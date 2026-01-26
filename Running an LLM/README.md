@@ -284,6 +284,10 @@ cd 'Running an LLM/playground'
 python plot_mmlu_compare.py <results1.json> <results2.json> <results3.json> --all-timings --out compare_all_timings.png
 ```
 
+Answer:
++ Abstract algebra, formal logic, and college chemistry are low for all three models.
++ SmolLM2 is consistently the weakest across most subjects.
++ Llama tends to lead on anatomy / astronomy / biology / world religions, while Qwen is comparatively strong on business ethics.
 
 ## Task 7 — Repeat on Google Colab
 
