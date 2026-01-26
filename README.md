@@ -1,2 +1,2 @@
-# uva-ai-agent-workshop
-uva-ai-agent-workshop
+# Introduction
+This repo for my ai agent workshop class.
