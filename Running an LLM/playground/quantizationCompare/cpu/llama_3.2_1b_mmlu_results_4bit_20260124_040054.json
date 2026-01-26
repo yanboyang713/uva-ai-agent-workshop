@@ -1,0 +1,32 @@
+{
+  "model": "meta-llama/Llama-3.2-1B-Instruct",
+  "quantization_bits": 4,
+  "timestamp": "20260124_040054",
+  "device": "cpu",
+  "duration_seconds": 10.206326,
+  "timing": {
+    "real_time_seconds": 10.206325889999789,
+    "cpu_user_seconds": 6.792108000000001,
+    "cpu_system_seconds": 0.244332,
+    "cpu_total_seconds": 7.036440000000001,
+    "gpu_time_seconds": 6.809871932983398
+  },
+  "overall_accuracy": 27.0,
+  "total_correct": 27,
+  "total_questions": 100,
+  "subject_results": [
+    {
+      "subject": "abstract_algebra",
+      "correct": 27,
+      "total": 100,
+      "accuracy": 27.0,
+      "timing": {
+        "real_time_seconds": 10.20612465999966,
+        "cpu_user_seconds": 6.792044000000001,
+        "cpu_system_seconds": 0.24420300000000017,
+        "cpu_total_seconds": 7.036247000000001,
+        "gpu_time_seconds": 6.809871932983398
+      }
+    }
+  ]
+}

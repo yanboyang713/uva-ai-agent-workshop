@@ -1,0 +1,149 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "quantization_bits": null,
+  "timestamp": "20260124_031645",
+  "device": "cuda",
+  "duration_seconds": 111.681166,
+  "timing": {
+    "real_time_seconds": 111.68118059299991,
+    "cpu_user_seconds": 52.043181999999995,
+    "cpu_system_seconds": 0.49781299999999984,
+    "cpu_total_seconds": 52.540994999999995,
+    "gpu_time_seconds": 50.02932180404663
+  },
+  "overall_accuracy": 41.37096774193548,
+  "total_correct": 513,
+  "total_questions": 1240,
+  "subject_results": [
+    {
+      "subject": "abstract_algebra",
+      "correct": 29,
+      "total": 100,
+      "accuracy": 28.999999999999996,
+      "timing": {
+        "real_time_seconds": 12.342007047000152,
+        "cpu_user_seconds": 4.238720000000001,
+        "cpu_system_seconds": 0.2738670000000001,
+        "cpu_total_seconds": 4.512587000000001,
+        "gpu_time_seconds": 4.707061321258545
+      }
+    },
+    {
+      "subject": "anatomy",
+      "correct": 59,
+      "total": 135,
+      "accuracy": 43.7037037037037,
+      "timing": {
+        "real_time_seconds": 11.553136214999995,
+        "cpu_user_seconds": 5.824107999999999,
+        "cpu_system_seconds": 0.02322300000000066,
+        "cpu_total_seconds": 5.847331,
+        "gpu_time_seconds": 5.573057125091553
+      }
+    },
+    {
+      "subject": "astronomy",
+      "correct": 65,
+      "total": 152,
+      "accuracy": 42.76315789473684,
+      "timing": {
+        "real_time_seconds": 12.525685988000077,
+        "cpu_user_seconds": 6.543737999999998,
+        "cpu_system_seconds": 0.02939899999999973,
+        "cpu_total_seconds": 6.573136999999997,
+        "gpu_time_seconds": 6.321451763153076
+      }
+    },
+    {
+      "subject": "business_ethics",
+      "correct": 51,
+      "total": 100,
+      "accuracy": 51.0,
+      "timing": {
+        "real_time_seconds": 9.20592570299982,
+        "cpu_user_seconds": 4.377496000000001,
+        "cpu_system_seconds": 0.020787999999999585,
+        "cpu_total_seconds": 4.398284,
+        "gpu_time_seconds": 4.116165702819824
+      }
+    },
+    {
+      "subject": "college_biology",
+      "correct": 62,
+      "total": 144,
+      "accuracy": 43.05555555555556,
+      "timing": {
+        "real_time_seconds": 13.180236851000018,
+        "cpu_user_seconds": 6.088401999999995,
+        "cpu_system_seconds": 0.026861999999999497,
+        "cpu_total_seconds": 6.1152639999999945,
+        "gpu_time_seconds": 5.820576629638672
+      }
+    },
+    {
+      "subject": "college_chemistry",
+      "correct": 28,
+      "total": 100,
+      "accuracy": 28.000000000000004,
+      "timing": {
+        "real_time_seconds": 8.938875591999931,
+        "cpu_user_seconds": 3.951186,
+        "cpu_system_seconds": 0.0192060000000005,
+        "cpu_total_seconds": 3.9703920000000004,
+        "gpu_time_seconds": 3.612435665130615
+      }
+    },
+    {
+      "subject": "computer_security",
+      "correct": 59,
+      "total": 100,
+      "accuracy": 59.0,
+      "timing": {
+        "real_time_seconds": 9.814674386999968,
+        "cpu_user_seconds": 3.9889980000000023,
+        "cpu_system_seconds": 0.024855999999999767,
+        "cpu_total_seconds": 4.013854000000002,
+        "gpu_time_seconds": 3.672915050506592
+      }
+    },
+    {
+      "subject": "formal_logic",
+      "correct": 30,
+      "total": 126,
+      "accuracy": 23.809523809523807,
+      "timing": {
+        "real_time_seconds": 11.39946648099999,
+        "cpu_user_seconds": 4.988833,
+        "cpu_system_seconds": 0.019758999999999638,
+        "cpu_total_seconds": 5.008591999999999,
+        "gpu_time_seconds": 4.6498815612792965
+      }
+    },
+    {
+      "subject": "machine_learning",
+      "correct": 43,
+      "total": 112,
+      "accuracy": 38.392857142857146,
+      "timing": {
+        "real_time_seconds": 10.447028261000014,
+        "cpu_user_seconds": 4.719172999999998,
+        "cpu_system_seconds": 0.02619100000000074,
+        "cpu_total_seconds": 4.745363999999999,
+        "gpu_time_seconds": 4.430514747619629
+      }
+    },
+    {
+      "subject": "world_religions",
+      "correct": 87,
+      "total": 171,
+      "accuracy": 50.877192982456144,
+      "timing": {
+        "real_time_seconds": 12.272333272000196,
+        "cpu_user_seconds": 7.320922999999993,
+        "cpu_system_seconds": 0.033508000000000315,
+        "cpu_total_seconds": 7.354430999999994,
+        "gpu_time_seconds": 7.125262237548828
+      }
+    }
+  ]
+}
