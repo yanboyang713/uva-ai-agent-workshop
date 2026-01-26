@@ -1,6 +1,6 @@
 # Topic 1: Running an LLM — Portfolio Notes
 
-This folder contains my work for UVA Agentic AI (Topic 1: **Running an LLM**): environment setup, running small LLMs locally, benchmarking on MMLU, and building a simple chat agent.
+This folder contains my work for UVA AI Agent class (Topic 1: **Running an LLM**): environment setup, running small LLMs locally, benchmarking on MMLU, and building a simple chat agent.
 
 Most runnable code/scripts are in `Running an LLM/playground/`.
 
