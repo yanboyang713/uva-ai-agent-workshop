@@ -68,6 +68,7 @@ time python llama_mmlu_eval.py
 ```
 
 I draw a line chart for CPU/GPU on different quantization.
+![QuantizationComparison](./playground/quantizationCompare/quant_configs.png)
 Please, check my line chart and dicussion on results.pdf
 
 Practical constraints:
@@ -283,6 +284,8 @@ Compare multiple runs/models:
 cd 'Running an LLM/playground'
 python plot_mmlu_compare.py <results1.json> <results2.json> <results3.json> --all-timings --out compare_all_timings.png
 ```
+![Task 6](./playground/compare10subjectsData/compare_3models_all_timings.png)
+Please, check my bar chart and dicussion on results.pdf
 
 Answer:
 + Abstract algebra, formal logic, and college chemistry are low for all three models.
