@@ -1,0 +1,12 @@
+openai
+langchain
+langchain-openai
+langgraph
+langgraph-checkpoint-sqlite
+datasets
+tqdm
+torch
+transformers
+accelerate
+huggingface_hub
+bitsandbytes

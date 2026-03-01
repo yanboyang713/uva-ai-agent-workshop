@@ -1,0 +1,32 @@
+{
+  "model": "meta-llama/Llama-3.2-1B-Instruct",
+  "quantization_bits": null,
+  "timestamp": "20260301_022803",
+  "device": "cpu",
+  "duration_seconds": 125.675671,
+  "timing": {
+    "real_time_seconds": 125.67566865399931,
+    "cpu_user_seconds": 477.241337,
+    "cpu_system_seconds": 4.504643,
+    "cpu_total_seconds": 481.74598,
+    "gpu_time_seconds": null
+  },
+  "overall_accuracy": 45.0,
+  "total_correct": 45,
+  "total_questions": 100,
+  "subject_results": [
+    {
+      "subject": "business_ethics",
+      "correct": 45,
+      "total": 100,
+      "accuracy": 45.0,
+      "timing": {
+        "real_time_seconds": 125.67551946599997,
+        "cpu_user_seconds": 477.241218,
+        "cpu_system_seconds": 4.504620000000001,
+        "cpu_total_seconds": 481.745838,
+        "gpu_time_seconds": null
+      }
+    }
+  ]
+}

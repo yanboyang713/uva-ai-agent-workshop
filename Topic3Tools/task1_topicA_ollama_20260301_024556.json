@@ -1,0 +1,10 @@
+{
+  "subject": "astronomy",
+  "model": "llama3.2:1b",
+  "split": "test",
+  "total": 5,
+  "correct": 1,
+  "accuracy": 20.0,
+  "duration_seconds": 11.477310582999053,
+  "timestamp": "20260301_024556"
+}

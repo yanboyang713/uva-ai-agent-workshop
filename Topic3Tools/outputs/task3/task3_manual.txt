@@ -1,0 +1,57 @@
+====================================================================
+TEST 1
+====================================================================
+
+User: What's the weather in Charlottesville?
+
+--- Iteration 1 ---
+LLM requested 1 tool call(s).
+  Tool: get_weather
+  Args: {'location': 'Charlottesville'}
+  Result: {"location": "Charlottesville", "forecast": "Partly cloudy, 68F"}
+
+--- Iteration 2 ---
+Assistant: The weather in Charlottesville is partly cloudy with a temperature of 68°F.
+
+====================================================================
+TEST 2
+====================================================================
+
+User: What is area_circle(3) and circumference_circle(3)?
+
+--- Iteration 1 ---
+LLM requested 2 tool call(s).
+  Tool: calculator
+  Args: {'expression': 'area_circle(3)'}
+  Result: {"ok": true, "expression": "area_circle(3)", "result": 28.274334, "precision": 6}
+  Tool: calculator
+  Args: {'expression': 'circumference_circle(3)'}
+  Result: {"ok": true, "expression": "circumference_circle(3)", "result": 18.849556, "precision": 6}
+
+--- Iteration 2 ---
+Assistant: The area of a circle with a radius of 3 is approximately \(28.274334\) square units, and the circumference of the same circle is approximately \(18.849556\) units.
+
+====================================================================
+TEST 3
+====================================================================
+
+User: What is sin(area_rectangle(3, 4) - area_triangle(6, 4))?
+
+--- Iteration 1 ---
+LLM requested 2 tool call(s).
+  Tool: calculator
+  Args: {'expression': 'area_rectangle(3, 4)'}
+  Result: {"ok": true, "expression": "area_rectangle(3, 4)", "result": 12.0, "precision": 6}
+  Tool: calculator
+  Args: {'expression': 'area_triangle(6, 4)'}
+  Result: {"ok": true, "expression": "area_triangle(6, 4)", "result": 12.0, "precision": 6}
+
+--- Iteration 2 ---
+LLM requested 1 tool call(s).
+  Tool: calculator
+  Args: {'expression': 'sin(12.0 - 12.0)'}
+  Result: {"ok": true, "expression": "sin(12.0 - 12.0)", "result": 0.0, "precision": 6}
+
+--- Iteration 3 ---
+Assistant: The result of \( \sin(\text{area\_rectangle}(3, 4) - \text{area\_triangle}(6, 4)) \) is \( 0.0 \).
+

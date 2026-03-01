@@ -1,0 +1,5 @@
+Model: gpt-4o-mini
+Response: Working!
+Prompt tokens: 12
+Completion tokens: 2
+Total tokens: 14

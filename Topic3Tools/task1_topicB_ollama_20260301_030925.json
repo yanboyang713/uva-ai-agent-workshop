@@ -1,0 +1,10 @@
+{
+  "subject": "business_ethics",
+  "model": "llama3.2:1b",
+  "split": "test",
+  "total": 100,
+  "correct": 30,
+  "accuracy": 30.0,
+  "duration_seconds": 361.0248543990001,
+  "timestamp": "20260301_030925"
+}

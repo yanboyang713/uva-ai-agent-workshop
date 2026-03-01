@@ -1,0 +1,79 @@
+====================================================================
+TEST 1
+====================================================================
+
+User: How many s are in Mississippi riverboats?
+
+--- Iteration 1 ---
+LLM requested 1 tool call(s).
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 's'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "s", "case_sensitive": false, "count": 5}
+
+--- Iteration 2 ---
+Assistant: There are 5 occurrences of the letter "s" in "Mississippi riverboats."
+
+====================================================================
+TEST 2
+====================================================================
+
+User: Are there more i's than s's in Mississippi riverboats? Give the difference too.
+
+--- Iteration 1 ---
+LLM requested 2 tool call(s).
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 'i'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "i", "case_sensitive": false, "count": 5}
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 's'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "s", "case_sensitive": false, "count": 5}
+
+--- Iteration 2 ---
+Assistant: In the phrase "Mississippi riverboats," there are 5 occurrences of the letter 'i' and 5 occurrences of the letter 's'. 
+
+Since the counts are equal, there are not more 'i's than 's's. The difference is 0.
+
+====================================================================
+TEST 3
+====================================================================
+
+User: What is the sin of the difference between the number of i's and s's in Mississippi riverboats?
+
+--- Iteration 1 ---
+LLM requested 2 tool call(s).
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 'i'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "i", "case_sensitive": false, "count": 5}
+  Tool: count_letter
+  Args: {'text': 'Mississippi riverboats', 'letter': 's'}
+  Result: {"ok": true, "text": "Mississippi riverboats", "letter": "s", "case_sensitive": false, "count": 5}
+
+--- Iteration 2 ---
+LLM requested 1 tool call(s).
+  Tool: calculator
+  Args: {'expression': 'sin(5 - 5)'}
+  Result: {"ok": true, "expression": "sin(5 - 5)", "result": 0.0}
+
+--- Iteration 3 ---
+Assistant: The sine of the difference between the number of 'i's and 's's in "Mississippi riverboats" is \( \sin(0) = 0.0 \).
+
+====================================================================
+TEST 4
+====================================================================
+
+User: What is the weather in Tokyo, and how many unique letters are in that city name?
+
+--- Iteration 1 ---
+LLM requested 2 tool call(s).
+  Tool: get_weather
+  Args: {'location': 'Tokyo'}
+  Result: {"location": "Tokyo", "forecast": "Clear, 65F"}
+  Tool: text_stats
+  Args: {'text': 'Tokyo'}
+  Result: {"ok": true, "chars": 5, "words": 1, "unique_letters": ["k", "o", "t", "y"], "unique_letter_count": 4}
+
+--- Iteration 2 ---
+Assistant: The weather in Tokyo is clear with a temperature of 65°F. 
+
+Additionally, there are 4 unique letters in the city name "Tokyo": k, o, t, and y.
+

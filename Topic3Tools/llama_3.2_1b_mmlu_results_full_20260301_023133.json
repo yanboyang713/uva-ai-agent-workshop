@@ -1,0 +1,32 @@
+{
+  "model": "meta-llama/Llama-3.2-1B-Instruct",
+  "quantization_bits": null,
+  "timestamp": "20260301_023133",
+  "device": "cpu",
+  "duration_seconds": 193.368261,
+  "timing": {
+    "real_time_seconds": 193.36825800799852,
+    "cpu_user_seconds": 736.9533720000001,
+    "cpu_system_seconds": 7.469612,
+    "cpu_total_seconds": 744.422984,
+    "gpu_time_seconds": null
+  },
+  "overall_accuracy": 49.34210526315789,
+  "total_correct": 75,
+  "total_questions": 152,
+  "subject_results": [
+    {
+      "subject": "astronomy",
+      "correct": 75,
+      "total": 152,
+      "accuracy": 49.34210526315789,
+      "timing": {
+        "real_time_seconds": 193.36810480799977,
+        "cpu_user_seconds": 736.9532389999999,
+        "cpu_system_seconds": 7.469598,
+        "cpu_total_seconds": 744.422837,
+        "gpu_time_seconds": null
+      }
+    }
+  ]
+}

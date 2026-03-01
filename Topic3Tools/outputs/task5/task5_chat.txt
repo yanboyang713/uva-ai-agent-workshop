@@ -1,0 +1,9 @@
+Started new thread 'topic3-demo'.
+
+Type '/history' to print recent context and '/quit' to exit.
+
+> 
+Assistant: There are 5 occurrences of the letter "s" in "Mississippi riverboats."
+
+
+> Goodbye.
