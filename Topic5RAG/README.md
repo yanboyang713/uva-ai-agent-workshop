@@ -11,14 +11,11 @@ This folder contains my portfolio work for Topic 5.
 - `task3_frontier_manual_comparison.md` - manual template for Exercise 3
 - `outputs/` - saved JSON/TXT outputs by exercise
 
-## Team
-
-- Team members: add names here.
-
 ## Setup
 
 ```bash
-conda activate topic3
+conda create -n topic5 -y python=3.12
+conda activate topic5
 pip install -r Topic5RAG/requirements.txt
 ```
 

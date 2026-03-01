@@ -1,0 +1,5 @@
+# Topic 5 downloaded resources (large local assets; do not commit)
+Topic5RAG/resources/
+
+# macOS metadata
+.DS_Store
