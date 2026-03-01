@@ -7,7 +7,7 @@ This directory contains my portfolio work for Topic 4.
 - `requirements.txt` - dependencies for Topic 4 scripts
 - `task3_toolnode_vs_react_answers.md` - answers to ToolNode vs create_react_agent questions
 - `task5_option1_wikipedia_duckduckgo_research_assistant.py` - Option 1 project implementation
-- `outputs/task1_analysis/` - notes or captures for Task 1 analysis
+- `outputs/task3_analysis/` - notes or captures for Task 3 analysis
 - `outputs/task5_option1/` - traces and terminal logs for Option 1
 
 ## Setup

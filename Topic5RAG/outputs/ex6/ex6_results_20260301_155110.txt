@@ -1,0 +1,46 @@
+Exercise 6: Query Phrasing Sensitivity
+======================================
+corpus_dir=Topic4Exploring
+chunk_size=512 chunk_overlap=128
+open_model=llama3.2:1b open_provider=ollama
+rag_k=5
+
+Q: What is the recommended maintenance schedule for the engine?
+  - score=0.2805 source=task3_toolnode_vs_react_answers.md chunk=56
+  - score=0.1962 source=task3_toolnode_vs_react_answers.md chunk=55
+  - score=0.1755 source=outputs/task3_analysis/task3_toolnode_run.txt chunk=19
+  - score=0.1752 source=task3_toolnode_vs_react_answers.md chunk=57
+  - score=0.1692 source=outputs/task5_option1/task5_option1_run1.txt chunk=49
+
+Q: How often should I service the engine?
+  - score=0.1003 source=outputs/task5_option1/task3_option1_run1.txt chunk=31
+  - score=0.0996 source=outputs/task5_option1/task5_option1_run1.txt chunk=50
+  - score=0.0975 source=outputs/task5_option1/task3_option1_run2.txt chunk=38
+  - score=0.0960 source=outputs/task5_option1/task3_option1_run1.txt chunk=33
+  - score=0.0932 source=outputs/task5_option1/task3_option1_run1.txt chunk=32
+
+Q: engine maintenance intervals
+
+Q: When do I need to check the engine?
+  - score=0.1811 source=task3_toolnode_vs_react_answers.md chunk=61
+  - score=0.1577 source=outputs/task5_option1/task5_option1_run1.txt chunk=51
+  - score=0.1546 source=outputs/task5_option1/task3_option1_run2.txt chunk=38
+  - score=0.1270 source=task3_toolnode_vs_react_answers.md chunk=62
+  - score=0.1015 source=outputs/task5_option1/task5_option1_run1.txt chunk=50
+
+Q: Preventive maintenance requirements
+  - score=0.1251 source=README.md chunk=0
+  - score=0.1212 source=README.md chunk=1
+  - score=0.1195 source=task3_toolnode_vs_react_answers.md chunk=54
+
+Pairwise Jaccard overlap of retrieved chunk IDs:
+  - What is the recommended maintenance schedule for the engine? || How often should I service the engine?: 0.000
+  - What is the recommended maintenance schedule for the engine? || engine maintenance intervals: 0.000
+  - What is the recommended maintenance schedule for the engine? || When do I need to check the engine?: 0.000
+  - What is the recommended maintenance schedule for the engine? || Preventive maintenance requirements: 0.000
+  - How often should I service the engine? || engine maintenance intervals: 0.000
+  - How often should I service the engine? || When do I need to check the engine?: 0.250
+  - How often should I service the engine? || Preventive maintenance requirements: 0.000
+  - engine maintenance intervals || When do I need to check the engine?: 0.000
+  - engine maintenance intervals || Preventive maintenance requirements: 0.000
+  - When do I need to check the engine? || Preventive maintenance requirements: 0.000

@@ -1,0 +1,198 @@
+{
+  "exercise": "ex6",
+  "args": {
+    "exercise": "ex6",
+    "corpus_dir": "Topic4Exploring",
+    "corpus": "custom",
+    "queries_file": "",
+    "chunk_size": 512,
+    "chunk_overlap": 128,
+    "rag_k": 5,
+    "open_provider": "ollama",
+    "open_model": "llama3.2:1b",
+    "ollama_base_url": "http://127.0.0.1:11434/v1",
+    "output_dir": "Topic5RAG/outputs/ex6"
+  },
+  "results": [
+    {
+      "query": "What is the recommended maintenance schedule for the engine?",
+      "retrieved": [
+        {
+          "chunk_id": 56,
+          "score": 0.2805495924093991,
+          "source_file": "task3_toolnode_vs_react_answers.md",
+          "start_char": 768,
+          "end_char": 1280,
+          "text": "t_example.py ``` Suggested test inputs at the prompt: - `What is the weather in London and population of Paris?` - `quiet` - `What is 144 / 12?` - `exit` ### 4) Capture terminal output for portfolio files Run non-interactively by piping inputs: ```bash cd Topic4Exploring printf \"What is the weather in Tokyo and population of New York?\\nverbose\\n2 + 2 * 10\\nexit\\n\" \\ | python -u toolnode_example.py 2>&1 | tee ./outputs/task3_analysis/task3_toolnode_run.txt printf \"What is the weather in London and population"
+        },
+        {
+          "chunk_id": 55,
+          "score": 0.19620750574655715,
+          "source_file": "task3_toolnode_vs_react_answers.md",
+          "start_char": 384,
+          "end_char": 896,
+          "text": "n `toolnode_example.py` (interactive) Run from the Topic 4 folder so graph PNG files are saved there: ```bash cd Topic4Exploring python -u toolnode_example.py ``` Test inputs at the prompt: - `What is the weather in Tokyo and population of New York?` - `verbose` - `2 + 2 * 10` - `exit` ### 3) Run `react_agent_example.py` (interactive) ```bash cd Topic4Exploring python -u react_agent_example.py ``` Suggested test inputs at the prompt: - `What is the weather in London and population of Paris?` - `quiet` - `Wh"
+        },
+        {
+          "chunk_id": 19,
+          "score": 0.17545856256743209,
+          "source_file": "outputs/task3_analysis/task3_toolnode_run.txt",
+          "start_char": 1152,
+          "end_char": 1664,
+          "text": "===================================== NODE: input_node ================================================================================ You: [DEBUG] User input: What is the weather in Tokyo and population of New York? [DEBUG] Routing to call_model ================================================================================ NODE: call_model ================================================================================ [DEBUG] Calling model with 1 messages [DEBUG] Added system prompt [DEBUG] Model reque"
+        },
+        {
+          "chunk_id": 57,
+          "score": 0.17522099171218142,
+          "source_file": "task3_toolnode_vs_react_answers.md",
+          "start_char": 1152,
+          "end_char": 1664,
+          "text": "lnode_example.py 2>&1 | tee ./outputs/task3_analysis/task3_toolnode_run.txt printf \"What is the weather in London and population of Paris?\\nquiet\\nWhat is 144 / 12?\\nexit\\n\" \\ | python -u react_agent_example.py 2>&1 | tee ./outputs/task3_analysis/task3_react_run.txt ``` The programs also generate graph images in `Topic4Exploring/`: - ToolNode version: `langchain_manual_tool_graph.png` - ReAct version: `langchain_react_agent.png` and `langchain_conversation_graph.png` ## 1) What Python features does ToolNode"
+        },
+        {
+          "chunk_id": 49,
+          "score": 0.16919368331973028,
+          "source_file": "outputs/task5_option1/task5_option1_run1.txt",
+          "start_char": 1920,
+          "end_char": 2432,
+          "text": "ive overview of CRISPR-Cas9 and prime editing, including their mechanisms, applications, and potential risks. * DuckDuckGo emphasizes the importance of caution and research in the use of CRISPR gene editing, highlighting the need for further studies on its safety and efficacy. Brief Report: \u2022 CRISPR-Cas9 is a powerful tool for editing genes within living organisms. \u2022 Prime editing is another methodology similar to precursor genome editing technologies that has been used on animal models of disease. \u2022 The us"
+        }
+      ]
+    },
+    {
+      "query": "How often should I service the engine?",
+      "retrieved": [
+        {
+          "chunk_id": 31,
+          "score": 0.10028233535786243,
+          "source_file": "outputs/task5_option1/task3_option1_run1.txt",
+          "start_char": 1152,
+          "end_char": 1664,
+          "text": " Based on the Wikipedia findings, it appears that both fusion power and cold fusion have been researched in recent years. Wikipedia notes that research on fusion reactors began in the 1940s, and there are ongoing efforts to develop practical fusion power plants. The concept of nuclear fusion has also gained attention in recent years, with some researchers exploring the possibility of harnessing this process for energy production. However, it's worth noting that the term \"cold fusion\" is often associated wit"
+        },
+        {
+          "chunk_id": 50,
+          "score": 0.09955079612270269,
+          "source_file": "outputs/task5_option1/task5_option1_run1.txt",
+          "start_char": 2304,
+          "end_char": 2816,
+          "text": "is another methodology similar to precursor genome editing technologies that has been used on animal models of disease. \u2022 The use of CRISPR/Cas9 and prime editing has the potential to revolutionize various fields, including medicine, agriculture, and biotechnology. \u2022 Wikipedia emphasizes precision and safety in genetic engineering. \u2022 DuckDuckGo highlights caution and research in the use of CRISPR gene editing. Note: As a research assistant, I must emphasize that while CRISPR gene editing holds great promise"
+        },
+        {
+          "chunk_id": 38,
+          "score": 0.09745846401202626,
+          "source_file": "outputs/task5_option1/task3_option1_run2.txt",
+          "start_char": 768,
+          "end_char": 1280,
+          "text": "y. Devices that use this process are known as fusion reactors. Research on fusion reactors began in the 1940s. As of 2025, the National (URL: https://en.wikipedia.org/wiki/Fusion_power) - Cold... === Final Report === I need to call DuckDuckGo to find relevant information. * DuckDuckGo Search: \"fusion energy progress last few years\" * DuckDuckGo Web Findings: - Fusion power is a promising technology for generating electricity, but it remains in the experimental phase. (Source: [https://www.duckduckgo.com/?q="
+        },
+        {
+          "chunk_id": 33,
+          "score": 0.09595720652778786,
+          "source_file": "outputs/task5_option1/task3_option1_run1.txt",
+          "start_char": 1920,
+          "end_char": 2432,
+          "text": "Wikipedia provides more balanced coverage of nuclear fusion, highlighting its theoretical foundations and ongoing research efforts. Here are three concise bullets summarizing the findings: * Research on fusion reactors has continued in recent years, with ongoing efforts to develop practical power plants. * The term \"cold fusion\" is often associated with claims of successful experiments, but these have been met with skepticism by the scientific community. * Nuclear fusion remains a theoretical concept, with "
+        },
+        {
+          "chunk_id": 32,
+          "score": 0.09319936309345987,
+          "source_file": "outputs/task5_option1/task3_option1_run1.txt",
+          "start_char": 1536,
+          "end_char": 2048,
+          "text": "of harnessing this process for energy production. However, it's worth noting that the term \"cold fusion\" is often associated with claims of successful experiments, but these have been met with skepticism by the scientific community due to methodological flaws and inconsistencies. As a result, the term \"cold fusion\" is not widely accepted as a valid scientific concept. In contrast, Wikipedia provides more balanced coverage of nuclear fusion, highlighting its theoretical foundations and ongoing research effor"
+        }
+      ]
+    },
+    {
+      "query": "engine maintenance intervals",
+      "retrieved": []
+    },
+    {
+      "query": "When do I need to check the engine?",
+      "retrieved": [
+        {
+          "chunk_id": 61,
+          "score": 0.18106014722546604,
+          "source_file": "task3_toolnode_vs_react_answers.md",
+          "start_char": 2688,
+          "end_char": 3200,
+          "text": "ry -> input Main difference: - ToolNode version has explicit `tools` node and conditional routing from model to tools, then back to model. - ReAct version hides tool loop inside `create_react_agent`, so wrapper graph is simpler while internal agent graph handles the action/observation loop. ## 4) When is create_react_agent too restrictive vs ToolNode? Use ToolNode/manual orchestration when you need custom control flow that is not standard ReAct: - strict business rules on tool order - branch-specific retry/"
+        },
+        {
+          "chunk_id": 51,
+          "score": 0.15771133753285527,
+          "source_file": "outputs/task5_option1/task5_option1_run1.txt",
+          "start_char": 2688,
+          "end_char": 3081,
+          "text": "e use of CRISPR gene editing. Note: As a research assistant, I must emphasize that while CRISPR gene editing holds great promise, it is essential to conduct thorough research and follow established guidelines and regulations when using this technology. Saved trace JSON: /home/yanboyang713/projects/uva-ai-agent-workshop/Topic4Exploring/outputs/task3_option1/option1_trace_20260301_153204.json"
+        },
+        {
+          "chunk_id": 38,
+          "score": 0.15459974778574223,
+          "source_file": "outputs/task5_option1/task3_option1_run2.txt",
+          "start_char": 768,
+          "end_char": 1280,
+          "text": "y. Devices that use this process are known as fusion reactors. Research on fusion reactors began in the 1940s. As of 2025, the National (URL: https://en.wikipedia.org/wiki/Fusion_power) - Cold... === Final Report === I need to call DuckDuckGo to find relevant information. * DuckDuckGo Search: \"fusion energy progress last few years\" * DuckDuckGo Web Findings: - Fusion power is a promising technology for generating electricity, but it remains in the experimental phase. (Source: [https://www.duckduckgo.com/?q="
+        },
+        {
+          "chunk_id": 62,
+          "score": 0.12703342554121255,
+          "source_file": "task3_toolnode_vs_react_answers.md",
+          "start_char": 3072,
+          "end_char": 3425,
+          "text": "ion when you need custom control flow that is not standard ReAct: - strict business rules on tool order - branch-specific retry/timeout behavior per tool - custom safety/approval gates between reasoning and tool execution - deterministic multi-tool pipelines with mixed parallel + sequential stages - richer state transitions than one generic ReAct loop"
+        },
+        {
+          "chunk_id": 50,
+          "score": 0.10150995164520984,
+          "source_file": "outputs/task5_option1/task5_option1_run1.txt",
+          "start_char": 2304,
+          "end_char": 2816,
+          "text": "is another methodology similar to precursor genome editing technologies that has been used on animal models of disease. \u2022 The use of CRISPR/Cas9 and prime editing has the potential to revolutionize various fields, including medicine, agriculture, and biotechnology. \u2022 Wikipedia emphasizes precision and safety in genetic engineering. \u2022 DuckDuckGo highlights caution and research in the use of CRISPR gene editing. Note: As a research assistant, I must emphasize that while CRISPR gene editing holds great promise"
+        }
+      ]
+    },
+    {
+      "query": "Preventive maintenance requirements",
+      "retrieved": [
+        {
+          "chunk_id": 0,
+          "score": 0.12508583278669105,
+          "source_file": "README.md",
+          "start_char": 0,
+          "end_char": 512,
+          "text": "# Topic 4: Exploring Tools This directory contains my portfolio work for Topic 4. ## Table of contents - `requirements.txt` - dependencies for Topic 4 scripts - `task3_toolnode_vs_react_answers.md` - answers to ToolNode vs create_react_agent questions - `task5_option1_wikipedia_duckduckgo_research_assistant.py` - Option 1 project implementation - `outputs/task1_analysis/` - notes or captures for Task 1 analysis - `outputs/task5_option1/` - traces and terminal logs for Option 1 ## Setup ```bash conda create "
+        },
+        {
+          "chunk_id": 1,
+          "score": 0.1212131402851667,
+          "source_file": "README.md",
+          "start_char": 384,
+          "end_char": 896,
+          "text": "r captures for Task 1 analysis - `outputs/task5_option1/` - traces and terminal logs for Option 1 ## Setup ```bash conda create -n topic4 -y python=3.12 conda activate topic4 pip install -r Topic4Exploring/requirements.txt ``` ## Task 3 (starter code analysis) Question answers are in: - `Topic4Exploring/task3_toolnode_vs_react_answers.md` ## Task 5: 2-Hour Agent Project (Option 1) Project chosen: - **Option 1: Wikipedia + DuckDuckGo** - \"Research Assistant - Compare Sources\" ### How to run (Ollama, no API k"
+        },
+        {
+          "chunk_id": 54,
+          "score": 0.11951255923134177,
+          "source_file": "task3_toolnode_vs_react_answers.md",
+          "start_char": 0,
+          "end_char": 512,
+          "text": "# Task 3: ToolNode vs create_react_agent Based on the provided starter files: - `toolnode_example.py` - `react_agent_example.py` ## How to run these two programs (Task 3) ### 1) Environment and dependencies From repo root: ```bash conda activate topic3 pip install -r Topic4Exploring/requirements.txt ``` Set OpenAI key in shell: ```bash export OPENAI_API_KEY=\"your-key\" ``` ### 2) Run `toolnode_example.py` (interactive) Run from the Topic 4 folder so graph PNG files are saved there: ```bash cd Topic4Exploring"
+        }
+      ]
+    }
+  ],
+  "overlap_jaccard": {
+    "What is the recommended maintenance schedule for the engine? || How often should I service the engine?": 0.0,
+    "What is the recommended maintenance schedule for the engine? || engine maintenance intervals": 0.0,
+    "What is the recommended maintenance schedule for the engine? || When do I need to check the engine?": 0.0,
+    "What is the recommended maintenance schedule for the engine? || Preventive maintenance requirements": 0.0,
+    "How often should I service the engine? || engine maintenance intervals": 0.0,
+    "How often should I service the engine? || When do I need to check the engine?": 0.25,
+    "How often should I service the engine? || Preventive maintenance requirements": 0.0,
+    "engine maintenance intervals || When do I need to check the engine?": 0.0,
+    "engine maintenance intervals || Preventive maintenance requirements": 0.0,
+    "When do I need to check the engine? || Preventive maintenance requirements": 0.0
+  }
+}
