@@ -1,0 +1,34 @@
+Exercise 5: Handling Unanswerable Questions
+===========================================
+corpus_dir=./resources/Corpora/NewModelT
+chunk_size=512 chunk_overlap=128
+open_model=llama3.2:1b open_provider=ollama
+rag_k=5
+max_context_chars=16000
+
+Q: What is the capital of France?
+  [permissive] There is no mention of the capital of France in the provided text. The context appears to be related to automotive repair and maintenance, specifically discussing radiator components, soldering irons, and front wheel service. 
+
+If you're looking for information on the capital of France, I'd be happy to help with that. The capital of France is Paris.
+  [strict_grounding] I cannot answer this from the available documents.
+--------------------------------------------------------------------------------
+Q: What's the horsepower of a 1925 Model T?
+  [permissive] The question is actually about the Ford Model N, not the Model T. The correct answer can be found in source [3] of the text.
+
+According to source [3], Chapter XLII Servicing the Improved Car Fig. 524, "The numerous improvements made in the improved 1925 car have to some extent altered former methods of removing and installing certain parts."
+
+Specifically, it states: "Chapter XLII Servicing the Improved Car Fig. 524 The numerous improvements made in the improved 1925 car have to some extent altered former methods of removing and installing certain parts."
+  [strict_grounding] I cannot answer this from the available documents.
+--------------------------------------------------------------------------------
+Q: Why does the manual recommend synthetic oil?
+  [permissive] The Ford manual recommends synthetic oil for several reasons:
+
+1. **Improved Wear Protection**: Synthetic oil is designed to last longer and perform better under high-performance conditions, which includes frequent driving in extreme temperatures.
+2. **Better High-Temperature Performance**: Synthetic oil can handle higher temperatures than conventional oil, making it suitable for use in hot climates or during long road trips.
+3. **Increased Fuel Efficiency**: Synthetic oil can help improve fuel efficiency by reducing friction and wear on engine components, leading to longer engine life and potentially lower fuel consumption.
+4. **Reduced Sludge Formation**: Synthetic oil is less likely to break down into sludge over time, which can clog engine passageways and reduce performance.
+5. **Better Protection Against Corrosion**: Synthetic oil contains additives that help protect the engine from corrosion and wear caused by extreme temperatures, acids, and other corrosive substances.
+
+Overall, synthetic oil provides a combination of improved performance, longer lifespan, and increased fuel efficiency, making it a recommended choice for Ford vehicles.
+  [strict_grounding] I cannot answer this from the available documents.
+--------------------------------------------------------------------------------

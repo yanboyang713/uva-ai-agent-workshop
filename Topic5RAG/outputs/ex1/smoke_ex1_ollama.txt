@@ -1,2 +1,0 @@
-Saved: Topic5RAG/outputs/ex1/ex1_results_20260301_155212.json
-Saved: Topic5RAG/outputs/ex1/ex1_results_20260301_155212.txt

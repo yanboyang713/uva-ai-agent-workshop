@@ -1,0 +1,593 @@
+{
+  "exercise": "ex11",
+  "args": {
+    "exercise": "ex11",
+    "corpus_dir": "./resources/Corpora/NewModelT",
+    "corpus": "modelt",
+    "queries_file": "",
+    "chunk_size": 512,
+    "chunk_overlap": 128,
+    "rag_k": 5,
+    "max_context_chars": 16000,
+    "open_provider": "ollama",
+    "open_model": "llama3.2:1b",
+    "ollama_base_url": "http://127.0.0.1:11434/v1",
+    "k_values": "3,5,10",
+    "output_dir": "./outputs/ex11"
+  },
+  "results": [
+    {
+      "query": "What are all monthly maintenance tasks mentioned in the manual?",
+      "by_k": {
+        "3": {
+          "text": "Based on the context provided, the following monthly maintenance tasks are mentioned:\n\n1. Checking and replenishing stock of parts regularly sold for service.\n2. Computing orders for labor and parts.\n3. Routing orders to a designated person for entry into the service card record.\n\nThese tasks are essential for maintaining an accurate and efficient service system.",
+          "elapsed_seconds": 16.92817742799889,
+          "usage": {
+            "completion_tokens": 67,
+            "prompt_tokens": 447,
+            "total_tokens": 514,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 679,
+              "score": 0.11294674014966598,
+              "source_file": "ModelTNew.txt",
+              "start_char": 260736,
+              "end_char": 261248,
+              "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+            },
+            {
+              "chunk_id": 32,
+              "score": 0.10521528946851484,
+              "source_file": "ModelTNew.txt",
+              "start_char": 12288,
+              "end_char": 12800,
+              "text": " \u00b7on the part of customers who are obliged to wait until replacement parts are obtained from the factory. It means the additional and unnecessary expense of a rush shipment from the factory. \u00b7 A thorough check should be made monthly of every part regularly sold for service and replenishment made accordingly, consideration being given to seasonal demands. Steel storage bins can be used advantageously, particularly where space is limited. In addition to presenting a more attractive appear- ance, the stock can"
+            },
+            {
+              "chunk_id": 38,
+              "score": 0.10504831875739952,
+              "source_file": "ModelTNew.txt",
+              "start_char": 14592,
+              "end_char": 15104,
+              "text": "air orders should be computed, showing the total amount of the bill for labor and parts. Before filing the orders they should be routed to some definite person in the office designated to make entries on the service card record. This is particularly impor- tant, for unless some employee is held to strict accountability for the maintenance of the follow-up system, it is likely to be slighted, with the result that it will eventually become useless. All entries on the service card should show date, repair orde"
+            }
+          ],
+          "prompt_variant": "structured"
+        },
+        "5": {
+          "text": "Based on the provided context, the following monthly maintenance tasks are mentioned:\n\n1. Oil change: \n   - Change the oil in the crankcase at the end of the first 400 miles.\n   - Every 750 miles thereafter, except during cold weather.\n\n2. Inspection and replacement of parts:\n   - Check every part regularly sold for service and replenish accordingly.\n   - Consider seasonal demands when making replenishment.\n\n3. Storage and organization:\n   - Use steel storage bins to store parts, particularly where space is limited.\n   - Present a more attractive appearance by using clean attire and meeting customers in a professional manner.\n\n4. Record-keeping:\n   - Route orders to a designated person for entry on the service card record.\n   - Ensure all entries show date, repair order, or other relevant information.",
+          "elapsed_seconds": 22.742419245998462,
+          "usage": {
+            "completion_tokens": 164,
+            "prompt_tokens": 705,
+            "total_tokens": 869,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 679,
+              "score": 0.11294674014966598,
+              "source_file": "ModelTNew.txt",
+              "start_char": 260736,
+              "end_char": 261248,
+              "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+            },
+            {
+              "chunk_id": 32,
+              "score": 0.10521528946851484,
+              "source_file": "ModelTNew.txt",
+              "start_char": 12288,
+              "end_char": 12800,
+              "text": " \u00b7on the part of customers who are obliged to wait until replacement parts are obtained from the factory. It means the additional and unnecessary expense of a rush shipment from the factory. \u00b7 A thorough check should be made monthly of every part regularly sold for service and replenishment made accordingly, consideration being given to seasonal demands. Steel storage bins can be used advantageously, particularly where space is limited. In addition to presenting a more attractive appear- ance, the stock can"
+            },
+            {
+              "chunk_id": 38,
+              "score": 0.10504831875739952,
+              "source_file": "ModelTNew.txt",
+              "start_char": 14592,
+              "end_char": 15104,
+              "text": "air orders should be computed, showing the total amount of the bill for labor and parts. Before filing the orders they should be routed to some definite person in the office designated to make entries on the service card record. This is particularly impor- tant, for unless some employee is held to strict accountability for the maintenance of the follow-up system, it is likely to be slighted, with the result that it will eventually become useless. All entries on the service card should show date, repair orde"
+            },
+            {
+              "chunk_id": 28,
+              "score": 0.0920618018266916,
+              "source_file": "ModelTNew.txt",
+              "start_char": 10752,
+              "end_char": 11264,
+              "text": "ould be represented by cleanly attired men, capable of meeting and serving the trade in a manner that will inspire confidence. The courtesy and promptness of the parts man indicates that the entire organization is interested in the customer's welfare. One of the most important duties of the parts salesman is to know what parts are required to perform each repair job and to diplomatically convey this information to the customer. For example when a cus- tomer purchases a front. spring, the parts salesman shou"
+            },
+            {
+              "chunk_id": 45,
+              "score": 0.08801774901271178,
+              "source_file": "ModelTNew.txt",
+              "start_char": 17280,
+              "end_char": 17792,
+              "text": "n indefinite period. Accordingly, it will be to your interest to carefully study the Ford manual containing instructions on the care and operation of Ford cars, in order that you may be generally familiar with the mechanism of the car. In driving a new car the following points of care are of particular importance: Do not drive over 20 miles per hour for the first 500 miles. Change the oil in the crankcase at the end of the first 400 miles and every 750 miles thereafter, except during cold weather, when it i"
+            }
+          ],
+          "prompt_variant": "structured"
+        },
+        "10": {
+          "text": "Based on the provided text, the following monthly maintenance tasks are mentioned:\n\n1. Check every part regularly sold for service and replenishment made accordingly.\n2. Consideration being given to seasonal demands.\n3. Computation of orders should be done before filing them to some definite person in the office designated to make entries on the service card record.\n4. Entries on the service card should show date, repair order, etc.\n5. Parts man should know what parts are required to perform each repair job and convey this information to the customer.\n\nAdditionally, the manual mentions that:\n\n* Detailed instructions for servicing batteries is described in the Ford battery manual (Chapter XLII).\n* The improved 1925 car has altered former methods of removing and installing certain parts.\n* It is recommended to carefully study the Ford manual containing instructions on the care and operation of Ford cars.",
+          "elapsed_seconds": 38.47625576700011,
+          "usage": {
+            "completion_tokens": 172,
+            "prompt_tokens": 1393,
+            "total_tokens": 1565,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 679,
+              "score": 0.11294674014966598,
+              "source_file": "ModelTNew.txt",
+              "start_char": 260736,
+              "end_char": 261248,
+              "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+            },
+            {
+              "chunk_id": 32,
+              "score": 0.10521528946851484,
+              "source_file": "ModelTNew.txt",
+              "start_char": 12288,
+              "end_char": 12800,
+              "text": " \u00b7on the part of customers who are obliged to wait until replacement parts are obtained from the factory. It means the additional and unnecessary expense of a rush shipment from the factory. \u00b7 A thorough check should be made monthly of every part regularly sold for service and replenishment made accordingly, consideration being given to seasonal demands. Steel storage bins can be used advantageously, particularly where space is limited. In addition to presenting a more attractive appear- ance, the stock can"
+            },
+            {
+              "chunk_id": 38,
+              "score": 0.10504831875739952,
+              "source_file": "ModelTNew.txt",
+              "start_char": 14592,
+              "end_char": 15104,
+              "text": "air orders should be computed, showing the total amount of the bill for labor and parts. Before filing the orders they should be routed to some definite person in the office designated to make entries on the service card record. This is particularly impor- tant, for unless some employee is held to strict accountability for the maintenance of the follow-up system, it is likely to be slighted, with the result that it will eventually become useless. All entries on the service card should show date, repair orde"
+            },
+            {
+              "chunk_id": 28,
+              "score": 0.0920618018266916,
+              "source_file": "ModelTNew.txt",
+              "start_char": 10752,
+              "end_char": 11264,
+              "text": "ould be represented by cleanly attired men, capable of meeting and serving the trade in a manner that will inspire confidence. The courtesy and promptness of the parts man indicates that the entire organization is interested in the customer's welfare. One of the most important duties of the parts salesman is to know what parts are required to perform each repair job and to diplomatically convey this information to the customer. For example when a cus- tomer purchases a front. spring, the parts salesman shou"
+            },
+            {
+              "chunk_id": 45,
+              "score": 0.08801774901271178,
+              "source_file": "ModelTNew.txt",
+              "start_char": 17280,
+              "end_char": 17792,
+              "text": "n indefinite period. Accordingly, it will be to your interest to carefully study the Ford manual containing instructions on the care and operation of Ford cars, in order that you may be generally familiar with the mechanism of the car. In driving a new car the following points of care are of particular importance: Do not drive over 20 miles per hour for the first 500 miles. Change the oil in the crankcase at the end of the first 400 miles and every 750 miles thereafter, except during cold weather, when it i"
+            },
+            {
+              "chunk_id": 1010,
+              "score": 0.08308030900070514,
+              "source_file": "ModelTNew.txt",
+              "start_char": 387840,
+              "end_char": 388352,
+              "text": " be looked for and removed. (See Chapter XXXIX.) 1119 If starter will not crank engine, turn on lights and attempt to start in the usual manner. If lights go out or become quite dim, the battery is in poor condition and should be given a bench charge and the cause of the trouble located and removed. If lights con- tinue to burn brightly, the trouble is elsewhere than in the battery. 1120 Detailed instructions for servicing batteries is described in the Ford battery manual, a copy of which will be furnished "
+            },
+            {
+              "chunk_id": 1011,
+              "score": 0.07228109232340622,
+              "source_file": "ModelTNew.txt",
+              "start_char": 388224,
+              "end_char": 388736,
+              "text": ". 1120 Detailed instructions for servicing batteries is described in the Ford battery manual, a copy of which will be furnished to dealers upon application to nearest Ford Branch. Chapter XLII Servicing the Improved Car Fig. 524 1121 The numerous improvements made in the improved 1925 car have to some extent altered former methods of removing and installing certain parts. 1122 So that no difficulty will be experienced when replacing a new part, we will, wherever an improvement has altered former replace- me"
+            },
+            {
+              "chunk_id": 44,
+              "score": 0.07172886488077528,
+              "source_file": "ModelTNew.txt",
+              "start_char": 16896,
+              "end_char": 17408,
+              "text": "of your new Ford car, we extend to you our best wishes for many years of motoring satisfaction. Ford cars are built to give years of economical service. We aim to help you get the most out of your investment. You, of course, realize that every piece FORD SERVICE xvii of high grade machinery requires a certain amount of attention, if it is to continue to operate satisfactorily for an indefinite period. Accordingly, it will be to your interest to carefully study the Ford manual containing instructions on the "
+            },
+            {
+              "chunk_id": 1020,
+              "score": 0.06850046512879039,
+              "source_file": "ModelTNew.txt",
+              "start_char": 391680,
+              "end_char": 392192,
+              "text": "o install the new type front fender, position it against frame and fender bracket, lining up the bolt holes in fender with holes in frame. The three front fender to bracket bolts are then inserted through bracket and fender. Castle nuts are run down on the ends of two of the bolts, but are not locked with cotter keys until all bolts and nuts are entered. The third bolt is locked in position with a lockwasher and hexagon nut. (See Fig. 535.) Do not draw nuts down tightly until all fender bolts have been ente"
+            },
+            {
+              "chunk_id": 1021,
+              "score": 0.0597719743758063,
+              "source_file": "ModelTNew.txt",
+              "start_char": 392064,
+              "end_char": 392576,
+              "text": " position with a lockwasher and hexagon nut. (See Fig. 535.) Do not draw nuts down tightly until all fender bolts have been entered. 1141 Place flat washers over the ends of the four front fender to dust shield bolts and insert the bolts through fender and dust shield (see \"B\" Fig. 534) . The bolts are locked in position by means of a flat washer and a lockwasher which are placed over the ends of each bolt and nuts run down but not tightened until all bolts are entered. 1142 Insert the two fender to running"
+            }
+          ],
+          "prompt_variant": "structured"
+        }
+      }
+    },
+    {
+      "query": "Summarize all safety warnings in the manual.",
+      "by_k": {
+        "3": {
+          "text": "Based on the context, there are two safety warnings mentioned in the manual:\n\n1. Do not drive over 20 miles per hour for the first 500 miles of driving.\n2. If lights become quite dim or go out while driving, it may indicate a poor battery condition and should be given a bench charge.\n\nThese warnings highlight the importance of proper driving habits and maintenance to ensure safe operation of the vehicle.",
+          "elapsed_seconds": 18.87395995100087,
+          "usage": {
+            "completion_tokens": 83,
+            "prompt_tokens": 461,
+            "total_tokens": 544,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 1010,
+              "score": 0.16579770268932809,
+              "source_file": "ModelTNew.txt",
+              "start_char": 387840,
+              "end_char": 388352,
+              "text": " be looked for and removed. (See Chapter XXXIX.) 1119 If starter will not crank engine, turn on lights and attempt to start in the usual manner. If lights go out or become quite dim, the battery is in poor condition and should be given a bench charge and the cause of the trouble located and removed. If lights con- tinue to burn brightly, the trouble is elsewhere than in the battery. 1120 Detailed instructions for servicing batteries is described in the Ford battery manual, a copy of which will be furnished "
+            },
+            {
+              "chunk_id": 45,
+              "score": 0.16063611127812594,
+              "source_file": "ModelTNew.txt",
+              "start_char": 17280,
+              "end_char": 17792,
+              "text": "n indefinite period. Accordingly, it will be to your interest to carefully study the Ford manual containing instructions on the care and operation of Ford cars, in order that you may be generally familiar with the mechanism of the car. In driving a new car the following points of care are of particular importance: Do not drive over 20 miles per hour for the first 500 miles. Change the oil in the crankcase at the end of the first 400 miles and every 750 miles thereafter, except during cold weather, when it i"
+            },
+            {
+              "chunk_id": 1011,
+              "score": 0.14424644298078215,
+              "source_file": "ModelTNew.txt",
+              "start_char": 388224,
+              "end_char": 388736,
+              "text": ". 1120 Detailed instructions for servicing batteries is described in the Ford battery manual, a copy of which will be furnished to dealers upon application to nearest Ford Branch. Chapter XLII Servicing the Improved Car Fig. 524 1121 The numerous improvements made in the improved 1925 car have to some extent altered former methods of removing and installing certain parts. 1122 So that no difficulty will be experienced when replacing a new part, we will, wherever an improvement has altered former replace- me"
+            }
+          ],
+          "prompt_variant": "structured"
+        },
+        "5": {
+          "text": "There are no explicit safety warnings provided in the text. However, based on the context and content of the manual, it appears that there are general precautions to be taken when operating and maintaining a Ford car.\n\nSome potential safety considerations mentioned in the manual include:\n\n* Not driving over 20 miles per hour for the first 500 miles after purchasing a new car\n* Changing the oil in the crankcase at the end of the first 400 miles, every 750 miles thereafter, except during cold weather\n* Avoiding extreme temperatures and not driving in them if possible\n* Keeping an eye on battery condition and replacing it if necessary\n\nIt's also worth noting that the manual provides detailed instructions for servicing batteries, which may include procedures to avoid damaging the car or its components.",
+          "elapsed_seconds": 22.284709530000328,
+          "usage": {
+            "completion_tokens": 156,
+            "prompt_tokens": 735,
+            "total_tokens": 891,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 1010,
+              "score": 0.16579770268932809,
+              "source_file": "ModelTNew.txt",
+              "start_char": 387840,
+              "end_char": 388352,
+              "text": " be looked for and removed. (See Chapter XXXIX.) 1119 If starter will not crank engine, turn on lights and attempt to start in the usual manner. If lights go out or become quite dim, the battery is in poor condition and should be given a bench charge and the cause of the trouble located and removed. If lights con- tinue to burn brightly, the trouble is elsewhere than in the battery. 1120 Detailed instructions for servicing batteries is described in the Ford battery manual, a copy of which will be furnished "
+            },
+            {
+              "chunk_id": 45,
+              "score": 0.16063611127812594,
+              "source_file": "ModelTNew.txt",
+              "start_char": 17280,
+              "end_char": 17792,
+              "text": "n indefinite period. Accordingly, it will be to your interest to carefully study the Ford manual containing instructions on the care and operation of Ford cars, in order that you may be generally familiar with the mechanism of the car. In driving a new car the following points of care are of particular importance: Do not drive over 20 miles per hour for the first 500 miles. Change the oil in the crankcase at the end of the first 400 miles and every 750 miles thereafter, except during cold weather, when it i"
+            },
+            {
+              "chunk_id": 1011,
+              "score": 0.14424644298078215,
+              "source_file": "ModelTNew.txt",
+              "start_char": 388224,
+              "end_char": 388736,
+              "text": ". 1120 Detailed instructions for servicing batteries is described in the Ford battery manual, a copy of which will be furnished to dealers upon application to nearest Ford Branch. Chapter XLII Servicing the Improved Car Fig. 524 1121 The numerous improvements made in the improved 1925 car have to some extent altered former methods of removing and installing certain parts. 1122 So that no difficulty will be experienced when replacing a new part, we will, wherever an improvement has altered former replace- me"
+            },
+            {
+              "chunk_id": 44,
+              "score": 0.12968047536028598,
+              "source_file": "ModelTNew.txt",
+              "start_char": 16896,
+              "end_char": 17408,
+              "text": "of your new Ford car, we extend to you our best wishes for many years of motoring satisfaction. Ford cars are built to give years of economical service. We aim to help you get the most out of your investment. You, of course, realize that every piece FORD SERVICE xvii of high grade machinery requires a certain amount of attention, if it is to continue to operate satisfactorily for an indefinite period. Accordingly, it will be to your interest to carefully study the Ford manual containing instructions on the "
+            },
+            {
+              "chunk_id": 1020,
+              "score": 0.09290270647532563,
+              "source_file": "ModelTNew.txt",
+              "start_char": 391680,
+              "end_char": 392192,
+              "text": "o install the new type front fender, position it against frame and fender bracket, lining up the bolt holes in fender with holes in frame. The three front fender to bracket bolts are then inserted through bracket and fender. Castle nuts are run down on the ends of two of the bolts, but are not locked with cotter keys until all bolts and nuts are entered. The third bolt is locked in position with a lockwasher and hexagon nut. (See Fig. 535.) Do not draw nuts down tightly until all fender bolts have been ente"
+            }
+          ],
+          "prompt_variant": "structured"
+        },
+        "10": {
+          "text": "Based on the provided text, there are several safety warnings mentioned in the Ford Motor Company's service manual for Model T cars:\n\n1. Do not drive over 20 miles per hour for the first 500 miles after installing a new battery.\n2. Change the oil in the crankcase at the end of the first 400 miles and every 750 miles thereafter, except during cold weather.\n3. Do not draw nuts down tightly until all fender bolts have been entered before installing.\n4. Clean all parts thoroughly, including lubricating moving parts and surfaces upon which they move.\n5. Use acid to wipe tubes and header after installation.\n6. Check the triple gears on the triple gear shafts for more than .005\" play between bushings and shaft.\n7. If shims have been removed in making previous bearing adjustments, file the cap in the same manner as the connecting rod cap.\n8. Clean out any babbitt from oil grooves in bearing caps and cover the surface of the bearing with oil.\n9. Replace bearing caps over ends of bolts making sure they are tightened but not yet tightened.\n\nThese safety warnings highlight the importance of proper installation, maintenance, and handling of Ford cars to ensure safe operation and longevity.",
+          "elapsed_seconds": 50.0883905970004,
+          "usage": {
+            "completion_tokens": 249,
+            "prompt_tokens": 1458,
+            "total_tokens": 1707,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 1010,
+              "score": 0.16579770268932809,
+              "source_file": "ModelTNew.txt",
+              "start_char": 387840,
+              "end_char": 388352,
+              "text": " be looked for and removed. (See Chapter XXXIX.) 1119 If starter will not crank engine, turn on lights and attempt to start in the usual manner. If lights go out or become quite dim, the battery is in poor condition and should be given a bench charge and the cause of the trouble located and removed. If lights con- tinue to burn brightly, the trouble is elsewhere than in the battery. 1120 Detailed instructions for servicing batteries is described in the Ford battery manual, a copy of which will be furnished "
+            },
+            {
+              "chunk_id": 45,
+              "score": 0.16063611127812594,
+              "source_file": "ModelTNew.txt",
+              "start_char": 17280,
+              "end_char": 17792,
+              "text": "n indefinite period. Accordingly, it will be to your interest to carefully study the Ford manual containing instructions on the care and operation of Ford cars, in order that you may be generally familiar with the mechanism of the car. In driving a new car the following points of care are of particular importance: Do not drive over 20 miles per hour for the first 500 miles. Change the oil in the crankcase at the end of the first 400 miles and every 750 miles thereafter, except during cold weather, when it i"
+            },
+            {
+              "chunk_id": 1011,
+              "score": 0.14424644298078215,
+              "source_file": "ModelTNew.txt",
+              "start_char": 388224,
+              "end_char": 388736,
+              "text": ". 1120 Detailed instructions for servicing batteries is described in the Ford battery manual, a copy of which will be furnished to dealers upon application to nearest Ford Branch. Chapter XLII Servicing the Improved Car Fig. 524 1121 The numerous improvements made in the improved 1925 car have to some extent altered former methods of removing and installing certain parts. 1122 So that no difficulty will be experienced when replacing a new part, we will, wherever an improvement has altered former replace- me"
+            },
+            {
+              "chunk_id": 44,
+              "score": 0.12968047536028598,
+              "source_file": "ModelTNew.txt",
+              "start_char": 16896,
+              "end_char": 17408,
+              "text": "of your new Ford car, we extend to you our best wishes for many years of motoring satisfaction. Ford cars are built to give years of economical service. We aim to help you get the most out of your investment. You, of course, realize that every piece FORD SERVICE xvii of high grade machinery requires a certain amount of attention, if it is to continue to operate satisfactorily for an indefinite period. Accordingly, it will be to your interest to carefully study the Ford manual containing instructions on the "
+            },
+            {
+              "chunk_id": 1020,
+              "score": 0.09290270647532563,
+              "source_file": "ModelTNew.txt",
+              "start_char": 391680,
+              "end_char": 392192,
+              "text": "o install the new type front fender, position it against frame and fender bracket, lining up the bolt holes in fender with holes in frame. The three front fender to bracket bolts are then inserted through bracket and fender. Castle nuts are run down on the ends of two of the bolts, but are not locked with cotter keys until all bolts and nuts are entered. The third bolt is locked in position with a lockwasher and hexagon nut. (See Fig. 535.) Do not draw nuts down tightly until all fender bolts have been ente"
+            },
+            {
+              "chunk_id": 200,
+              "score": 0.09161344997509988,
+              "source_file": "ModelTNew.txt",
+              "start_char": 76800,
+              "end_char": 77312,
+              "text": "before installing; see that the surface against which it fits is clean and in good condition. 162 Before assembling, clean all parts thoroughly, also lubricate all moving parts and the surfaces upon which they move, such as bearings, bushings, pistons, cylinders, etc. Draw all bolts, nuts and cap screws down tightly, making sure to replace lock washers and cotter pins as required. Complete Engine and Transmission Overhaul (Removing Engine from Car) 163 Drain water from radiator. 164 Shut off gasoline at sed"
+            },
+            {
+              "chunk_id": 724,
+              "score": 0.08960410247355198,
+              "source_file": "ModelTNew.txt",
+              "start_char": 278016,
+              "end_char": 278528,
+              "text": "into position with the regulator. When all the tubes fit properly into the support, remove support and position the header. Fig. 413 FORD SERVICE 195 823 Place the new header in position, making sure that all the tubes are entering the holes, then tap header into position with a hammer , a tube regulator is used to facilitate entering the tubes through the holes in the header. The header should be located about 11% \" from the radiator support. Wipe the tubes and header with acid and set the tubes as explain"
+            },
+            {
+              "chunk_id": 294,
+              "score": 0.08775125792133133,
+              "source_file": "ModelTNew.txt",
+              "start_char": 112896,
+              "end_char": 113408,
+              "text": " 292 Check the triple gears on the triple gear shafts. If there is more than .005\" play b etween bushing and shaft (See \"A\" Fig. 196), new bushings should be installed in the gears. The bushings are then reamed (All new bushings installed in transmission drums and gears are reamed to a .002\" running fit. When the reaming operation is completed remove all cuttings.) When installing new bushings in triple gears, make sure that the flange face of the bushings project from .006\" to .010\" over side of gears (See"
+            },
+            {
+              "chunk_id": 432,
+              "score": 0.08757435805276789,
+              "source_file": "ModelTNew.txt",
+              "start_char": 165888,
+              "end_char": 166400,
+              "text": "If shims have all been removed in making previous bearing ad- justments it is necessary to file the cap in the same manner as the connecting rod cap (See Fig. 232). As a general rule, how- ever, by the time all shims have been removed, the babbitt in the block has become worn to such an extent that the block should be rebabbitted. 112 FORD SERVICE Fig. 260 (f) Clean out any babbitt from oil grooves in bearing cap, and cover surface of bearing with oil. (g) Replace bearing cap over ends of bolts making sure "
+            },
+            {
+              "chunk_id": 1022,
+              "score": 0.08671070690134854,
+              "source_file": "ModelTNew.txt",
+              "start_char": 392448,
+              "end_char": 392960,
+              "text": "ver the ends of each bolt and nuts run down but not tightened until all bolts are entered. 1142 Insert the two fender to running board bolts through running board and fender (see \"A\" Fig. 534). Place lockwashers and nuts over the ends of the bolts and run down nuts but do not tighten until all bolts a re entered. 1143 Insert headlamp wire into notch in hood block and position hood block on frame lining up bolt holes in hood block with holes in frame. The two engine pan bolts (see \"C\" Fig. 524) are then inse"
+            }
+          ],
+          "prompt_variant": "structured"
+        }
+      }
+    },
+    {
+      "query": "What tools are needed for a complete tune-up?",
+      "by_k": {
+        "3": {
+          "text": "Based on the context, it appears that the question is asking about the tools required for a comprehensive maintenance or repair of the Model T New (also known as the Ford Model T) engine and other components.\n\nThe provided sources suggest that the following tools are necessary:\n\n1. Solder (specifically 50-50 solder)\n2. Soldering iron\n3. Dent puller or tube holder (if a forge is available)\n4. Mill file\n5. Outlet air connection\n6. Outlet test plug\n\nThese tools are mentioned in various sections of the text, including:\n\n* Section [1]: \"e puller and inserter . . For drive shaft and axle roller bearing sleeves. Wheel alignor xii 'FORD SERVICE Carburetor Division Carburetor repair tools Battery Division Battery recharging outfit including tools Electrical Division Electric test stand including tools Coil tester Magnet tester Magnet gap gauge Radiator Division See pages 189 and 190 for radiator repair tools Miscellaneous Arbor press Bending iron . ....... For aligning head lamps, Car covers Chain falls Electric drill Grinder Straightening pre\"\n\n* Section [2]: \"Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body.\"\n\n* Section [3]: \"Fig. 403 shows the tools used in repairing the radiator. They will be referred to as their need arises. FORD SERVICE 189 Index to Fig. 40 1 Dent puller or tube holder. Can be made by a repairman if a forge is available. 2 12\" Mill file. 3 Outlet air connection to which the hose is Tools 3 to 7 attached. inclusive 4 Outlet test plug. used in 5 Inlet test plug. testi\"\n\nIt's worth noting that some of these tools may not be explicitly mentioned as being required for a complete tune-up, but rather as being necessary for specific repairs or maintenance tasks.",
+          "elapsed_seconds": 51.84233049300019,
+          "usage": {
+            "completion_tokens": 454,
+            "prompt_tokens": 492,
+            "total_tokens": 946,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 24,
+              "score": 0.1900055109241514,
+              "source_file": "ModelTNew.txt",
+              "start_char": 9216,
+              "end_char": 9728,
+              "text": "e puller and inserter . . For drive shaft and axle roller bearing sleeves. Wheel alignor xii 'FORD SERVICE Carburetor Division Carburetor repair tools Battery Division Battery recharging outfit including tools Electrical Division Electric test stand including tools Coil tester Magnet tester Magnet gap gauge Radiator Division See pages 189 and 190 for radiator repair tools Miscellaneous Arbor press Bending iron . ....... For aligning head lamps, Car covers Chain falls Electric drill Grinder Straightening pre"
+            },
+            {
+              "chunk_id": 679,
+              "score": 0.12874944520713336,
+              "source_file": "ModelTNew.txt",
+              "start_char": 260736,
+              "end_char": 261248,
+              "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+            },
+            {
+              "chunk_id": 704,
+              "score": 0.12719821116886565,
+              "source_file": "ModelTNew.txt",
+              "start_char": 270336,
+              "end_char": 270848,
+              "text": "ont of the test tank and des- ignated as air supply is used in testing the repaired r adiators, a pres- sure of 5 to 8 lbs. being carried. 809 Fig. 403 shows the tools used in repairing the radiator. They will be referred to as their need arises. FORD SERVICE 189 Index to Fig. 40 3 1 Dent puller or tube holder. Can be made by a repairman if a forge is available. 2 12\" Mill file. 3 Outlet air connection to which the hose is Tools 3 to 7 attached. inclusive 4 Outlet test plug. used in 5 Inlet test plug. testi"
+            }
+          ],
+          "prompt_variant": "structured"
+        },
+        "5": {
+          "text": "Based on the context provided, it appears that the question is asking about the tools required for a comprehensive maintenance or repair of the Model T New car. However, the text does not explicitly list all the necessary tools.\n\nThe following tools can be inferred from the context:\n\n* Solder (specifically 50-50 solder) and soldering iron\n* Various wrenches and sockets (e.g., dent puller, tube holder, mill file)\n* Outlet air connection and test plug\n* Inlet test plug\n\nIt is also mentioned that a parts salesman should be able to provide information on the necessary parts for each repair job. Additionally, tools such as a straightening iron, bending iron, and arbor press may be required.\n\nTo answer the question more accurately, it would be helpful to have access to the full text of the Model T New.txt file or additional context about the specific tune-up or maintenance task being referred to.",
+          "elapsed_seconds": 28.27542378600083,
+          "usage": {
+            "completion_tokens": 189,
+            "prompt_tokens": 837,
+            "total_tokens": 1026,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 24,
+              "score": 0.1900055109241514,
+              "source_file": "ModelTNew.txt",
+              "start_char": 9216,
+              "end_char": 9728,
+              "text": "e puller and inserter . . For drive shaft and axle roller bearing sleeves. Wheel alignor xii 'FORD SERVICE Carburetor Division Carburetor repair tools Battery Division Battery recharging outfit including tools Electrical Division Electric test stand including tools Coil tester Magnet tester Magnet gap gauge Radiator Division See pages 189 and 190 for radiator repair tools Miscellaneous Arbor press Bending iron . ....... For aligning head lamps, Car covers Chain falls Electric drill Grinder Straightening pre"
+            },
+            {
+              "chunk_id": 679,
+              "score": 0.12874944520713336,
+              "source_file": "ModelTNew.txt",
+              "start_char": 260736,
+              "end_char": 261248,
+              "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+            },
+            {
+              "chunk_id": 704,
+              "score": 0.12719821116886565,
+              "source_file": "ModelTNew.txt",
+              "start_char": 270336,
+              "end_char": 270848,
+              "text": "ont of the test tank and des- ignated as air supply is used in testing the repaired r adiators, a pres- sure of 5 to 8 lbs. being carried. 809 Fig. 403 shows the tools used in repairing the radiator. They will be referred to as their need arises. FORD SERVICE 189 Index to Fig. 40 3 1 Dent puller or tube holder. Can be made by a repairman if a forge is available. 2 12\" Mill file. 3 Outlet air connection to which the hose is Tools 3 to 7 attached. inclusive 4 Outlet test plug. used in 5 Inlet test plug. testi"
+            },
+            {
+              "chunk_id": 28,
+              "score": 0.12071914181370409,
+              "source_file": "ModelTNew.txt",
+              "start_char": 10752,
+              "end_char": 11264,
+              "text": "ould be represented by cleanly attired men, capable of meeting and serving the trade in a manner that will inspire confidence. The courtesy and promptness of the parts man indicates that the entire organization is interested in the customer's welfare. One of the most important duties of the parts salesman is to know what parts are required to perform each repair job and to diplomatically convey this information to the customer. For example when a cus- tomer purchases a front. spring, the parts salesman shou"
+            },
+            {
+              "chunk_id": 2,
+              "score": 0.11696889860917242,
+              "source_file": "ModelTNew.txt",
+              "start_char": 768,
+              "end_char": 1280,
+              "text": ". . . . . . . . . . xv CHAPTER I Disassembling the car. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1 CHAPTER I1 Assembling the car. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 CHAPTER I11 Complete engine and transmission overhaul. . . . . . . . . . . . . . . . . . 50 CHAPTER IV Valve grinding and carbon removal.. . . . . . . . . . . . . . . . . . . . . . . . . 91 CHAPTER V Taking up connecting rod bearings. . . . . . . . . . . . . . . . . . ."
+            }
+          ],
+          "prompt_variant": "structured"
+        },
+        "10": {
+          "text": "Based on the context provided, it appears that the following tools are mentioned as being necessary for a complete tune-up:\n\n* Solder (specifically, 50-50 solder)\n* Soldering iron\n* Various wrenches and pliers (e.g. dent puller, tube holder, mill file)\n* Outlet air connection\n* Outlet test plug\n* Inlet test plug\n* Parts man tools (e.g. milling file, outlet air connection)\n\nIt's worth noting that the specific tools required may vary depending on the make and model of the vehicle being tuned up, as well as the type of tune-up being performed.",
+          "elapsed_seconds": 36.88111164399925,
+          "usage": {
+            "completion_tokens": 130,
+            "prompt_tokens": 1585,
+            "total_tokens": 1715,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 24,
+              "score": 0.1900055109241514,
+              "source_file": "ModelTNew.txt",
+              "start_char": 9216,
+              "end_char": 9728,
+              "text": "e puller and inserter . . For drive shaft and axle roller bearing sleeves. Wheel alignor xii 'FORD SERVICE Carburetor Division Carburetor repair tools Battery Division Battery recharging outfit including tools Electrical Division Electric test stand including tools Coil tester Magnet tester Magnet gap gauge Radiator Division See pages 189 and 190 for radiator repair tools Miscellaneous Arbor press Bending iron . ....... For aligning head lamps, Car covers Chain falls Electric drill Grinder Straightening pre"
+            },
+            {
+              "chunk_id": 679,
+              "score": 0.12874944520713336,
+              "source_file": "ModelTNew.txt",
+              "start_char": 260736,
+              "end_char": 261248,
+              "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+            },
+            {
+              "chunk_id": 704,
+              "score": 0.12719821116886565,
+              "source_file": "ModelTNew.txt",
+              "start_char": 270336,
+              "end_char": 270848,
+              "text": "ont of the test tank and des- ignated as air supply is used in testing the repaired r adiators, a pres- sure of 5 to 8 lbs. being carried. 809 Fig. 403 shows the tools used in repairing the radiator. They will be referred to as their need arises. FORD SERVICE 189 Index to Fig. 40 3 1 Dent puller or tube holder. Can be made by a repairman if a forge is available. 2 12\" Mill file. 3 Outlet air connection to which the hose is Tools 3 to 7 attached. inclusive 4 Outlet test plug. used in 5 Inlet test plug. testi"
+            },
+            {
+              "chunk_id": 28,
+              "score": 0.12071914181370409,
+              "source_file": "ModelTNew.txt",
+              "start_char": 10752,
+              "end_char": 11264,
+              "text": "ould be represented by cleanly attired men, capable of meeting and serving the trade in a manner that will inspire confidence. The courtesy and promptness of the parts man indicates that the entire organization is interested in the customer's welfare. One of the most important duties of the parts salesman is to know what parts are required to perform each repair job and to diplomatically convey this information to the customer. For example when a cus- tomer purchases a front. spring, the parts salesman shou"
+            },
+            {
+              "chunk_id": 2,
+              "score": 0.11696889860917242,
+              "source_file": "ModelTNew.txt",
+              "start_char": 768,
+              "end_char": 1280,
+              "text": ". . . . . . . . . . xv CHAPTER I Disassembling the car. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1 CHAPTER I1 Assembling the car. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 CHAPTER I11 Complete engine and transmission overhaul. . . . . . . . . . . . . . . . . . 50 CHAPTER IV Valve grinding and carbon removal.. . . . . . . . . . . . . . . . . . . . . . . . . 91 CHAPTER V Taking up connecting rod bearings. . . . . . . . . . . . . . . . . . ."
+            },
+            {
+              "chunk_id": 307,
+              "score": 0.11458337332768118,
+              "source_file": "ModelTNew.txt",
+              "start_char": 117888,
+              "end_char": 118400,
+              "text": " triple gears are assembled on drum assembly, place oil on triple gear and transmission gear shafts then pick up the complete drum and gear assembly (See Fig. 202) and place it over transmission shaft, positioning the triple gears on the triple gear shafts. Drums and gears should now revolve freely on shafts. 306 Examine the three driven gear sleeve washers for wear, if washers are 0. K., oil them and insert over end of transmission shaft (See Fig. 182). 307 Install transmission clutch disc drum key into ke"
+            },
+            {
+              "chunk_id": 678,
+              "score": 0.11185876176168329,
+              "source_file": "ModelTNew.txt",
+              "start_char": 260352,
+              "end_char": 260864,
+              "text": ". ....... 15 2 Overhaul steering gear. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1 0 3 Install steering gear in car . .. . . . .. . . . , . . . . . . . . . . . 20 1 35 \\ CHAPTER XXVI Repairing the Radiator Fig. 398 788 Before going into the methods of repairing the radiator, infor- mation on the tools, equipment and the process of soldering will be in order. The Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, how"
+            },
+            {
+              "chunk_id": 731,
+              "score": 0.10782378268234259,
+              "source_file": "ModelTNew.txt",
+              "start_char": 280704,
+              "end_char": 281216,
+              "text": " the header, rear wall a nd inlet connection come together. It is good practice to clean the joints between the inlet connection and rear wall and re-run this seam also. 828 If there is too large an opening at any point in the joint, solder the dent puller (See tools 1 or 9, Fig. 403 ) to the top near the rear wall as shown in Fig. 415. Using this as a handle, hold the top up 196 FORD SERVICE Fig. 414 Fig. 415 to the flange of the rear wall, closing the opening while tacking it with solder at the center of "
+            },
+            {
+              "chunk_id": 334,
+              "score": 0.10068093634848688,
+              "source_file": "ModelTNew.txt",
+              "start_char": 128256,
+              "end_char": 128768,
+              "text": "s. 333 Pour one gallon of a light high grade engine oil into crankcase through breather pipe. 334 The complete assembly is now placed on a running-in machine, and run in for a period of at least 20 minutes and carefully checked for oil lea ks, and knocks which might possibly develop due to incor- rect assembly of p a rts (See Fig. 216) . 335 After completing the running-in period and inspection, the assem - bly should be operated under its own power by connecting it up with the attachments on the stand, and"
+            },
+            {
+              "chunk_id": 17,
+              "score": 0.09950820951147359,
+              "source_file": "ModelTNew.txt",
+              "start_char": 6528,
+              "end_char": 7040,
+              "text": "the customer t o a large extent. A clean, well laid out repair shop provided with modern service equipment is essential t o the performance of good service. Modern service equipment not only saves time in performing the various repair operations, but it improves the accuracy of the work. New tools and measuring devices which are now available permit the mechanic t o work t o limits which practically approach manufacturing standards. I n Fig. 1 is shown an ideal shop layout for the average size dealer. The e"
+            }
+          ],
+          "prompt_variant": "structured"
+        }
+      }
+    }
+  ]
+}

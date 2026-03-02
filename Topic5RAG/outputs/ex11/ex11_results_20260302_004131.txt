@@ -1,0 +1,23 @@
+Exercise 11: Cross-Document Synthesis
+=====================================
+corpus_dir=./resources/Corpora/NewModelT
+chunk_size=512 chunk_overlap=128
+open_model=llama3.2:1b open_provider=ollama
+rag_k=5
+max_context_chars=16000
+
+Q: What are all monthly maintenance tasks mentioned in the manual?
+  k=3 elapsed=16.93s
+  k=5 elapsed=22.74s
+  k=10 elapsed=38.48s
+--------------------------------------------------------------------------------
+Q: Summarize all safety warnings in the manual.
+  k=3 elapsed=18.87s
+  k=5 elapsed=22.28s
+  k=10 elapsed=50.09s
+--------------------------------------------------------------------------------
+Q: What tools are needed for a complete tune-up?
+  k=3 elapsed=51.84s
+  k=5 elapsed=28.28s
+  k=10 elapsed=36.88s
+--------------------------------------------------------------------------------

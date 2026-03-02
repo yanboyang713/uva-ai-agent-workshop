@@ -1,0 +1,997 @@
+{
+  "exercise": "ex9",
+  "args": {
+    "exercise": "ex9",
+    "corpus_dir": "./resources/Corpora/NewModelT",
+    "corpus": "modelt",
+    "queries_file": "",
+    "chunk_size": 512,
+    "chunk_overlap": 128,
+    "rag_k": 5,
+    "max_context_chars": 16000,
+    "open_provider": "ollama",
+    "open_model": "llama3.2:1b",
+    "ollama_base_url": "http://127.0.0.1:11434/v1",
+    "output_dir": "./outputs/ex9"
+  },
+  "results": [
+    {
+      "query": "How do I adjust the carburetor on a Model T?",
+      "scores": [
+        0.15293097574767855,
+        0.1396806922735342,
+        0.12601338644915075,
+        0.11220378853719781,
+        0.11187802630576406,
+        0.11137819419068445,
+        0.11089625150982768,
+        0.10893636440178757,
+        0.10813990537404966,
+        0.10796567238103516
+      ],
+      "winner_gap_1_2": 0.013250283474144364,
+      "stats": {
+        "max": 0.15293097574767855,
+        "min": 0.10796567238103516,
+        "mean": 0.11900232571707099,
+        "stdev": 0.0147981017335804
+      },
+      "retrieved": [
+        {
+          "chunk_id": 9,
+          "score": 0.15293097574767855,
+          "source_file": "ModelTNew.txt",
+          "start_char": 3456,
+          "end_char": 3968,
+          "text": " T E R XXVI Repairing the radiator. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184 CHAPTER X X V I I Carburetor overhaul. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 206 CHAPTER X X V I I I Installing new bendix shaft or spring. . . . . . . . . . . . . . . . . . . . . . . . 212 CHAPTER X X I X Generatoroverhaul . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215 CHAPTER X X X Starting motdr overhaul. . . . . . . ."
+        },
+        {
+          "chunk_id": 790,
+          "score": 0.1396806922735342,
+          "source_file": "ModelTNew.txt",
+          "start_char": 303360,
+          "end_char": 303872,
+          "text": "r pin (See \"A\" Fig. 429). Float should be moved up and down to see that inlet needle and lever pin are working freely (See Fig. 435) . Check adjustment of float with a gauge (See Fig. 436). On the Ford Model N o H. Carburetor, the distance from top of float to machined flange on mixer chamber is 1%'4\" to (On the Kingston car- Fig. 434 Fig. 435 FORD SER VICE 209 F ig. 436 Fig. 4 37 buretor this dimension is U6\" . ) The adjustment is obtained by slightly prying open float spring (See \" A\" Fig. 437) and raisin"
+        },
+        {
+          "chunk_id": 6,
+          "score": 0.12601338644915075,
+          "source_file": "ModelTNew.txt",
+          "start_char": 2304,
+          "end_char": 2816,
+          "text": " . . . . . . . . . . . . . . . . . . 141 C H A P T E R XVI Stopping oil leak a t rear wheel.. . . . . . . . . . . . . . . . . . . . . . . . . . . . 155 CHAPTER XVII Changing rear radius rods. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158 CHAPTER X V I I I Changing rear spring. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161 CHAPTER X I X Front axle assembly overhaul. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163 CHAPTER X X Changing fro"
+        },
+        {
+          "chunk_id": 202,
+          "score": 0.11220378853719781,
+          "source_file": "ModelTNew.txt",
+          "start_char": 77568,
+          "end_char": 78080,
+          "text": "7 Run off nuts on ends of the four engine pan bolts (See \"A\" Fig. 9) . 168 Lift off hood. 169 Disconnect carburetor priming rod at carburetor and withdraw rod through r adiator apron (See \" A \" Fig. 18) . 170 Disconnect bell crank priming wire at carburetor (S ee \"C\" Fig. 28) . 171 Disconnect carburetor adj u sting rod a t carbur etor (See \"B\" Fig. 28) . 172 R emove carburetor pull rod from carburetor and throttle rod \u00b7lever (See \"A\" Fig. 28) . 173 Disconnect feed pipe at carburetor by running off the feed "
+        },
+        {
+          "chunk_id": 797,
+          "score": 0.11187802630576406,
+          "source_file": "ModelTNew.txt",
+          "start_char": 306048,
+          "end_char": 306560,
+          "text": "cking it in position with a cotter pin (See \"A\" Fig. 28). (g) Run down feed line pack nut on carburetor inlet elbow, making sure that feed pipe gasket inside of pack nut is in place (See \"A\" Fig. 442). (h) Turn on gasoline by opening stop cock in sediment bulb under- neath gas tank. (i) Install hood. FORD SERVICE 211 Fig, 442 890 Time Study Carburetor Overhaul (One man doing the job) Hrs . Min. 1 Remove carburetor from ca r . . . . . . . .. ... . 15 2 Overhaul carburetor . . .. . . . . . . . . . 30 3 Insta "
+        },
+        {
+          "chunk_id": 61,
+          "score": 0.11137819419068445,
+          "source_file": "ModelTNew.txt",
+          "start_char": 23424,
+          "end_char": 23936,
+          "text": "on for you. READY MOTOR COMPANY By ........................... \" If no response is received, the owner should be called on the phone or a personal call made. The latter is preferable. Service card is held on service manager's desk and follow-ups made until the owner comes in for service, when card is placed back in file. SERVICE CHAPTER I 1 So that the mechanic will have complete information on how each part of the car is removed and installed, we will first describe, step by step, the correct procedure in "
+        },
+        {
+          "chunk_id": 1075,
+          "score": 0.11089625150982768,
+          "source_file": "ModelTNew.txt",
+          "start_char": 412800,
+          "end_char": 413312,
+          "text": " a much stronger tension than the old type spring, a special t ool has been designed (see Fig. 559) to facilitate its removal and installation. Fig. 560 shows how the new tool is used to remove the spring. After removing the spring, the brake shoe can be lifted off of axle brake housing plate, as shown in Fig. 558. lnstalling- 1225 To install the new brake shoe, position it on axle brake housing plate, inserting the flange on the edge of the shoe behind the four steel clips on housing plate (see \"A\" Fig. 55"
+        },
+        {
+          "chunk_id": 4,
+          "score": 0.10893636440178757,
+          "source_file": "ModelTNew.txt",
+          "start_char": 1536,
+          "end_char": 2048,
+          "text": "Correcting noisy time gears. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114 CHAPTER I X Installing new camshaft bearings.. . . . . . . . . . . . . . . . . . . . . . . . . . . 122 CHAPTER X Cleaning the oil line. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128 CHAPTER X I Stopping oil leak a t front end of crankshaft. . . . . . . . . . . . . . . . . . 129 CHAPTER X I 1 Installing transmission bands (old design). . . . . . . . . . . . . . . . . . . . 131 CH"
+        },
+        {
+          "chunk_id": 919,
+          "score": 0.10813990537404966,
+          "source_file": "ModelTNew.txt",
+          "start_char": 352896,
+          "end_char": 353408,
+          "text": "he carburetor to loosen a sticking float, finding the ground in the ignition system, or cleaning the commutator. 1026 If changing the carburetor adjustment does \u00b7n ot overcome the trouble, check the carburetor and fuel line as described in Pars. 1014 to 1020. 1027 The first thing to do in locating the cause of the backfire is to determine whether or not it is being caused by pre-ignition due to incandescent carbon. Turn off the ignition switch and if the engine continues to fire, the trouble is pre-ignition"
+        },
+        {
+          "chunk_id": 1040,
+          "score": 0.10796567238103516,
+          "source_file": "ModelTNew.txt",
+          "start_char": 399360,
+          "end_char": 399872,
+          "text": " bolt holes. Insert the four fender to body bolts (see \"A\" Fig. 541 ) through fender and run them down into the fender bolt nuts which are held stationary in body. Do not tighten until all bolts have been entered. 1163 Insert the two fender to running board bolts through fender and running board (see \"A\" Fig. 539) . Place lockwashers over the ends of the bolts and run down the nuts. Do not tighten the nuts until all fender bolts and nuts are entered. 1164 Place flat washers over the ends of the two fender t"
+        }
+      ]
+    },
+    {
+      "query": "What is the correct spark plug gap for a Model T Ford?",
+      "scores": [
+        0.25055503919019484,
+        0.16967240047667181,
+        0.15756991916766333,
+        0.15460146535427932,
+        0.14454418902713473,
+        0.14367233675159088,
+        0.13923917670274955,
+        0.1274200362237568,
+        0.12692462924663153,
+        0.12689633578564277
+      ],
+      "winner_gap_1_2": 0.08088263871352303,
+      "stats": {
+        "max": 0.25055503919019484,
+        "min": 0.12689633578564277,
+        "mean": 0.15410955279263155,
+        "stdev": 0.034884981694672995
+      },
+      "retrieved": [
+        {
+          "chunk_id": 891,
+          "score": 0.25055503919019484,
+          "source_file": "ModelTNew.txt",
+          "start_char": 342144,
+          "end_char": 342656,
+          "text": " occurs the trouble lies in the plug and can be overcome by cleaning, or if necessary, repla cing the plug. Before replacing the plug, check the spark plug points for gap, the gap between the points should measure approximately Also examine the porcelain to make sure that it has not been cracked. 1003 If no spark occurs when the above test is made , again hold the spark plug wire approximately Ys\" away from the engine, at the same time shorting the commutator terminal of the missing cylinder at the coil box"
+        },
+        {
+          "chunk_id": 416,
+          "score": 0.16967240047667181,
+          "source_file": "ModelTNew.txt",
+          "start_char": 159744,
+          "end_char": 160256,
+          "text": "ime, it is advisable to check the bottom ring at the bottom of the cylinder, as the cylinders sometimes wear slightly taper. The ring gap clearance is .008\" to .012\" for the top ring, .006\" to .008\" for middle ring, and .004\" to .006\" for bottom ring. 427 If the gap is too small, the ends of the ring can be filed (See Fig. 252), until the correct gap is obtained. When filing ends of rings, care should be taken that ring is not distorted as it is possible in this way to get a larger gap measurement than the "
+        },
+        {
+          "chunk_id": 889,
+          "score": 0.15756991916766333,
+          "source_file": "ModelTNew.txt",
+          "start_char": 341376,
+          "end_char": 341888,
+          "text": "ar one of the spark plugs, then lean it against terminal of spark plug (See Fig. 502 ). This shorts the current past the spark plug. A screw driver with a wooden handle should be used when making this test to prevent receiving a shock. Check each plug in this man- ner until one is found which makes no change in the sound of the exhaust from the engine. When this plug is found, the trouble lies in the ignition or valves of that cylinder. (As the miss is more likely to be due to ignition than valve trouble it"
+        },
+        {
+          "chunk_id": 890,
+          "score": 0.15460146535427932,
+          "source_file": "ModelTNew.txt",
+          "start_char": 341760,
+          "end_char": 342272,
+          "text": "trouble lies in the ignition or valves of that cylinder. (As the miss is more likely to be due to ignition than valve trouble it is advisable to check the ignition first .) 1002 Next, stop the engine and disconnect the spark plug wire from the plug in the missing cylinder, then start the engine and hold this wire approximately Ys\" away from any part of the cylinder head. If a spark occurs the trouble lies in the plug and can be overcome by cleaning, or if necessary, repla cing the plug. Before replacing the"
+        },
+        {
+          "chunk_id": 1149,
+          "score": 0.14454418902713473,
+          "source_file": "ModelTNew.txt",
+          "start_char": 441216,
+          "end_char": 441728,
+          "text": " . .. . ... . . . . . . .... 1014 G Gap, between magnet clamps and coil core. . . . . . . . . . . . . . . . . . . 319 piston ring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 426 spark plug . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1002 vibrator and vibrator bridge . . . . . . . . . . . . . . . . . . . . . . . . . . 1007 Gasoline tank, fuel fails to flow from ..... ........ . ...... 1016- 1018 (new type) removing ..... . . . .."
+        },
+        {
+          "chunk_id": 320,
+          "score": 0.14367233675159088,
+          "source_file": "ModelTNew.txt",
+          "start_char": 122880,
+          "end_char": 123392,
+          "text": "our magneto coil cap screws which are inserted through them. 320 In addition to checking the height of the magnets, the use of a gap gauge is a time saver in obtaining the correct clearance between magnet clamps and coil cores. 321 With the coil support assembled to cylinder block, clamp the gap gauge to the face of the crankshaft. The gap between the end of the gauge and the face of the coils represents the thickness of the shims which should be inserted between coil support and cylinder block. With the sh"
+        },
+        {
+          "chunk_id": 314,
+          "score": 0.13923917670274955,
+          "source_file": "ModelTNew.txt",
+          "start_char": 120576,
+          "end_char": 121088,
+          "text": "e face of trans- mission shaft flange should measure between lYJu\" and The use of a gap gauge, which is adjusted to these dimensions is a consid- erable time saver in lining up the magnets. 317 To check the height of the magnets with a gap gauge, position the gauge on the flange of the transmission gear shaft and slowly revolve gauge (See Fig. 207) . If there is any variation in the height of the magnets it can be readily detected. Magnets which are high can be set to the correct height by lightly tapping t"
+        },
+        {
+          "chunk_id": 895,
+          "score": 0.1274200362237568,
+          "source_file": "ModelTNew.txt",
+          "start_char": 343680,
+          "end_char": 344192,
+          "text": "fails to make a good conta.c t with any one of the four contact points, its corresponding cylinder will not fire. This usually occurs when driv- ing at high speed. Examine roller for wear. Inspect brush spring to see that spring is not weak or broken. If commutator case or roller is badly worn or the spring is weak or broken, new parts should be installed. 1004 If no spark occurs between spark plug wire and cylinder head when commutator terminal \u00b7is shorted to radiator sta y rod, as de- scribed in Par. 1003"
+        },
+        {
+          "chunk_id": 1111,
+          "score": 0.12692462924663153,
+          "source_file": "ModelTNew.txt",
+          "start_char": 426624,
+          "end_char": 427136,
+          "text": " e v e - No. 4 Spark Plug R Red Wire to No. 3 .Spark Plug L-Headlight Wires (Dim) Black No. I Black with Red Tracer with Red No. 2 Spark Plug No. I Spark Plug Wire Starting Motor Grounded to Transmission Cover _ _ _ _./ No.2 Wires Must Be Behind No.4 Commutator Spring H eadlights Grounded Thru Lamps Sketch Showing Method of Assembling '--Generator Cutout Wires Must Be Over Wires to Commutator Case Generator Grounded to Cylinder Priming Rod Wiring diagram of improved car equipped with starter N 00 00 No. 1 B"
+        },
+        {
+          "chunk_id": 932,
+          "score": 0.12689633578564277,
+          "source_file": "ModelTNew.txt",
+          "start_char": 357888,
+          "end_char": 358400,
+          "text": " knock is a metallic tapping which is heard most plainly when driving about 25 miles per hour . It indicates either a worn piston pin or piston pin bushing, and these parts should be inspected for wear as described in Chapter VI. 1042 With the exception of a carbon knock the particular cylinder in which any of these knocks occur can be located by short circuiting each spark plug with a screw driver as described in Par. 1001. 1043 If, when No. 1 spark plug is shorted, the knock is no longer heard, the knock "
+        }
+      ]
+    },
+    {
+      "query": "How do I fix a slipping transmission band?",
+      "scores": [
+        0.1643320907310461,
+        0.1288052650664431,
+        0.12787701999735931,
+        0.12620881861823913,
+        0.12450330465258554,
+        0.12380224172301574,
+        0.12339553572398525,
+        0.12178434311261226,
+        0.1149317120604816,
+        0.11200676042004076
+      ],
+      "winner_gap_1_2": 0.035526825664602996,
+      "stats": {
+        "max": 0.1643320907310461,
+        "min": 0.11200676042004076,
+        "mean": 0.1267647092105809,
+        "stdev": 0.013508814481082203
+      },
+      "retrieved": [
+        {
+          "chunk_id": 519,
+          "score": 0.1643320907310461,
+          "source_file": "ModelTNew.txt",
+          "start_char": 199296,
+          "end_char": 199808,
+          "text": "C\" Fig. 300). 134 FORD SERVICE F ig. 304 Fig. 3 05 (h) Position starting motor against transmission cover and run down the four motor mounting screws. (i) Remove wooden block. 518 Compress transmission band springs (See \"A\" Fig. 306) with a screw driver until the springs are positioned between lugs on band with the transmission band washers \"B\" outside of lugs; the raised point on the washers should point outward so that they will fit into notch \"C\" on nuts. Withdraw clip \"D\" and force the trans - mission c"
+        },
+        {
+          "chunk_id": 527,
+          "score": 0.1288052650664431,
+          "source_file": "ModelTNew.txt",
+          "start_char": 202368,
+          "end_char": 202880,
+          "text": "...... . 15 1 53 CHAPTER XIII Installing New Type Transmission Bands Fig. 308 532 The new type transmission band with detachable ear, shown in Fig. 308, considerably simplifies the work of changing bands and at the same time reduces the cost of operation. It is unnecessary to remove the transmission cover to change this type band as all of the operations can be performed through the transmission cover door. 533 Fig. 308 shows the band with the lug removed. The lug is held in place by means of studs in the b"
+        },
+        {
+          "chunk_id": 1160,
+          "score": 0.12787701999735931,
+          "source_file": "ModelTNew.txt",
+          "start_char": 445440,
+          "end_char": 445952,
+          "text": "ouble in . . . . . . . . . . . . . . . . . . . . . . . . . . 1095 Linings, transmission band, installation of.... . . . . . . . . . . . . . . . . 515 Low speed band, adjustment of . . .. ........... ... .... ... . : . . 524 M Magneto clearance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 319 coil grounded or shorted . . . . . . . . . . . . . . . . . . . . . . . . . . . 996 contact, inspection of. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 991 testing strength "
+        },
+        {
+          "chunk_id": 325,
+          "score": 0.12620881861823913,
+          "source_file": "ModelTNew.txt",
+          "start_char": 124800,
+          "end_char": 125312,
+          "text": "Par. 515. 325 Position transmission bands over drums using a clip to temporarily hold them in place, as shown in Fig. 304. Inspecting and Installing Crankcase 326 Clean crankcase thoroughly; see that no parts of gaskets are sticking to flanges of crankcase. 327 Check crankcase for alignment by placing it on an aligning jig (See Fig. 212) . The case should rest evenly on the fixture when ..' FORD SERVICE 87 Fig. 212 locating plugs \"A\" and \"B\" are entered through crankcase, and fix- ture, and locating pin \"C\""
+        },
+        {
+          "chunk_id": 330,
+          "score": 0.12450330465258554,
+          "source_file": "ModelTNew.txt",
+          "start_char": 126720,
+          "end_char": 127232,
+          "text": "utch release ring into rear groove on clutch shift (See Fig. 305 ) and lowering cover over bands. The transmission band springs are then positioned between lugs on bands; the transmission band clip withdrawn and cover forced down onto crankcase as described in Par. 518. The 12 bolts, cap screws, lock washers and nuts which hald transmission cover to crankcase are run down and tightened as described in Par. 519. After installing cover, adjust bands and replace transmission cover door as described in Pars. 52"
+        },
+        {
+          "chunk_id": 528,
+          "score": 0.12380224172301574,
+          "source_file": "ModelTNew.txt",
+          "start_char": 202752,
+          "end_char": 203264,
+          "text": "e transmission cover door. 533 Fig. 308 shows the band with the lug removed. The lug is held in place by means of studs in the band which protrude through the slots in the lug, the shoulder of the lug snapping over the end of the brake band and holding it securely in place. 534 To remove the lug, simply insert a tool through the end of the lug into the square hole in end of brake band, lift up on the tool forcing the brake band down and the lug back (See Fig. 309). 535 To remove the new type bands, remove t"
+        },
+        {
+          "chunk_id": 514,
+          "score": 0.12339553572398525,
+          "source_file": "ModelTNew.txt",
+          "start_char": 197376,
+          "end_char": 197888,
+          "text": "and edge of reverse drum, with the lugs downward; while in this position, the band is then turned until the lugs are on top. The first band installed is slipped to the rear (brake) drum; the second band to the center (slow speed) drum; while the third band is positioned on the third (reverse) drum (See Fig. 302) . Bands must be turned so that the lugs are on to while the band is positioned over triple gears and edge of reverse drum, as there is not sufficient clearance between transmission drums and crankca"
+        },
+        {
+          "chunk_id": 510,
+          "score": 0.12178434311261226,
+          "source_file": "ModelTNew.txt",
+          "start_char": 195840,
+          "end_char": 196352,
+          "text": " . This permits removal of starting motor and gasket \"B\" and bendix \" C \", which can be lifted out as on\u00b7e unit . 131 132 FORD SERVICE 514 Lift off transmission cover (See Fig. 301); bands can now be slipped off of drums. The reverse band (the band nearest flywheel) is removed first. The band is positioned over edge of triple gears and turned until the lugs (See \"A\" Fig. 302) point downward. The band can then be lifted off drum. The slow speed and brake bands are removed in the same manner after first posit"
+        },
+        {
+          "chunk_id": 5,
+          "score": 0.1149317120604816,
+          "source_file": "ModelTNew.txt",
+          "start_char": 1920,
+          "end_char": 2432,
+          "text": ". . . . . . . . . . . 129 CHAPTER X I 1 Installing transmission bands (old design). . . . . . . . . . . . . . . . . . . . 131 CHAPTER XI11 PAGE Installing transmission bands (new design). .................. 136 CHAPTER X I V Replacing transmission clutch spring. . . . . . . . . . . . . . . . . . . . . . . . 139 CHAPTER XV Overhauling rear axle. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141 C H A P T E R XVI Stopping oil leak a t rear wheel.. . . . . . . . . . . . . . . . . . "
+        },
+        {
+          "chunk_id": 509,
+          "score": 0.11200676042004076,
+          "source_file": "ModelTNew.txt",
+          "start_char": 195456,
+          "end_char": 195968,
+          "text": "d cap screws that hold transmission cover to crankcase (See Fig. 298) . 511 Loosen transmission band adjusting screw (See \"A\" Fig. 299) . 512 Remove transmission cover door by running out the six screws \"B\" which hold it to transmission cover. 513 Raise front end of transmission cover and insert a block of wood approximately 2\" thick between cover and crankcase (See \" A \" Fig. 300) . This permits removal of starting motor and gasket \"B\" and bendix \" C \", which can be lifted out as on\u00b7e unit . 131 132 FORD S"
+        }
+      ]
+    },
+    {
+      "query": "What oil should I use in a Model T engine?",
+      "scores": [
+        0.1564720625797367,
+        0.15324515861880292,
+        0.12913053377525857,
+        0.11707989652183985,
+        0.1083890836938365,
+        0.10495679393922468,
+        0.10167686262509028,
+        0.10139599714556634,
+        0.10032658448377191,
+        0.09582398259351557
+      ],
+      "winner_gap_1_2": 0.00322690396093378,
+      "stats": {
+        "max": 0.1564720625797367,
+        "min": 0.09582398259351557,
+        "mean": 0.11684969559766434,
+        "stdev": 0.021077433906233022
+      },
+      "retrieved": [
+        {
+          "chunk_id": 4,
+          "score": 0.1564720625797367,
+          "source_file": "ModelTNew.txt",
+          "start_char": 1536,
+          "end_char": 2048,
+          "text": "Correcting noisy time gears. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114 CHAPTER I X Installing new camshaft bearings.. . . . . . . . . . . . . . . . . . . . . . . . . . . 122 CHAPTER X Cleaning the oil line. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128 CHAPTER X I Stopping oil leak a t front end of crankshaft. . . . . . . . . . . . . . . . . . 129 CHAPTER X I 1 Installing transmission bands (old design). . . . . . . . . . . . . . . . . . . . 131 CH"
+        },
+        {
+          "chunk_id": 6,
+          "score": 0.15324515861880292,
+          "source_file": "ModelTNew.txt",
+          "start_char": 2304,
+          "end_char": 2816,
+          "text": " . . . . . . . . . . . . . . . . . . 141 C H A P T E R XVI Stopping oil leak a t rear wheel.. . . . . . . . . . . . . . . . . . . . . . . . . . . . 155 CHAPTER XVII Changing rear radius rods. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158 CHAPTER X V I I I Changing rear spring. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161 CHAPTER X I X Front axle assembly overhaul. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163 CHAPTER X X Changing fro"
+        },
+        {
+          "chunk_id": 5,
+          "score": 0.12913053377525857,
+          "source_file": "ModelTNew.txt",
+          "start_char": 1920,
+          "end_char": 2432,
+          "text": ". . . . . . . . . . . 129 CHAPTER X I 1 Installing transmission bands (old design). . . . . . . . . . . . . . . . . . . . 131 CHAPTER XI11 PAGE Installing transmission bands (new design). .................. 136 CHAPTER X I V Replacing transmission clutch spring. . . . . . . . . . . . . . . . . . . . . . . . 139 CHAPTER XV Overhauling rear axle. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141 C H A P T E R XVI Stopping oil leak a t rear wheel.. . . . . . . . . . . . . . . . . . "
+        },
+        {
+          "chunk_id": 9,
+          "score": 0.11707989652183985,
+          "source_file": "ModelTNew.txt",
+          "start_char": 3456,
+          "end_char": 3968,
+          "text": " T E R XXVI Repairing the radiator. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184 CHAPTER X X V I I Carburetor overhaul. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 206 CHAPTER X X V I I I Installing new bendix shaft or spring. . . . . . . . . . . . . . . . . . . . . . . . 212 CHAPTER X X I X Generatoroverhaul . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215 CHAPTER X X X Starting motdr overhaul. . . . . . . ."
+        },
+        {
+          "chunk_id": 790,
+          "score": 0.1083890836938365,
+          "source_file": "ModelTNew.txt",
+          "start_char": 303360,
+          "end_char": 303872,
+          "text": "r pin (See \"A\" Fig. 429). Float should be moved up and down to see that inlet needle and lever pin are working freely (See Fig. 435) . Check adjustment of float with a gauge (See Fig. 436). On the Ford Model N o H. Carburetor, the distance from top of float to machined flange on mixer chamber is 1%'4\" to (On the Kingston car- Fig. 434 Fig. 435 FORD SER VICE 209 F ig. 436 Fig. 4 37 buretor this dimension is U6\" . ) The adjustment is obtained by slightly prying open float spring (See \" A\" Fig. 437) and raisin"
+        },
+        {
+          "chunk_id": 20,
+          "score": 0.10495679393922468,
+          "source_file": "ModelTNew.txt",
+          "start_char": 7680,
+          "end_char": 8192,
+          "text": "aning. After the cleaning operation it is trans- ferred t o the stand or repair bench on which the work is t o be performed. When the overhaul work is completed the assembly is returned by means of the overhead track t o the car from. which it, was removed. It is then installed in the car and the job is completed. BUR~~~ISHINC AND CRANKCASE ALI CN- RUNNING-IN MACHINE TRANSMISSIqREPAIR BENCH ING JIG I! 1. !I AIR COMPRESSOR FORD SERVICE xi Essential Shop Equipment Engine and Transmission Division Babbitt furn"
+        },
+        {
+          "chunk_id": 418,
+          "score": 0.10167686262509028,
+          "source_file": "ModelTNew.txt",
+          "start_char": 160512,
+          "end_char": 161024,
+          "text": ". 254) . The ring should fit in the groove with a clear- ance offrom .001\" to .002\". If the ring fits too t ightly it can be dressed down by rubbing it on a surface plate covered with fine sandpaper. 429 The fit of the piston ring in the ring groove and on the cylinder wall are of vital importance in controlling oil pumping and leakage. If a ring has considerable up and down motion in the ring groove, it will act as a miniature oil pump, i. e. as the piston moves down- ward, the ring moves to the top of the"
+        },
+        {
+          "chunk_id": 316,
+          "score": 0.10139599714556634,
+          "source_file": "ModelTNew.txt",
+          "start_char": 121344,
+          "end_char": 121856,
+          "text": "08 . F ig. 209 318 The oil tube should next be thoroughly cleaned, compressed air can be used for this purpose. After cleaning oil tube, position magneto coil on cylinder block and run in three of the four magneto coil cap screws which hold coil to cylinder block (See \"A\" Fig. 208) . Insert end of oil tube \"B\" through hole in rear and center walls of cylinder, sliding the tube back until it enters hole in front wall of cylinder. The remaining magneto coil cap screw, which holds oil tube to magneto coil is t"
+        },
+        {
+          "chunk_id": 679,
+          "score": 0.10032658448377191,
+          "source_file": "ModelTNew.txt",
+          "start_char": 260736,
+          "end_char": 261248,
+          "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+        },
+        {
+          "chunk_id": 3,
+          "score": 0.09582398259351557,
+          "source_file": "ModelTNew.txt",
+          "start_char": 1152,
+          "end_char": 1664,
+          "text": " . . . . . . . . . . . . . . . . . . . . . . 91 CHAPTER V Taking up connecting rod bearings. . . . . . . . . . . . . . . . . . . . . . . . . . 97 CHAPTER VI Fitting pistons and rings. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102 CHAPTER V I I Taking u p main bearings. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110 CHAPTER V I I I Correcting noisy time gears. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114 CHAPTER I X Installing new cams"
+        }
+      ]
+    },
+    {
+      "query": "What is the recommended maintenance schedule for the engine?",
+      "scores": [
+        0.1343132512475041,
+        0.13260319856442981,
+        0.13125091965173646,
+        0.12897960945818598,
+        0.11163808948992965,
+        0.08382932544323442,
+        0.08260526905816237,
+        0.08052923563026079,
+        0.06818461881547078,
+        0.06732784880320564
+      ],
+      "winner_gap_1_2": 0.0017100526830742813,
+      "stats": {
+        "max": 0.1343132512475041,
+        "min": 0.06732784880320564,
+        "mean": 0.102126136616212,
+        "stdev": 0.02677669146505339
+      },
+      "retrieved": [
+        {
+          "chunk_id": 395,
+          "score": 0.1343132512475041,
+          "source_file": "ModelTNew.txt",
+          "start_char": 151680,
+          "end_char": 152192,
+          "text": "is not recommended unless the mechanic is skilled in the use of a file. As a general rule it is better to install a new piston. 402 Leaks in pistons can be found by pouring about 1\" of gasoline into the interior of the piston, after piston rings have been removed with a ring extractor as shown in Fig. 239, and the oil wiped out of the grooves. If there is a leak, the gasoline will seep through. 403 Pistons can be checked for wear by inserting them into cylinders and measuring the clearance between piston an"
+        },
+        {
+          "chunk_id": 394,
+          "score": 0.13260319856442981,
+          "source_file": "ModelTNew.txt",
+          "start_char": 151296,
+          "end_char": 151808,
+          "text": " bring No. 2 and No. 3 connecting rod caps in position so they can be removed and the pistons withdrawn. 400 After withdrawing pistons, the cylinder bores should be in- spected for being scored, tapered or out of round. 401 The pistons should next be inspected for scores, leaks and wear. A piston, if not too badly scored can be dressed off with a mill file. This practice, however, is not recommended unless the mechanic is skilled in the use of a file. As a general rule it is better to install a new piston. "
+        },
+        {
+          "chunk_id": 38,
+          "score": 0.13125091965173646,
+          "source_file": "ModelTNew.txt",
+          "start_char": 14592,
+          "end_char": 15104,
+          "text": "air orders should be computed, showing the total amount of the bill for labor and parts. Before filing the orders they should be routed to some definite person in the office designated to make entries on the service card record. This is particularly impor- tant, for unless some employee is held to strict accountability for the maintenance of the follow-up system, it is likely to be slighted, with the result that it will eventually become useless. All entries on the service card should show date, repair orde"
+        },
+        {
+          "chunk_id": 679,
+          "score": 0.12897960945818598,
+          "source_file": "ModelTNew.txt",
+          "start_char": 260736,
+          "end_char": 261248,
+          "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+        },
+        {
+          "chunk_id": 28,
+          "score": 0.11163808948992965,
+          "source_file": "ModelTNew.txt",
+          "start_char": 10752,
+          "end_char": 11264,
+          "text": "ould be represented by cleanly attired men, capable of meeting and serving the trade in a manner that will inspire confidence. The courtesy and promptness of the parts man indicates that the entire organization is interested in the customer's welfare. One of the most important duties of the parts salesman is to know what parts are required to perform each repair job and to diplomatically convey this information to the customer. For example when a cus- tomer purchases a front. spring, the parts salesman shou"
+        },
+        {
+          "chunk_id": 335,
+          "score": 0.08382932544323442,
+          "source_file": "ModelTNew.txt",
+          "start_char": 128640,
+          "end_char": 129152,
+          "text": "nd inspection, the assem - bly should be operated under its own power by connecting it up with the attachments on the stand, and again checked for correct FORD SERVICE 89 operation, making sure there is sufficient oil in the crankcase and that water is flowing freely through the water jackets. Engine is now ready for installation in car. Installing Engine in Car 336 (a) Mount engine in frame. (b ) Enter universal joint into drive plate assembly. (c) Install crank case arm bolts and blocks. (d) Connect axle "
+        },
+        {
+          "chunk_id": 921,
+          "score": 0.08260526905816237,
+          "source_file": "ModelTNew.txt",
+          "start_char": 353664,
+          "end_char": 354176,
+          "text": "uble is due to hot carbon. If it boils before the engine backfires the fault lies in the cooling system. If the backfire occurs immediately on starting the engine, after the system has been allowed to cool, it is due to ignition or valve trouble. 242 FORD SERVICE 243 1028 .While the engine is running, short the spark plugs as previously described until a cylinder is located where shorting eliminates the backfire. Test the ignition wires of this cylinder for a ground, or the valves for failure to seat. 1029 "
+        },
+        {
+          "chunk_id": 905,
+          "score": 0.08052923563026079,
+          "source_file": "ModelTNew.txt",
+          "start_char": 347520,
+          "end_char": 348032,
+          "text": "ch), the engine and test for weak valve springs. This can be done by inserting a screw driver between the coils and forcing the spring down. If this causes the engine to pick up speed, the\u00b7 spring is weak and should be replaced. (To check the strength of the valve springs accurately the tension of the springs should be checked as described in Par. 258.) 1013 See that the valves are not sticking in guides. This is done by running the engine slowly and watching the travel of the valves and push rods and check"
+        },
+        {
+          "chunk_id": 473,
+          "score": 0.06818461881547078,
+          "source_file": "ModelTNew.txt",
+          "start_char": 181632,
+          "end_char": 182144,
+          "text": " pin. Run down commutator lock nut over end of FORD SERVICE 121 shaft, drawing it down tightly against brush cap. The commutator case is then installed as described in Par. 119 and checked for correct setting as described in Par. 126. 470 Before installing fan and radiator, it is advisable to check the gears to make sure that they are correctly meshed. This can be done by starting the engine and noting whether the gears run quietly (do not run the engine more than a few seconds at a time with the fan and ra"
+        },
+        {
+          "chunk_id": 992,
+          "score": 0.06732784880320564,
+          "source_file": "ModelTNew.txt",
+          "start_char": 380928,
+          "end_char": 381440,
+          "text": "condition to be guarded against, as running the car for any length of time with the charging 256 FORD SERVICE 257 Fig. 520 circuit open will result in a burned out generator. While the engine is running at a fair rate of speed an open is indicated by the ammeter showing no charge and a decided hum in the generator. When this condition occurs the trouble should be located and corrected imme- diately. If it is necessary to run the engine while the charging circuit is open, the generator should be grounded. Th"
+        }
+      ]
+    },
+    {
+      "query": "How often should I service the engine?",
+      "scores": [
+        0.15590054358081304,
+        0.13721996750981885,
+        0.1363573249455528,
+        0.11900199728649699,
+        0.11882416973985443,
+        0.11761670866258032,
+        0.10906301387071889,
+        0.10803434771698679,
+        0.10551811640491295,
+        0.10132594519977689
+      ],
+      "winner_gap_1_2": 0.018680576070994187,
+      "stats": {
+        "max": 0.15590054358081304,
+        "min": 0.10132594519977689,
+        "mean": 0.1208862134917512,
+        "stdev": 0.01635354116205773
+      },
+      "retrieved": [
+        {
+          "chunk_id": 61,
+          "score": 0.15590054358081304,
+          "source_file": "ModelTNew.txt",
+          "start_char": 23424,
+          "end_char": 23936,
+          "text": "on for you. READY MOTOR COMPANY By ........................... \" If no response is received, the owner should be called on the phone or a personal call made. The latter is preferable. Service card is held on service manager's desk and follow-ups made until the owner comes in for service, when card is placed back in file. SERVICE CHAPTER I 1 So that the mechanic will have complete information on how each part of the car is removed and installed, we will first describe, step by step, the correct procedure in "
+        },
+        {
+          "chunk_id": 1006,
+          "score": 0.13721996750981885,
+          "source_file": "ModelTNew.txt",
+          "start_char": 386304,
+          "end_char": 386816,
+          "text": "than 1.250. Readings less than 1.150 indicate complete discharge, in which case the battery should be given a bench charge. This discharged condition may be due to trouble other than in the battery in which case all connections should be examined; a loose or dirty connection is often the cause of trouble. 1116 If the connections between battery and cable terminals are not kept clean they will corrode, causing a poor connection or else open- ing the circuit altogether. The corrosion will also consume the bat"
+        },
+        {
+          "chunk_id": 918,
+          "score": 0.1363573249455528,
+          "source_file": "ModelTNew.txt",
+          "start_char": 352512,
+          "end_char": 353024,
+          "text": "n may be due to incandescent carbon, faulty cooling system or the spark being advanced or retarded too far. The order of testing given above should be varied according to the conditions under which the tests are made and the previous knowledge of the car available to the party making the test. Often the trouble can be located quickly by changing the carburetor adjustment, tapping the carburetor to loosen a sticking float, finding the ground in the ignition system, or cleaning the commutator. 1026 If changin"
+        },
+        {
+          "chunk_id": 432,
+          "score": 0.11900199728649699,
+          "source_file": "ModelTNew.txt",
+          "start_char": 165888,
+          "end_char": 166400,
+          "text": "If shims have all been removed in making previous bearing ad- justments it is necessary to file the cap in the same manner as the connecting rod cap (See Fig. 232). As a general rule, how- ever, by the time all shims have been removed, the babbitt in the block has become worn to such an extent that the block should be rebabbitted. 112 FORD SERVICE Fig. 260 (f) Clean out any babbitt from oil grooves in bearing cap, and cover surface of bearing with oil. (g) Replace bearing cap over ends of bolts making sure "
+        },
+        {
+          "chunk_id": 9,
+          "score": 0.11882416973985443,
+          "source_file": "ModelTNew.txt",
+          "start_char": 3456,
+          "end_char": 3968,
+          "text": " T E R XXVI Repairing the radiator. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184 CHAPTER X X V I I Carburetor overhaul. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 206 CHAPTER X X V I I I Installing new bendix shaft or spring. . . . . . . . . . . . . . . . . . . . . . . . 212 CHAPTER X X I X Generatoroverhaul . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215 CHAPTER X X X Starting motdr overhaul. . . . . . . ."
+        },
+        {
+          "chunk_id": 3,
+          "score": 0.11761670866258032,
+          "source_file": "ModelTNew.txt",
+          "start_char": 1152,
+          "end_char": 1664,
+          "text": " . . . . . . . . . . . . . . . . . . . . . . 91 CHAPTER V Taking up connecting rod bearings. . . . . . . . . . . . . . . . . . . . . . . . . . 97 CHAPTER VI Fitting pistons and rings. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102 CHAPTER V I I Taking u p main bearings. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110 CHAPTER V I I I Correcting noisy time gears. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114 CHAPTER I X Installing new cams"
+        },
+        {
+          "chunk_id": 40,
+          "score": 0.10906301387071889,
+          "source_file": "ModelTNew.txt",
+          "start_char": 15360,
+          "end_char": 15872,
+          "text": "n the service cards from them. Dealers will find a service record of great value in keeping the shop working to capacity during dull periods. Service follow-up cards assist the service floor man to sell a repair job to the customer on the basis of past experience. A service follow-up properly used keeps the dealer in contact with his customers. It shows him how many service customers are lost and the reason for each case of customer dissatisfaction. It shows whether or not his service is satisfactory and su"
+        },
+        {
+          "chunk_id": 10,
+          "score": 0.10803434771698679,
+          "source_file": "ModelTNew.txt",
+          "start_char": 3840,
+          "end_char": 4352,
+          "text": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215 CHAPTER X X X Starting motdr overhaul. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 227 CONTENTS-Continued vii CHAPTER X X X I PAGE Tracing car troubles-Engine fails to start. . . . . . . . . . . . . . . . . . . 231 CHAPTER X X X I I Misfiring (missing) caused by trouble in ignition system, valves, or fuel system. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 237 CHAPTER X"
+        },
+        {
+          "chunk_id": 7,
+          "score": 0.10551811640491295,
+          "source_file": "ModelTNew.txt",
+          "start_char": 2688,
+          "end_char": 3200,
+          "text": "TER X I X Front axle assembly overhaul. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163 CHAPTER X X Changing front spring. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 170 CHAPTER X X I Rebushing springs and perches. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 172 CHAPTER X X I I Changing front radius rods. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 173 CHAPTER XXIII Changingfrontaxle . . . . . . . . . . . . . . . . . . . . . . "
+        },
+        {
+          "chunk_id": 11,
+          "score": 0.10132594519977689,
+          "source_file": "ModelTNew.txt",
+          "start_char": 4224,
+          "end_char": 4736,
+          "text": " system, valves, or fuel system. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 237 CHAPTER X X X I I I Backfiring ................................................ 242 CHAPTER XXXIV Engineknocks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 244 CHAPTER XXXV Clutchtroubles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 246 CHAPTER XXXVI Tracing trouble in the generator. . . . . . . . . . . . . "
+        }
+      ]
+    },
+    {
+      "query": "engine maintenance intervals",
+      "scores": [
+        0.12390907276375754,
+        0.11088530575800801,
+        0.07086758887690922,
+        0.05357208387342887,
+        0.052113426453930536,
+        0.051304300898755865,
+        0.05097312501908657,
+        0.05091224285481602,
+        0.050432914840980794,
+        0.04889835783475363
+      ],
+      "winner_gap_1_2": 0.013023767005749531,
+      "stats": {
+        "max": 0.12390907276375754,
+        "min": 0.04889835783475363,
+        "mean": 0.06638684191744271,
+        "stdev": 0.026347390050564527
+      },
+      "retrieved": [
+        {
+          "chunk_id": 306,
+          "score": 0.12390907276375754,
+          "source_file": "ModelTNew.txt",
+          "start_char": 117504,
+          "end_char": 118016,
+          "text": "e gears with driven gear, making sure that the punch marks (See \"A\" Fig. 201) between the teeth on triple gears mesh with teeth on driven gear. The first triple gear can be meshed at any point on driven gear. The second and third sets of triple gears are assembled in the same manner as the first triple gear, but at intervals of nine teeth or 120\u00b0 apart on the driven gear. 305 After triple gears are assembled on drum assembly, place oil on triple gear and transmission gear shafts then pick up the complete dr"
+        },
+        {
+          "chunk_id": 38,
+          "score": 0.11088530575800801,
+          "source_file": "ModelTNew.txt",
+          "start_char": 14592,
+          "end_char": 15104,
+          "text": "air orders should be computed, showing the total amount of the bill for labor and parts. Before filing the orders they should be routed to some definite person in the office designated to make entries on the service card record. This is particularly impor- tant, for unless some employee is held to strict accountability for the maintenance of the follow-up system, it is likely to be slighted, with the result that it will eventually become useless. All entries on the service card should show date, repair orde"
+        },
+        {
+          "chunk_id": 345,
+          "score": 0.07086758887690922,
+          "source_file": "ModelTNew.txt",
+          "start_char": 132480,
+          "end_char": 132992,
+          "text": "se drain cock in bottom of radiator and fill radiator with clean water. 359 Time Study Engine and Transmission Overhaul Hrs. Min. 1 Install car covers on front fenders, running board, steering wheel and upholstery .. ... . .. ..... .. , . . . . . . . . . . . . . . 5 2 Remove engine from chassis . . . . . . . . . . . . . . . . . . . . . . . . . . 38 3 Wash engine.. .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10 4 Disassemble engine and wash all parts . . . . . . . . . . . . . ."
+        },
+        {
+          "chunk_id": 879,
+          "score": 0.05357208387342887,
+          "source_file": "ModelTNew.txt",
+          "start_char": 337536,
+          "end_char": 338048,
+          "text": "engine. On cars equipped with starters simply turn switch key to point marked \"Bat\". 994 If the engine starts, the magneto is either weak or dead. With the engine running take a volt meter reading (See Fig. 499). This can be done by disconnecting magneto terminal wire at magneto contact assembly. One wire on the volt meter is then connected to magneto contact, while the other wire on volt meter is pressed against a clean part of the cylinder or transmission cover. Throttle the engine down FORD SERVICE 235 F"
+        },
+        {
+          "chunk_id": 905,
+          "score": 0.052113426453930536,
+          "source_file": "ModelTNew.txt",
+          "start_char": 347520,
+          "end_char": 348032,
+          "text": "ch), the engine and test for weak valve springs. This can be done by inserting a screw driver between the coils and forcing the spring down. If this causes the engine to pick up speed, the\u00b7 spring is weak and should be replaced. (To check the strength of the valve springs accurately the tension of the springs should be checked as described in Par. 258.) 1013 See that the valves are not sticking in guides. This is done by running the engine slowly and watching the travel of the valves and push rods and check"
+        },
+        {
+          "chunk_id": 146,
+          "score": 0.051304300898755865,
+          "source_file": "ModelTNew.txt",
+          "start_char": 56064,
+          "end_char": 56576,
+          "text": "down tightly (See \"A\" Fig. 24) . After cap has been installed it should be carefully inspeCted to make sure that crankcase front end support is held firmly in bearing. If there is any play at this point it is necessary to remove and lightly file face of cap in the same manner as a connecting rod cap is filed (See Fig. 232) . 106 Assemble engine pan-right to engine by slipping the pan under the heads of the two crankcase bolts shown at \"B\" Fig. 2 7, which have been previously loosened. 107 Assemble engine pa"
+        },
+        {
+          "chunk_id": 210,
+          "score": 0.05097312501908657,
+          "source_file": "ModelTNew.txt",
+          "start_char": 80640,
+          "end_char": 81152,
+          "text": "s and withdraw the two crankcase arm bolts- top (See \"C\" Fig. 31). 199 Engine can now be lifted from frame with lifting hooks and chain falls as shown in Fig. 38 and disassembled on an engine stand. Disassembling the Engine 200 Remove exhaust, and intake manifolds together with carburetor by running off the four manifold stud nuts (See \"A\" Fig. 129) and withdrawing clamps. Exhaust manifold \"B\" can then be removed and intake manifold \"C\" with carburetor \"D\" attached , lifted from cylinder block. 201 Remove t"
+        },
+        {
+          "chunk_id": 323,
+          "score": 0.05091224285481602,
+          "source_file": "ModelTNew.txt",
+          "start_char": 124032,
+          "end_char": 124544,
+          "text": "o Engine 322 Before assembling transmission to engine, see that the face of .flanges on crankshaft and transmission gear shaft are free from dirt or burrs. The transmission is assembled to the engine by positioning it on crankshaft flange, making sure that flywheel dowel pins enter dowel pin holes in crankshaft flange, and running in the four fly- wheel cap screws. The screws should be drawn down evenly, after which they are tightened and wired together (See Fig. 135) . 323 Check clearance between magnet cl"
+        },
+        {
+          "chunk_id": 335,
+          "score": 0.050432914840980794,
+          "source_file": "ModelTNew.txt",
+          "start_char": 128640,
+          "end_char": 129152,
+          "text": "nd inspection, the assem - bly should be operated under its own power by connecting it up with the attachments on the stand, and again checked for correct FORD SERVICE 89 operation, making sure there is sufficient oil in the crankcase and that water is flowing freely through the water jackets. Engine is now ready for installation in car. Installing Engine in Car 336 (a) Mount engine in frame. (b ) Enter universal joint into drive plate assembly. (c) Install crank case arm bolts and blocks. (d) Connect axle "
+        },
+        {
+          "chunk_id": 201,
+          "score": 0.04889835783475363,
+          "source_file": "ModelTNew.txt",
+          "start_char": 77184,
+          "end_char": 77696,
+          "text": "Complete Engine and Transmission Overhaul (Removing Engine from Car) 163 Drain water from radiator. 164 Shut off gasoline at sediment bulb underneath gas tank (See \"C\" Fig. 12. 165 Break wire and run out the two universal ball cap cap screws (See \"B\" Fig. 32) . 166 Break wire and run off radius rod ball cap stud nuts and lift off ball cap springs, and ball cap (See \"A\" Fig. 37). 167 Run off nuts on ends of the four engine pan bolts (See \"A\" Fig. 9) . 168 Lift off hood. 169 Disconnect carburetor priming rod "
+        }
+      ]
+    },
+    {
+      "query": "When do I need to check the engine?",
+      "scores": [
+        0.15252527006090977,
+        0.13670594791831212,
+        0.13587023031246495,
+        0.13483471147789627,
+        0.13054112206638338,
+        0.1278369268879286,
+        0.12626300293400983,
+        0.1249799503204183,
+        0.12428937929838299,
+        0.1200416534574854
+      ],
+      "winner_gap_1_2": 0.015819322142597653,
+      "stats": {
+        "max": 0.15252527006090977,
+        "min": 0.1200416534574854,
+        "mean": 0.13138881947341916,
+        "stdev": 0.008756831455455588
+      },
+      "retrieved": [
+        {
+          "chunk_id": 473,
+          "score": 0.15252527006090977,
+          "source_file": "ModelTNew.txt",
+          "start_char": 181632,
+          "end_char": 182144,
+          "text": " pin. Run down commutator lock nut over end of FORD SERVICE 121 shaft, drawing it down tightly against brush cap. The commutator case is then installed as described in Par. 119 and checked for correct setting as described in Par. 126. 470 Before installing fan and radiator, it is advisable to check the gears to make sure that they are correctly meshed. This can be done by starting the engine and noting whether the gears run quietly (do not run the engine more than a few seconds at a time with the fan and ra"
+        },
+        {
+          "chunk_id": 562,
+          "score": 0.13670594791831212,
+          "source_file": "ModelTNew.txt",
+          "start_char": 215808,
+          "end_char": 216320,
+          "text": " wear very slowly, it is seldom they need to be replaced for being undersize. If cracked, pitted, or badly worn a new bearing should be installed. If 0. K. grease bearing and insert it over end of sleeve. 588 Inspect bearing housing for cracks or pits. If cracked or pitted, install a new housing. If 0. K. place bearing housing over top of bearing. 589 Inspect differential drive gear for worn or chipped teeth. Check gear on a surface plate to see if it is sprung (See Fig. 344). If gear is sprung, teeth badly"
+        },
+        {
+          "chunk_id": 272,
+          "score": 0.13587023031246495,
+          "source_file": "ModelTNew.txt",
+          "start_char": 104448,
+          "end_char": 104960,
+          "text": "the closing as in an engine where the camshaft is worn it is not always possible to have both the opening and closing check accurately with the figures given. 264 The method of determining when the valves open and close is as follows: With the spring assembled, close the valve. When it is closed, hold it with the fingers and twist back and forth on head of valve while slowly cranking engine (See Fig. 174). When checking the opening and closing of valves with engine removed from car a turning bar is used to "
+        },
+        {
+          "chunk_id": 905,
+          "score": 0.13483471147789627,
+          "source_file": "ModelTNew.txt",
+          "start_char": 347520,
+          "end_char": 348032,
+          "text": "ch), the engine and test for weak valve springs. This can be done by inserting a screw driver between the coils and forcing the spring down. If this causes the engine to pick up speed, the\u00b7 spring is weak and should be replaced. (To check the strength of the valve springs accurately the tension of the springs should be checked as described in Par. 258.) 1013 See that the valves are not sticking in guides. This is done by running the engine slowly and watching the travel of the valves and push rods and check"
+        },
+        {
+          "chunk_id": 919,
+          "score": 0.13054112206638338,
+          "source_file": "ModelTNew.txt",
+          "start_char": 352896,
+          "end_char": 353408,
+          "text": "he carburetor to loosen a sticking float, finding the ground in the ignition system, or cleaning the commutator. 1026 If changing the carburetor adjustment does \u00b7n ot overcome the trouble, check the carburetor and fuel line as described in Pars. 1014 to 1020. 1027 The first thing to do in locating the cause of the backfire is to determine whether or not it is being caused by pre-ignition due to incandescent carbon. Turn off the ignition switch and if the engine continues to fire, the trouble is pre-ignition"
+        },
+        {
+          "chunk_id": 288,
+          "score": 0.1278369268879286,
+          "source_file": "ModelTNew.txt",
+          "start_char": 110592,
+          "end_char": 111104,
+          "text": "ve been disturbed they are in identically the same relation to each other as they should be when installed on the flywheel. 285 To assemble the magnets, place magnets on flywheel, position magnet bolt washers over end of magnet bolts and run down bolts but do not tighten. 286 As a final check to make sure that all adjacent magnet ends have the same polarity, move all the magnets back and forth on the flywheel and see that none of them stick when the sides of the magnets are placed together (See Fig. 193) . "
+        },
+        {
+          "chunk_id": 9,
+          "score": 0.12626300293400983,
+          "source_file": "ModelTNew.txt",
+          "start_char": 3456,
+          "end_char": 3968,
+          "text": " T E R XXVI Repairing the radiator. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184 CHAPTER X X V I I Carburetor overhaul. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 206 CHAPTER X X V I I I Installing new bendix shaft or spring. . . . . . . . . . . . . . . . . . . . . . . . 212 CHAPTER X X I X Generatoroverhaul . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215 CHAPTER X X X Starting motdr overhaul. . . . . . . ."
+        },
+        {
+          "chunk_id": 3,
+          "score": 0.1249799503204183,
+          "source_file": "ModelTNew.txt",
+          "start_char": 1152,
+          "end_char": 1664,
+          "text": " . . . . . . . . . . . . . . . . . . . . . . 91 CHAPTER V Taking up connecting rod bearings. . . . . . . . . . . . . . . . . . . . . . . . . . 97 CHAPTER VI Fitting pistons and rings. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102 CHAPTER V I I Taking u p main bearings. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110 CHAPTER V I I I Correcting noisy time gears. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114 CHAPTER I X Installing new cams"
+        },
+        {
+          "chunk_id": 679,
+          "score": 0.12428937929838299,
+          "source_file": "ModelTNew.txt",
+          "start_char": 260736,
+          "end_char": 261248,
+          "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+        },
+        {
+          "chunk_id": 10,
+          "score": 0.1200416534574854,
+          "source_file": "ModelTNew.txt",
+          "start_char": 3840,
+          "end_char": 4352,
+          "text": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215 CHAPTER X X X Starting motdr overhaul. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 227 CONTENTS-Continued vii CHAPTER X X X I PAGE Tracing car troubles-Engine fails to start. . . . . . . . . . . . . . . . . . . 231 CHAPTER X X X I I Misfiring (missing) caused by trouble in ignition system, valves, or fuel system. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 237 CHAPTER X"
+        }
+      ]
+    },
+    {
+      "query": "Preventive maintenance requirements",
+      "scores": [
+        0.13134751712700082,
+        0.12771579983887998,
+        0.1187900274264652
+      ],
+      "winner_gap_1_2": 0.0036317172881208393,
+      "stats": {
+        "max": 0.13134751712700082,
+        "min": 0.1187900274264652,
+        "mean": 0.12595111479744867,
+        "stdev": 0.005276250048810116
+      },
+      "retrieved": [
+        {
+          "chunk_id": 260,
+          "score": 0.13134751712700082,
+          "source_file": "ModelTNew.txt",
+          "start_char": 99840,
+          "end_char": 100352,
+          "text": "5% of the surface. If the cap does not meet these requirements it should be scraped and re-run, taking out one or more shims from each side of cap. 251 While it is not necessary for an experienced operator to remove the center and front caps, it is advisable for the beginner to do so, so that he may be sure his work is correctly performed. When crankshaft has been properly Fig. 11 1 run in, lock all bearing bolt nuts with cotter keys. Inspecting and Assembling Pistons and Push Rods 252 After a crankshaft is"
+        },
+        {
+          "chunk_id": 259,
+          "score": 0.12771579983887998,
+          "source_file": "ModelTNew.txt",
+          "start_char": 99456,
+          "end_char": 99968,
+          "text": "ng-in opera - tion repeated. 249 When sufficiently run in , the shaft can be turned over with the hand wheel on the running-in stand (See \"A\" Fig. 171) or by means of a 20\" turning bar. FORD SERVICE 69 250 When the shaft can be turned in this manner the rear bearing cap should be re- moved and inspected. There should be a bearing the entire length of the cap and covering at least 95% of the surface. If the cap does not meet these requirements it should be scraped and re-run, taking out one or more shims fro"
+        },
+        {
+          "chunk_id": 38,
+          "score": 0.1187900274264652,
+          "source_file": "ModelTNew.txt",
+          "start_char": 14592,
+          "end_char": 15104,
+          "text": "air orders should be computed, showing the total amount of the bill for labor and parts. Before filing the orders they should be routed to some definite person in the office designated to make entries on the service card record. This is particularly impor- tant, for unless some employee is held to strict accountability for the maintenance of the follow-up system, it is likely to be slighted, with the result that it will eventually become useless. All entries on the service card should show date, repair orde"
+        }
+      ]
+    },
+    {
+      "query": "What is the recommended maintenance schedule for the engine?",
+      "scores": [
+        0.1343132512475041,
+        0.13260319856442981,
+        0.13125091965173646,
+        0.12897960945818598,
+        0.11163808948992965,
+        0.08382932544323442,
+        0.08260526905816237,
+        0.08052923563026079,
+        0.06818461881547078,
+        0.06732784880320564
+      ],
+      "winner_gap_1_2": 0.0017100526830742813,
+      "stats": {
+        "max": 0.1343132512475041,
+        "min": 0.06732784880320564,
+        "mean": 0.102126136616212,
+        "stdev": 0.02677669146505339
+      },
+      "retrieved": [
+        {
+          "chunk_id": 395,
+          "score": 0.1343132512475041,
+          "source_file": "ModelTNew.txt",
+          "start_char": 151680,
+          "end_char": 152192,
+          "text": "is not recommended unless the mechanic is skilled in the use of a file. As a general rule it is better to install a new piston. 402 Leaks in pistons can be found by pouring about 1\" of gasoline into the interior of the piston, after piston rings have been removed with a ring extractor as shown in Fig. 239, and the oil wiped out of the grooves. If there is a leak, the gasoline will seep through. 403 Pistons can be checked for wear by inserting them into cylinders and measuring the clearance between piston an"
+        },
+        {
+          "chunk_id": 394,
+          "score": 0.13260319856442981,
+          "source_file": "ModelTNew.txt",
+          "start_char": 151296,
+          "end_char": 151808,
+          "text": " bring No. 2 and No. 3 connecting rod caps in position so they can be removed and the pistons withdrawn. 400 After withdrawing pistons, the cylinder bores should be in- spected for being scored, tapered or out of round. 401 The pistons should next be inspected for scores, leaks and wear. A piston, if not too badly scored can be dressed off with a mill file. This practice, however, is not recommended unless the mechanic is skilled in the use of a file. As a general rule it is better to install a new piston. "
+        },
+        {
+          "chunk_id": 38,
+          "score": 0.13125091965173646,
+          "source_file": "ModelTNew.txt",
+          "start_char": 14592,
+          "end_char": 15104,
+          "text": "air orders should be computed, showing the total amount of the bill for labor and parts. Before filing the orders they should be routed to some definite person in the office designated to make entries on the service card record. This is particularly impor- tant, for unless some employee is held to strict accountability for the maintenance of the follow-up system, it is likely to be slighted, with the result that it will eventually become useless. All entries on the service card should show date, repair orde"
+        },
+        {
+          "chunk_id": 679,
+          "score": 0.12897960945818598,
+          "source_file": "ModelTNew.txt",
+          "start_char": 260736,
+          "end_char": 261248,
+          "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+        },
+        {
+          "chunk_id": 28,
+          "score": 0.11163808948992965,
+          "source_file": "ModelTNew.txt",
+          "start_char": 10752,
+          "end_char": 11264,
+          "text": "ould be represented by cleanly attired men, capable of meeting and serving the trade in a manner that will inspire confidence. The courtesy and promptness of the parts man indicates that the entire organization is interested in the customer's welfare. One of the most important duties of the parts salesman is to know what parts are required to perform each repair job and to diplomatically convey this information to the customer. For example when a cus- tomer purchases a front. spring, the parts salesman shou"
+        },
+        {
+          "chunk_id": 335,
+          "score": 0.08382932544323442,
+          "source_file": "ModelTNew.txt",
+          "start_char": 128640,
+          "end_char": 129152,
+          "text": "nd inspection, the assem - bly should be operated under its own power by connecting it up with the attachments on the stand, and again checked for correct FORD SERVICE 89 operation, making sure there is sufficient oil in the crankcase and that water is flowing freely through the water jackets. Engine is now ready for installation in car. Installing Engine in Car 336 (a) Mount engine in frame. (b ) Enter universal joint into drive plate assembly. (c) Install crank case arm bolts and blocks. (d) Connect axle "
+        },
+        {
+          "chunk_id": 921,
+          "score": 0.08260526905816237,
+          "source_file": "ModelTNew.txt",
+          "start_char": 353664,
+          "end_char": 354176,
+          "text": "uble is due to hot carbon. If it boils before the engine backfires the fault lies in the cooling system. If the backfire occurs immediately on starting the engine, after the system has been allowed to cool, it is due to ignition or valve trouble. 242 FORD SERVICE 243 1028 .While the engine is running, short the spark plugs as previously described until a cylinder is located where shorting eliminates the backfire. Test the ignition wires of this cylinder for a ground, or the valves for failure to seat. 1029 "
+        },
+        {
+          "chunk_id": 905,
+          "score": 0.08052923563026079,
+          "source_file": "ModelTNew.txt",
+          "start_char": 347520,
+          "end_char": 348032,
+          "text": "ch), the engine and test for weak valve springs. This can be done by inserting a screw driver between the coils and forcing the spring down. If this causes the engine to pick up speed, the\u00b7 spring is weak and should be replaced. (To check the strength of the valve springs accurately the tension of the springs should be checked as described in Par. 258.) 1013 See that the valves are not sticking in guides. This is done by running the engine slowly and watching the travel of the valves and push rods and check"
+        },
+        {
+          "chunk_id": 473,
+          "score": 0.06818461881547078,
+          "source_file": "ModelTNew.txt",
+          "start_char": 181632,
+          "end_char": 182144,
+          "text": " pin. Run down commutator lock nut over end of FORD SERVICE 121 shaft, drawing it down tightly against brush cap. The commutator case is then installed as described in Par. 119 and checked for correct setting as described in Par. 126. 470 Before installing fan and radiator, it is advisable to check the gears to make sure that they are correctly meshed. This can be done by starting the engine and noting whether the gears run quietly (do not run the engine more than a few seconds at a time with the fan and ra"
+        },
+        {
+          "chunk_id": 992,
+          "score": 0.06732784880320564,
+          "source_file": "ModelTNew.txt",
+          "start_char": 380928,
+          "end_char": 381440,
+          "text": "condition to be guarded against, as running the car for any length of time with the charging 256 FORD SERVICE 257 Fig. 520 circuit open will result in a burned out generator. While the engine is running at a fair rate of speed an open is indicated by the ammeter showing no charge and a decided hum in the generator. When this condition occurs the trouble should be located and corrected imme- diately. If it is necessary to run the engine while the charging circuit is open, the generator should be grounded. Th"
+        }
+      ]
+    }
+  ],
+  "suggested_threshold": 0.11328595283458137
+}

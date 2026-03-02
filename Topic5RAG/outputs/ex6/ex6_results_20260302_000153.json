@@ -1,0 +1,240 @@
+{
+  "exercise": "ex6",
+  "args": {
+    "exercise": "ex6",
+    "corpus_dir": "./resources/Corpora/NewModelT",
+    "corpus": "modelt",
+    "queries_file": "",
+    "chunk_size": 512,
+    "chunk_overlap": 128,
+    "rag_k": 5,
+    "max_context_chars": 16000,
+    "open_provider": "ollama",
+    "open_model": "llama3.2:1b",
+    "ollama_base_url": "http://127.0.0.1:11434/v1",
+    "output_dir": "./outputs/ex6"
+  },
+  "results": [
+    {
+      "query": "What is the recommended maintenance schedule for the engine?",
+      "retrieved": [
+        {
+          "chunk_id": 395,
+          "score": 0.1343132512475041,
+          "source_file": "ModelTNew.txt",
+          "start_char": 151680,
+          "end_char": 152192,
+          "text": "is not recommended unless the mechanic is skilled in the use of a file. As a general rule it is better to install a new piston. 402 Leaks in pistons can be found by pouring about 1\" of gasoline into the interior of the piston, after piston rings have been removed with a ring extractor as shown in Fig. 239, and the oil wiped out of the grooves. If there is a leak, the gasoline will seep through. 403 Pistons can be checked for wear by inserting them into cylinders and measuring the clearance between piston an"
+        },
+        {
+          "chunk_id": 394,
+          "score": 0.13260319856442981,
+          "source_file": "ModelTNew.txt",
+          "start_char": 151296,
+          "end_char": 151808,
+          "text": " bring No. 2 and No. 3 connecting rod caps in position so they can be removed and the pistons withdrawn. 400 After withdrawing pistons, the cylinder bores should be in- spected for being scored, tapered or out of round. 401 The pistons should next be inspected for scores, leaks and wear. A piston, if not too badly scored can be dressed off with a mill file. This practice, however, is not recommended unless the mechanic is skilled in the use of a file. As a general rule it is better to install a new piston. "
+        },
+        {
+          "chunk_id": 38,
+          "score": 0.13125091965173646,
+          "source_file": "ModelTNew.txt",
+          "start_char": 14592,
+          "end_char": 15104,
+          "text": "air orders should be computed, showing the total amount of the bill for labor and parts. Before filing the orders they should be routed to some definite person in the office designated to make entries on the service card record. This is particularly impor- tant, for unless some employee is held to strict accountability for the maintenance of the follow-up system, it is likely to be slighted, with the result that it will eventually become useless. All entries on the service card should show date, repair orde"
+        },
+        {
+          "chunk_id": 679,
+          "score": 0.12897960945818598,
+          "source_file": "ModelTNew.txt",
+          "start_char": 260736,
+          "end_char": 261248,
+          "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+        },
+        {
+          "chunk_id": 28,
+          "score": 0.11163808948992965,
+          "source_file": "ModelTNew.txt",
+          "start_char": 10752,
+          "end_char": 11264,
+          "text": "ould be represented by cleanly attired men, capable of meeting and serving the trade in a manner that will inspire confidence. The courtesy and promptness of the parts man indicates that the entire organization is interested in the customer's welfare. One of the most important duties of the parts salesman is to know what parts are required to perform each repair job and to diplomatically convey this information to the customer. For example when a cus- tomer purchases a front. spring, the parts salesman shou"
+        }
+      ]
+    },
+    {
+      "query": "How often should I service the engine?",
+      "retrieved": [
+        {
+          "chunk_id": 61,
+          "score": 0.15590054358081304,
+          "source_file": "ModelTNew.txt",
+          "start_char": 23424,
+          "end_char": 23936,
+          "text": "on for you. READY MOTOR COMPANY By ........................... \" If no response is received, the owner should be called on the phone or a personal call made. The latter is preferable. Service card is held on service manager's desk and follow-ups made until the owner comes in for service, when card is placed back in file. SERVICE CHAPTER I 1 So that the mechanic will have complete information on how each part of the car is removed and installed, we will first describe, step by step, the correct procedure in "
+        },
+        {
+          "chunk_id": 1006,
+          "score": 0.13721996750981885,
+          "source_file": "ModelTNew.txt",
+          "start_char": 386304,
+          "end_char": 386816,
+          "text": "than 1.250. Readings less than 1.150 indicate complete discharge, in which case the battery should be given a bench charge. This discharged condition may be due to trouble other than in the battery in which case all connections should be examined; a loose or dirty connection is often the cause of trouble. 1116 If the connections between battery and cable terminals are not kept clean they will corrode, causing a poor connection or else open- ing the circuit altogether. The corrosion will also consume the bat"
+        },
+        {
+          "chunk_id": 918,
+          "score": 0.1363573249455528,
+          "source_file": "ModelTNew.txt",
+          "start_char": 352512,
+          "end_char": 353024,
+          "text": "n may be due to incandescent carbon, faulty cooling system or the spark being advanced or retarded too far. The order of testing given above should be varied according to the conditions under which the tests are made and the previous knowledge of the car available to the party making the test. Often the trouble can be located quickly by changing the carburetor adjustment, tapping the carburetor to loosen a sticking float, finding the ground in the ignition system, or cleaning the commutator. 1026 If changin"
+        },
+        {
+          "chunk_id": 432,
+          "score": 0.11900199728649699,
+          "source_file": "ModelTNew.txt",
+          "start_char": 165888,
+          "end_char": 166400,
+          "text": "If shims have all been removed in making previous bearing ad- justments it is necessary to file the cap in the same manner as the connecting rod cap (See Fig. 232). As a general rule, how- ever, by the time all shims have been removed, the babbitt in the block has become worn to such an extent that the block should be rebabbitted. 112 FORD SERVICE Fig. 260 (f) Clean out any babbitt from oil grooves in bearing cap, and cover surface of bearing with oil. (g) Replace bearing cap over ends of bolts making sure "
+        },
+        {
+          "chunk_id": 9,
+          "score": 0.11882416973985443,
+          "source_file": "ModelTNew.txt",
+          "start_char": 3456,
+          "end_char": 3968,
+          "text": " T E R XXVI Repairing the radiator. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184 CHAPTER X X V I I Carburetor overhaul. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 206 CHAPTER X X V I I I Installing new bendix shaft or spring. . . . . . . . . . . . . . . . . . . . . . . . 212 CHAPTER X X I X Generatoroverhaul . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215 CHAPTER X X X Starting motdr overhaul. . . . . . . ."
+        }
+      ]
+    },
+    {
+      "query": "engine maintenance intervals",
+      "retrieved": [
+        {
+          "chunk_id": 306,
+          "score": 0.12390907276375754,
+          "source_file": "ModelTNew.txt",
+          "start_char": 117504,
+          "end_char": 118016,
+          "text": "e gears with driven gear, making sure that the punch marks (See \"A\" Fig. 201) between the teeth on triple gears mesh with teeth on driven gear. The first triple gear can be meshed at any point on driven gear. The second and third sets of triple gears are assembled in the same manner as the first triple gear, but at intervals of nine teeth or 120\u00b0 apart on the driven gear. 305 After triple gears are assembled on drum assembly, place oil on triple gear and transmission gear shafts then pick up the complete dr"
+        },
+        {
+          "chunk_id": 38,
+          "score": 0.11088530575800801,
+          "source_file": "ModelTNew.txt",
+          "start_char": 14592,
+          "end_char": 15104,
+          "text": "air orders should be computed, showing the total amount of the bill for labor and parts. Before filing the orders they should be routed to some definite person in the office designated to make entries on the service card record. This is particularly impor- tant, for unless some employee is held to strict accountability for the maintenance of the follow-up system, it is likely to be slighted, with the result that it will eventually become useless. All entries on the service card should show date, repair orde"
+        },
+        {
+          "chunk_id": 345,
+          "score": 0.07086758887690922,
+          "source_file": "ModelTNew.txt",
+          "start_char": 132480,
+          "end_char": 132992,
+          "text": "se drain cock in bottom of radiator and fill radiator with clean water. 359 Time Study Engine and Transmission Overhaul Hrs. Min. 1 Install car covers on front fenders, running board, steering wheel and upholstery .. ... . .. ..... .. , . . . . . . . . . . . . . . 5 2 Remove engine from chassis . . . . . . . . . . . . . . . . . . . . . . . . . . 38 3 Wash engine.. .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10 4 Disassemble engine and wash all parts . . . . . . . . . . . . . ."
+        },
+        {
+          "chunk_id": 879,
+          "score": 0.05357208387342887,
+          "source_file": "ModelTNew.txt",
+          "start_char": 337536,
+          "end_char": 338048,
+          "text": "engine. On cars equipped with starters simply turn switch key to point marked \"Bat\". 994 If the engine starts, the magneto is either weak or dead. With the engine running take a volt meter reading (See Fig. 499). This can be done by disconnecting magneto terminal wire at magneto contact assembly. One wire on the volt meter is then connected to magneto contact, while the other wire on volt meter is pressed against a clean part of the cylinder or transmission cover. Throttle the engine down FORD SERVICE 235 F"
+        },
+        {
+          "chunk_id": 905,
+          "score": 0.052113426453930536,
+          "source_file": "ModelTNew.txt",
+          "start_char": 347520,
+          "end_char": 348032,
+          "text": "ch), the engine and test for weak valve springs. This can be done by inserting a screw driver between the coils and forcing the spring down. If this causes the engine to pick up speed, the\u00b7 spring is weak and should be replaced. (To check the strength of the valve springs accurately the tension of the springs should be checked as described in Par. 258.) 1013 See that the valves are not sticking in guides. This is done by running the engine slowly and watching the travel of the valves and push rods and check"
+        }
+      ]
+    },
+    {
+      "query": "When do I need to check the engine?",
+      "retrieved": [
+        {
+          "chunk_id": 473,
+          "score": 0.15252527006090977,
+          "source_file": "ModelTNew.txt",
+          "start_char": 181632,
+          "end_char": 182144,
+          "text": " pin. Run down commutator lock nut over end of FORD SERVICE 121 shaft, drawing it down tightly against brush cap. The commutator case is then installed as described in Par. 119 and checked for correct setting as described in Par. 126. 470 Before installing fan and radiator, it is advisable to check the gears to make sure that they are correctly meshed. This can be done by starting the engine and noting whether the gears run quietly (do not run the engine more than a few seconds at a time with the fan and ra"
+        },
+        {
+          "chunk_id": 562,
+          "score": 0.13670594791831212,
+          "source_file": "ModelTNew.txt",
+          "start_char": 215808,
+          "end_char": 216320,
+          "text": " wear very slowly, it is seldom they need to be replaced for being undersize. If cracked, pitted, or badly worn a new bearing should be installed. If 0. K. grease bearing and insert it over end of sleeve. 588 Inspect bearing housing for cracks or pits. If cracked or pitted, install a new housing. If 0. K. place bearing housing over top of bearing. 589 Inspect differential drive gear for worn or chipped teeth. Check gear on a surface plate to see if it is sprung (See Fig. 344). If gear is sprung, teeth badly"
+        },
+        {
+          "chunk_id": 272,
+          "score": 0.13587023031246495,
+          "source_file": "ModelTNew.txt",
+          "start_char": 104448,
+          "end_char": 104960,
+          "text": "the closing as in an engine where the camshaft is worn it is not always possible to have both the opening and closing check accurately with the figures given. 264 The method of determining when the valves open and close is as follows: With the spring assembled, close the valve. When it is closed, hold it with the fingers and twist back and forth on head of valve while slowly cranking engine (See Fig. 174). When checking the opening and closing of valves with engine removed from car a turning bar is used to "
+        },
+        {
+          "chunk_id": 905,
+          "score": 0.13483471147789627,
+          "source_file": "ModelTNew.txt",
+          "start_char": 347520,
+          "end_char": 348032,
+          "text": "ch), the engine and test for weak valve springs. This can be done by inserting a screw driver between the coils and forcing the spring down. If this causes the engine to pick up speed, the\u00b7 spring is weak and should be replaced. (To check the strength of the valve springs accurately the tension of the springs should be checked as described in Par. 258.) 1013 See that the valves are not sticking in guides. This is done by running the engine slowly and watching the travel of the valves and push rods and check"
+        },
+        {
+          "chunk_id": 919,
+          "score": 0.13054112206638338,
+          "source_file": "ModelTNew.txt",
+          "start_char": 352896,
+          "end_char": 353408,
+          "text": "he carburetor to loosen a sticking float, finding the ground in the ignition system, or cleaning the commutator. 1026 If changing the carburetor adjustment does \u00b7n ot overcome the trouble, check the carburetor and fuel line as described in Pars. 1014 to 1020. 1027 The first thing to do in locating the cause of the backfire is to determine whether or not it is being caused by pre-ignition due to incandescent carbon. Turn off the ignition switch and if the engine continues to fire, the trouble is pre-ignition"
+        }
+      ]
+    },
+    {
+      "query": "Preventive maintenance requirements",
+      "retrieved": [
+        {
+          "chunk_id": 260,
+          "score": 0.13134751712700082,
+          "source_file": "ModelTNew.txt",
+          "start_char": 99840,
+          "end_char": 100352,
+          "text": "5% of the surface. If the cap does not meet these requirements it should be scraped and re-run, taking out one or more shims from each side of cap. 251 While it is not necessary for an experienced operator to remove the center and front caps, it is advisable for the beginner to do so, so that he may be sure his work is correctly performed. When crankshaft has been properly Fig. 11 1 run in, lock all bearing bolt nuts with cotter keys. Inspecting and Assembling Pistons and Push Rods 252 After a crankshaft is"
+        },
+        {
+          "chunk_id": 259,
+          "score": 0.12771579983887998,
+          "source_file": "ModelTNew.txt",
+          "start_char": 99456,
+          "end_char": 99968,
+          "text": "ng-in opera - tion repeated. 249 When sufficiently run in , the shaft can be turned over with the hand wheel on the running-in stand (See \"A\" Fig. 171) or by means of a 20\" turning bar. FORD SERVICE 69 250 When the shaft can be turned in this manner the rear bearing cap should be re- moved and inspected. There should be a bearing the entire length of the cap and covering at least 95% of the surface. If the cap does not meet these requirements it should be scraped and re-run, taking out one or more shims fro"
+        },
+        {
+          "chunk_id": 38,
+          "score": 0.1187900274264652,
+          "source_file": "ModelTNew.txt",
+          "start_char": 14592,
+          "end_char": 15104,
+          "text": "air orders should be computed, showing the total amount of the bill for labor and parts. Before filing the orders they should be routed to some definite person in the office designated to make entries on the service card record. This is particularly impor- tant, for unless some employee is held to strict accountability for the maintenance of the follow-up system, it is likely to be slighted, with the result that it will eventually become useless. All entries on the service card should show date, repair orde"
+        }
+      ]
+    }
+  ],
+  "overlap_jaccard": {
+    "What is the recommended maintenance schedule for the engine? || How often should I service the engine?": 0.0,
+    "What is the recommended maintenance schedule for the engine? || engine maintenance intervals": 0.1111111111111111,
+    "What is the recommended maintenance schedule for the engine? || When do I need to check the engine?": 0.0,
+    "What is the recommended maintenance schedule for the engine? || Preventive maintenance requirements": 0.14285714285714285,
+    "How often should I service the engine? || engine maintenance intervals": 0.0,
+    "How often should I service the engine? || When do I need to check the engine?": 0.0,
+    "How often should I service the engine? || Preventive maintenance requirements": 0.0,
+    "engine maintenance intervals || When do I need to check the engine?": 0.1111111111111111,
+    "engine maintenance intervals || Preventive maintenance requirements": 0.14285714285714285,
+    "When do I need to check the engine? || Preventive maintenance requirements": 0.0
+  }
+}

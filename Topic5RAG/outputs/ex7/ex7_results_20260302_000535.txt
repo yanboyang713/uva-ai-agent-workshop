@@ -1,0 +1,36 @@
+Exercise 7: Chunk Overlap Experiment
+====================================
+corpus_dir=./resources/Corpora/NewModelT
+chunk_size=512 chunk_overlap=128
+open_model=llama3.2:1b open_provider=ollama
+rag_k=5
+max_context_chars=16000
+
+overlap=0 chunks=893
+  - score=0.2336 source=ModelTNew.txt chunk=46
+  - score=0.1116 source=ModelTNew.txt chunk=84
+  - score=0.0946 source=ModelTNew.txt chunk=454
+  - score=0.0840 source=ModelTNew.txt chunk=478
+  - score=0.0806 source=ModelTNew.txt chunk=81
+----------------------------------------
+overlap=64 chunks=1020
+  - score=0.2450 source=ModelTNew.txt chunk=53
+  - score=0.1219 source=ModelTNew.txt chunk=795
+  - score=0.1118 source=ModelTNew.txt chunk=96
+  - score=0.0936 source=ModelTNew.txt chunk=84
+  - score=0.0841 source=ModelTNew.txt chunk=546
+----------------------------------------
+overlap=128 chunks=1190
+  - score=0.2269 source=ModelTNew.txt chunk=62
+  - score=0.2145 source=ModelTNew.txt chunk=61
+  - score=0.1315 source=ModelTNew.txt chunk=927
+  - score=0.1154 source=ModelTNew.txt chunk=112
+  - score=0.1066 source=ModelTNew.txt chunk=605
+----------------------------------------
+overlap=256 chunks=1785
+  - score=0.2383 source=ModelTNew.txt chunk=93
+  - score=0.2379 source=ModelTNew.txt chunk=92
+  - score=0.1241 source=ModelTNew.txt chunk=1391
+  - score=0.1105 source=ModelTNew.txt chunk=168
+  - score=0.1055 source=ModelTNew.txt chunk=907
+----------------------------------------

@@ -1,0 +1,205 @@
+{
+  "exercise": "ex7",
+  "args": {
+    "exercise": "ex7",
+    "corpus_dir": "./resources/Corpora/NewModelT",
+    "corpus": "modelt",
+    "queries_file": "",
+    "chunk_size": 512,
+    "chunk_overlap": 128,
+    "rag_k": 5,
+    "max_context_chars": 16000,
+    "open_provider": "ollama",
+    "open_model": "llama3.2:1b",
+    "ollama_base_url": "http://127.0.0.1:11434/v1",
+    "overlap_values": "0,64,128,256",
+    "boundary_query": "What details describe a multi-step procedure that might cross section boundaries?",
+    "output_dir": "./outputs/ex7"
+  },
+  "results": [
+    {
+      "overlap": 0,
+      "chunks_count": 893,
+      "retrieved": [
+        {
+          "chunk_id": 46,
+          "score": 0.23358256659769852,
+          "source_file": "ModelTNew.txt",
+          "start_char": 23552,
+          "end_char": 24064,
+          "text": "hone or a personal call made. The latter is preferable. Service card is held on service manager's desk and follow-ups made until the owner comes in for service, when card is placed back in file. SERVICE CHAPTER I 1 So that the mechanic will have complete information on how each part of the car is removed and installed, we will first describe, step by step, the correct procedure in disassembling, and reassembling the car. 2 Before commencing a service job, it is important that car covers be placed over the r"
+        },
+        {
+          "chunk_id": 84,
+          "score": 0.11157053397101371,
+          "source_file": "ModelTNew.txt",
+          "start_char": 43008,
+          "end_char": 43520,
+          "text": "er keys. The fourth nut is not tightened until feed pipe is inserted through clamp. 68 Install rear spring by entering spring into cross member, making sure that head of tie bolt (See \"A\" Fig. 66), enters hole in cross member. 69 Install rear spring clips-Position spring clips on cross member, making sure that locking pin \"B\" on spring clip enters hole \"C\" in cross member. 70 Install spring clip bars (See \"A\" Fig. 67) over ends of spring clips. Run \u00b7down and securely tighten the four spring clip nuts, locki"
+        },
+        {
+          "chunk_id": 454,
+          "score": 0.09460875202511237,
+          "source_file": "ModelTNew.txt",
+          "start_char": 232448,
+          "end_char": 232960,
+          "text": "s tightly in cross member, it can be pried out with a pinch bar. Fig. 365 161 162 FORD SERVICE Fig. 366 Installing Rear Spring 661 Insert spring into rear cross member m a king sure that head of tie bolt enters the hole in rear cross m ember (See Fig. 66) . 662 Insert the two spring clip bars over ends of spring clips and run down the four nuts which h old them in pla ce, locking three of the nuts with cotter keys and the fourth nut with the wire on the tail lamp bushing assembly (See \" B \" Fig. 6 7) . 663 "
+        },
+        {
+          "chunk_id": 478,
+          "score": 0.08404992078786436,
+          "source_file": "ModelTNew.txt",
+          "start_char": 244736,
+          "end_char": 245248,
+          "text": " nuts from ends of crank case front bearing and spring clip, and remove license bracket and front spring clip bar (See Fig. 59). Front spring can now be removed. 703 Installing Front Spring (a ) Place spring pad over head of tie bolt in spring as shown in Fig. 62 . (b) Position spring in front cross member making sure that head of tie bolt enters hole in cross member (See \"A\" Fig. 63 ) . 704 Insert spring clip bar and license bracket over ends of spring clip (See Fig. 59 ), running down the two spring clip "
+        },
+        {
+          "chunk_id": 81,
+          "score": 0.08058363602563942,
+          "source_file": "ModelTNew.txt",
+          "start_char": 41472,
+          "end_char": 41984,
+          "text": "g. 63 62 Install spring pad-Place front axle assembly on jacks. Position spring pad on top of front spring, making sure that head of tie bolt (See \"A\" Fig. 62 ), enters hole \"B\" in spring pad. 63 Connect frame \u00b7 to front axle assembly-Position frame on front axle assembly, making sure that head of tie bolt (See \"A\" Fig. 63 ) enters hole in cross member. Fig. 64 64 Install crankcase front bearing and spring clip assembly- Position crankcase front bearing (See \"A\" Fig. 64) on cross member, inserting spring cl"
+        }
+      ]
+    },
+    {
+      "overlap": 64,
+      "chunks_count": 1020,
+      "retrieved": [
+        {
+          "chunk_id": 53,
+          "score": 0.2450018657287005,
+          "source_file": "ModelTNew.txt",
+          "start_char": 23744,
+          "end_char": 24256,
+          "text": "e. SERVICE CHAPTER I 1 So that the mechanic will have complete information on how each part of the car is removed and installed, we will first describe, step by step, the correct procedure in disassembling, and reassembling the car. 2 Before commencing a service job, it is important that car covers be placed over the running boards, fenders, steering wheel and up- holstery. This prevents the parts becoming scratched or marred and protects the upholstery from grease spots and stains. 3 When disassembling, it"
+        },
+        {
+          "chunk_id": 795,
+          "score": 0.12189718412720973,
+          "source_file": "ModelTNew.txt",
+          "start_char": 356160,
+          "end_char": 356672,
+          "text": "n this part of the system. In the majority of cases it is due to faulty wiring at the commutator or a shorted commutator. CHAPTER XXXIV Engine Knocks 1036 While it would be impractical to describe in detail every knock that might possibly occur in an automobile engine, there are certain knocks which comprise the bulk of this trouble and with which the mechanic should be familiar. 1037 Carbon knock- A carbon knock is a clear sounding knock which develops after the engine becomes warmed. It is heard most plai"
+        },
+        {
+          "chunk_id": 96,
+          "score": 0.1118115332868914,
+          "source_file": "ModelTNew.txt",
+          "start_char": 43008,
+          "end_char": 43520,
+          "text": "er keys. The fourth nut is not tightened until feed pipe is inserted through clamp. 68 Install rear spring by entering spring into cross member, making sure that head of tie bolt (See \"A\" Fig. 66), enters hole in cross member. 69 Install rear spring clips-Position spring clips on cross member, making sure that locking pin \"B\" on spring clip enters hole \"C\" in cross member. 70 Install spring clip bars (See \"A\" Fig. 67) over ends of spring clips. Run \u00b7down and securely tighten the four spring clip nuts, locki"
+        },
+        {
+          "chunk_id": 84,
+          "score": 0.0936169730023221,
+          "source_file": "ModelTNew.txt",
+          "start_char": 37632,
+          "end_char": 38144,
+          "text": " as shown at \"C\" . (b ) Run off the four spring clip nuts \"D\" and lift off spring clip bars \"E\" . Spring can now be removed from cross member by tapping the spring with a brass or lead hammer. If spring fits tightly in cross member it can be pried out with a pinch bar which is inserted between the spring and cross member. Fig. 56 18 FORD SERVICE Fig. 57 Fig. 58 59 Remove control shaft by running out the four control shaft bracket bolts and nuts (See \"A\" Fig. 57). \u00b7 60 Remove front axle assembly- (a) Jack up"
+        },
+        {
+          "chunk_id": 546,
+          "score": 0.08408635525267522,
+          "source_file": "ModelTNew.txt",
+          "start_char": 244608,
+          "end_char": 245120,
+          "text": "wo spring hanger nuts from ends of each hanger and lift off hanger bars (See Fig. 376) and withdraw hangers. 702 Run off the two nuts from ends of crank case front bearing and spring clip, and remove license bracket and front spring clip bar (See Fig. 59). Front spring can now be removed. 703 Installing Front Spring (a ) Place spring pad over head of tie bolt in spring as shown in Fig. 62 . (b) Position spring in front cross member making sure that head of tie bolt enters hole in cross member (See \"A\" Fig. "
+        }
+      ]
+    },
+    {
+      "overlap": 128,
+      "chunks_count": 1190,
+      "retrieved": [
+        {
+          "chunk_id": 62,
+          "score": 0.22693497470447102,
+          "source_file": "ModelTNew.txt",
+          "start_char": 23808,
+          "end_char": 24320,
+          "text": "nformation on how each part of the car is removed and installed, we will first describe, step by step, the correct procedure in disassembling, and reassembling the car. 2 Before commencing a service job, it is important that car covers be placed over the running boards, fenders, steering wheel and up- holstery. This prevents the parts becoming scratched or marred and protects the upholstery from grease spots and stains. 3 When disassembling, it is a good plan to provide a clean box for holding small parts, "
+        },
+        {
+          "chunk_id": 61,
+          "score": 0.21453286324639653,
+          "source_file": "ModelTNew.txt",
+          "start_char": 23424,
+          "end_char": 23936,
+          "text": "on for you. READY MOTOR COMPANY By ........................... \" If no response is received, the owner should be called on the phone or a personal call made. The latter is preferable. Service card is held on service manager's desk and follow-ups made until the owner comes in for service, when card is placed back in file. SERVICE CHAPTER I 1 So that the mechanic will have complete information on how each part of the car is removed and installed, we will first describe, step by step, the correct procedure in "
+        },
+        {
+          "chunk_id": 927,
+          "score": 0.13151628969061369,
+          "source_file": "ModelTNew.txt",
+          "start_char": 355968,
+          "end_char": 356480,
+          "text": "tor, may indicate on a test the same as a carburetor trouble. 1035 If the coil vibrates continually, examine the wire between that coil and the commutator as the trouble must necessarily lie in this part of the system. In the majority of cases it is due to faulty wiring at the commutator or a shorted commutator. CHAPTER XXXIV Engine Knocks 1036 While it would be impractical to describe in detail every knock that might possibly occur in an automobile engine, there are certain knocks which comprise the bulk o"
+        },
+        {
+          "chunk_id": 112,
+          "score": 0.11539880224911857,
+          "source_file": "ModelTNew.txt",
+          "start_char": 43008,
+          "end_char": 43520,
+          "text": "er keys. The fourth nut is not tightened until feed pipe is inserted through clamp. 68 Install rear spring by entering spring into cross member, making sure that head of tie bolt (See \"A\" Fig. 66), enters hole in cross member. 69 Install rear spring clips-Position spring clips on cross member, making sure that locking pin \"B\" on spring clip enters hole \"C\" in cross member. 70 Install spring clip bars (See \"A\" Fig. 67) over ends of spring clips. Run \u00b7down and securely tighten the four spring clip nuts, locki"
+        },
+        {
+          "chunk_id": 605,
+          "score": 0.10655486723804318,
+          "source_file": "ModelTNew.txt",
+          "start_char": 232320,
+          "end_char": 232832,
+          "text": "t \"A\" Fig. 365. 660 Spring can now be removed from cross member by tapping the spring with a brass or lead hammer. If spring fits tightly in cross member, it can be pried out with a pinch bar. Fig. 365 161 162 FORD SERVICE Fig. 366 Installing Rear Spring 661 Insert spring into rear cross member m a king sure that head of tie bolt enters the hole in rear cross m ember (See Fig. 66) . 662 Insert the two spring clip bars over ends of spring clips and run down the four nuts which h old them in pla ce, locking t"
+        }
+      ]
+    },
+    {
+      "overlap": 256,
+      "chunks_count": 1785,
+      "retrieved": [
+        {
+          "chunk_id": 93,
+          "score": 0.23828543711286063,
+          "source_file": "ModelTNew.txt",
+          "start_char": 23808,
+          "end_char": 24320,
+          "text": "nformation on how each part of the car is removed and installed, we will first describe, step by step, the correct procedure in disassembling, and reassembling the car. 2 Before commencing a service job, it is important that car covers be placed over the running boards, fenders, steering wheel and up- holstery. This prevents the parts becoming scratched or marred and protects the upholstery from grease spots and stains. 3 When disassembling, it is a good plan to provide a clean box for holding small parts, "
+        },
+        {
+          "chunk_id": 92,
+          "score": 0.23787780606735895,
+          "source_file": "ModelTNew.txt",
+          "start_char": 23552,
+          "end_char": 24064,
+          "text": "hone or a personal call made. The latter is preferable. Service card is held on service manager's desk and follow-ups made until the owner comes in for service, when card is placed back in file. SERVICE CHAPTER I 1 So that the mechanic will have complete information on how each part of the car is removed and installed, we will first describe, step by step, the correct procedure in disassembling, and reassembling the car. 2 Before commencing a service job, it is important that car covers be placed over the r"
+        },
+        {
+          "chunk_id": 1391,
+          "score": 0.12411114680406388,
+          "source_file": "ModelTNew.txt",
+          "start_char": 356096,
+          "end_char": 356608,
+          "text": "at coil and the commutator as the trouble must necessarily lie in this part of the system. In the majority of cases it is due to faulty wiring at the commutator or a shorted commutator. CHAPTER XXXIV Engine Knocks 1036 While it would be impractical to describe in detail every knock that might possibly occur in an automobile engine, there are certain knocks which comprise the bulk of this trouble and with which the mechanic should be familiar. 1037 Carbon knock- A carbon knock is a clear sounding knock which"
+        },
+        {
+          "chunk_id": 168,
+          "score": 0.1105318145922669,
+          "source_file": "ModelTNew.txt",
+          "start_char": 43008,
+          "end_char": 43520,
+          "text": "er keys. The fourth nut is not tightened until feed pipe is inserted through clamp. 68 Install rear spring by entering spring into cross member, making sure that head of tie bolt (See \"A\" Fig. 66), enters hole in cross member. 69 Install rear spring clips-Position spring clips on cross member, making sure that locking pin \"B\" on spring clip enters hole \"C\" in cross member. 70 Install spring clip bars (See \"A\" Fig. 67) over ends of spring clips. Run \u00b7down and securely tighten the four spring clip nuts, locki"
+        },
+        {
+          "chunk_id": 907,
+          "score": 0.10553984926232055,
+          "source_file": "ModelTNew.txt",
+          "start_char": 232192,
+          "end_char": 232704,
+          "text": " \"B\" on ends of spring hangers lifting off the spring hanger bars \"C\" and drive the hangers out of spring and perches as shown at \"A\" Fig. 365. 660 Spring can now be removed from cross member by tapping the spring with a brass or lead hammer. If spring fits tightly in cross member, it can be pried out with a pinch bar. Fig. 365 161 162 FORD SERVICE Fig. 366 Installing Rear Spring 661 Insert spring into rear cross member m a king sure that head of tie bolt enters the hole in rear cross m ember (See Fig. 66) "
+        }
+      ]
+    }
+  ]
+}

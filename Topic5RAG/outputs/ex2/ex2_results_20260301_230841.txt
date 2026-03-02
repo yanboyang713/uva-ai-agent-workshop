@@ -1,0 +1,59 @@
+Exercise 2: Open Model + RAG vs Large Model
+===========================================
+corpus_dir=./resources/Corpora/Congressional_Record_Jan_2026/txt
+chunk_size=512 chunk_overlap=128
+open_model=qwen2.5:1.5b open_provider=ollama
+rag_k=30
+max_context_chars=24000
+
+loaded_docs=25 loaded_chunks=38717
+Q: What did Mr. Flood have to say about Mayor David Black in Congress on January 13, 2026?
+Open model + RAG:
+Mr. Flood had to say that he was concerned about the working man and the standard of living that they had taken away from them. He played this game with healthcare. They created ObamaCare. They never had a solution. It was never a permanent fix.
+Large model no-RAG (gpt-4o-mini):
+I'm sorry, but I don't have access to real-time information or events that occurred after my last training cut-off in October 2023. Therefore, I cannot provide details about Mr. Flood's comments regarding Mayor David Black in Congress on January 13, 2026. You may want to check news sources or official congressional records for the most accurate and up-to-date information.
+--------------------------------------------------------------------------------
+Q: What mistake Elise Stefanovic make in Congress on January 23, 2026?
+Open model + RAG:
+Elise Stefanik was removed from the board of the National Endowment for Democracy.
+Large model no-RAG (gpt-4o-mini):
+I'm sorry, but I don't have any information about events or actions taken by Elise Stefanovic in Congress on January 23, 2026, as my training only includes data up to October 2023. For the most current information, I recommend checking reliable news sources or official congressional records.
+--------------------------------------------------------------------------------
+Q: What is the purpose of the Main Street Parity Act?
+Open model + RAG:
+The purpose of the Main Street Parity Act is to ensure that artificial intelligence can be used for small business concerns by providing guidance on its use. The bill amends the Small Business Act and directs the Secretary of Commerce to develop guidelines for the use of artificial intelligence in small businesses, including assistance with the use of artificial intelligence.
+Large model no-RAG (gpt-4o-mini):
+The Main Street Parity Act is legislation aimed at addressing the regulatory disparities between community banks and larger financial institutions, particularly in the context of the financial services industry. The primary purpose of the Act is to ensure that community banks, which play a crucial role in local economies, are not at a competitive disadvantage due to more stringent regulatory requirements that may not be necessary for smaller institutions.
+
+Key objectives of the Main Street Parity Act include:
+
+1. **Regulatory Relief**: It seeks to provide regulatory relief to community banks by reducing the compliance burden associated with certain regulations, allowing them to focus more on serving their customers and communities.
+
+2. **Promoting Lending**: By easing regulatory constraints, the Act aims to encourage community banks to increase lending to small businesses and consumers, thereby stimulating local economic growth.
+
+3. **Leveling the Playing Field**: The Act aims to create a more level playing field between community banks and larger financial institutions, which often have more resources to manage regulatory compliance.
+
+4. **Supporting Financial Stability**: By strengthening community banks, the Act supports the overall stability of the financial system, as these institutions are often more closely tied to their local economies.
+
+Overall, the Main Street Parity Act is designed to enhance the ability of community banks to operate effectively and contribute to the economic vitality of their regions.
+--------------------------------------------------------------------------------
+Q: Who in Congress has spoken for and against funding of pregnancy centers?
+Open model + RAG:
+The representative FISCHBACH is in strong support of H.R. 6945, the Supporting Pregnant and Parenting Women and Families Act. Across our Nation, more than 2,700 pregnancy centers serve nearly 2 million women and families each year.
+Large model no-RAG (gpt-4o-mini):
+As of my last update in October 2023, discussions around funding for pregnancy centers, particularly crisis pregnancy centers (CPCs), have been a topic of debate among members of Congress, reflecting broader discussions on reproductive health and rights.
+
+**Supporters of Funding:**
+- Generally, Republican lawmakers and some conservative Democrats have expressed support for funding pregnancy centers. They argue that these centers provide essential services, such as counseling, parenting classes, and resources for expectant mothers, particularly those who may be considering alternatives to abortion.
+
+**Opponents of Funding:**
+- Many Democratic lawmakers and some progressive members of Congress have opposed funding for pregnancy centers. They argue that some of these centers provide misleading information about abortion and reproductive health, and they advocate for funding to be directed toward comprehensive reproductive health services, including access to abortion.
+
+Specific names of Congress members who have spoken out on this issue can vary over time, but prominent figures often include:
+
+- **For Funding:** Senators like Marco Rubio and Representatives like Mike Kelly have been vocal supporters of crisis pregnancy centers.
+  
+- **Against Funding:** Senators like Elizabeth Warren and Representatives like Alexandria Ocasio-Cortez have criticized funding for these centers, advocating instead for more comprehensive reproductive health services.
+
+For the most current and specific statements, it would be best to refer to recent congressional records, press releases, or news articles that cover the latest debates and positions on this issue.
+--------------------------------------------------------------------------------

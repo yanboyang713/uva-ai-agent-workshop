@@ -1,0 +1,358 @@
+{
+  "exercise": "ex5",
+  "args": {
+    "exercise": "ex5",
+    "corpus_dir": "./resources/Corpora/NewModelT",
+    "corpus": "modelt",
+    "queries_file": "",
+    "chunk_size": 512,
+    "chunk_overlap": 128,
+    "rag_k": 5,
+    "max_context_chars": 16000,
+    "open_provider": "ollama",
+    "open_model": "llama3.2:1b",
+    "ollama_base_url": "http://127.0.0.1:11434/v1",
+    "output_dir": "./outputs/ex5"
+  },
+  "results": [
+    {
+      "query": "What is the capital of France?",
+      "variants": {
+        "permissive": {
+          "text": "There is no mention of the capital of France in the provided text. The context appears to be related to automotive repair and maintenance, specifically discussing radiator components, soldering irons, and front wheel service. \n\nIf you're looking for information on the capital of France, I'd be happy to help with that. The capital of France is Paris.",
+          "elapsed_seconds": 25.569197852000798,
+          "usage": {
+            "completion_tokens": 71,
+            "prompt_tokens": 740,
+            "total_tokens": 811,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 679,
+              "score": 0.19129571605773252,
+              "source_file": "ModelTNew.txt",
+              "start_char": 260736,
+              "end_char": 261248,
+              "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+            },
+            {
+              "chunk_id": 28,
+              "score": 0.1853778336016514,
+              "source_file": "ModelTNew.txt",
+              "start_char": 10752,
+              "end_char": 11264,
+              "text": "ould be represented by cleanly attired men, capable of meeting and serving the trade in a manner that will inspire confidence. The courtesy and promptness of the parts man indicates that the entire organization is interested in the customer's welfare. One of the most important duties of the parts salesman is to know what parts are required to perform each repair job and to diplomatically convey this information to the customer. For example when a cus- tomer purchases a front. spring, the parts salesman shou"
+            },
+            {
+              "chunk_id": 937,
+              "score": 0.05349427197579597,
+              "source_file": "ModelTNew.txt",
+              "start_char": 359808,
+              "end_char": 360320,
+              "text": "g the operation until each valve and push rod has been checked. If the knock disappears, the nearest camshaft bearing is loose and the fit of the bearing should be checked. This can be done by removing the cylinder front cover and inserting a brass bar between each side of camshaft gear and cylinder block and forcing the camshaft back and forth in the bearing at the same time noting whether there is any movement of the shaft. If there is play in the bearing it will be necessary to remove the camshaft and in"
+            },
+            {
+              "chunk_id": 187,
+              "score": 0.05243638823190659,
+              "source_file": "ModelTNew.txt",
+              "start_char": 71808,
+              "end_char": 72320,
+              "text": " than 7-4\" or more than If the distance is greater or less than these limits, it can be adjusted by slightly tilting the front axle with straightening bar until the correct adjustment is obtained. The bar is placed on the lower side of the axle over the ends of the spring perches. 46 FORD SERVICE of Front Wheels Fig. 120 149 The front wheels are checked for camber and gather. Gather is the toe in at the front of the wheels measured on a horizontal plane through the center of the hub. Camber is the outward p"
+            },
+            {
+              "chunk_id": 484,
+              "score": 0.052030347709679806,
+              "source_file": "ModelTNew.txt",
+              "start_char": 185856,
+              "end_char": 186368,
+              "text": "ositioned on the shaft. The center bearing is assembled to the shaft with the notch in the bear- ing pointing towards the rear end of camshaft. The front bearing is assembled with the radius on the end of the bearing (See \"A\" Fig. 288) set towards the front of the shaft. The old style front bearing with the 30\u00b0 chamfer \"B\" and notch \"C\", is always assembled with the notch set towards the rear. This is to allow clearance for the head of push rod. Fig. 289 FORD SERVICE 125 Fig. 290 481 If the old bearings are"
+            }
+          ],
+          "prompt_variant": "permissive"
+        },
+        "strict_grounding": {
+          "text": "I cannot answer this from the available documents.",
+          "elapsed_seconds": 21.988833487001102,
+          "usage": {
+            "completion_tokens": 10,
+            "prompt_tokens": 753,
+            "total_tokens": 763,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 679,
+              "score": 0.19129571605773252,
+              "source_file": "ModelTNew.txt",
+              "start_char": 260736,
+              "end_char": 261248,
+              "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+            },
+            {
+              "chunk_id": 28,
+              "score": 0.1853778336016514,
+              "source_file": "ModelTNew.txt",
+              "start_char": 10752,
+              "end_char": 11264,
+              "text": "ould be represented by cleanly attired men, capable of meeting and serving the trade in a manner that will inspire confidence. The courtesy and promptness of the parts man indicates that the entire organization is interested in the customer's welfare. One of the most important duties of the parts salesman is to know what parts are required to perform each repair job and to diplomatically convey this information to the customer. For example when a cus- tomer purchases a front. spring, the parts salesman shou"
+            },
+            {
+              "chunk_id": 937,
+              "score": 0.05349427197579597,
+              "source_file": "ModelTNew.txt",
+              "start_char": 359808,
+              "end_char": 360320,
+              "text": "g the operation until each valve and push rod has been checked. If the knock disappears, the nearest camshaft bearing is loose and the fit of the bearing should be checked. This can be done by removing the cylinder front cover and inserting a brass bar between each side of camshaft gear and cylinder block and forcing the camshaft back and forth in the bearing at the same time noting whether there is any movement of the shaft. If there is play in the bearing it will be necessary to remove the camshaft and in"
+            },
+            {
+              "chunk_id": 187,
+              "score": 0.05243638823190659,
+              "source_file": "ModelTNew.txt",
+              "start_char": 71808,
+              "end_char": 72320,
+              "text": " than 7-4\" or more than If the distance is greater or less than these limits, it can be adjusted by slightly tilting the front axle with straightening bar until the correct adjustment is obtained. The bar is placed on the lower side of the axle over the ends of the spring perches. 46 FORD SERVICE of Front Wheels Fig. 120 149 The front wheels are checked for camber and gather. Gather is the toe in at the front of the wheels measured on a horizontal plane through the center of the hub. Camber is the outward p"
+            },
+            {
+              "chunk_id": 484,
+              "score": 0.052030347709679806,
+              "source_file": "ModelTNew.txt",
+              "start_char": 185856,
+              "end_char": 186368,
+              "text": "ositioned on the shaft. The center bearing is assembled to the shaft with the notch in the bear- ing pointing towards the rear end of camshaft. The front bearing is assembled with the radius on the end of the bearing (See \"A\" Fig. 288) set towards the front of the shaft. The old style front bearing with the 30\u00b0 chamfer \"B\" and notch \"C\", is always assembled with the notch set towards the rear. This is to allow clearance for the head of push rod. Fig. 289 FORD SERVICE 125 Fig. 290 481 If the old bearings are"
+            }
+          ],
+          "prompt_variant": "strict_grounding"
+        }
+      }
+    },
+    {
+      "query": "What's the horsepower of a 1925 Model T?",
+      "variants": {
+        "permissive": {
+          "text": "The question is actually about the Ford Model N, not the Model T. The correct answer can be found in source [3] of the text.\n\nAccording to source [3], Chapter XLII Servicing the Improved Car Fig. 524, \"The numerous improvements made in the improved 1925 car have to some extent altered former methods of removing and installing certain parts.\"\n\nSpecifically, it states: \"Chapter XLII Servicing the Improved Car Fig. 524 The numerous improvements made in the improved 1925 car have to some extent altered former methods of removing and installing certain parts.\"",
+          "elapsed_seconds": 31.12468226599958,
+          "usage": {
+            "completion_tokens": 120,
+            "prompt_tokens": 780,
+            "total_tokens": 900,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 28,
+              "score": 0.11943156033898317,
+              "source_file": "ModelTNew.txt",
+              "start_char": 10752,
+              "end_char": 11264,
+              "text": "ould be represented by cleanly attired men, capable of meeting and serving the trade in a manner that will inspire confidence. The courtesy and promptness of the parts man indicates that the entire organization is interested in the customer's welfare. One of the most important duties of the parts salesman is to know what parts are required to perform each repair job and to diplomatically convey this information to the customer. For example when a cus- tomer purchases a front. spring, the parts salesman shou"
+            },
+            {
+              "chunk_id": 790,
+              "score": 0.10764620909418718,
+              "source_file": "ModelTNew.txt",
+              "start_char": 303360,
+              "end_char": 303872,
+              "text": "r pin (See \"A\" Fig. 429). Float should be moved up and down to see that inlet needle and lever pin are working freely (See Fig. 435) . Check adjustment of float with a gauge (See Fig. 436). On the Ford Model N o H. Carburetor, the distance from top of float to machined flange on mixer chamber is 1%'4\" to (On the Kingston car- Fig. 434 Fig. 435 FORD SER VICE 209 F ig. 436 Fig. 4 37 buretor this dimension is U6\" . ) The adjustment is obtained by slightly prying open float spring (See \" A\" Fig. 437) and raisin"
+            },
+            {
+              "chunk_id": 1011,
+              "score": 0.10301140477682677,
+              "source_file": "ModelTNew.txt",
+              "start_char": 388224,
+              "end_char": 388736,
+              "text": ". 1120 Detailed instructions for servicing batteries is described in the Ford battery manual, a copy of which will be furnished to dealers upon application to nearest Ford Branch. Chapter XLII Servicing the Improved Car Fig. 524 1121 The numerous improvements made in the improved 1925 car have to some extent altered former methods of removing and installing certain parts. 1122 So that no difficulty will be experienced when replacing a new part, we will, wherever an improvement has altered former replace- me"
+            },
+            {
+              "chunk_id": 679,
+              "score": 0.0925065401586372,
+              "source_file": "ModelTNew.txt",
+              "start_char": 260736,
+              "end_char": 261248,
+              "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+            },
+            {
+              "chunk_id": 1001,
+              "score": 0.0805976382474982,
+              "source_file": "ModelTNew.txt",
+              "start_char": 384384,
+              "end_char": 384896,
+              "text": "s less than W 6\" or more than %'2\" loosen the plunger lock nut and turn adjusting screw \" B\" until the correct adjustment is obtained . (On the m a gneto t y pe horn the adjusting nut is located a t the front of the diaphragm and can be adjusted by insert ing a small wrench into the funnel end of the horn and loosening or t ightening the nut. ) 258 FORD SERVICE 259 1114 After checking the adjustment, depress the horn button; if no sound comes from the horn, examine for burned or sticking breaker points at p"
+            }
+          ],
+          "prompt_variant": "permissive"
+        },
+        "strict_grounding": {
+          "text": "I cannot answer this from the available documents.",
+          "elapsed_seconds": 22.15765582899985,
+          "usage": {
+            "completion_tokens": 10,
+            "prompt_tokens": 793,
+            "total_tokens": 803,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 28,
+              "score": 0.11943156033898317,
+              "source_file": "ModelTNew.txt",
+              "start_char": 10752,
+              "end_char": 11264,
+              "text": "ould be represented by cleanly attired men, capable of meeting and serving the trade in a manner that will inspire confidence. The courtesy and promptness of the parts man indicates that the entire organization is interested in the customer's welfare. One of the most important duties of the parts salesman is to know what parts are required to perform each repair job and to diplomatically convey this information to the customer. For example when a cus- tomer purchases a front. spring, the parts salesman shou"
+            },
+            {
+              "chunk_id": 790,
+              "score": 0.10764620909418718,
+              "source_file": "ModelTNew.txt",
+              "start_char": 303360,
+              "end_char": 303872,
+              "text": "r pin (See \"A\" Fig. 429). Float should be moved up and down to see that inlet needle and lever pin are working freely (See Fig. 435) . Check adjustment of float with a gauge (See Fig. 436). On the Ford Model N o H. Carburetor, the distance from top of float to machined flange on mixer chamber is 1%'4\" to (On the Kingston car- Fig. 434 Fig. 435 FORD SER VICE 209 F ig. 436 Fig. 4 37 buretor this dimension is U6\" . ) The adjustment is obtained by slightly prying open float spring (See \" A\" Fig. 437) and raisin"
+            },
+            {
+              "chunk_id": 1011,
+              "score": 0.10301140477682677,
+              "source_file": "ModelTNew.txt",
+              "start_char": 388224,
+              "end_char": 388736,
+              "text": ". 1120 Detailed instructions for servicing batteries is described in the Ford battery manual, a copy of which will be furnished to dealers upon application to nearest Ford Branch. Chapter XLII Servicing the Improved Car Fig. 524 1121 The numerous improvements made in the improved 1925 car have to some extent altered former methods of removing and installing certain parts. 1122 So that no difficulty will be experienced when replacing a new part, we will, wherever an improvement has altered former replace- me"
+            },
+            {
+              "chunk_id": 679,
+              "score": 0.0925065401586372,
+              "source_file": "ModelTNew.txt",
+              "start_char": 260736,
+              "end_char": 261248,
+              "text": " Solder 789 The first thing to consider is the solder. There are several types used in building the radiator. For repairing, however, only one type need be used. What is known commercially as 50-50 solder is adapted for all repair work and can be obtained from Ford Branches in either wire or bar form, as well as the special washer solder which is used when soldering the headers to the body. The Iron 790 The second consideration is the soldering iron. The soldering iron should be heavy enough to convey suffi"
+            },
+            {
+              "chunk_id": 1001,
+              "score": 0.0805976382474982,
+              "source_file": "ModelTNew.txt",
+              "start_char": 384384,
+              "end_char": 384896,
+              "text": "s less than W 6\" or more than %'2\" loosen the plunger lock nut and turn adjusting screw \" B\" until the correct adjustment is obtained . (On the m a gneto t y pe horn the adjusting nut is located a t the front of the diaphragm and can be adjusted by insert ing a small wrench into the funnel end of the horn and loosening or t ightening the nut. ) 258 FORD SERVICE 259 1114 After checking the adjustment, depress the horn button; if no sound comes from the horn, examine for burned or sticking breaker points at p"
+            }
+          ],
+          "prompt_variant": "strict_grounding"
+        }
+      }
+    },
+    {
+      "query": "Why does the manual recommend synthetic oil?",
+      "variants": {
+        "permissive": {
+          "text": "The Ford manual recommends synthetic oil for several reasons:\n\n1. **Improved Wear Protection**: Synthetic oil is designed to last longer and perform better under high-performance conditions, which includes frequent driving in extreme temperatures.\n2. **Better High-Temperature Performance**: Synthetic oil can handle higher temperatures than conventional oil, making it suitable for use in hot climates or during long road trips.\n3. **Increased Fuel Efficiency**: Synthetic oil can help improve fuel efficiency by reducing friction and wear on engine components, leading to longer engine life and potentially lower fuel consumption.\n4. **Reduced Sludge Formation**: Synthetic oil is less likely to break down into sludge over time, which can clog engine passageways and reduce performance.\n5. **Better Protection Against Corrosion**: Synthetic oil contains additives that help protect the engine from corrosion and wear caused by extreme temperatures, acids, and other corrosive substances.\n\nOverall, synthetic oil provides a combination of improved performance, longer lifespan, and increased fuel efficiency, making it a recommended choice for Ford vehicles.",
+          "elapsed_seconds": 36.775464258000284,
+          "usage": {
+            "completion_tokens": 207,
+            "prompt_tokens": 773,
+            "total_tokens": 980,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 45,
+              "score": 0.16082184225908044,
+              "source_file": "ModelTNew.txt",
+              "start_char": 17280,
+              "end_char": 17792,
+              "text": "n indefinite period. Accordingly, it will be to your interest to carefully study the Ford manual containing instructions on the care and operation of Ford cars, in order that you may be generally familiar with the mechanism of the car. In driving a new car the following points of care are of particular importance: Do not drive over 20 miles per hour for the first 500 miles. Change the oil in the crankcase at the end of the first 400 miles and every 750 miles thereafter, except during cold weather, when it i"
+            },
+            {
+              "chunk_id": 433,
+              "score": 0.14695213677528393,
+              "source_file": "ModelTNew.txt",
+              "start_char": 166272,
+              "end_char": 166784,
+              "text": " from oil grooves in bearing cap, and cover surface of bearing with oil. (g) Replace bearing cap over ends of bolts making sure that cap is installed in its origina) position. (h) Run down the two crankshaft bearing bolt nuts drawing them down tightly and lining up nut with cotter pin hole, so that cot- ter pin can be entered. In locating the cotter pin .hole, never turn the nut back. If the cotter pin hole in the bolt does not line up with the nut, run the nut back sufficiently far to insure a new setting,"
+            },
+            {
+              "chunk_id": 408,
+              "score": 0.14371530908908745,
+              "source_file": "ModelTNew.txt",
+              "start_char": 156672,
+              "end_char": 157184,
+              "text": "e piston pin does not extend beyond the outside diameter of the piston (See \"A\" Fig. 247). If it does, remove the rod and pin and press the piston pin bushing in a little further. If it does not, tighten down the cap screw \"B\", with a connecting rod clamp screw wrench and lock the screw with cotter pin as shown at ''C''. 106 FORD SERVICE Fig. 246 Fig. 24 7 419 The fit of the pin in the bushings can now be checked as shown in Fig. 248. The rod should drop gradually when the piston is held in both hands and g"
+            },
+            {
+              "chunk_id": 413,
+              "score": 0.14357708146202688,
+              "source_file": "ModelTNew.txt",
+              "start_char": 158592,
+              "end_char": 159104,
+              "text": "oil before it, thus preventing the oil working into the combustion chamber. 424 Since the rings are softer than the cylinder walls against which they are tightly pressed and also present small wearing surfaces, they wear undersize in time. To insure maximum power, together with minimum oil and gas consumption, the rings should be renewed every 10,000 miles. 425 When a ring is worn undersize, or does not seat all the way around, it allows oil and gas to pass, and should be replaced. The rings are removed wit"
+            },
+            {
+              "chunk_id": 803,
+              "score": 0.13282418796445303,
+              "source_file": "ModelTNew.txt",
+              "start_char": 308352,
+              "end_char": 308864,
+              "text": "d spring screw. This eliminates any possibility of the screw working loose. Installing Bendix in Car 899 Place a little oil on end of bendix and insert bendix over end of starting motor shaft, making sure that the bendix shaft turns freely in mounting bracket bushing. If it does not turn freely, remove bendix and dress down end of shaft with an oil stone. Fig. 4 47 214 FORD SERVICE Fig. 448 Fig. 449 900 Position bendix on starting motor shaft, install bendix key in keyway on starting motor shaft (See \"A\" Fi"
+            }
+          ],
+          "prompt_variant": "permissive"
+        },
+        "strict_grounding": {
+          "text": "I cannot answer this from the available documents.",
+          "elapsed_seconds": 22.028346422999675,
+          "usage": {
+            "completion_tokens": 10,
+            "prompt_tokens": 786,
+            "total_tokens": 796,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+          },
+          "retrieved": [
+            {
+              "chunk_id": 45,
+              "score": 0.16082184225908044,
+              "source_file": "ModelTNew.txt",
+              "start_char": 17280,
+              "end_char": 17792,
+              "text": "n indefinite period. Accordingly, it will be to your interest to carefully study the Ford manual containing instructions on the care and operation of Ford cars, in order that you may be generally familiar with the mechanism of the car. In driving a new car the following points of care are of particular importance: Do not drive over 20 miles per hour for the first 500 miles. Change the oil in the crankcase at the end of the first 400 miles and every 750 miles thereafter, except during cold weather, when it i"
+            },
+            {
+              "chunk_id": 433,
+              "score": 0.14695213677528393,
+              "source_file": "ModelTNew.txt",
+              "start_char": 166272,
+              "end_char": 166784,
+              "text": " from oil grooves in bearing cap, and cover surface of bearing with oil. (g) Replace bearing cap over ends of bolts making sure that cap is installed in its origina) position. (h) Run down the two crankshaft bearing bolt nuts drawing them down tightly and lining up nut with cotter pin hole, so that cot- ter pin can be entered. In locating the cotter pin .hole, never turn the nut back. If the cotter pin hole in the bolt does not line up with the nut, run the nut back sufficiently far to insure a new setting,"
+            },
+            {
+              "chunk_id": 408,
+              "score": 0.14371530908908745,
+              "source_file": "ModelTNew.txt",
+              "start_char": 156672,
+              "end_char": 157184,
+              "text": "e piston pin does not extend beyond the outside diameter of the piston (See \"A\" Fig. 247). If it does, remove the rod and pin and press the piston pin bushing in a little further. If it does not, tighten down the cap screw \"B\", with a connecting rod clamp screw wrench and lock the screw with cotter pin as shown at ''C''. 106 FORD SERVICE Fig. 246 Fig. 24 7 419 The fit of the pin in the bushings can now be checked as shown in Fig. 248. The rod should drop gradually when the piston is held in both hands and g"
+            },
+            {
+              "chunk_id": 413,
+              "score": 0.14357708146202688,
+              "source_file": "ModelTNew.txt",
+              "start_char": 158592,
+              "end_char": 159104,
+              "text": "oil before it, thus preventing the oil working into the combustion chamber. 424 Since the rings are softer than the cylinder walls against which they are tightly pressed and also present small wearing surfaces, they wear undersize in time. To insure maximum power, together with minimum oil and gas consumption, the rings should be renewed every 10,000 miles. 425 When a ring is worn undersize, or does not seat all the way around, it allows oil and gas to pass, and should be replaced. The rings are removed wit"
+            },
+            {
+              "chunk_id": 803,
+              "score": 0.13282418796445303,
+              "source_file": "ModelTNew.txt",
+              "start_char": 308352,
+              "end_char": 308864,
+              "text": "d spring screw. This eliminates any possibility of the screw working loose. Installing Bendix in Car 899 Place a little oil on end of bendix and insert bendix over end of starting motor shaft, making sure that the bendix shaft turns freely in mounting bracket bushing. If it does not turn freely, remove bendix and dress down end of shaft with an oil stone. Fig. 4 47 214 FORD SERVICE Fig. 448 Fig. 449 900 Position bendix on starting motor shaft, install bendix key in keyway on starting motor shaft (See \"A\" Fi"
+            }
+          ],
+          "prompt_variant": "strict_grounding"
+        }
+      }
+    }
+  ]
+}

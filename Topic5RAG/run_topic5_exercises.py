@@ -95,7 +95,8 @@ def _header(args: argparse.Namespace, title: str) -> str:
         f"corpus_dir={args.corpus_dir}\n"
         f"chunk_size={args.chunk_size} chunk_overlap={args.chunk_overlap}\n"
         f"open_model={getattr(args, 'open_model', '')} open_provider={getattr(args, 'open_provider', '')}\n"
-        f"rag_k={getattr(args, 'rag_k', '')}\n\n"
+        f"rag_k={getattr(args, 'rag_k', '')}\n"
+        f"max_context_chars={getattr(args, 'max_context_chars', '')}\n\n"
     )
 
 
@@ -133,6 +134,7 @@ def run_ex1(args: argparse.Namespace) -> None:
                 retriever=retriever,
                 k=args.rag_k,
                 prompt_variant="strict_grounding",
+                max_context_chars=args.max_context_chars,
                 ollama_base_url=args.ollama_base_url,
             )
             record["rag"] = rag
@@ -177,6 +179,7 @@ def run_ex2(args: argparse.Namespace) -> None:
                 retriever=retriever,
                 k=args.rag_k,
                 prompt_variant="strict_grounding",
+                max_context_chars=args.max_context_chars,
                 ollama_base_url=args.ollama_base_url,
             )
             record["open_model_rag"] = rag
@@ -233,6 +236,7 @@ def run_ex4(args: argparse.Namespace) -> None:
                     retriever=retriever,
                     k=k,
                     prompt_variant="strict_grounding",
+                    max_context_chars=args.max_context_chars,
                     ollama_base_url=args.ollama_base_url,
                 )
                 qrec["by_k"][str(k)] = rag
@@ -271,6 +275,7 @@ def run_ex5(args: argparse.Namespace) -> None:
                     retriever=retriever,
                     k=args.rag_k,
                     prompt_variant=variant,
+                    max_context_chars=args.max_context_chars,
                     ollama_base_url=args.ollama_base_url,
                 )
                 qrec["variants"][variant] = rag
@@ -451,6 +456,7 @@ def run_ex10(args: argparse.Namespace) -> None:
                     retriever=retriever,
                     k=args.rag_k,
                     prompt_variant=variant,
+                    max_context_chars=args.max_context_chars,
                     ollama_base_url=args.ollama_base_url,
                 )
                 qrec["variants"][variant] = rag
@@ -490,6 +496,7 @@ def run_ex11(args: argparse.Namespace) -> None:
                     retriever=retriever,
                     k=k,
                     prompt_variant="structured",
+                    max_context_chars=args.max_context_chars,
                     ollama_base_url=args.ollama_base_url,
                 )
                 qrec["by_k"][str(k)] = rag
@@ -520,6 +527,12 @@ def build_parser() -> argparse.ArgumentParser:
         sp.add_argument("--chunk-size", type=int, default=512)
         sp.add_argument("--chunk-overlap", type=int, default=128)
         sp.add_argument("--rag-k", type=int, default=5)
+        sp.add_argument(
+            "--max-context-chars",
+            type=int,
+            default=16000,
+            help="Max characters of retrieved context passed to the model.",
+        )
         sp.add_argument("--open-provider", choices=["ollama", "openai"], default="ollama")
         sp.add_argument("--open-model", default="llama3.2:1b")
         sp.add_argument("--ollama-base-url", default="http://127.0.0.1:11434/v1")

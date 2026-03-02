@@ -1,0 +1,115 @@
+Exercise 2: Open Model + RAG vs Large Model
+===========================================
+corpus_dir=./resources/Corpora/NewModelT
+chunk_size=512 chunk_overlap=128
+open_model=qwen2.5:1.5b open_provider=ollama
+rag_k=30
+max_context_chars=24000
+
+loaded_docs=1 loaded_chunks=1190
+Q: How do I adjust the carburetor on a Model T?
+Open model + RAG:
+The carburetor should be adjusted by turning the adjustment screw until the mixture is just right for your driving conditions. The fuel will flow through the venturi and into the carburetor, where it mixes with air to form a combustible mixture that can then be ignited in the engine's cylinders.
+Large model no-RAG (gpt-4o-mini):
+Adjusting the carburetor on a Model T Ford involves a few steps to ensure proper fuel-air mixture and engine performance. Here’s a general guide to help you with the adjustment:
+
+### Tools Needed:
+- Screwdriver
+- Wrench (if necessary)
+- Tachometer (optional, for fine-tuning)
+
+### Steps to Adjust the Carburetor:
+
+1. **Warm Up the Engine**: Start the engine and let it warm up to operating temperature. This ensures that the adjustments you make will be effective.
+
+2. **Locate the Carburetor**: The Model T typically has a simple carburetor mounted on the engine. Familiarize yourself with the components, including the mixture adjustment screw and the throttle.
+
+3. **Adjust the Mixture**:
+   - **Idle Mixture**: Locate the mixture adjustment screw, usually found on the side of the carburetor. 
+   - Start with the screw turned in (clockwise) until it lightly seats, then back it out (counterclockwise) about 1.5 to 2 turns. This is a good starting point.
+   - **Fine-Tuning**: With the engine running, slowly turn the mixture screw in (clockwise) until the engine starts to run rough, then back it out (counterclockwise) until it runs smoothly again. This may take a few tries to find the optimal setting.
+
+4. **Adjust the Throttle**: 
+   - The throttle lever controls the engine speed. Make sure it is set to a comfortable idle speed. Adjust the throttle stop screw if necessary to achieve a steady idle.
+
+5. **Check for Smooth Operation**: 
+   - Rev the engine gently and observe how it responds. It should accelerate smoothly without hesitation. If it stutters or backfires, further adjustments may be needed.
+
+6. **Test Drive**: 
+   - Take the Model T for a short drive to see how it performs under load. Pay attention to how it accelerates and idles. If it feels sluggish or stalls, you may need to revisit the mixture adjustment.
+
+7. **Final Adjustments**: 
+   - After the test drive, make any final adjustments to the mixture and throttle settings as needed.
+
+### Additional Tips:
+- **Fuel Quality**: Ensure you are using good quality fuel, as poor fuel can affect performance.
+- **Regular Maintenance**: Keep the carburetor clean and check for any leaks or wear in the gaskets.
+- **Consult the Manual**: If you have access to a Model T service manual, refer to it for specific settings and adjustments.
+
+### Safety Precautions:
+- Always work in a well-ventilated area when dealing with fuel systems.
+- Be cautious of hot engine parts and moving components.
+
+By following these steps, you should be able to adjust the carburetor on your Model T for optimal performance. If you encounter persistent issues, consider consulting a professional or a Model T expert.
+--------------------------------------------------------------------------------
+Q: What is the correct spark plug gap for a Model T Ford?
+Open model + RAG:
+The correct spark plug gap for a Model T Ford is 1/2 inch.
+Large model no-RAG (gpt-4o-mini):
+The correct spark plug gap for a Model T Ford is typically around 0.025 inches (0.635 mm). However, it's always a good idea to consult the specific owner's manual or service documentation for your particular vehicle, as there may be slight variations based on the year or modifications made to the engine.
+--------------------------------------------------------------------------------
+Q: How do I fix a slipping transmission band?
+Open model + RAG:
+The steps to fix a slipping transmission band are as follows:
+
+1. Adjust the low speed band by running it in or out of the adjusting screw.
+2. If necessary, replace the spring that is causing the problem.
+
+These adjustments should help resolve the issue with the slipping transmission band.
+Large model no-RAG (gpt-4o-mini):
+Fixing a slipping transmission band can be a complex task, as it often requires a good understanding of automotive mechanics and transmission systems. Here are some general steps you can take to address the issue, but keep in mind that if you're not experienced with car repairs, it may be best to consult a professional mechanic.
+
+### Steps to Fix a Slipping Transmission Band:
+
+1. **Diagnose the Problem:**
+   - **Check Fluid Levels:** Low transmission fluid can cause slipping. Check the fluid level and condition (it should be red and not burnt).
+   - **Look for Leaks:** Inspect for any leaks around the transmission.
+   - **Check for Error Codes:** If your vehicle has an onboard diagnostic system, use an OBD-II scanner to check for any error codes related to the transmission.
+
+2. **Change Transmission Fluid:**
+   - If the fluid is low or dirty, consider changing it. Use the manufacturer-recommended fluid type.
+   - **Flush the Transmission:** In some cases, a complete flush may be necessary to remove old fluid and debris.
+
+3. **Adjust the Bands:**
+   - Some transmissions have adjustable bands. If your vehicle's transmission allows for this, you can adjust the bands to improve engagement.
+   - **Locate the Band Adjustment Screws:** Refer to your vehicle's service manual for the exact location and procedure.
+   - **Make Adjustments:** Use the appropriate tools to adjust the bands according to the specifications in the service manual.
+
+4. **Inspect the Transmission:**
+   - If the problem persists, you may need to remove the transmission pan to inspect the bands and other internal components.
+   - Look for signs of wear or damage on the bands, clutches, and other components.
+
+5. **Replace Worn Components:**
+   - If you find that the bands are worn or damaged, they will need to be replaced. This often requires disassembling the transmission.
+   - Consider replacing other components like clutches or seals if they show signs of wear.
+
+6. **Reassemble and Test:**
+   - After making repairs or adjustments, reassemble the transmission and refill it with the appropriate fluid.
+   - Test drive the vehicle to see if the slipping issue has been resolved.
+
+### Important Considerations:
+- **Consult the Manual:** Always refer to your vehicle's service manual for specific instructions and specifications.
+- **Safety First:** Ensure the vehicle is securely lifted and supported if you're working underneath it.
+- **Professional Help:** If you're unsure about any step or if the problem persists, it’s advisable to seek help from a qualified mechanic.
+
+### Note:
+Transmission repairs can be intricate and may require specialized tools and knowledge. If you're not comfortable performing these tasks, it's best to consult a professional to avoid further damage to the transmission.
+--------------------------------------------------------------------------------
+Q: What oil should I use in a Model T engine?
+Open model + RAG:
+A light high grade engine oil should be used in a Model T engine.
+Large model no-RAG (gpt-4o-mini):
+For a Model T engine, it is generally recommended to use a non-detergent oil with a viscosity of 30 weight (SAE 30) or 40 weight (SAE 40). These oils are suitable for the low operating speeds and temperatures of the Model T engine. Some owners also opt for modern multi-viscosity oils, such as 10W-30 or 10W-40, but it's important to ensure that they are non-detergent to avoid issues with the engine's design and materials.
+
+Additionally, some enthusiasts prefer using oils specifically formulated for vintage engines, which may provide better protection and performance. Always check the manufacturer's recommendations and consider the specific conditions in which you will be operating the vehicle.
+--------------------------------------------------------------------------------

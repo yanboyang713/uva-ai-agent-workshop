@@ -1,0 +1,52 @@
+Exercise 6: Query Phrasing Sensitivity
+======================================
+corpus_dir=./resources/Corpora/NewModelT
+chunk_size=512 chunk_overlap=128
+open_model=llama3.2:1b open_provider=ollama
+rag_k=5
+max_context_chars=16000
+
+Q: What is the recommended maintenance schedule for the engine?
+  - score=0.1343 source=ModelTNew.txt chunk=395
+  - score=0.1326 source=ModelTNew.txt chunk=394
+  - score=0.1313 source=ModelTNew.txt chunk=38
+  - score=0.1290 source=ModelTNew.txt chunk=679
+  - score=0.1116 source=ModelTNew.txt chunk=28
+
+Q: How often should I service the engine?
+  - score=0.1559 source=ModelTNew.txt chunk=61
+  - score=0.1372 source=ModelTNew.txt chunk=1006
+  - score=0.1364 source=ModelTNew.txt chunk=918
+  - score=0.1190 source=ModelTNew.txt chunk=432
+  - score=0.1188 source=ModelTNew.txt chunk=9
+
+Q: engine maintenance intervals
+  - score=0.1239 source=ModelTNew.txt chunk=306
+  - score=0.1109 source=ModelTNew.txt chunk=38
+  - score=0.0709 source=ModelTNew.txt chunk=345
+  - score=0.0536 source=ModelTNew.txt chunk=879
+  - score=0.0521 source=ModelTNew.txt chunk=905
+
+Q: When do I need to check the engine?
+  - score=0.1525 source=ModelTNew.txt chunk=473
+  - score=0.1367 source=ModelTNew.txt chunk=562
+  - score=0.1359 source=ModelTNew.txt chunk=272
+  - score=0.1348 source=ModelTNew.txt chunk=905
+  - score=0.1305 source=ModelTNew.txt chunk=919
+
+Q: Preventive maintenance requirements
+  - score=0.1313 source=ModelTNew.txt chunk=260
+  - score=0.1277 source=ModelTNew.txt chunk=259
+  - score=0.1188 source=ModelTNew.txt chunk=38
+
+Pairwise Jaccard overlap of retrieved chunk IDs:
+  - What is the recommended maintenance schedule for the engine? || How often should I service the engine?: 0.000
+  - What is the recommended maintenance schedule for the engine? || engine maintenance intervals: 0.111
+  - What is the recommended maintenance schedule for the engine? || When do I need to check the engine?: 0.000
+  - What is the recommended maintenance schedule for the engine? || Preventive maintenance requirements: 0.143
+  - How often should I service the engine? || engine maintenance intervals: 0.000
+  - How often should I service the engine? || When do I need to check the engine?: 0.000
+  - How often should I service the engine? || Preventive maintenance requirements: 0.000
+  - engine maintenance intervals || When do I need to check the engine?: 0.111
+  - engine maintenance intervals || Preventive maintenance requirements: 0.143
+  - When do I need to check the engine? || Preventive maintenance requirements: 0.000

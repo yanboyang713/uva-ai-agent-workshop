@@ -1,0 +1,38 @@
+Exercise 8: Chunk Size Experiment
+=================================
+corpus_dir=./resources/Corpora/NewModelT
+chunk_size=512 chunk_overlap=32
+open_model=llama3.2:1b open_provider=ollama
+rag_k=5
+max_context_chars=16000
+
+chunk_size=128 chunks=4759
+  Q: How do I adjust the carburetor on a Model T?
+    top1_score=0.2633
+  Q: What is the correct spark plug gap for a Model T Ford?
+    top1_score=0.3713
+  Q: How do I fix a slipping transmission band?
+    top1_score=0.2394
+  Q: What oil should I use in a Model T engine?
+    top1_score=0.1905
+--------------------------------------------------------------------------------
+chunk_size=512 chunks=952
+  Q: How do I adjust the carburetor on a Model T?
+    top1_score=0.1632
+  Q: What is the correct spark plug gap for a Model T Ford?
+    top1_score=0.2573
+  Q: How do I fix a slipping transmission band?
+    top1_score=0.1754
+  Q: What oil should I use in a Model T engine?
+    top1_score=0.1778
+--------------------------------------------------------------------------------
+chunk_size=2048 chunks=227
+  Q: How do I adjust the carburetor on a Model T?
+    top1_score=0.1091
+  Q: What is the correct spark plug gap for a Model T Ford?
+    top1_score=0.1513
+  Q: How do I fix a slipping transmission band?
+    top1_score=0.1325
+  Q: What oil should I use in a Model T engine?
+    top1_score=0.1045
+--------------------------------------------------------------------------------

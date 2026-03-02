@@ -1,0 +1,1125 @@
+{
+  "exercise": "ex2",
+  "args": {
+    "exercise": "ex2",
+    "corpus_dir": "./resources/Corpora/Congressional_Record_Jan_2026/txt",
+    "corpus": "congress",
+    "queries_file": "",
+    "chunk_size": 512,
+    "chunk_overlap": 128,
+    "rag_k": 30,
+    "max_context_chars": 24000,
+    "open_provider": "ollama",
+    "open_model": "qwen2.5:1.5b",
+    "ollama_base_url": "http://127.0.0.1:11434/v1",
+    "large_provider": "openai",
+    "large_model": "gpt-4o-mini",
+    "output_dir": "./outputs/ex2"
+  },
+  "results": [
+    {
+      "query": "What did Mr. Flood have to say about Mayor David Black in Congress on January 13, 2026?",
+      "open_model_rag": {
+        "text": "Mr. Flood had to say that he was concerned about the working man and the standard of living that they had taken away from them. He played this game with healthcare. They created ObamaCare. They never had a solution. It was never a permanent fix.",
+        "elapsed_seconds": 84.21645152499968,
+        "usage": {
+          "completion_tokens": 53,
+          "prompt_tokens": 2048,
+          "total_tokens": 2101,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "retrieved": [
+          {
+            "chunk_id": 13414,
+            "score": 0.344801790528168,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 13056,
+            "end_char": 13568,
+            "text": "sera vencido\u2019\u2019; \u2018\u2018the people united shall never be defeated.\u2019\u2019 Mr. Speaker, I thank and congratulate Juliet for all of her work. f RECOGNIZING MAYOR DAVID BLACK The SPEAKER pro tempore. The Chair now recognizes the gentleman from Nebraska, Mr. FLOOD, for 5 minutes. Mr. FLOOD. Mr. Speaker, I rise today to recognize Papillion, Nebraska\u2019s, Mayor David Black, as a paragon of public service and remarkable stewardship. Through more than two decades of service to the people of Papillion, E:\\RECORD26\\JANUARY\\H13JA6"
+          },
+          {
+            "chunk_id": 13417,
+            "score": 0.28698099588409587,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 14208,
+            "end_char": 14720,
+            "text": "on, and I am hopeful he will continue public service down the road. Mayor Black has more than earned the opportunity to spend additional time with his family once his final term in office concludes. Papillion, Mr. Speaker, is a special place, with Mayor Black\u2019s legacy being built yet another example of that truth. I thank Mayor Black for his outstanding public service. BEN SASSE NEVER STOPS FIGHTING abonner on LAPGK3WLY3PROD with CONG-REC-ONLINE Mr. FLOOD. Mr. Speaker, I rise today to recognize former U.S. "
+          },
+          {
+            "chunk_id": 13415,
+            "score": 0.2628328819978854,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 13440,
+            "end_char": 13952,
+            "text": "vice and remarkable stewardship. Through more than two decades of service to the people of Papillion, E:\\RECORD26\\JANUARY\\H13JA6.REC H13JA6 January 13, 2026 CONGRESSIONAL RECORD \u2014 HOUSE Mayor Black helped to guide the city into the thriving economic hub that it is today. This month, he announced that he will not seek reelection, which will conclude 171\u20442 years as mayor and nearly 5 additional years of serving the city in other roles. Mayor Black leaves behind a strong foundation built on partnership with an"
+          },
+          {
+            "chunk_id": 33834,
+            "score": 0.20352258743761786,
+            "source_file": "CREC-2026-01-22.txt",
+            "start_char": 1484544,
+            "end_char": 1485056,
+            "text": "Resolutions to remove Americans from hostilities that had not been authorized by the Congress. In those two votes, 52 Republicans and 47 Republicans, respectively, thought that Congress ought to have a say about our war powers. What has changed? The party of the occupant of the White House. Be consistent, Mr. Speaker. I support this resolution. Mr. MCGOVERN. Mr. Speaker, I yield myself such time as I may consume. Mr. Speaker, the gentleman keeps talking about the resolution, and here it is. I did talk about"
+          },
+          {
+            "chunk_id": 13416,
+            "score": 0.19777669630848732,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 13824,
+            "end_char": 14336,
+            "text": " additional years of serving the city in other roles. Mayor Black leaves behind a strong foundation built on partnership with an exceptional professional staff and the business community. Decades of engagement and community outreach have produced clear results, attracting firms like Google and Facebook to expand to Papillion. b 1015 He will be deeply missed by the people of Papillion, and I am hopeful he will continue public service down the road. Mayor Black has more than earned the opportunity to spend ad"
+          },
+          {
+            "chunk_id": 35928,
+            "score": 0.19714998012509158,
+            "source_file": "CREC-2026-01-28.txt",
+            "start_char": 183168,
+            "end_char": 183680,
+            "text": "le hear rumors that, if they go, they might be targeted. The fear is palpable. What I want to just say, Mr. President, that I hope we will kind of bear in mind, and this is: We all come to this place with different life experiences, and a life experience that I have had that is, you know, different than some is I have been a mayor and Governor and know what it is to have a police force. When I was the mayor of Richmond, we had a police force. When I was the Governor of Virginia, we had the Virginia State Po"
+          },
+          {
+            "chunk_id": 33878,
+            "score": 0.17438442212681513,
+            "source_file": "CREC-2026-01-22.txt",
+            "start_char": 1501440,
+            "end_char": 1501952,
+            "text": "ondemning Maduro, empty statements by them, empty statements by Joe Biden talking about how bad of a man he was, we finally have a President who actually went and did something about it. E:\\CR\\FM\\K22JA7.069 H22JAPT1 DMWilson on DSK7X7S144PROD with HOUSE January 22, 2026 That is what President Trump did. We should be proud. We should be thanking him. We should be supporting him for what he did, and we should be voting down this resolution. Mr. MEEKS. Mr. Speaker, I just wonder what kind of man, when a woman "
+          },
+          {
+            "chunk_id": 15594,
+            "score": 0.1691371813143485,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 850176,
+            "end_char": 850688,
+            "text": "reat credit upon himself, the State of Texas, and the United States of America. f HONORING MAYOR FREDDY PUZA HON. SYDNEY KAMLAGER-DOVE OF CALIFORNIA DMwilson on DSK7X7S144PROD with REMARKS IN THE HOUSE OF REPRESENTATIVES Tuesday, January 13, 2026 Ms. KAMLAGER-DOVE. Mr. Speaker, I rise today to honor the new mayor of Culver City in my district, Freddy Puza. First as a Councilmember and most recently as Vice Mayor, Freddy has relentlessly fought for a more inclusive, vibrant, and equitable Culver City. His un"
+          },
+          {
+            "chunk_id": 2386,
+            "score": 0.15797560242459444,
+            "source_file": "CREC-2026-01-06.txt",
+            "start_char": 721920,
+            "end_char": 722432,
+            "text": " Did something bad happen at work? I have avoided it for 5 years, and I have been wondering why. Why is it that I have been unable to be able to find the words to be able to talk to my child? And what I have come to understand today as I have been thinking about it is I have not talked to them about this because I have wanted to hold off on confronting the full implications of that day. I think what I have been waiting for is some moment where I can say with assurance that things are better now, where I cou"
+          },
+          {
+            "chunk_id": 20110,
+            "score": 0.15611580923395266,
+            "source_file": "CREC-2026-01-14.txt",
+            "start_char": 1636608,
+            "end_char": 1637120,
+            "text": "r who passed away on Saturday, December 20, 2025, at the age of 67. VerDate Sep 11 2014 08:12 Jan 15, 2026 E41 CONGRESSIONAL RECORD \u2014 Extensions of Remarks Jkt 069060 Eddie Cole proudly served as Mayor of Florida\u2019s oldest Black incorporated municipality, the Historic Town of Eatonville from 2016 to 2022. A tireless champion for preserving Eatonville\u2019s history, including the legacy of the Hungerford School, Mayor Cole led with passion, integrity, and an unwavering commitment to his community. Beyond public s"
+          },
+          {
+            "chunk_id": 14367,
+            "score": 0.15502400789680437,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 379008,
+            "end_char": 379520,
+            "text": "resident Trump? Mr. PERRY. No. Mr. ROY. Did President Trump put them on our streets? Mr. PERRY. President Trump did not. President Trump is credited with having the most secure border in history. Mr. ROY. And, today, we have a flow of basically statistically zero at our border. Do you remember when we were in this House Chamber, do you remember when we were debating legislation last year, and we were debating bills, and what did they say? They said: Well, we have got to pass comprehensive immigration reform"
+          },
+          {
+            "chunk_id": 3603,
+            "score": 0.15460798995742048,
+            "source_file": "CREC-2026-01-07.txt",
+            "start_char": 220032,
+            "end_char": 220544,
+            "text": "at is what they do. I will tell you how I came to Congressman FRY\u2019s bill and how I got interested in it. We were replacing a showerhead at my mom\u2019s house, and I said to my plumber, Marty: What is going on with these showerheads? He said: You tell me. The people in Washington messed this up. Nobody can have a darn good shower in the last 10 years. Why does that matter? What did they say? They say we are worried about showerheads. We are worried about the working man. We are worried about the standard of livi"
+          },
+          {
+            "chunk_id": 7066,
+            "score": 0.15388771099123857,
+            "source_file": "CREC-2026-01-08-bk3.txt",
+            "start_char": 845952,
+            "end_char": 846464,
+            "text": "................................................................................ Black Hills National Forest ......................................................................................................................................................................................................................................................... Land Acquisition Projects ..............................................................................................................................."
+          },
+          {
+            "chunk_id": 19397,
+            "score": 0.1538346484932779,
+            "source_file": "CREC-2026-01-14.txt",
+            "start_char": 1362816,
+            "end_char": 1363328,
+            "text": "he priority, not helping giant corporations looking to do another stock buyback. Unfortunately, it seems like Republicans, on healthcare, are focused on doubling down in the wrong direction. That is what this morning\u2019s developments say. VerDate Sep 11 2014 January 14, 2026 CONGRESSIONAL RECORD \u2014 SENATE 03:13 Jan 15, 2026 Jkt 069060 I yield the floor. The PRESIDING OFFICER. The Senator from Kentucky. NORTH ATLANTIC TREATY ORGANIZATION Mr. MCCONNELL. Mr. President, for years, the most pressing concern about t"
+          },
+          {
+            "chunk_id": 11495,
+            "score": 0.1491744931827839,
+            "source_file": "CREC-2026-01-09.txt",
+            "start_char": 123264,
+            "end_char": 123776,
+            "text": "titutional means. The President should have brought this to the attention of the Congress. He did not do so. He did, however, bring it to the attention of the oil companies. Have the oil companies replaced Congress in the United States of America? Is what they think more important than what we think, given that PO 00000 Frm 00016 Fmt 4636 Sfmt 0634 the Constitution has given us the authority to declare war? I know that this is a difficult topic for some people to embrace, but this is where we are. Congress "
+          },
+          {
+            "chunk_id": 15595,
+            "score": 0.1491170385944655,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 850560,
+            "end_char": 851072,
+            "text": "and most recently as Vice Mayor, Freddy has relentlessly fought for a more inclusive, vibrant, and equitable Culver City. His unwavering leadership and compassion are exactly what Culver City deserves in its next mayor. His accession to Mayor represents visibility, dignity, and hope that extend far beyond the boundaries of my district. As the first openly gay Mayor in Culver City\u2019s 108-year history, he paves the way for future generations of LGBTQ+ youth to see themselves reflected in public service and civ"
+          },
+          {
+            "chunk_id": 33791,
+            "score": 0.14826172678094615,
+            "source_file": "CREC-2026-01-22.txt",
+            "start_char": 1468032,
+            "end_char": 1468544,
+            "text": "han it already has. We ought to vote on these issues. Mr. Speaker, I reserve the balance of my time. Mr. MAST. Mr. Speaker, I yield myself such time as I may consume. Mr. Speaker, neither of my colleagues bothered to say anything about what their bill they are bringing forward actually does. They didn\u2019t say a word about it. Let\u2019s quote their own bill for them, since they clearly don\u2019t want to talk about it. They want to \u2018\u2018remove U.S. Forces from hostilities in Venezuela.\u2019\u2019 That is what the bill says. Anybod"
+          },
+          {
+            "chunk_id": 21019,
+            "score": 0.14665230661830123,
+            "source_file": "CREC-2026-01-15.txt",
+            "start_char": 306432,
+            "end_char": 306944,
+            "text": "n\u2014investment opportunities, by the way, that few American companies seem excited about and which promise only to flood the international oil market at a time when oil prices are the lowest that they have been in years. When one oil company decided to dare to tell the truth\u2014to say what any sane executive would be thinking, what any sane observer of the market would be thinking, what anybody who understood the oil markets would say, which is that a country that has a history of expropriating property is not t"
+          },
+          {
+            "chunk_id": 24564,
+            "score": 0.14624350399276478,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 991488,
+            "end_char": 992000,
+            "text": "ATRICK OF PENNSYLVANIA IN THE HOUSE OF REPRESENTATIVES Tuesday, January 20, 2026 Mr. FITZPATRICK. Mr. Speaker, I rise today to recognize an outstanding constituent of my district, Larry Keller. Larry has faithfully served the residents of New Hope Borough, Pennsylvania, including as Mayor of New Hope, during his many years of dedication to public service. Mayor Keller has long been a committed civic leader in New Hope, a historic river town known for its vibrant small businesses, tourism, and strong sense o"
+          },
+          {
+            "chunk_id": 14354,
+            "score": 0.144300424509792,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 374016,
+            "end_char": 374528,
+            "text": " the aisle, want to side with these guys. Mr. PERRY. I just have to ask you in this colloquy, Representative ROY from Texas: You say, \u2018\u2018the radical left,\u2019\u2019 but I listened to you rattle off the statements of elected officials. Mr. ROY. Yes. VerDate Sep 11 2014 January 13, 2026 CONGRESSIONAL RECORD \u2014 HOUSE 10:05 Jan 14, 2026 Jkt 069060 Mr. PERRY. Not just Members of Congress, but Members of the United States Senate. Mr. ROY. Yes. Mr. PERRY. Governors of States, including the one that I come from. Is this the "
+          },
+          {
+            "chunk_id": 33800,
+            "score": 0.14322061709993356,
+            "source_file": "CREC-2026-01-22.txt",
+            "start_char": 1471488,
+            "end_char": 1472000,
+            "text": "l provide the appropriate notifications to Con- VerDate Sep 11 2014 07:13 Jan 23, 2026 H1319 CONGRESSIONAL RECORD \u2014 HOUSE Jkt 069060 gress; he literally said this in his letter. What is this really about, this resolution that you all refused to even say a word about in your opening statements? It is about spite. It is about the fact that you don\u2019t want President Trump to arrest Maduro, and you will condemn him no matter what he does, even though he brought Maduro to justice with possibly the most successful"
+          },
+          {
+            "chunk_id": 3647,
+            "score": 0.1425947871635303,
+            "source_file": "CREC-2026-01-07.txt",
+            "start_char": 236928,
+            "end_char": 237440,
+            "text": "of my time. Mr. GUTHRIE. Mr. Speaker, I yield myself the balance of my time. Mr. Speaker, my point when I talked about the Affordable Care Act is that once it was in place, I wish it had worked. I wish what was believed to be in place worked because I think people with sincere hearts were the ones who voted for it and put it in place. If we VerDate Sep 11 2014 January 7, 2026 CONGRESSIONAL RECORD \u2014 HOUSE 05:38 Jan 08, 2026 Jkt 069060 did have choice and we had more people provided\u2014we didn\u2019t have consolidati"
+          },
+          {
+            "chunk_id": 2102,
+            "score": 0.14222884325121277,
+            "source_file": "CREC-2026-01-06.txt",
+            "start_char": 612864,
+            "end_char": 613376,
+            "text": "zed, right? Let\u2019s talk about ActBlue, which is the Democrats\u2019 equivalent\u2014we have a fundraising engine too. I am not saying they have something we don\u2019t. But they actually allowed Black Lives Matter, in the years leading up to January 6, to raise money on their website for the 13.12-mile race because 1\u20133-1\u20132 translates into A-C-A-B, which translates into \u2018\u2018all cops are bastards,\u2019\u2019 a E:\\CR\\FM\\G06JA6.010 S06JAPT1 DMWilson on DSK7X7S144PROD with SENATE January 6, 2026 fundraising effort by the Democrats on the "
+          },
+          {
+            "chunk_id": 14368,
+            "score": 0.14217768983947637,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 379392,
+            "end_char": 379904,
+            "text": "t year, and we were debating bills, and what did they say? They said: Well, we have got to pass comprehensive immigration reform in order to solve the problem and secure the border, when it E:\\CR\\FM\\K13JA7.101 H13JAPT1 DMwilson on DSK7X7S144PROD with HOUSE January 13, 2026 was Joe Biden as the President and Alejandro Mayorkas as the Secretary of Homeland Security. Now it turns out, somehow magically, without that being signed into law, magically President Trump is able to stop the flow at the border. Do you"
+          },
+          {
+            "chunk_id": 19286,
+            "score": 0.14216326900896262,
+            "source_file": "CREC-2026-01-14.txt",
+            "start_char": 1320192,
+            "end_char": 1320704,
+            "text": "he government made a subpoena request that if you tell me about what is going on here, that I am likely to taint the witnesses and act irresponsibly. What have I ever done as a Senator to make you think that is me? There was no factual foundation that I would do anything illegal if you told me. I did nothing illegal except to be Trump\u2019s friend, apparently. I inquired as to whether or not I should vote to certify the election on January 6, and I did. I did not know this had happened, but if it can happen to "
+          },
+          {
+            "chunk_id": 3604,
+            "score": 0.14107905694042447,
+            "source_file": "CREC-2026-01-07.txt",
+            "start_char": 220416,
+            "end_char": 220928,
+            "text": " say? They say we are worried about showerheads. We are worried about the working man. We are worried about the standard of living that they have taken away from them. They have taxed them to death. They play this game VerDate Sep 11 2014 January 7, 2026 CONGRESSIONAL RECORD \u2014 HOUSE 03:45 Jan 08, 2026 Jkt 069060 with healthcare. They created ObamaCare. They never had a solution. It was never a permanent fix. b 1850 Mr. Speaker, the Democrats kicked it down the road, and then they said to just extend it with"
+          },
+          {
+            "chunk_id": 2929,
+            "score": 0.14070416205070152,
+            "source_file": "CREC-2026-01-06.txt",
+            "start_char": 930432,
+            "end_char": 930944,
+            "text": "will have Thursday on our bipartisan resolution to say no to war in Venezuela without congressional authorization is actually a vote about many things. It is a short resolution, like a page and a half, but it is a vote about many things. It is about Venezuela. It is about war. It is about the use of U.S. troops. It is about our complicated history in the region. It is about the example we set and our position in the world. But it is also, ultimately, about what it is to be a U.S. Senator. In recent months, "
+          },
+          {
+            "chunk_id": 36114,
+            "score": 0.14049804980803915,
+            "source_file": "CREC-2026-01-28.txt",
+            "start_char": 254592,
+            "end_char": 255104,
+            "text": "is driving while Asian. Mr. Madel is right, and more Republicans need to speak out if they care about protecting the values this Nation was founded upon. When we talk about authoritarianism, we must also talk about the Big Lie\u2014the lies that are told over and over again, that black is white and white is black. It is a constant barrage of lies that comes from the White House. We can disagree on the issues, but you cannot have a democracy when the President of the United States lies profoundly every single day"
+          },
+          {
+            "chunk_id": 3561,
+            "score": 0.1402448880886592,
+            "source_file": "CREC-2026-01-07.txt",
+            "start_char": 203904,
+            "end_char": 204416,
+            "text": " South Carolina (Mr. FRY). Over the last several years, Americans have seen firsthand what happens VerDate Sep 11 2014 January 7, 2026 CONGRESSIONAL RECORD \u2014 HOUSE 03:45 Jan 08, 2026 Jkt 069060 when a radical regulatory agenda takes over Washington. The previous administration, it is sad to say, inserted itself into nearly every aspect of American life, raising costs and imposing rules that made no sense for American families. One of the clearest examples is what they did, believe it or not, to our showers."
+          },
+          {
+            "chunk_id": 33876,
+            "score": 0.13979501512842252,
+            "source_file": "CREC-2026-01-22.txt",
+            "start_char": 1500672,
+            "end_char": 1501184,
+            "text": "ed about people not understanding what is in the resolution. Before I got to Congress, I used to complain about really long bills that no one read before they voted on them. Well, this one is six lines long, and it doesn\u2019t talk about things like my colleague spoke about like escalation. This resolution deals with escalation. That is not what it does. It is six lines, and two of them say this: \u2018\u2018Congress hereby directs the President to remove United States Armed Forces from Venezuela . . . \u2019\u2019 There aren\u2019t an"
+          }
+        ],
+        "prompt_variant": "strict_grounding"
+      },
+      "large_model_no_rag": {
+        "text": "I'm sorry, but I don't have access to real-time information or events that occurred after my last training cut-off in October 2023. Therefore, I cannot provide details about Mr. Flood's comments regarding Mayor David Black in Congress on January 13, 2026. You may want to check news sources or official congressional records for the most accurate and up-to-date information.",
+        "elapsed_seconds": 2.5809843020006156,
+        "usage": {
+          "completion_tokens": 76,
+          "prompt_tokens": 30,
+          "total_tokens": 106,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "query": "What mistake Elise Stefanovic make in Congress on January 23, 2026?",
+      "open_model_rag": {
+        "text": "Elise Stefanik was removed from the board of the National Endowment for Democracy.",
+        "elapsed_seconds": 79.6869950270002,
+        "usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 2048,
+          "total_tokens": 2066,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "retrieved": [
+          {
+            "chunk_id": 25479,
+            "score": 0.15839740383905873,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 289920,
+            "end_char": 290432,
+            "text": "make America healthy again by examining finally what is in our food supply, empowering patients, expanding health savings accounts, and improving access and accountability across our healthcare system. We ran on these promises. We delivered on these promises. Mr. Speaker, we are just getting started. Is the Sun rising or setting? I can say with absolute certainty, the Sun is rising under the leadership of President Trump, Speaker MIKE JOHNSON, and House Republicans. Make no mistake, more is to come. As the "
+          },
+          {
+            "chunk_id": 34730,
+            "score": 0.15328289048001273,
+            "source_file": "CREC-2026-01-23.txt",
+            "start_char": 8832,
+            "end_char": 9344,
+            "text": "354; NAY on Roll Call No. 355; YEA on Roll Call No. 356; NAY on Roll Call No. 357; YEA on Roll Call No. 358; NAY on Roll Call No. 359; YEA on Roll Call No. 360; NAY on Roll Call No. 361; and YEA on Roll Call No. 362. f PERSONAL EXPLANATION HON. ELISE M. STEFANIK OF NEW YORK IN THE HOUSE OF REPRESENTATIVES Friday, January 23, 2026 Ms. STEFANIK. Mr. Speaker, on Roll Call No. 43, I mistakenly voted No when I intended to vote Yes. f RECOGNIZING THE 65TH ANNIVERSARY SEASON OF AS SCHOOLS MATCH WITS HON. RICHARD E"
+          },
+          {
+            "chunk_id": 4008,
+            "score": 0.14900034403844173,
+            "source_file": "CREC-2026-01-07.txt",
+            "start_char": 375552,
+            "end_char": 376064,
+            "text": "read and understood the Federalist Papers. The constitutional power to initiate war is placed squarely on the shoulders of Congress. VerDate Sep 11 2014 05:45 Jan 08, 2026 S75 CONGRESSIONAL RECORD \u2014 SENATE Jkt 069060 Current congressional leaders squirm and would like to shift the burden of initiating the war to the President. Less than courageous Members of Congress fall all over themselves to avoid taking responsibility to avoid the momentous vote of declaring war. But make no mistake, bombing another nat"
+          },
+          {
+            "chunk_id": 17843,
+            "score": 0.14874674353874506,
+            "source_file": "CREC-2026-01-14.txt",
+            "start_char": 766080,
+            "end_char": 766592,
+            "text": "f Congresswoman ELISE STEFANIK from the board for defending President Trump, a clear sign of ideological capture, and that is the biggest problem. They have lost their way. They cannot be trusted. We should not give them another dime. Ms. LOIS FRANKEL of Florida. Mr. Chair, I yield 1 minute to the gentlewoman from Connecticut (Ms. DELAURO), the ranking member of the Appropriations Committee. Ms. DELAURO. Chairman, I oppose this amendment. The National Endow- VerDate Sep 11 2014 January 14, 2026 CONGRESSIONA"
+          },
+          {
+            "chunk_id": 24755,
+            "score": 0.14606650642819372,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 11904,
+            "end_char": 12416,
+            "text": "in the district, I make it clear that although my name is on the ballot and I am the elected Member of Congress, when I go to Congress, we all go to Congress. Instead of assuming that I knew what mattered the most to people in my district, we sent out a survey to ask people in Ohio\u2019s 13th what mattered most to them. Thankfully, more than 2,000 people took the time to respond. What they told us was pretty straightforward. They wanted me to E:\\CR\\FM\\K21JA7.002 H21JAPT1 January 21, 2026 DMWilson on DSK7X7S144P"
+          },
+          {
+            "chunk_id": 2780,
+            "score": 0.1432699862784229,
+            "source_file": "CREC-2026-01-06.txt",
+            "start_char": 873216,
+            "end_char": 873728,
+            "text": "al election. Fortunately, Trump and his gang of violent extremists failed in their mission to undermine our democracy that day, but make no mistake, Donald Trump continues to bear direct responsibility for this disgraceful attack, an attack that forever scarred our political system and scarred our Nation. We cannot, and we must not forget, what happened on January 6, 2021. That morning, my colleagues and I started the day in this Chamber, ready to fulfill our constitutional duty to ratify the electoral coll"
+          },
+          {
+            "chunk_id": 25480,
+            "score": 0.13778754174597496,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 290304,
+            "end_char": 290816,
+            "text": " under the leadership of President Trump, Speaker MIKE JOHNSON, and House Republicans. Make no mistake, more is to come. As the Sun rises, we are ushering in America\u2019s golden age: a time of renewed strength, prosperity, and opportunity for every citizen in every community across this great land. The best days of our Nation are still ahead, and together, we will make America PO 00000 Frm 00036 Fmt 4636 Sfmt 0634 stronger, safer, and greater than ever before. It is, once again, Mr. Speaker, morning in America"
+          },
+          {
+            "chunk_id": 10166,
+            "score": 0.13749296813860548,
+            "source_file": "CREC-2026-01-08.txt",
+            "start_char": 915840,
+            "end_char": 916352,
+            "text": " much more than she already does. We have the chance here in Congress to ease the immense burden being carried by Mekhiya and the tens of millions more seeing a spike in healthcare premiums. I urge my colleagues in the Senate to do right by families and act without delay to lower healthcare and help working family people breathe a little easier. Make no mistake, the fight to lower costs is far from over. We have got to put our foot on the gas when it comes to driving down those healthcare costs and making l"
+          },
+          {
+            "chunk_id": 38066,
+            "score": 0.13680324684740716,
+            "source_file": "CREC-2026-01-30.txt",
+            "start_char": 83328,
+            "end_char": 83840,
+            "text": "014 January 30, 2026 CONGRESSIONAL RECORD \u2014 SENATE 03:30 Jan 31, 2026 Jkt 069060 better? Because one person has a say. So when I heard that, well, the House passed it, I think they made a mistake. I think they went too far. The $500,000 thing, let\u2019s fix it. But you took it all out because there is a rush to judgment and a political stampede. So don\u2019t ever come to me ever again and say: You are just one voice. That is not a good reason to not let me know what is going on or to deny me a chance to have that v"
+          },
+          {
+            "chunk_id": 10121,
+            "score": 0.13644642283494582,
+            "source_file": "CREC-2026-01-08.txt",
+            "start_char": 898560,
+            "end_char": 899072,
+            "text": "or 5 minutes. He spoke so long that he finally remembered that he forgot to leave people any time to answer his questions. It was a pretty funny moment for the committee. He laughed about it, and he didn\u2019t make that mistake again. Mr. Speaker, I will say this about him. He was 100 percent American. When the local sheriff\u2019s department asked for help with people who knew how to operate diesel equipment, Doug showed up. Doug is the one. He is the Member of Congress that we saw on camera, getting on a bulldozer"
+          },
+          {
+            "chunk_id": 4116,
+            "score": 0.1358879741037592,
+            "source_file": "CREC-2026-01-07.txt",
+            "start_char": 417024,
+            "end_char": 417536,
+            "text": "e same is this: Trump\u2019s reckless use of military power without a plan for what comes next or respect for the men and women who will be sent to fight this war\u2014will engage in it\u2014is going to cause problems. He has shown us he could care less about the Iraq and Afghanistan veterans who are screaming from the rooftops right now not to make this mistake again. If we allow this to continue, I will have to look into the eyes of young men and women in Arizona\u2014 working-class kids like everywhere in this country who a"
+          },
+          {
+            "chunk_id": 4009,
+            "score": 0.1324798749663444,
+            "source_file": "CREC-2026-01-07.txt",
+            "start_char": 375936,
+            "end_char": 376448,
+            "text": "themselves to avoid taking responsibility to avoid the momentous vote of declaring war. But make no mistake, bombing another nation\u2019s capital and removing their President is an act of war, plain and simple. No provision in the Constitution provides such power to the Presidency. No Supreme Court has allowed the Congress to abdicate its role in the decisions of war and peace, and no Congressman of any self-respect will argue otherwise. Our leaders debated fully whether or not to grant this power to the Presid"
+          },
+          {
+            "chunk_id": 24950,
+            "score": 0.13225270290301905,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 86784,
+            "end_char": 87296,
+            "text": "nd America conspire together to subvert freedom, democracy, and peace. It is a world I don\u2019t want to live in, but it is the world that will come to be if we allow this President to do what he says he wants to do. My message to our allies is simple: Do not mistake this President for the American people. Stand up to him. Do not appease him, and know that there are Americans and there are Members of Congress who will stand with you in defense of democracy, alliances, and the rule of law. My message to House Re"
+          },
+          {
+            "chunk_id": 35992,
+            "score": 0.1316485037592411,
+            "source_file": "CREC-2026-01-28.txt",
+            "start_char": 207744,
+            "end_char": 208256,
+            "text": "\u2019\u2019 So what we are hearing out of law enforcement professionals around the country is disgust with the lack of professionalism with which ICE and CBP are discharging their responsibilities. I will close by talking about deconfliction because that is probably the most dangerous mistake that law enforcement can make. That is how you get blue-on-blue violence. That is how things get dangerously out of hand. With respect to deconfliction, a sheriff in Maine talked about \u2018\u2018unmarked cars\u2019\u2019 and masked individuals, "
+          },
+          {
+            "chunk_id": 34707,
+            "score": 0.12873235105989603,
+            "source_file": "CREC-2026-01-23.txt",
+            "start_char": 0,
+            "end_char": 512,
+            "text": "UR IB U U E PL NU Congressional Record M S United States of America PROCEEDINGS AND DEBATES OF THE Vol. 172 119 th CONGRESS, SECOND SESSION WASHINGTON, FRIDAY, JANUARY 23, 2026 No. 16 Senate The Senate was not in session today. Its next meeting will be held on Monday, January 26, 2026, at 3 p.m. House of Representatives FRIDAY, JANUARY 23, 2026 The House met at 10 a.m. and was called to order by the Speaker pro tempore (Mr. BOST). f DESIGNATION OF THE SPEAKER PRO TEMPORE The SPEAKER pro tempore laid before "
+          },
+          {
+            "chunk_id": 33820,
+            "score": 0.12832672548391272,
+            "source_file": "CREC-2026-01-22.txt",
+            "start_char": 1479168,
+            "end_char": 1479680,
+            "text": " 1450 Mr. CRAWFORD. Mr. Speaker, I thank Chairman MAST for yielding and for his leadership on this critical issue. Mr. Speaker, make no mistake about it, we are not at war with Venezuela. Nicolas Maduro is a murderer, an autocrat, a narcoterrorist, and a thug who has oppressed his own people, stolen elections, and turned a once prosperous and free country into a desperate nation that millions have fled. Most importantly, as for the action that the United States took against him on January 3, he is a crimina"
+          },
+          {
+            "chunk_id": 9782,
+            "score": 0.12506936663769377,
+            "source_file": "CREC-2026-01-08.txt",
+            "start_char": 768384,
+            "end_char": 768896,
+            "text": "0 Alabamians faced higher premiums because Republicans in this body let the ACA tax credits expire. That is on top of the nearly $1 trillion in cuts that Republicans made to healthcare earlier this year. Today\u2019s vote represents one more chance for Republicans to do the right thing, reverse their disastrous policies, and join Democrats in making healthcare more affordable. Let\u2019s make no mistake: This vote would not have taken place had it not been for the relentless efforts of House Democrats and our leader,"
+          },
+          {
+            "chunk_id": 2198,
+            "score": 0.12495336361549741,
+            "source_file": "CREC-2026-01-06.txt",
+            "start_char": 649728,
+            "end_char": 650240,
+            "text": "was arrested again for threatening the life of Leader JEFFRIES. Make no mistake: Trump\u2019s mass pardons were a dangerous endorsement of political violence, telling criminals you can beat cops within an inch of VerDate Sep 11 2014 04:59 Jan 07, 2026 S29 CONGRESSIONAL RECORD \u2014 SENATE Jkt 069060 their life as long as it is in service to President Trump. They are also part of an all-out effort by the President and his allies to rewrite the history of the insurrection of that day. President Trump\u2019s Justice Departm"
+          },
+          {
+            "chunk_id": 38503,
+            "score": 0.12438335392563088,
+            "source_file": "CREC-2026-01-30.txt",
+            "start_char": 251136,
+            "end_char": 251648,
+            "text": "ng to stop building affordable housing and critical infrastructure in our communities. It also includes tens of millions of dollars I worked hard to secure for affordable housing projects in communities across Washington State. Make no mistake, there is way more we need to do to tackle the affordable housing and homelessness crisis. This is an issue that is always top of mind for me as a Senator from the State of Washington. But every bit of progress we can get is progress we must take. PO 00000 Frm 00026 F"
+          },
+          {
+            "chunk_id": 38027,
+            "score": 0.1232292500129643,
+            "source_file": "CREC-2026-01-30.txt",
+            "start_char": 68352,
+            "end_char": 68864,
+            "text": "iden ways? We made a mistake here. We are on the run in an 80-percent issue, and I am tired of it. We should be reminding the American people: We are different than our colleagues on the other side. We are not going back to Joe Biden policies. You can be unnerved by what is happening in Minneapolis\u2014I get it\u2014but the problem is, you want bandaid solutions. We are going to have a vote on the floor of the U.S. Senate in 2 weeks as to whether or not we should criminalize the act of local and State officials who "
+          },
+          {
+            "chunk_id": 12439,
+            "score": 0.12097012557766866,
+            "source_file": "CREC-2026-01-12.txt",
+            "start_char": 260352,
+            "end_char": 260864,
+            "text": "l tool, inflation becomes a campaign strategy; and your mortgage, your job, and your savings become collateral damage. Make no mistake, Mr. Speaker, this attempt to intimidate the Fed isn\u2019t about justice or the American people. It is about the President\u2019s ego, in my opinion. I can\u2019t, and won\u2019t, stand by and let that happen. I will continue fighting to make sure that the Fed works for Oregonians and for Americans. f CHAMPIONS OF NEWARK BOARD OF EDUCATION\u2019S HOLIDAY BASKETBALL TOURNAMENT (Mrs. MCIVER asked and"
+          },
+          {
+            "chunk_id": 19427,
+            "score": 0.12082026218539203,
+            "source_file": "CREC-2026-01-14.txt",
+            "start_char": 1374336,
+            "end_char": 1374848,
+            "text": "of strategic self-harm if we choose to go it alone. So let\u2019s make no mistake. All of the good progress the President has made in pushing allies to spend more on defense, the increased burden-sharing, the demand for American-made capabilities\u2014all of it would be for nothing if his administration\u2019s ill-advised threats about Greenland were to shatter the trust of our allies. Following through on this provocation would be more disastrous for the President\u2019s legacy than withdrawing from Afghanistan was for his pr"
+          },
+          {
+            "chunk_id": 35621,
+            "score": 0.1202697694751323,
+            "source_file": "CREC-2026-01-28.txt",
+            "start_char": 65280,
+            "end_char": 65792,
+            "text": "law enforcement. Get a warrant from an independent judge before barging into people\u2019s homes and snatching people from their families. And make no mistake, there should be real consequences for anyone who knocks down someone\u2019s door without a real warrant. This is the United States of America, and the last I checked, the Constitution still matters. We must enforce it. VerDate Sep 11 2014 03:38 Jan 29, 2026 S309 CONGRESSIONAL RECORD \u2014 SENATE Jkt 069060 And, three, accountability. It is about time that Border P"
+          },
+          {
+            "chunk_id": 14784,
+            "score": 0.11624320677466114,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 539136,
+            "end_char": 539648,
+            "text": "\u2014any fraud\u2014is too much. But the numbers are clear. The vast majority of fraud in healthcare is conducted by shady insurance brokers who are looking to make a fast buck through commissions from phony enrollments, not working Americans looking to buy healthcare. So I have introduced legislation to create tough, criminal penalties for these insurance brokers. So make no mistake about it, Senator KAINE, there is something we ought to be doing to root out fraud. Let\u2019s go after these insurance brokers with tough "
+          },
+          {
+            "chunk_id": 17842,
+            "score": 0.11515760135449656,
+            "source_file": "CREC-2026-01-14.txt",
+            "start_char": 765696,
+            "end_char": 766208,
+            "text": "? The reason is it has lost its moorings. It is wandering around. It hasn\u2019t complied with transparency requirements. It more closely resembles covert political operations designed to entangle the United States in foreign disputes and undermine diplomatic efforts than support them. Their board and staff overwhelmingly donate to Democratic candidates. They even demanded the removal of Congresswoman ELISE STEFANIK from the board for defending President Trump, a clear sign of ideological capture, and that is th"
+          },
+          {
+            "chunk_id": 12551,
+            "score": 0.11463846506361651,
+            "source_file": "CREC-2026-01-12.txt",
+            "start_char": 303360,
+            "end_char": 303872,
+            "text": "ORD. Mr. Speaker, I thank the gentlewoman from New York for those outstanding comments. Mr. Speaker, I take no pleasure in highlighting the hypocrisy of my colleagues on the other side of the aisle. In fact, I wish we all could speak with one voice on this issue. It should never be partisan or controversial to praise the arrest of a man like Nicolas Maduro. Make no mistake about it, Nicolas Maduro is a murderer, an autocrat, a narcoterrorist, and a thug who has oppressed his people, stolen elections, and tu"
+          },
+          {
+            "chunk_id": 2861,
+            "score": 0.11459037080769001,
+            "source_file": "CREC-2026-01-06.txt",
+            "start_char": 904320,
+            "end_char": 904832,
+            "text": "has presided over the economic collapse of a nation that was recently one of the most prosperous countries in the entire region, but multiple things can be true. It is also true that President Trump\u2019s haphazard initiation of a unilateral war against the country of Venezuela is, in my view, a mistake of historic proportions that will make our country and our region and our world less secure. I view this invasion in the same way that many warned about the U.S. involvement in the war in Vietnam or in the initi"
+          },
+          {
+            "chunk_id": 36909,
+            "score": 0.11453008499409006,
+            "source_file": "CREC-2026-01-29.txt",
+            "start_char": 53760,
+            "end_char": 54272,
+            "text": "nfrastructures to help American workers upskill and to advance in their careers. We include funding for apprenticeship grants to support the Trump administration\u2019s goal of creating 1 million active apprenticeships. The bill is important to our country. But make no mistake, it is really important to my State of West Virginia, for our universities, our hospitals, dozens of nonprofits and workforce programs, treatments for our coal miners and those suffering from opioid addiction. All of these things help my f"
+          },
+          {
+            "chunk_id": 33778,
+            "score": 0.11360277933746056,
+            "source_file": "CREC-2026-01-22.txt",
+            "start_char": 1463040,
+            "end_char": 1463552,
+            "text": "h. A President is not a king. He is not an emperor. Without an act of Congress, he cannot invade a nation and set us down the road of war. Let us stand up and do our responsibilities. Let\u2019s see where Congress stands. Let\u2019s have a vote on this floor VerDate Sep 11 2014 January 22, 2026 CONGRESSIONAL RECORD \u2014 HOUSE 07:13 Jan 23, 2026 Jkt 069060 and see where the majority of the Members of the United States House of Representatives is. The people deserve to know. Mr. Speaker, I reserve the balance of my time. "
+          },
+          {
+            "chunk_id": 2029,
+            "score": 0.1134215149844424,
+            "source_file": "CREC-2026-01-06.txt",
+            "start_char": 584832,
+            "end_char": 585344,
+            "text": "this Chamber, they ransacked offices, waved Confederate flags through these hallways, and used violence to try and steal an election. All of that happened, and it was propagated by Donald Trump. But make no mistake, January 6 was also a day when the power of democracy ultimately prevailed. It was a day where U.S. Capitol Police faced their moment of maximum danger and responded with maximum valor. Let us take a moment to remember all our brave public servicemembers, Capitol Police, DC Police, and all other "
+          }
+        ],
+        "prompt_variant": "strict_grounding"
+      },
+      "large_model_no_rag": {
+        "text": "I'm sorry, but I don't have any information about events or actions taken by Elise Stefanovic in Congress on January 23, 2026, as my training only includes data up to October 2023. For the most current information, I recommend checking reliable news sources or official congressional records.",
+        "elapsed_seconds": 1.6054333689999112,
+        "usage": {
+          "completion_tokens": 59,
+          "prompt_tokens": 24,
+          "total_tokens": 83,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "query": "What is the purpose of the Main Street Parity Act?",
+      "open_model_rag": {
+        "text": "The purpose of the Main Street Parity Act is to ensure that artificial intelligence can be used for small business concerns by providing guidance on its use. The bill amends the Small Business Act and directs the Secretary of Commerce to develop guidelines for the use of artificial intelligence in small businesses, including assistance with the use of artificial intelligence.",
+        "elapsed_seconds": 84.04010737000044,
+        "usage": {
+          "completion_tokens": 66,
+          "prompt_tokens": 2048,
+          "total_tokens": 2114,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "retrieved": [
+          {
+            "chunk_id": 24679,
+            "score": 0.2786795147624189,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 1035648,
+            "end_char": 1036160,
+            "text": "n eligibility for the Commonwealth of the Northern Mariana Islands; Pages H929\u201330 Main Street Parity Act: H.R. 5763, to amend the Small Business Investment Act of 1958 to modify the criteria for loans for plant acquisition, construction, conversion or expansion, by a 2\u20443 yea-andnay vote of 383 yeas to 8 nays, Roll No. 32; Pages H930\u201331, H939\u201340 AI for Main Street Act: H.R. 5764, amended, to amend the Small Business Act to require small business development centers to assist small business concerns with the "
+          },
+          {
+            "chunk_id": 22048,
+            "score": 0.2779138977105219,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 25344,
+            "end_char": 25856,
+            "text": "R. 5763) to amend the Small Business Investment Act of 1958 to modify the criteria for loans for plant acquisition, construction, conversion or expansion, and for other purposes. PO 00000 Frm 00004 Fmt 4634 Sfmt 0634 The Clerk read the title of the bill. The text of the bill is as follows: H.R. 5763 Be it enacted by the Senate and House of Representatives of the United States of America in Congress assembled, SECTION 1. SHORT TITLE. This Act may be cited as the \u2018\u2018Main Street Parity Act\u2019\u2019. SEC. 2. MODIFICATI"
+          },
+          {
+            "chunk_id": 22049,
+            "score": 0.25584566848845375,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 25728,
+            "end_char": 26240,
+            "text": "erica in Congress assembled, SECTION 1. SHORT TITLE. This Act may be cited as the \u2018\u2018Main Street Parity Act\u2019\u2019. SEC. 2. MODIFICATION TO CRITERIA FOR LOANS FOR PLANT ACQUISITION, CONSTRUCTION, CONVERSION OR EXPANSION. (a) IN GENERAL.\u2014Section 502(3)(C) of the Small Business Investment Act of 1958 (15 U.S.C. 696(3)(C)) is amended\u2014 (1) by striking clauses (ii) and (iii); (2) in clause (i), by inserting \u2018\u2018or\u2019\u2019 at the end; and (3) by redesignating clause (iv) as clause (ii). AMENDMENT.\u2014Section (b) CONFORMING 502(3)"
+          },
+          {
+            "chunk_id": 22052,
+            "score": 0.25560468956742916,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 26880,
+            "end_char": 27392,
+            "text": " pro tempore. Is there objection to the request of the gentleman from Texas? There was no objection. Mr. WILLIAMS of Texas. Madam Speaker, I yield myself such time as I may consume. Madam Speaker, I rise today in strong support of my bill, H.R. 5763, the Main Street Parity Act. I also thank the gentlewoman from California (Ms. SIMON), my friend, for joining me in co-leading this bipartisan effort. The SBA\u2019s 504 loan program is an important tool that helps small businesses obtain affordable financing for the"
+          },
+          {
+            "chunk_id": 22066,
+            "score": 0.24433748579713385,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 32256,
+            "end_char": 32768,
+            "text": " creating new economic opportunities for their communities and families or walking away entirely. This way of doing business just doesn\u2019t reflect our current economic or technological realities. This bill offers a new opportunity for Americans across the country to step forward. The Main Street Parity Act is common sense. It is a clear fix that brings these loans in line with the 504 standardization programs by setting an equity requirement at 10 percent. Madam Speaker, I encourage Members from both sides o"
+          },
+          {
+            "chunk_id": 22047,
+            "score": 0.24309910119189665,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 24960,
+            "end_char": 25472,
+            "text": "m Texas (Mr. WILLIAMS) that the House suspend the rules and pass the bill, H.R. 3496, as amended. The question was taken; and (twothirds being in the affirmative) the rules were suspended and the bill, as amended, was passed. A motion to reconsider was laid on the table. f MAIN STREET PARITY ACT Mr. WILLIAMS of Texas. Madam Speaker, I move to suspend the rules and pass the bill (H.R. 5763) to amend the Small Business Investment Act of 1958 to modify the criteria for loans for plant acquisition, construction"
+          },
+          {
+            "chunk_id": 22056,
+            "score": 0.24246232674817064,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 28416,
+            "end_char": 28928,
+            "text": "LA\u0301ZQUEZ. Madam Speaker, I yield myself such time as I may consume. Madam Speaker, I rise in support of H.R. 5763, the Main Street Parity Act. One of the key functions of the SBA is to ensure that small businesses in communities across the country have access to the capital they need to grow and scale their operations. The SBA has long served this need through its loan guarantee program, including the 504/CDC program. The 504/CDC program supports small businesses in accessing capital for the development of "
+          },
+          {
+            "chunk_id": 22055,
+            "score": 0.23744631383759496,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 28032,
+            "end_char": 28544,
+            "text": "eased costs were at lower risk of default than E:\\CR\\FM\\K20JA7.008 H20JAPT1 DMwilson on DSK7X7S144PROD with HOUSE January 20, 2026 the broader 504 portfolio. It is time to bring parity to Main Street and remove the unnecessary lender barriers based on outdated assumptions. Madam Speaker, I urge my colleagues to vote \u2018\u2018yes\u2019\u2019 on H.R. 5763, and I reserve the balance of my time. Ms. VELA\u0301ZQUEZ. Madam Speaker, I yield myself such time as I may consume. Madam Speaker, I rise in support of H.R. 5763, the Main Stre"
+          },
+          {
+            "chunk_id": 22063,
+            "score": 0.23570802673426688,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 31104,
+            "end_char": 31616,
+            "text": "proud to lead the Main Street Parity Act with Chair WILLIAMS. As members of the Small Business Committee, one of the most bipartisan committees in the 119th Congress, we hear the same messages repeated every single day: Small businesses don\u2019t need special treatment. In fact, they are just asking for a fair shot in this economy. The SBA\u2019s 504 loan program is designed to provide that fair shot through basic good policy and affordable, long-term financing. The financing helps small businesses buy buildings, bu"
+          },
+          {
+            "chunk_id": 22062,
+            "score": 0.22869456733348856,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 30720,
+            "end_char": 31232,
+            "text": "man from California (Ms. SIMON). Ms. SIMON. Madam Speaker, I thank Representative VELA\u0301ZQUEZ for her sup- VerDate Sep 11 2014 02:10 Jan 21, 2026 H931 CONGRESSIONAL RECORD \u2014 HOUSE Jkt 069060 port, particularly for freshman members from the Democratic side on the Small Business Committee and to Representative WILLIAMS for his collaboration on this bill. Madam Speaker, I am extremely proud to lead the Main Street Parity Act with Chair WILLIAMS. As members of the Small Business Committee, one of the most bipart"
+          },
+          {
+            "chunk_id": 22240,
+            "score": 0.22536522375541623,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 99072,
+            "end_char": 99584,
+            "text": "PORE The SPEAKER pro tempore. Proceedings will resume on motions to suspend the rules previously postponed. Votes will be taken in the following order: H.R. 5763; and H.R. 5764. The first electronic vote will be conducted as a 15-minute vote. Pursuant to clause 9 of rule XX, the remaining electronic vote will be conducted as a 5-minute vote. f MAIN STREET PARITY ACT The SPEAKER pro tempore. Pursuant to clause 8 of rule XX, the unfinished business is the vote on the motion to suspend the rules and pass the b"
+          },
+          {
+            "chunk_id": 29298,
+            "score": 0.21281416950506504,
+            "source_file": "CREC-2026-01-22-bk2.txt",
+            "start_char": 1309824,
+            "end_char": 1310336,
+            "text": "s Home Safety and Accessibility Renovation MD 1,000,000 Alsobrooks, Van Hollen S Department of Housing and Urban Development Community Development Fund Montgomery Housing Partnership, Inc. Amherst Affordable Housing Redevelopment MD 1,000,000 Alsobrooks, Van Hollen S Department of Housing and Urban Development Community Development Fund Parity Baltimore Incorporated Parity Homes Strategic Acquisition Fund MD 1,524,000 Van Hollen S Department of Housing and Urban Development Community Development Fund Cedar "
+          },
+          {
+            "chunk_id": 22082,
+            "score": 0.20696901092666287,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 38400,
+            "end_char": 38912,
+            "text": " As artificial intelligence becomes a core driver of productivity and competitiveness, Main Street cannot be left behind. I urge my colleagues to support H.R. 5764, the AI for Main Street Act. Madam Speaker, I reserve the balance of my time. Ms. VELA\u0301ZQUEZ. Madam Speaker, I yield myself such time as I may consume. Madam Speaker, I am pleased to support the AI for Main Street Act, which would allow SBDCs to assist small business owners on how to evaluate artificial intelligence. I commend Mr. ALFORD and Ms. "
+          },
+          {
+            "chunk_id": 23903,
+            "score": 0.20005821441798935,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 737664,
+            "end_char": 738176,
+            "text": " and Urban Development Community Development Fund The Chimes Foundation, Inc. Chimes Home Safety and Accessibility Renovation MD 1,000,000 Alsobrooks, Van Hollen S Department of Housing and Urban Development Community Development Fund Montgomery Housing Partnership, Inc. Amherst Affordable Housing Redevelopment MD 1,000,000 Alsobrooks, Van Hollen S Department of Housing and Urban Development Community Development Fund Parity Baltimore Incorporated Parity Homes Strategic Acquisition Fund MD 1,524,000 Van Hol"
+          },
+          {
+            "chunk_id": 23904,
+            "score": 0.1956509451501994,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 738048,
+            "end_char": 738560,
+            "text": "evelopment Community Development Fund Parity Baltimore Incorporated Parity Homes Strategic Acquisition Fund MD 1,524,000 Van Hollen S Department of Housing and Urban Development Community Development Fund Cedar Lane Senior Living Community III Inc. Cedar Lane Senior Living Community Development MD 1,500,000 Van Hollen S Department of Housing and Urban Development Community Development Fund Robert W. Johnson Community Center Community Center Revitalization Project MD 500,000 Van Hollen S Department of Housin"
+          },
+          {
+            "chunk_id": 22079,
+            "score": 0.19084827271375226,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 37248,
+            "end_char": 37760,
+            "text": "support of H.R. 5764, the AI for Main Street Act, introduced by Representatives ALFORD and SCHOLTEN. Artificial intelligence is increasingly being used to streamline operations, reduce costs, and boost productivity for small businesses. For many small businesses across the country, adopting these tools remains out of reach because they lack the staff, the expertise, or the capital to do so. b 1550 Madam Speaker, the AI for Main Street Act helps address this challenge by directing the SBA\u2019s Small Business De"
+          },
+          {
+            "chunk_id": 24678,
+            "score": 0.19005890327930253,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 1035264,
+            "end_char": 1035776,
+            "text": "onvened at 2 p.m. Page H928 Recess: The House recessed at 2:08 p.m. and reconvened at 3:30 p.m. Page H929 Recess: The House recessed at 4:43 p.m. and reconvened at 6:30 p.m. Page H939 Suspensions: The House agreed to suspend the rules and pass the following measures: Northern Mariana Islands Small Business Access Act: H.R. 3496, amended, to amend the Small Business Act for microloan eligibility for the Commonwealth of the Northern Mariana Islands; Pages H929\u201330 Main Street Parity Act: H.R. 5763, to amend th"
+          },
+          {
+            "chunk_id": 22087,
+            "score": 0.17838518300338194,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 40320,
+            "end_char": 40832,
+            "text": "s not happen. In fact, it will increase businesses in America. This committee exists for one simple reason, and that is to champion Main Street and the small businesses that line our town squares, that power our farms, support our hospitals, and employ nearly half of the American workforce. Right now, Main Street stands at the doorstep of a major transformation because the AI revolution is not just coming. It is already here. Whether it is managing inventory, scheduling workers, marketing products, improvin"
+          },
+          {
+            "chunk_id": 14558,
+            "score": 0.17212376018560077,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 452352,
+            "end_char": 452864,
+            "text": " and Infrastructure, and in addition to the Committees on Education and Workforce, and Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned. By Mr. EMMER (for himself and Mr. TORRES of New York): H.R. 7030. A bill to amend section 242 of the National Housing Act to provide parity with respect to access to the mortgage insurance for hospitals program for licensed hospitals, "
+          },
+          {
+            "chunk_id": 28481,
+            "score": 0.1717962135212049,
+            "source_file": "CREC-2026-01-22-bk2.txt",
+            "start_char": 996096,
+            "end_char": 996608,
+            "text": "Womack H Department of Transportation Highway Infrastructure Programs AR Construction of Future Interstate I\u201349 AR 3,000,000 Womack H Department of Transportation Highway Infrastructure Programs AR I\u201349 AR 15,800,000 Boozman S Department of Transportation Highway Infrastructure Programs AR North Little Rock Main Street Viaduct Bridge AR 2,000,000 Boozman S Department of Transportation Highway Infrastructure Programs AZ Duncan Main Street and High Street Improvements AZ 1,900,000 Ciscomani Gallego, Kelly H/S"
+          },
+          {
+            "chunk_id": 22093,
+            "score": 0.16873776813499053,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 42624,
+            "end_char": 43136,
+            "text": "mmittee with strong bipartisan support. I appreciate the strong backing from our colleagues on both sides of the aisle who recognize that innovation and small business growth should never be partisan issues. At the end of the day, when Main Street succeeds, America succeeds. The AI for Main Street Act helps ensure that our entrepreneurs are not spectators in the next wave of innovation but our small business owners are leaders in this revolution. Ms. VELA\u0301ZQUEZ. Madam Speaker, I commend the sponsors for wor"
+          },
+          {
+            "chunk_id": 23088,
+            "score": 0.16347438830254313,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 424704,
+            "end_char": 425216,
+            "text": "rtation Highway Infrastructure Programs AR North Little Rock Main Street Viaduct Bridge AR 2,000,000 Boozman S Department of Transportation Highway Infrastructure Programs AZ Duncan Main Street and High Street Improvements AZ 1,900,000 Ciscomani Gallego, Kelly H/S Department of Transportation Highway Infrastructure Programs AZ Buffalo Soldier Trail Reconstruction AZ 7,000,000 Ciscomani Gallego, Kelly H Department of Transportation Highway Infrastructure Programs AZ Town of Oro Valley: Bridge Replacement AZ "
+          },
+          {
+            "chunk_id": 14559,
+            "score": 0.1592986750026557,
+            "source_file": "CREC-2026-01-13.txt",
+            "start_char": 452736,
+            "end_char": 453248,
+            "text": "al Housing Act to provide parity with respect to access to the mortgage insurance for hospitals program for licensed hospitals, and for other purposes; to the Committee on Financial Services. By Mr. FULCHER: H.R. 7031. A bill to direct the Secretary of the Interior to upgrade existing emergency communications centers in units of the National Park System to Next Generation 9-11 systems, and for other purposes; to the Committee on Natural Resources. By Mr. GARCI\u0301A of Illinois (for himself, Mrs. HAYES, Mrs. GR"
+          },
+          {
+            "chunk_id": 35103,
+            "score": 0.15871689191023666,
+            "source_file": "CREC-2026-01-27.txt",
+            "start_char": 99840,
+            "end_char": 100352,
+            "text": "ontinued to grow. In 2025, the business was awarded Main Street Iowa\u2019s Open 4 Business Grant, which supports small businesses investing in new equipment, technology, and expanded services to better meet customers\u2019 needs. In addition to its restaurant operations, Z\u2019s also offers catering services for family gatherings, corporate events, and community celebrations, further extending its impact throughout Bremer County. Z\u2019s Pizza is a proud member of the Waverly Chamber of Commerce and the Main Street Iowa Pro"
+          },
+          {
+            "chunk_id": 35087,
+            "score": 0.15842029838241728,
+            "source_file": "CREC-2026-01-27.txt",
+            "start_char": 93696,
+            "end_char": 94208,
+            "text": "continue to invest in the longterm vitality of Main Street Albia while preserving the character of their community and creating new opportunities for residents. In just a short time, The Coffee Grounds has become more than a place to grab a cup of coffee, it has become a gathering point that reflects the values of service and community connection. By listening to their neighbors and investing back into Albia, the owners have strengthened Main Street and demonstrated the lasting impact small businesses can h"
+          },
+          {
+            "chunk_id": 35086,
+            "score": 0.15811502777832848,
+            "source_file": "CREC-2026-01-27.txt",
+            "start_char": 93312,
+            "end_char": 93824,
+            "text": "ll four owners are actively involved in volunteering with organizations such as the Chamber of Commerce, Main Street Albia, youth sports programs, the volunteer fire department, and the Rotary Club, where Wes serves as president. Beyond the coffee shop, the owners also operate additional local businesses, including insurance and real estate enterprises. Through these efforts, they continue to invest in the longterm vitality of Main Street Albia while preserving the character of their community and creating "
+          },
+          {
+            "chunk_id": 22071,
+            "score": 0.15540705336698582,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 34176,
+            "end_char": 34688,
+            "text": " business development centers to assist small business concerns with the use of artificial intelligence, and for other purposes, as amended. The Clerk read the title of the bill. The text of the bill is as follows: H.R. 5764 Be it enacted by the Senate and House of Representatives of the United States of America in Congress assembled, SECTION 1. SHORT TITLE. This Act may be cited as the \u2018\u2018AI for Main Street Act\u2019\u2019. SEC. 2. GUIDANCE ON THE USE OF ARTIFICIAL INTELLIGENCE FOR SMALL BUSINESS CONCERNS. (a) IN GEN"
+          },
+          {
+            "chunk_id": 25996,
+            "score": 0.1521667073180046,
+            "source_file": "CREC-2026-01-22-bk2.txt",
+            "start_char": 41856,
+            "end_char": 42368,
+            "text": "is critical that the budget or appropriations liaison offices remain independent from the legislative liaison offices, have organizational parity, and retain the authority to respond directly and promptly with the information required by the Committees on Appropriations. Events throughout fiscal year 2025 have reinforced concerns with the ability of budget and appropriations liaison offices to exercise their responsibility towards the Committees on Appropriations. Therefore, the Secretary of Defense and the"
+          },
+          {
+            "chunk_id": 22078,
+            "score": 0.14522997089814915,
+            "source_file": "CREC-2026-01-20.txt",
+            "start_char": 36864,
+            "end_char": 37376,
+            "text": " unanimous consent that all Members may have 5 legislative days in which to revise and extend their remarks and include extraneous material on the bill. The SPEAKER pro tempore. Is there objection to the request of the gentleman from Texas? There was no objection. Mr. WILLIAMS of Texas. Madam Speaker, I yield myself such time as I may consume. Madam Speaker, I rise today in strong support of H.R. 5764, the AI for Main Street Act, introduced by Representatives ALFORD and SCHOLTEN. Artificial intelligence is "
+          },
+          {
+            "chunk_id": 35862,
+            "score": 0.1444538327862354,
+            "source_file": "CREC-2026-01-28.txt",
+            "start_char": 157824,
+            "end_char": 158336,
+            "text": "es now. They are called ghost cars. What is this? This is a car that is left in the street, the middle of the street sometimes, the door open, the engine running, the keys still in the car, and nobody is there. People know what happened. ICE came and got whoever was driving the car and took them away. You know, if you are going through a legal immigration process in this country, you go through a process, and it is your obligation\u2014your legal obligation\u2014to check in with the Federal authorities. What is happe"
+          }
+        ],
+        "prompt_variant": "strict_grounding"
+      },
+      "large_model_no_rag": {
+        "text": "The Main Street Parity Act is legislation aimed at addressing the regulatory disparities between community banks and larger financial institutions, particularly in the context of the financial services industry. The primary purpose of the Act is to ensure that community banks, which play a crucial role in local economies, are not at a competitive disadvantage due to more stringent regulatory requirements that may not be necessary for smaller institutions.\n\nKey objectives of the Main Street Parity Act include:\n\n1. **Regulatory Relief**: It seeks to provide regulatory relief to community banks by reducing the compliance burden associated with certain regulations, allowing them to focus more on serving their customers and communities.\n\n2. **Promoting Lending**: By easing regulatory constraints, the Act aims to encourage community banks to increase lending to small businesses and consumers, thereby stimulating local economic growth.\n\n3. **Leveling the Playing Field**: The Act aims to create a more level playing field between community banks and larger financial institutions, which often have more resources to manage regulatory compliance.\n\n4. **Supporting Financial Stability**: By strengthening community banks, the Act supports the overall stability of the financial system, as these institutions are often more closely tied to their local economies.\n\nOverall, the Main Street Parity Act is designed to enhance the ability of community banks to operate effectively and contribute to the economic vitality of their regions.",
+        "elapsed_seconds": 5.077338383000097,
+        "usage": {
+          "completion_tokens": 265,
+          "prompt_tokens": 19,
+          "total_tokens": 284,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "query": "Who in Congress has spoken for and against funding of pregnancy centers?",
+      "open_model_rag": {
+        "text": "The representative FISCHBACH is in strong support of H.R. 6945, the Supporting Pregnant and Parenting Women and Families Act. Across our Nation, more than 2,700 pregnancy centers serve nearly 2 million women and families each year.",
+        "elapsed_seconds": 82.83094724399962,
+        "usage": {
+          "completion_tokens": 59,
+          "prompt_tokens": 2048,
+          "total_tokens": 2107,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": null
+        },
+        "retrieved": [
+          {
+            "chunk_id": 25021,
+            "score": 0.29210463548606624,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 114048,
+            "end_char": 114560,
+            "text": "ngress assembled. SECTION 1. SHORT TITLE. This Act may be cited as the \u2018\u2018Supporting Pregnant and Parenting Women and Families Act\u2019\u2019. SEC. 2. PROHIBITION ON DISCRIMINATION AGAINST PREGNANCY CENTERS. Section 404 of the Social Security Act (42 U.S.C. 604) is amended by adding at the end the following: \u2018\u2018(l) USE OF FUNDS FOR PREGNANCY CENTERS.\u2014 \u2018\u2018(1) IN GENERAL.\u2014Nothing in this part shall be construed to prohibit a State from using a grant made under section 403 to support pregnancy centers. \u2018\u2018(2) DEFINITION OF"
+          },
+          {
+            "chunk_id": 25171,
+            "score": 0.270318967247886,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 171648,
+            "end_char": 172160,
+            "text": "now, there has to be accountability if States use TANF funds for the crisis pregnancy centers. What this bill does is, by amending section 404 of the Social Security Act to state that nothing in this part may be construed to restrict TANF funding for pregnancy centers, this bill actually overrides TANF\u2019s statutory purposes, reporting requirements, penalty authority, and HHS enforcement provisions. As a result, any future Federal effort to limit condition or review TANF funding for these crisis pregnancy cen"
+          },
+          {
+            "chunk_id": 25163,
+            "score": 0.25521539170245017,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 168576,
+            "end_char": 169088,
+            "text": "hwith with the following amendment: Strike all after the enacting clause and insert the following: SECTION 1. SHORT TITLE. This Act may be cited as the \u2018\u2018Supporting Pregnant and Parenting Women and Families Act\u2019\u2019. SEC. 2. PROHIBITION ON DISCRIMINATION AGAINST PREGNANCY CENTERS. DMWilson on DSK7X7S144PROD with HOUSE Section 404 of the Social Security Act (42 U.S.C. 604) is amended by adding at the end the following: \u2018\u2018(l) USE OF FUNDS FOR PREGNANCY CENTERS.\u2014 \u2018\u2018(1) IN GENERAL.\u2014Nothing in this part shall be co"
+          },
+          {
+            "chunk_id": 25022,
+            "score": 0.2521138699198772,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 114432,
+            "end_char": 114944,
+            "text": "all be construed to prohibit a State from using a grant made under section 403 to support pregnancy centers. \u2018\u2018(2) DEFINITION OF PREGNANCY CENTER.\u2014In paragraph (1), the term \u2018pregnancy center\u2019 means any organization, such as a pregnancy resource center, pregnancy help center or organization, or pregnancy medical center, that\u2014 \u2018\u2018(A) supports protecting the life of the mother and the unborn child; and \u2018\u2018(B) offers resources and services to mothers, fathers, and families, including but not limited to relations"
+          },
+          {
+            "chunk_id": 34211,
+            "score": 0.25082506421062567,
+            "source_file": "CREC-2026-01-22.txt",
+            "start_char": 1629312,
+            "end_char": 1629824,
+            "text": "spect, and care for mothers and their precious children. Yet, some States and lawmakers, including my own State of New Jersey, seek to discriminate against pregnancy care centers by violating fundamental conscience rights, including trying to compel these centers to participate or be complicit in abortions. We saw that especially in California. The Knights of Columbus has released a poll which found that 83 percent of Americans, including 79 percent of Democrats, support pregnancy resource centers. We would"
+          },
+          {
+            "chunk_id": 24920,
+            "score": 0.24408374030938595,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 75264,
+            "end_char": 75776,
+            "text": " That is not a choice everyone in this body wants that woman to make. They want them to make a different choice for some reason. Mr. Speaker, I am here today to support the pregnancy centers across America, including Life Network in my home of Colorado Springs, Colorado. Pregnancy centers offer hope, and they offer opportunity. They promote life and give necessary and lifesaving resources to struggling mothers and fathers. It is these very pregnancy centers whose only focus is for the enrichment and support"
+          },
+          {
+            "chunk_id": 25124,
+            "score": 0.24278635788053868,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 153600,
+            "end_char": 154112,
+            "text": "oductive healthcare. We have heard today that wonderful, caring people staff these crisis pregnancy centers, and I don\u2019t doubt that, but crisis pregnancy centers do not provide medical care, though they imply that they do. Crisis pregnancy centers are unregulated, deceptive, and dangerous. As an OB/GYN myself for more than 20 years, I have seen far too many patients who have had, at best, confusing and, at worst, life-threatening experiences at crisis pregnancy centers. They don\u2019t serve patients. They serve"
+          },
+          {
+            "chunk_id": 24745,
+            "score": 0.24091170703282977,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 8064,
+            "end_char": 8576,
+            "text": "tural beauty and wonder in our State\u2019s renowned golf courses. f FUNDING CRISIS PREGNANCY CENTERS (Ms. DEXTER of Oregon was recognized to address the House for 5 minutes.) Ms. DEXTER. Mr. Speaker, I rise today in strong opposition to the proposal Republicans voted on to take money from families in need and divert it to anti-abortion crisis pregnancy centers. As a medical doctor, I want to be crystal clear. Crisis pregnancy centers are not medical facilities. They do not even have to employ licensed medical p"
+          },
+          {
+            "chunk_id": 25183,
+            "score": 0.2390683238222193,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 176256,
+            "end_char": 176768,
+            "text": "hank Representative FISCHBACH for her very hard work on this bill. She has been a champion\u2014a champion for women, mothers, and children her entire career. I am glad she once again led the effort this Congress to preserve funding for pregnancy resource centers. Mr. Speaker, I yield back the balance of my time. E:\\CR\\FM\\K21JA7.044 H21JAPT1 January 21, 2026 Ms. DELBENE. Mr. Speaker, I have heard story after story of people seeking care from crisis pregnancy centers only to be provided with misleading or decepti"
+          },
+          {
+            "chunk_id": 24921,
+            "score": 0.2315362825728077,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 75648,
+            "end_char": 76160,
+            "text": "sources to struggling mothers and fathers. It is these very pregnancy centers whose only focus is for the enrichment and support of these often inexpectant parents who are the target of a punitive and distasteful action by the previous administration. In Colorado\u2019s Fifth Congressional District, Life Network has served 3,900 patients, providing high-quality pregnancy tests, ultrasounds, early pregnancy care, and more for free to anyone who walks through their door. This is just the impact in my district. I k"
+          },
+          {
+            "chunk_id": 34219,
+            "score": 0.2212300547819721,
+            "source_file": "CREC-2026-01-22.txt",
+            "start_char": 1632384,
+            "end_char": 1632896,
+            "text": " gratitude, not only for the privilege of serving the people of western Minnesota but for the significant step the House took yesterday of passing the Supporting Pregnant and Parenting Women and Families Act. This is more than just a legislative win. This is a victory for every woman who has ever felt alone during a pregnancy. It is a victory for every father who wants to provide for their child, and it is a victory for the thousands of pregnancy resource centers across our Nation that offer a hand to hold "
+          },
+          {
+            "chunk_id": 24922,
+            "score": 0.21797576044047243,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 76032,
+            "end_char": 76544,
+            "text": "nds, early pregnancy care, and more for free to anyone who walks through their door. This is just the impact in my district. I know that the presence of similar pregnancy centers across the country are providing hope and support to thousands of parents each day. Funding for these mothers and fathers, many of whom are underserved, should never be politically taken away. Mr. Speaker, I thank Congresswoman FISCHBACH for introducing the Supporting Pregnant and Parenting Women and Families Act, which I strongly "
+          },
+          {
+            "chunk_id": 25052,
+            "score": 0.21361960488576207,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 125952,
+            "end_char": 126464,
+            "text": "aining to help that mother move from a crisis to self-sufficiency. Pregnancy centers are the backbone of community-based support. The impact of their work is undeniable. In 2024 alone, over 2,700 centers aided nearly 3.8 million women, children, and families. These centers provided over $452 million in total medical care, education, and material goods. As Democrats continue to attack pregnancy care centers, I have asked them repeatedly if they have ever visited a center, ever bothered to go and see what the"
+          },
+          {
+            "chunk_id": 24910,
+            "score": 0.20676127416695672,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 71424,
+            "end_char": 71936,
+            "text": " 06:09 Jan 22, 2026 Jkt 069060 medical advice with the goal of dissuading them from accessing contraception or abortion care. Republicans aren\u2019t providing more funding for TANF. God forbid they do that. Giving this money away to these fake medical clinics is stealing money from low-income families who need real help. The damage these fake pregnancy centers do isn\u2019t theoretical. In my district, a woman was told by one of these centers that she had a viable pregnancy, but as time went on and she continued to "
+          },
+          {
+            "chunk_id": 25053,
+            "score": 0.20357850936030353,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 126336,
+            "end_char": 126848,
+            "text": "ck pregnancy care centers, I have asked them repeatedly if they have ever visited a center, ever bothered to go and see what they are talking about because if they had, they would see the compassion, the support, and love that are present in these facilities. These centers are staffed by trained men and women who guide and support mothers, fathers, children, and families. They are for the families from pregnancy through childbirth and beyond with parenting classes and assistance such as formula, diapers, an"
+          },
+          {
+            "chunk_id": 25164,
+            "score": 0.2024479693822341,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 168960,
+            "end_char": 169472,
+            "text": "y adding at the end the following: \u2018\u2018(l) USE OF FUNDS FOR PREGNANCY CENTERS.\u2014 \u2018\u2018(1) IN GENERAL.\u2014Nothing in this part shall be construed to prohibit a State from using a grant made under section 403 to support pregnancy centers. \u2018\u2018(2) SAFETY.\u2014Nothing in this part shall be construed to prohibit a State from using funds from a grant made under section 403 to provide security for child care facilities or to obtain information about harassment of child care facilities for law enforcement purposes. \u2018\u2018(3) DEFINITI"
+          },
+          {
+            "chunk_id": 24968,
+            "score": 0.20242667068422066,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 93696,
+            "end_char": 94208,
+            "text": "ia told a pregnant woman that she had a miscarriage, so she left. Then, later, she was still experiencing pregnancy symptoms, so she went to a real doctor who told her she still had a viable pregnancy. This deception is wrong on so many levels, and these centers should be held accountable, not receive government funds. I introduced the Stop Anti-Abortion Disinformation Act to prohibit unfair or deceptive advertising about abortion services and services that crisis pregnancy centers do and do not offer. Also"
+          },
+          {
+            "chunk_id": 24854,
+            "score": 0.19866685356663036,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 49920,
+            "end_char": 50432,
+            "text": "ity Act to clarify the authority of States to use funds for pregnancy centers, and for other purposes. All points of order against consideration of the bill are waived. An amendment in the nature of a substitute consisting of the text of Rules Committee Print 119\u201317 shall be considered as adopted. The bill, as amended, shall be considered as read. All points of order against provisions in the bill, as amended, are waived. The previous question shall be considered as ordered on the bill, as amended, and on a"
+          },
+          {
+            "chunk_id": 25049,
+            "score": 0.19727920578543248,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 124800,
+            "end_char": 125312,
+            "text": " on DSK7X7S144PROD with HOUSE January 21, 2026 Mrs. FISCHBACH. Mr. Speaker, I thank the chairman for the opportunity to speak. I am so proud to rise today in support of my legislation, H.R. 6945, the Supporting Pregnant and Parenting Women and Families Act. For too long, previous Democrat administrations have weaponized the Department of Health and Human Services against pregnancy resource centers by attempting to cut off their Temporary Assistance for Needy Families, or TANF, funding. This bill puts a defi"
+          },
+          {
+            "chunk_id": 34294,
+            "score": 0.19640780693148394,
+            "source_file": "CREC-2026-01-22.txt",
+            "start_char": 1661184,
+            "end_char": 1661696,
+            "text": " people don\u2019t see that that is violence against children. Equally, it is violence against mothers. Mr. Speaker, I call on everyone who might be watching this: Please pray for this movement. Pray for the mothers. Pregnancy care centers are filled to E:\\CR\\FM\\K22JA7.119 H22JAPT1 DMWilson on DSK7X7S144PROD with HOUSE January 22, 2026 overflowing with women who have had abortions and never want to see another woman suffer like that. I have met with so many. During the Michelle Fischbach bill the other day I tal"
+          },
+          {
+            "chunk_id": 25038,
+            "score": 0.19523187337466846,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 120576,
+            "end_char": 121088,
+            "text": "cy. They don\u2019t tell her that this is not a medical clinic at all. In fact, because it is not, this woman\u2019s privacy is not protected, and her information could be shared with the public. The real world of the crisis pregnancy centers is exemplified by an OB/ GYN in Iowa, who has seen patients who visited these centers and were told that using contraceptives was the same as having an abortion. She has seen patients who suffered miscarriages and ectopic pregnancies because they were misdiagnosed by these anti-"
+          },
+          {
+            "chunk_id": 25093,
+            "score": 0.1924800005140684,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 141696,
+            "end_char": 142208,
+            "text": "e crisis pregnancy center had given her the wrong information. This misdiagnosis greatly increased her risk of having pregnancy complications. Mr. Speaker, I yield 2 minutes to the gentleman from California (Mr. THOMPSON). Mr. THOMPSON of California. Mr. Speaker, I thank the gentlewoman for yielding. Mr. Speaker, I rise today in opposition to this legislation that prioritizes a partisan agenda over the health, privacy, and autonomy of women. Most of these so-called pregnancy centers are not licensed medical"
+          },
+          {
+            "chunk_id": 25165,
+            "score": 0.1906428575311167,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 169344,
+            "end_char": 169856,
+            "text": " care facilities or to obtain information about harassment of child care facilities for law enforcement purposes. \u2018\u2018(3) DEFINITION OF PREGNANCY CENTER.\u2014In paragraph (1), the term \u2018pregnancy center\u2019 means any organization, such as a pregnancy resource center, pregnancy help center or organization, or pregnancy medical center, that\u2014 \u2018\u2018(A) supports protecting the life of the mother and the unborn child; and \u2018\u2018(B) offers resources and services to mothers, fathers, and families, including but not limited to rela"
+          },
+          {
+            "chunk_id": 25121,
+            "score": 0.18888075724366543,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 152448,
+            "end_char": 152960,
+            "text": "for Women\u2019s Rights and Gender Equality that studied 607 crisis pregnancy centers across nine States, and they documented a consistent pattern of deception, misinformation, and patient harm. Nearly two-thirds of the centers promoted patently false or biased medical claims about pregnancy, abortions, contraception, or reproductive health providers, and fewer than half reported having a licensed medical professional on staff. These are not isolated incidents. These are standard practices for these centers. Mr."
+          },
+          {
+            "chunk_id": 25026,
+            "score": 0.1887288511845189,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 115968,
+            "end_char": 116480,
+            "text": "epresentative FISCHBACH. What this bill does is really pretty simple. It ensures States will be able to continue to use TANF funds for pregnancy resource centers and the maternal care they provide to pregnant women and moms. That is it, Mr. Speaker. Pregnancy resource centers offered material support and care to over 2 million women at more than 2,700 locations in 2024 alone, including diapers, prenatal vitamins, parenting classes, and transportation, just to name a few of the many services provided to thes"
+          },
+          {
+            "chunk_id": 25177,
+            "score": 0.18812273356837145,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 173952,
+            "end_char": 174464,
+            "text": "iance for Women\u2019s Rights and Gender Equality, which studied 607 crisis pregnancy centers across 9 States. They documented patients\u2019 experiences at the centers. In one case, a patient seeking abortion care was misled into believing she was too early in pregnancy to receive medical care and was encouraged to delay seeing a licensed provider, despite experiencing symptoms consistent with a pregnancy complication. In another documented case, a patient was falsely told that abortion would cause infertility and s"
+          },
+          {
+            "chunk_id": 25073,
+            "score": 0.18759441942433136,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 134016,
+            "end_char": 134528,
+            "text": "not a human being. Recognizing the extraordinary care provided at these centers, some States\u2014there are at least six of them, including the distinguished chairman\u2019s from Missouri\u2014do provide TANF funding. Biden was in the process of promulgating a rule that would have precluded that. We can\u2019t allow that to happen now or ever. This important legislation\u2014 again, I can\u2019t thank Michelle enough for it\u2014would ensure that pregnancy centers cannot be excluded or restricted from receiving TANF funding as a result of di"
+          },
+          {
+            "chunk_id": 25088,
+            "score": 0.18746557168438474,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 139776,
+            "end_char": 140288,
+            "text": "ay in strong support of H.R. 6945, the Supporting Pregnant and Parenting Women and Families Act. Across our Nation, more than 2,700 pregnancy centers serve nearly 2 million women and families each year. I have seen firsthand my local pregnancy centers in California and the services they provide offering diapers, baby clothes, prenatal education, ultrasounds, housing referrals, and additional real, compassionate support during life\u2019s most vulnerable moments. These services are valued at over $450 million ann"
+          },
+          {
+            "chunk_id": 24966,
+            "score": 0.1855173866999584,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 92928,
+            "end_char": 93440,
+            "text": ".R. 6945, the Supporting Pregnant and Parenting Women and Families Act, which allows Health and Human Services funds to be sent to crisis pregnancy centers, and H.R. 6359, the Pregnant Students\u2019 Rights Act, which unfairly limits the information it requires colleges to provide to students and the students it chooses to support. Most crisis pregnancy centers are sham organizations. They have the sole purpose of advancing an anti-choice E:\\CR\\FM\\K21JA7.022 H21JAPT1 DMWilson on DSK7X7S144PROD with HOUSE January"
+          },
+          {
+            "chunk_id": 25108,
+            "score": 0.18299771058218892,
+            "source_file": "CREC-2026-01-21.txt",
+            "start_char": 147456,
+            "end_char": 147968,
+            "text": " States and all women in our country. I think the death certificates for so many other women who have been denied treatment for pregnancy complications should really read the truth, which is \u2018\u2018Cause of Death: Republican abortion ban.\u2019\u2019 For every American whose life is threatened by Republican extremist interference, I strongly oppose this bill and urge its rejection. Mr. SMITH of Missouri. Mr. Speaker, Democrats are fear-mongering today. The majority of pregnancy resource centers have voluntarily signed on "
+          }
+        ],
+        "prompt_variant": "strict_grounding"
+      },
+      "large_model_no_rag": {
+        "text": "As of my last update in October 2023, discussions around funding for pregnancy centers, particularly crisis pregnancy centers (CPCs), have been a topic of debate among members of Congress, reflecting broader discussions on reproductive health and rights.\n\n**Supporters of Funding:**\n- Generally, Republican lawmakers and some conservative Democrats have expressed support for funding pregnancy centers. They argue that these centers provide essential services, such as counseling, parenting classes, and resources for expectant mothers, particularly those who may be considering alternatives to abortion.\n\n**Opponents of Funding:**\n- Many Democratic lawmakers and some progressive members of Congress have opposed funding for pregnancy centers. They argue that some of these centers provide misleading information about abortion and reproductive health, and they advocate for funding to be directed toward comprehensive reproductive health services, including access to abortion.\n\nSpecific names of Congress members who have spoken out on this issue can vary over time, but prominent figures often include:\n\n- **For Funding:** Senators like Marco Rubio and Representatives like Mike Kelly have been vocal supporters of crisis pregnancy centers.\n  \n- **Against Funding:** Senators like Elizabeth Warren and Representatives like Alexandria Ocasio-Cortez have criticized funding for these centers, advocating instead for more comprehensive reproductive health services.\n\nFor the most current and specific statements, it would be best to refer to recent congressional records, press releases, or news articles that cover the latest debates and positions on this issue.",
+        "elapsed_seconds": 6.189882492000834,
+        "usage": {
+          "completion_tokens": 282,
+          "prompt_tokens": 20,
+          "total_tokens": 302,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}
