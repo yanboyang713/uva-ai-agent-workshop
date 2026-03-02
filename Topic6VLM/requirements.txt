@@ -1,0 +1,3 @@
+ollama
+langgraph
+opencv-python

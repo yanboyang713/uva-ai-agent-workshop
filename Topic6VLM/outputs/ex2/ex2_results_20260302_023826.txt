@@ -1,0 +1,17 @@
+Exercise 2 Video Surveillance
+video=Topic6VLM/video.mp4
+model=llava
+interval_sec=20.0
+sample_count=7
+
+Frame Results
+t=0.00s frame=0 present=False count=0 confidence=0.95
+t=20.00s frame=600 present=False count=0 confidence=0.85
+t=40.00s frame=1200 present=False count=0 confidence=0.50
+t=60.00s frame=1800 present=False count=0 confidence=1.00
+t=80.00s frame=2400 present=False count=0 confidence=0.95
+t=100.00s frame=3000 present=False count=0 confidence=1.00
+t=120.00s frame=3600 present=False count=0 confidence=1.00
+
+Entry times (s): 
+Exit times (s): 
