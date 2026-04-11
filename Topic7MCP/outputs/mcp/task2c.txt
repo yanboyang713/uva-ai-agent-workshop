@@ -1,0 +1,109 @@
+yanboyang713@Meta-Scientific-Linux ~/projects/uva-ai-agent-workshop (git)-[main] % python -u Topic7MCP/task2c_mcp_research_chatbot.py
+Loaded 8 MCP tools from Asta.
+Type a question (or 'quit').
+
+You: Who wrote Attention is All You Need and what else have they published?
+
+[tool] search_paper_by_title
+[args] {"title": "Attention is All You Need", "fields": "url,year,authors"}
+
+[tool] get_author_papers
+[args] {"author_id": "40348417", "paper_fields": "url,year,title", "limit": 5}
+
+[tool] get_author_papers
+[args] {"author_id": "1846258", "paper_fields": "url,year,title", "limit": 5}
+
+[tool] get_author_papers
+[args] {"author_id": "3877127", "paper_fields": "url,year,title", "limit": 5}
+
+[tool] get_author_papers
+[args] {"author_id": "39328010", "paper_fields": "url,year,title", "limit": 5}
+
+[tool] get_author_papers
+[args] {"author_id": "145024664", "paper_fields": "url,year,title", "limit": 5}
+
+[tool] get_author_papers
+[args] {"author_id": "19177000", "paper_fields": "url,year,title", "limit": 5}
+
+[tool] get_author_papers
+[args] {"author_id": "40527594", "paper_fields": "url,year,title", "limit": 5}
+
+[tool] get_author_papers
+[args] {"author_id": "3443442", "paper_fields": "url,year,title", "limit": 5}
+
+Assistant: The paper "Attention is All You Need" was co-authored by:
+
+1. **Ashish Vaswani**
+2. **Noam Shazeer**
+3. **Niki Parmar**
+4. **Jakob Uszkoreit**
+5. **Llion Jones**
+6. **Aidan N. Gomez**
+7. **Lukasz Kaiser**
+8. **I. Polosukhin**
+
+Here are some notable publications from a few of the authors:
+
+### Ashish Vaswani
+- [A Dataset for Metaphor Detection in Early Medieval Hebrew Poetry (2024)](https://www.semanticscholar.org/paper/8f456149eb9285130aed5486389b0da9d06bc377)
+- [Unifying Grokking and Double Descent (2023)](https://www.semanticscholar.org/paper/fb6ecf67c275fe775a12ad4ddf2c8dc7cfad1348)
+
+### Noam Shazeer
+- [CMI-AIGCX at GenAI Detection Task 2 (2025)](https://www.semanticscholar.org/paper/024ea6fde78e2adb6cd5f8f40ecd4c597d527864)
+- [Gemini 2.5: Pushing the Frontier (2025)](https://www.semanticscholar.org/paper/39d9c3f1cd4bd5069713e50dc7301570575fc055)
+
+### Niki Parmar
+- [A Study on Regularization-Based Continual Learning Methods for Indic ASR (2025)](https://www.semanticscholar.org/paper/24b316a715c6197eeb204e0936d63c8fff14c6b8)
+- [Synthetic Data Generation and Joint Learning for Robust Code-Mixed Translation (2024)](https://www.semanticscholar.org/paper/53f47501bcf5cfeb270b030dea1b1edb9f93f394)
+
+### Jakob Uszkoreit
+- [Team Conversational AI: Introducing Effervesce (2025)](https://www.semanticscholar.org/paper/d385d309a2b73c96790b24e04b43a03c6832cc08)
+- [Achilles-Bench: A Challenging Benchmark for Low-Resource Evaluation (2024)](https://www.semanticscholar.org/paper/7dc6a9530f46f28f6a7909f56304380c66f9bddd)
+
+For more details, you can explore their individual profiles on Semantic Scholar.
+
+You: What papers cite the original BERT paper?
+
+[tool] search_paper_by_title
+[args] {"title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", "fields": "url,year,authors"}
+
+[tool] get_citations
+[args] {"paper_id": "df2b0e26d0599ce3e70df8a9da02e51594e0e992", "fields": "url,year,title", "limit": 5}
+
+Assistant: Here are some papers that cite the original BERT paper:
+
+1. [Advanced technology-driven few-shot relation extraction: Challenges, opportunities, and future outlook (2026)](http://www.semanticscholar.org/paper/9be17a949a6c1c5488b59983a08fd29f452eac73)
+
+2. [TactileFormer: A feature-fused CNN-Transformer model for few-shot tactile perception (2026)](http://www.semanticscholar.org/paper/e48a7076e51e851b6d5e74d902135f61043824a2)
+
+3. [Enhancing large language models for knowledge graph question answering via multi-granularity knowledge injection and structured reasoning path-augmented prompting (2026)](http://www.semanticscholar.org/paper/a06d2796211ff8f39ac052dc06e502264b64b621)
+
+4. [Multi-view dynamic perception framework for Chinese harmful meme detection (2026)](http://www.semanticscholar.org/paper/01b19118e185bbe3e628d126cf8d73bebee112df)
+
+5. [SEGA: Selective cross-lingual representation via sparse guided attention for low-resource multilingual named entity recognition (2026)](http://www.semanticscholar.org/paper/59665f75898faf5af11ff4445e25145a09b3701b)
+
+You can explore these papers for more insights on how BERT has influenced subsequent research.
+
+You: Summarize the references used in the ReAct paper
+
+[tool] search_paper_by_title
+[args] {"title": "ReAct: Synergizing Reasoning and Acting in Language Models", "fields": "url,year,authors"}
+
+[tool] get_citations
+[args] {"paper_id": "99832586d55f540f603637e458a292406a0ed75d", "fields": "url,year,title", "limit": 5}
+
+[tool] get_citations
+[args] {"paper_id": "99832586d55f540f603637e458a292406a0ed75d", "fields": "references", "limit": 100}
+
+[tool] get_citations
+[args] {"paper_id": "99832586d55f540f603637e458a292406a0ed75d", "fields": "title,url", "limit": 100}
+
+Assistant: I encountered an issue retrieving the references used in the "ReAct: Synergizing Reasoning and Acting in Language Models" paper. However, I can provide you with the details of the paper itself:
+
+- **Title**: [ReAct: Synergizing Reasoning and Acting in Language Models](https://www.semanticscholar.org/paper/99832586d55f540f603637e458a292406a0ed75d)
+- **Authors**: Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao
+- **Year**: 2022
+
+If you need specific references or citations from this paper, I recommend checking the paper directly through the provided link or accessing it via a research database. If you have any other questions or need further assistance, feel free to ask!
+
+You: exit

@@ -1,0 +1,65 @@
+Using tools: search=search_papers_by_relevance, citations=get_citations, references=get_paper, batch=get_paper_batch
+
+================================================================================
+DRILL 1: search_papers - recent LLM agent papers
+================================================================================
+1. InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents (2024)
+2. Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning (2025)
+3. A Survey of Large Language Model Agents for Question Answering (2025)
+4. TimeCAP: Learning to Contextualize, Augment, and Predict Time Series Events with Large Language Model Agents (2025)
+5. Large language model agents can use tools to perform clinical calculations (2025)
+
+================================================================================
+DRILL 2: get_citations - BERT citations since 2023
+================================================================================
+Total parsed citing papers: 10
+1. Advanced technology-driven few-shot relation extraction: Challenges, opportunities, and future outlook (2026)
+2. TactileFormer: A feature-fused CNN-Transformer model for few-shot tactile perception (2026)
+3. Enhancing large language models for knowledge graph question answering via multi-granularity knowledge injection and structured reasoning path-augmented prompting (2026)
+4. Multi-view dynamic perception framework for Chinese harmful meme detection (2026)
+5. SEGA: Selective cross-lingual representation via sparse guided attention for low-resource multilingual named entity recognition (2026)
+
+================================================================================
+DRILL 3: get_references - ReAct references sorted by year
+================================================================================
+Using get_paper(fields=references) fallback because get_references is not exposed.
+- 1965: L.S. Vygotsky and the problem of localization of functions
+- 1984: Working memory
+- 2009: Self-and Social-Regulation Social Interaction and the Development of Social Understanding and Executive Functions
+- 2010: Vygotsky, Luria, and the social brain.
+- 2015: Inner Speech: Development, Cognitive Functions, Phenomenology, and Neurobiology
+- 2018: FEVER: a Large-scale Dataset for Fact Extraction and VERification
+- 2018: HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering
+- 2018: Thinking and Speech
+- 2019: ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks
+- 2019: ELI5: Long Form Question Answering
+- 2020: A Simple Language Model for Task-Oriented Dialogue
+- 2020: ALFWorld: Aligning Text and Embodied Environments for Interactive Learning
+- 2020: Imitating Interactive Intelligence
+- 2020: Keep CALM and Explore: Language Models for Action Generation in Text-based Games
+- 2020: Language Models are Few-Shot Learners
+- 2020: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+- 2021: Adaptive Information Seeking for Open-Domain Question Answering
+- 2021: Language Models are Few-Shot Butlers
+- 2021: LILA: Language-Informed Latent Actions
+- 2021: Show Your Work: Scratchpads for Intermediate Computation with Language Models
+- 2021: WebGPT: Browser-assisted question-answering with human feedback
+- 2022: BlenderBot 3: a deployed conversational agent that continually learns to responsibly engage
+- 2022: Chain of Thought Prompting Elicits Reasoning in Large Language Models
+- 2022: Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
+- 2022: Faithful Reasoning Using Large Language Models
+- 2022: Improving alignment of dialogue agents via targeted human judgements
+- 2022: Inner Monologue: Embodied Reasoning through Planning with Language Models
+- 2022: Internet-augmented language models through few-shot prompting for open-domain question answering
+- 2022: Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents
+- 2022: Language Models that Seek for Knowledge: Modular Search & Generation for Dialogue and Prompt Completion
+- 2022: Large Language Models are Zero-Shot Reasoners
+- 2022: Least-to-Most Prompting Enables Complex Reasoning in Large Language Models
+- 2022: PaLM: Scaling Language Modeling with Pathways
+- 2022: Pre-Trained Language Models for Interactive Decision-Making
+- 2022: Rationale-Augmented Ensembles in Language Models
+- 2022: Selection-Inference: Exploiting Large Language Models for Interpretable Logical Reasoning
+- 2022: Self-Consistency Improves Chain of Thought Reasoning in Language Models
+- 2022: Text and Patterns: For Effective Chain of Thought, It Takes Two to Tango
+- 2022: WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents
+- unknown year: of the Association for Computational Linguistics

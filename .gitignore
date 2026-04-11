@@ -3,3 +3,6 @@ Topic5RAG/resources/
 
 # macOS metadata
 .DS_Store
+
+# local environment secrets
+Topic7MCP/.env

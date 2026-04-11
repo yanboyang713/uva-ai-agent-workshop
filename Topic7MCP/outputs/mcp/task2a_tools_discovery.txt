@@ -1,0 +1,42 @@
+Discovered 8 tools from https://asta-tools.allen.ai/mcp/v1
+
+Tool: get_paper
+  Description: Get details about a paper by its id.
+  Required: paper_id (string)
+  Optional: fields (string)
+
+Tool: get_paper_batch
+  Description: Get details about a list of papers by their ids.
+  Required: ids (array)
+  Optional: fields (string)
+
+Tool: get_citations
+  Description: Get details about the papers that cite this paper (i.e. papers in whose bibliography this paper appears)
+  Required: paper_id (string)
+  Optional: fields (string), limit (integer), publication_date_range (string)
+
+Tool: search_authors_by_name
+  Description: Search for authors by name.
+  Required: name (string)
+  Optional: fields (string), limit (integer)
+
+Tool: get_author_papers
+  Description: Get papers written by this author.
+  Required: author_id (string)
+  Optional: limit (integer), paper_fields (string), publication_date_range (string)
+
+Tool: search_papers_by_relevance
+  Description: Search for papers by keyword relevance.
+  Required: keyword (string)
+  Optional: fields (string), limit (integer), publication_date_range (string), venues (string)
+
+Tool: search_paper_by_title
+  Description: Search for papers by title.
+  Required: title (string)
+  Optional: fields (string), publication_date_range (string), venues (string)
+
+Tool: snippet_search
+  Description: Search for text snippets that most closely match the query.
+  Required: query (string)
+  Optional: inserted_before (string), limit (integer), paper_ids (string), venues (string)
+

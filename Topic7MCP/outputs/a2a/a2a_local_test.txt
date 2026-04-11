@@ -1,0 +1,125 @@
+============================================================
+  🧪  A2A System Test
+============================================================
+
+  Starting registry on port 8001...
+  Starting fake agent 'History Agent' on port 8002...
+  Starting fake agent 'Science Agent' on port 8003...
+
+  All servers running. Starting tests...
+
+
+============================================================
+  TEST 1: Register Agents
+============================================================
+
+  ✅ Registered 'History Agent' → http://localhost:8002
+     Registry now has 1 agent(s)
+  ✅ Registered 'Science Agent' → http://localhost:8003
+     Registry now has 2 agent(s)
+
+============================================================
+  TEST 2: List All Agents
+============================================================
+
+  Found 2 agent(s):
+
+  🤖 History Agent
+     Description: Answers questions about world history
+     Skills: History Q&A
+     URL: http://localhost:8002
+     Status: online
+
+  🤖 Science Agent
+     Description: Answers questions about science and nature
+     Skills: Science Q&A
+     URL: http://localhost:8003
+     Status: online
+
+
+============================================================
+  TEST 3: Filter Agents by Skill
+============================================================
+
+  Skill 'history': ['History Agent']
+  Skill 'science': ['Science Agent']
+  Skill 'cooking': no matches
+
+============================================================
+  TEST 4: Fetch Agent Cards
+============================================================
+
+  📋 Card from History Agent:
+     {
+      "name": "History Agent",
+      "description": "Answers questions about world history",
+      "url": "http://localhost:8002",
+      "skills": [
+            {
+                  "id": "history",
+                  "name": "History Q&A",
+                  "description": "World history expert"
+            }
+      ]
+}
+
+  📋 Card from Science Agent:
+     {
+      "name": "Science Agent",
+      "description": "Answers questions about science and nature",
+      "url": "http://localhost:8003",
+      "skills": [
+            {
+                  "id": "science",
+                  "name": "Science Q&A",
+                  "description": "Science and nature expert"
+            }
+      ]
+}
+
+
+============================================================
+  TEST 5: Send Task to One Agent
+============================================================
+
+  Sending to 'History Agent': When was the Declaration of Independence signed?
+
+  📤 Response from History Agent:
+     [History Agent] I received your question: 'When was the Declaration of Independence signed?'. Here is a placeholder answer from History Agent.
+
+============================================================
+  TEST 6: Broadcast Trivia Round
+============================================================
+
+  📢 Question 1: What year did the Berlin Wall fall?
+
+     ✅ History Agent: [History Agent] I received your question: 'What year did the Berlin Wall fall?'. Here is a placeholder answer from History Agent.
+     ✅ Science Agent: [Science Agent] I received your question: 'What year did the Berlin Wall fall?'. Here is a placeholder answer from Science Agent.
+
+  📢 Question 2: What is the chemical symbol for gold?
+
+     ✅ History Agent: [History Agent] I received your question: 'What is the chemical symbol for gold?'. Here is a placeholder answer from History Agent.
+     ✅ Science Agent: [Science Agent] I received your question: 'What is the chemical symbol for gold?'. Here is a placeholder answer from Science Agent.
+
+  📢 Question 3: Who painted the Mona Lisa?
+
+     ✅ History Agent: [History Agent] I received your question: 'Who painted the Mona Lisa?'. Here is a placeholder answer from History Agent.
+     ✅ Science Agent: [Science Agent] I received your question: 'Who painted the Mona Lisa?'. Here is a placeholder answer from Science Agent.
+
+
+============================================================
+  TEST 7: Health Checks
+============================================================
+
+  Registry: ok (2/2 online)
+  History Agent: ok
+  Science Agent: ok
+
+============================================================
+  ALL TESTS COMPLETE ✅
+============================================================
+
+  The registry and agent communication pipeline is working.
+  Open http://localhost:8001 in your browser to see the dashboard.
+
+  Cleaned up registry process.

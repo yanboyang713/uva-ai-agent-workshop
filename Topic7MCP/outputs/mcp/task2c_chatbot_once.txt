@@ -1,0 +1,21 @@
+
+[tool] search_papers_by_relevance
+[args] {"keyword": "large language model agents", "limit": 5, "fields": "title,url,year,authors"}
+Here are some recent papers about large language model agents:
+
+1. **[InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents](https://www.semanticscholar.org/paper/c8eee9766f0968e8f1b1be0731bc70b85be0ac97)** (2024)  
+   Authors: Qiusi Zhan, Zhixiang Liang, Zifan Ying, Daniel Kang
+
+2. **[Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning](https://www.semanticscholar.org/paper/9df0947ec8a14c43e69f3b72ece5e9af2b8e8215)** (2025)  
+   Authors: Sikuan Yan, Xiufeng Yang, Zuchao Huang, Ercong Nie, Zifeng Ding, Zonggen Li, Xiaowen Ma, Hinrich Schutze, Volker Tresp, Yunpu Ma
+
+3. **[A Survey of Large Language Model Agents for Question Answering](https://www.semanticscholar.org/paper/79f2dcea1f249c62230f5483d0b08ebb775d6ca5)** (2025)  
+   Author: Murong Yue
+
+4. **[TimeCAP: Learning to Contextualize, Augment, and Predict Time Series Events with Large Language Model Agents](https://www.semanticscholar.org/paper/c1b55449e740b6c806db0bf37f70043f3e6a3f13)** (2025)  
+   Authors: Geon Lee, Wenchao Yu, Kijung Shin, Wei Cheng, Haifeng Chen
+
+5. **[Large language model agents can use tools to perform clinical calculations](https://www.semanticscholar.org/paper/c1285920c74b302b488b9a3261fe96d78b07fa18)** (2025)  
+   Authors: Alex J. Goodell, Simon N. Chu, D. Rouholiman, Larry F. Chu
+
+These papers explore various aspects of large language model agents, including their applications and enhancements.
