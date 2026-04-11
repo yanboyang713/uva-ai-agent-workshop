@@ -1,0 +1,187 @@
+[
+  {
+    "question": "What are the names of employees in the engineering department?",
+    "context": "CREATE TABLE employees (id INTEGER, name VARCHAR, salary REAL, department VARCHAR)",
+    "expected_sql": "SELECT name FROM employees WHERE department = 'engineering'",
+    "generated_sql": "SELECT name FROM employees WHERE department = 'engineering' ORDER BY salary DESC LIMIT 1",
+    "match": false,
+    "candidates": [
+      {
+        "score": 93.0,
+        "sql": "SELECT name FROM employees WHERE department = 'engineering' ORDER BY salary DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 14
+      },
+      {
+        "score": 93.0,
+        "sql": "SELECT name FROM employees WHERE department = 'engineering' ORDER BY salary DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 14
+      },
+      {
+        "score": 93.0,
+        "sql": "SELECT name FROM employees WHERE department = 'engineering' ORDER BY salary DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 14
+      },
+      {
+        "score": 93.0,
+        "sql": "SELECT name FROM employees WHERE department = 'engineering' ORDER BY salary DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 14
+      }
+    ]
+  },
+  {
+    "question": "How many products cost more than 50 dollars?",
+    "context": "CREATE TABLE products (id INTEGER, name VARCHAR, price REAL, category VARCHAR)",
+    "expected_sql": "SELECT COUNT(*) FROM products WHERE price > 50",
+    "generated_sql": "SELECT COUNT(*) FROM products WHERE price > 50 AND category = 'electronics' GROUP BY category HAVING SUM(price) > 50 ORDER BY SUM(price) DESC LIMIT 1",
+    "match": false,
+    "candidates": [
+      {
+        "score": 87.5,
+        "sql": "SELECT COUNT(*) FROM products WHERE price > 50 AND category = 'electronics' GROUP BY category HAVING SUM(price) > 50 ORDER BY SUM(price) DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 25
+      },
+      {
+        "score": 87.5,
+        "sql": "SELECT COUNT(*) FROM products WHERE price > 50 AND category = 'electronics' GROUP BY category HAVING SUM(price) > 50 ORDER BY SUM(price) DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 25
+      },
+      {
+        "score": 87.5,
+        "sql": "SELECT COUNT(*) FROM products WHERE price > 50 AND category = 'electronics' GROUP BY category HAVING SUM(price) > 50 ORDER BY SUM(price) DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 25
+      },
+      {
+        "score": 87.5,
+        "sql": "SELECT COUNT(*) FROM products WHERE price > 50 AND category = 'electronics' GROUP BY category HAVING SUM(price) > 50 ORDER BY SUM(price) DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 25
+      }
+    ]
+  },
+  {
+    "question": "What is the highest score in the science class?",
+    "context": "CREATE TABLE students (id INTEGER, name VARCHAR, score INTEGER, class VARCHAR)",
+    "expected_sql": "SELECT MAX(score) FROM students WHERE class = 'science'",
+    "generated_sql": "SELECT MAX(score) FROM students WHERE class ='science' ORDER BY score DESC LIMIT 1",
+    "match": true,
+    "candidates": [
+      {
+        "score": 93.5,
+        "sql": "SELECT MAX(score) FROM students WHERE class ='science' ORDER BY score DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 13
+      },
+      {
+        "score": 87.0,
+        "sql": "SELECT MAX(score) FROM students WHERE class ='science' GROUP BY class ORDER BY score DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 16
+      },
+      {
+        "score": 87.0,
+        "sql": "SELECT MAX(score) FROM students WHERE class ='science' GROUP BY class ORDER BY score DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 16
+      },
+      {
+        "score": 87.0,
+        "sql": "SELECT MAX(score) FROM students WHERE class ='science' GROUP BY class ORDER BY score DESC LIMIT 1",
+        "executable": true,
+        "select_count": 1,
+        "length": 16
+      }
+    ]
+  },
+  {
+    "question": "List the top 3 customers by total order amount.",
+    "context": "CREATE TABLE orders (id INTEGER, customer VARCHAR, amount REAL, date VARCHAR)",
+    "expected_sql": "SELECT customer FROM orders GROUP BY customer ORDER BY SUM(amount) DESC LIMIT 3",
+    "generated_sql": "SELECT customer, SUM(amount) FROM orders GROUP BY customer ORDER BY SUM(amount) DESC LIMIT 3",
+    "match": false,
+    "candidates": [
+      {
+        "score": 93.0,
+        "sql": "SELECT customer, SUM(amount) FROM orders GROUP BY customer ORDER BY SUM(amount) DESC LIMIT 3",
+        "executable": true,
+        "select_count": 1,
+        "length": 14
+      },
+      {
+        "score": 93.0,
+        "sql": "SELECT customer, SUM(amount) FROM orders GROUP BY customer ORDER BY SUM(amount) DESC LIMIT 3",
+        "executable": true,
+        "select_count": 1,
+        "length": 14
+      },
+      {
+        "score": 93.0,
+        "sql": "SELECT customer, SUM(amount) FROM orders GROUP BY customer ORDER BY SUM(amount) DESC LIMIT 3",
+        "executable": true,
+        "select_count": 1,
+        "length": 14
+      },
+      {
+        "score": 93.0,
+        "sql": "SELECT customer, SUM(amount) FROM orders GROUP BY customer ORDER BY SUM(amount) DESC LIMIT 3",
+        "executable": true,
+        "select_count": 1,
+        "length": 14
+      }
+    ]
+  },
+  {
+    "question": "How many students are enrolled in each department?",
+    "context": "CREATE TABLE courses (id INTEGER, name VARCHAR, department VARCHAR); CREATE TABLE enrollments (student_id INTEGER, course_id INTEGER, grade VARCHAR)",
+    "expected_sql": "SELECT courses.department, COUNT(*) FROM courses JOIN enrollments ON courses.id = enrollments.course_id GROUP BY courses.department",
+    "generated_sql": "SELECT courses.department, COUNT(*) FROM courses JOIN enrollments ON courses.id = enrollments.course_id GROUP BY courses.department ORDER BY COUNT(*) DESC",
+    "match": true,
+    "candidates": [
+      {
+        "score": 88.0,
+        "sql": "SELECT courses.department, COUNT(*) FROM courses JOIN enrollments ON courses.id = enrollments.course_id GROUP BY courses.department ORDER BY COUNT(*) DESC",
+        "executable": true,
+        "select_count": 1,
+        "length": 18
+      },
+      {
+        "score": 88.0,
+        "sql": "SELECT courses.department, COUNT(*) FROM courses JOIN enrollments ON courses.id = enrollments.course_id GROUP BY courses.department ORDER BY COUNT(*) DESC",
+        "executable": true,
+        "select_count": 1,
+        "length": 18
+      },
+      {
+        "score": 88.0,
+        "sql": "SELECT courses.department, COUNT(*) FROM courses JOIN enrollments ON courses.id = enrollments.course_id GROUP BY courses.department ORDER BY COUNT(*) DESC",
+        "executable": true,
+        "select_count": 1,
+        "length": 18
+      },
+      {
+        "score": 88.0,
+        "sql": "SELECT courses.department, COUNT(*) FROM courses JOIN enrollments ON courses.id = enrollments.course_id GROUP BY courses.department ORDER BY COUNT(*) DESC",
+        "executable": true,
+        "select_count": 1,
+        "length": 18
+      }
+    ]
+  }
+]

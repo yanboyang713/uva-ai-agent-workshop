@@ -1,0 +1,27 @@
+Total examples: 78577
+Training examples: 78377
+Test examples: 200
+Complexity breakdown:
+  easy: 54140
+  medium: 21911
+  hard: 2526
+
+Sample examples:
+
+Example 1
+  Question: What type is the school located in Macon, Georgia?
+  Context:  CREATE TABLE table_1973842_1 (type VARCHAR, location VARCHAR)...
+  Answer:   SELECT type FROM table_1973842_1 WHERE location = "Macon, Georgia"
+  Category: easy
+
+Example 2
+  Question: what is the lowest rank when the constituency is edinburgh northern and leith and the swing to gain is less than 4.16?
+  Context:  CREATE TABLE table_name_61 (rank INTEGER, constituency VARCHAR, swing_to_gain VARCHAR)...
+  Answer:   SELECT MIN(rank) FROM table_name_61 WHERE constituency = "edinburgh northern and leith" AND swing_to_gain < 4.16
+  Category: medium
+
+Example 3
+  Question: Tell me the constructor for david coulthard
+  Context:  CREATE TABLE table_name_10 (constructor VARCHAR, driver VARCHAR)...
+  Answer:   SELECT constructor FROM table_name_10 WHERE driver = "david coulthard"
+  Category: easy

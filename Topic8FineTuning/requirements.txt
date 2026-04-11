@@ -1,0 +1,7 @@
+python-dotenv
+requests
+torch
+transformers
+tinker
+tinker-cookbook @ git+https://github.com/thinking-machines-lab/tinker-cookbook.git@nightly
+

@@ -6,3 +6,4 @@ Topic5RAG/resources/
 
 # local environment secrets
 Topic7MCP/.env
+Topic8FineTuning/.env

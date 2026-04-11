@@ -1,0 +1,37 @@
+[
+  {
+    "question": "What are the names of employees in the engineering department?",
+    "context": "CREATE TABLE employees (id INTEGER, name VARCHAR, salary REAL, department VARCHAR)",
+    "expected_sql": "SELECT name FROM employees WHERE department = 'engineering'",
+    "generated_sql": "SELECT name FROM employees WHERE department = 'engineering' GROUP BY salary ORDER BY salary DESC LIMIT 1<|end_of_text|>",
+    "match": false
+  },
+  {
+    "question": "How many products cost more than 50 dollars?",
+    "context": "CREATE TABLE products (id INTEGER, name VARCHAR, price REAL, category VARCHAR)",
+    "expected_sql": "SELECT COUNT(*) FROM products WHERE price > 50",
+    "generated_sql": "SELECT COUNT(*) FROM products WHERE price > 50 AND category = 'electronics' GROUP BY id HAVING COUNT(*) > 1 UNION SELECT COUNT(*) FROM products WHERE price > 50 AND category = 'electronics' GROUP BY id HAVING COUNT(*) > 1 INTERSECT SELECT COUNT(*) FROM products WHERE price > 50 AND category = 'electronics' GROUP BY id HAVING COUNT(*) > 1 EXCEPT SELECT COUNT(*) FROM products WHERE price > 50 AND category = 'electronics' GROUP BY id HAVING COUNT(*) > 1 INTERSECT SELECT COUNT(*) FROM products WHERE price > 50 AND category = 'electronics' GROUP BY id HAVING COUNT(*) > 1 EXCEPT SELECT COUNT(*) FROM products WHERE price > 50 AND category = 'electronics' GROUP BY id",
+    "match": false
+  },
+  {
+    "question": "What is the highest score in the science class?",
+    "context": "CREATE TABLE students (id INTEGER, name VARCHAR, score INTEGER, class VARCHAR)",
+    "expected_sql": "SELECT MAX(score) FROM students WHERE class = 'science'",
+    "generated_sql": "SELECT MAX(score) FROM students WHERE class ='science' AND name <> 'John' AND score > 50 ORDER BY id DESC LIMIT 1<|end_of_text|>",
+    "match": false
+  },
+  {
+    "question": "List the top 3 customers by total order amount.",
+    "context": "CREATE TABLE orders (id INTEGER, customer VARCHAR, amount REAL, date VARCHAR)",
+    "expected_sql": "SELECT customer FROM orders GROUP BY customer ORDER BY SUM(amount) DESC LIMIT 3",
+    "generated_sql": "SELECT customer, SUM(amount) FROM orders GROUP BY customer ORDER BY SUM(amount) DESC LIMIT 3<|end_of_text|>",
+    "match": false
+  },
+  {
+    "question": "How many students are enrolled in each department?",
+    "context": "CREATE TABLE courses (id INTEGER, name VARCHAR, department VARCHAR); CREATE TABLE enrollments (student_id INTEGER, course_id INTEGER, grade VARCHAR)",
+    "expected_sql": "SELECT courses.department, COUNT(*) FROM courses JOIN enrollments ON courses.id = enrollments.course_id GROUP BY courses.department",
+    "generated_sql": "SELECT T1.id, T1.name, T1.department FROM courses AS T1 JOIN enrollments AS T2 ON T1.id = T2.course_id GROUP BY T1.department ORDER BY COUNT(*) DESC LIMIT 1 UNION SELECT T1.id, T1.name, T1.department FROM courses AS T1 JOIN enrollments AS T2 ON T1.id = T2.course_id GROUP BY T1.department ORDER BY COUNT(*) DESC LIMIT 1 UNION SELECT T1.id, T1.name, T1.department FROM courses AS T1 JOIN enrollments AS T2 ON T1.id = T2.course_id GROUP BY T1.department ORDER BY COUNT(*) DESC LIMIT 1 UNION SELECT T1.id, T1.name, T1.department FROM courses AS T1 JOIN enrollments AS T",
+    "match": false
+  }
+]

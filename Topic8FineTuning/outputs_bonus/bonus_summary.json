@@ -1,0 +1,15 @@
+{
+  "base_model": "meta-llama/Llama-3.2-1B",
+  "dataset": "Topic8FineTuning/data/sql_create_context_v4.json",
+  "train_examples_after_augmentation": 78857,
+  "eval_examples": 200,
+  "batch_size": 256,
+  "num_epochs": 1,
+  "learning_rate": 7e-05,
+  "lora_rank": 32,
+  "num_samples": 4,
+  "bonus_repeat_factor": 32,
+  "base_accuracy": 0.61,
+  "fine_tuned_accuracy": 0.19,
+  "manual_novel_schema_accuracy": 0.4
+}

@@ -1,0 +1,66 @@
+Loaded 78577 total examples from Topic8FineTuning/data/sql_create_context_v4.json
+Training examples: 78377
+Evaluation examples: 200
+
+Evaluating base model on held-out examples...
+Base eval: 10/200
+Base eval: 20/200
+Base eval: 30/200
+Base eval: 40/200
+Base eval: 50/200
+Base eval: 60/200
+Base eval: 70/200
+Base eval: 80/200
+Base eval: 90/200
+Base eval: 100/200
+Base eval: 110/200
+Base eval: 120/200
+Base eval: 130/200
+Base eval: 140/200
+Base eval: 150/200
+Base eval: 160/200
+Base eval: 170/200
+Base eval: 180/200
+Base eval: 190/200
+Base eval: 200/200
+Base accuracy: 0.285
+
+Training for 1 epoch(s), 306 updates per epoch...
+Epoch 1/1, update 25, loss: 0.1153
+Epoch 1/1, update 50, loss: 0.0795
+Epoch 1/1, update 75, loss: 0.0667
+Epoch 1/1, update 100, loss: 0.0506
+Epoch 1/1, update 125, loss: 0.0422
+Epoch 1/1, update 150, loss: 0.0404
+Epoch 1/1, update 175, loss: 0.0454
+Epoch 1/1, update 200, loss: 0.0405
+Epoch 1/1, update 225, loss: 0.0399
+Epoch 1/1, update 250, loss: 0.0305
+Epoch 1/1, update 275, loss: 0.0417
+Epoch 1/1, update 300, loss: 0.0402
+Epoch 1/1, update 306, loss: 0.0439
+Training time: 647.9s
+
+Saving adapter weights and evaluating fine-tuned model...
+Tuned eval: 10/200
+Tuned eval: 20/200
+Tuned eval: 30/200
+Tuned eval: 40/200
+Tuned eval: 50/200
+Tuned eval: 60/200
+Tuned eval: 70/200
+Tuned eval: 80/200
+Tuned eval: 90/200
+Tuned eval: 100/200
+Tuned eval: 110/200
+Tuned eval: 120/200
+Tuned eval: 130/200
+Tuned eval: 140/200
+Tuned eval: 150/200
+Tuned eval: 160/200
+Tuned eval: 170/200
+Tuned eval: 180/200
+Tuned eval: 190/200
+Tuned eval: 200/200
+Fine-tuned accuracy: 0.420
+Manual novel-schema accuracy: 0.000
