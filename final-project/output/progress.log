@@ -1,0 +1,51 @@
+[progress] start incident_monitor
+[progress] done  incident_monitor (0.0s)
+[progress] start context_collector
+[progress] done  context_collector (0.5s)
+[progress] start k8s_rag_retriever
+[progress] done  k8s_rag_retriever (1.2s)
+[progress] start org_roam_browser
+INFO:org_roam_mcp.config:Configuration valid - DB: /home/yanboyang713/.emacs.d/org-roam.db, Dir: /home/yanboyang713/org/org-roam/references
+INFO:org_roam_mcp.database:Connected to org-roam database: /home/yanboyang713/.emacs.d/org-roam.db
+INFO:org_roam_mcp.server:Database connection established
+INFO:org_roam_mcp.server:File manager initialized
+INFO:mcp.server.lowlevel.server:Processing request of type CallToolRequest
+INFO:mcp.server.lowlevel.server:Processing request of type ListToolsRequest
+INFO:org_roam_mcp.config:Configuration valid - DB: /home/yanboyang713/.emacs.d/org-roam.db, Dir: /home/yanboyang713/org/org-roam/references
+INFO:org_roam_mcp.database:Connected to org-roam database: /home/yanboyang713/.emacs.d/org-roam.db
+INFO:org_roam_mcp.server:Database connection established
+INFO:org_roam_mcp.server:File manager initialized
+INFO:mcp.server.lowlevel.server:Processing request of type CallToolRequest
+INFO:mcp.server.lowlevel.server:Processing request of type ListToolsRequest
+INFO:org_roam_mcp.config:Configuration valid - DB: /home/yanboyang713/.emacs.d/org-roam.db, Dir: /home/yanboyang713/org/org-roam/references
+INFO:org_roam_mcp.database:Connected to org-roam database: /home/yanboyang713/.emacs.d/org-roam.db
+INFO:org_roam_mcp.server:Database connection established
+INFO:org_roam_mcp.server:File manager initialized
+INFO:mcp.server.lowlevel.server:Processing request of type CallToolRequest
+INFO:mcp.server.lowlevel.server:Processing request of type ListToolsRequest
+INFO:org_roam_mcp.config:Configuration valid - DB: /home/yanboyang713/.emacs.d/org-roam.db, Dir: /home/yanboyang713/org/org-roam/references
+INFO:org_roam_mcp.database:Connected to org-roam database: /home/yanboyang713/.emacs.d/org-roam.db
+INFO:org_roam_mcp.server:Database connection established
+INFO:org_roam_mcp.server:File manager initialized
+INFO:mcp.server.lowlevel.server:Processing request of type CallToolRequest
+INFO:mcp.server.lowlevel.server:Processing request of type ListToolsRequest
+[progress] done  org_roam_browser (2.9s)
+[progress] start k8sgpt_tool
+{"level":"info","ts":1776125347.4167647,"caller":"server/server.go:149","msg":"binding metrics to 8081"}
+{"level":"info","ts":1776125347.4197483,"caller":"server/server.go:108","msg":"binding api to 8080"}
+W0413 20:09:07.473141  554633 warnings.go:70] v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice
+[progress] done  k8sgpt_tool (4.4s)
+[progress] start diagnosis
+[progress] done  diagnosis (288.1s)
+[progress] start remediation_planner
+[progress] done  remediation_planner (280.3s)
+[progress] start safety_policy
+[progress] done  safety_policy (0.0s)
+[progress] start human_approval
+[progress] done  human_approval (0.0s)
+[progress] start executor
+[progress] done  executor (0.7s)
+[progress] start verifier
+[progress] done  verifier (0.2s)
+[progress] start reporter
+[progress] done  reporter (292.8s)

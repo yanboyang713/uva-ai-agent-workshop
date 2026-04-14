@@ -1,0 +1,138 @@
+{
+  "approval_mode": "auto",
+  "approval_required": true,
+  "approval_status": "approved",
+  "diagnosis": {
+    "confidence": "high",
+    "evidence": [
+      "The `metrics` show the pod status as `ImagePullBackOff`. The `k8sgpt_findings` explicitly state: `Back-off pulling image \"ghcr.io/example/api-server:bad-tag\": ErrImagePull: failed to pull and...`. This directly points to an image pulling failure."
+    ],
+    "next_check": "Verify the image name and tag (`ghcr.io/example/api-server:bad-tag`) in the Deployment manifest. Ensure the tag is correct, the image exists in the registry, and that any required `imagePullSecrets` are correctly configured and accessible by the cluster.",
+    "root_cause": "The container image specified in the Deployment manifest is either incorrect, non-existent, or inaccessible. The specific error message from the pod event (`Back-off pulling image \"ghcr.io/example/api-server:bad-tag\": ErrImagePull: failed to pull and...`) confirms a failure to pull the image from the registry.",
+    "summary": "The `api-server` pod is failing to start due to an `ImagePullBackOff` error, indicating that Kubernetes cannot retrieve the specified container image."
+  },
+  "evidence": {
+    "events": [
+      "LAST SEEN   TYPE      REASON              OBJECT                             MESSAGE\n59m         Normal    Pulled              pod/api-server-7c5bb8988f-j55vd    Container image \"busybox:1.36\" already present on machine and can be accessed by the pod\n59m         Warning   Failed              pod/api-server-7c5bb8988f-j55vd    Error: configmap \"api-config\" not found\n54m         Normal    ScalingReplicaSet   deployment/api-server              Scaled down replica set api-server-6fbd98d959 from 1 to 0\n54m         Normal    Killing             pod/api-server-6fbd98d959-t2zpr    Stopping container api-server\n54m         Normal    SuccessfulDelete    replicaset/api-server-6fbd98d959   Deleted pod: api-server-6fbd98d959-t2zpr\n51m         Normal    SuccessfulCreate    replicaset/api-server-5d4fff8cf7   Created pod: api-server-5d4fff8cf7-6qd5f\n51m         Normal    Scheduled           pod/api-server-5d4fff8cf7-6qd5f    Successfully assigned payments/api-server-5d4fff8cf7-6qd5f to minikube\n48m         Normal    Pulling             pod/api-server-5d4fff8cf7-6qd5f    Pulling image \"ghcr.io/example/api-server:bad-tag\"\n48m         Warning   Failed              pod/api-server-5d4fff8cf7-6qd5f    Failed to pull image \"ghcr.io/example/api-server:bad-tag\": failed to pull and unpack image \"ghcr.io/example/api-server:bad-tag\": failed to resolve reference \"ghcr.io/example/api-server:bad-tag\": failed to authorize: failed to fetch anonymous token: unexpected status from GET request to https://ghcr.io/token?scope=repository%3Aexample%2Fapi-server%3Apull&service=ghcr.io: 403 Forbidden\n48m         Warning   Failed              pod/api-server-5d4fff8cf7-6qd5f    Error: ErrImagePull\n36m         Warning   Failed              pod/api-server-5d4fff8cf7-6qd5f    Error: ImagePullBackOff\n36m         Normal    BackOff             pod/api-server-5d4fff8cf7-6qd5f    Back-off pulling image \"ghcr.io/example/api-server:bad-tag\"\n32m         Normal    SuccessfulDelete    replicaset/api-server-5d4fff8cf7   Deleted pod: api-server-5d4fff8cf7-6qd5f\n31m         Normal    Scheduled           pod/api-server-5d4fff8cf7-ltsbz    Successfully assigned payments/api-server-5d4fff8cf7-ltsbz to minikube\n31m         Normal    SuccessfulCreate    replicaset/api-server-5d4fff8cf7   Created pod: api-server-5d4fff8cf7-ltsbz\n28m         Warning   Failed              pod/api-server-5d4fff8cf7-ltsbz    Error: ErrImagePull\n28m         Warning   Failed              pod/api-server-5d4fff8cf7-ltsbz    Failed to pull image \"ghcr.io/example/api-server:bad-tag\": failed to pull and unpack image \"ghcr.io/example/api-server:bad-tag\": failed to resolve reference \"ghcr.io/example/api-server:bad-tag\": failed to authorize: failed to fetch anonymous token: unexpected status from GET request to https://ghcr.io/token?scope=repository%3Aexample%2Fapi-server%3Apull&service=ghcr.io: 403 Forbidden\n28m         Normal    Pulling             pod/api-server-5d4fff8cf7-ltsbz    Pulling image \"ghcr.io/example/api-server:bad-tag\"\n6m37s       Warning   Failed              pod/api-server-5d4fff8cf7-ltsbz    Error: ImagePullBackOff\n6m37s       Normal    BackOff             pod/api-server-5d4fff8cf7-ltsbz    Back-off pulling image \"ghcr.io/example/api-server:bad-tag\"\n2m32s       Normal    SuccessfulDelete    replicaset/api-server-5d4fff8cf7   Deleted pod: api-server-5d4fff8cf7-ltsbz\n2m32s       Normal    ScalingReplicaSet   deployment/api-server              Scaled down replica set api-server-5d4fff8cf7 from 1 to 0\n2m10s       Normal    SuccessfulCreate    replicaset/api-server-5d4fff8cf7   Created pod: api-server-5d4fff8cf7-lwtlf\n2m10s       Normal    Scheduled           pod/api-server-5d4fff8cf7-lwtlf    Successfully assigned payments/api-server-5d4fff8cf7-lwtlf to minikube\n2m10s       Normal    ScalingReplicaSet   deployment/api-server              Scaled up replica set api-server-5d4fff8cf7 from 0 to 1\n37s         Warning   Failed              pod/api-server-5d4fff8cf7-lwtlf    Error: ErrImagePull\n37s         Warning   Failed              pod/api-server-5d4fff8cf7-lwtlf    Failed to pull image \"ghcr.io/example/api-server:bad-tag\": failed to pull and unpack image \"ghcr.io/example/api-server:bad-tag\": failed to resolve reference \"ghcr.io/example/api-server:bad-tag\": failed to authorize: failed to fetch anonymous token: unexpected status from GET request to https://ghcr.io/token?scope=repository%3Aexample%2Fapi-server%3Apull&service=ghcr.io: 403 Forbidden\n37s         Normal    Pulling             pod/api-server-5d4fff8cf7-lwtlf    Pulling image \"ghcr.io/example/api-server:bad-tag\"\n11s         Warning   Failed              pod/api-server-5d4fff8cf7-lwtlf    Error: ImagePullBackOff\n11s         Normal    BackOff             pod/api-server-5d4fff8cf7-lwtlf    Back-off pulling image \"ghcr.io/example/api-server:bad-tag\""
+    ],
+    "logs": [
+      "api-server booting with mode=demo"
+    ],
+    "manifests": [
+      "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  annotations:\n    deployment.kubernetes.io/revision: \"7\"\n    kubectl.kubernetes.io/last-applied-configuration: |\n      {\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{},\"name\":\"api-server\",\"namespace\":\"payments\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"api-server\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"api-server\"}},\"spec\":{\"containers\":[{\"command\":[\"sh\",\"-c\",\"echo \\\"api-server booting with mode=${APP_MODE}\\\"\\nmkdir -p /www\\necho \\\"ok\\\" \\u003e/www/index.html\\nexec httpd -f -p 8080 -h /www\\n\"],\"envFrom\":[{\"configMapRef\":{\"name\":\"api-config\"}}],\"image\":\"busybox:1.36\",\"name\":\"api-server\",\"ports\":[{\"containerPort\":8080}],\"readinessProbe\":{\"initialDelaySeconds\":2,\"periodSeconds\":5,\"tcpSocket\":{\"port\":8080}}}]}}}}\n  creationTimestamp: \"2026-04-13T21:18:13Z\"\n  generation: 7\n  name: api-server\n  namespace: payments\n  resourceVersion: \"11092\"\n  uid: 421b2ed2-00a4-4df4-aa54-47fc9503cf8d\nspec:\n  progressDeadlineSeconds: 600\n  replicas: 1\n  revisionHistoryLimit: 10\n  selector:\n    matchLabels:\n      app: api-server\n  strategy:\n    rollingUpdate:\n      maxSurge: 25%\n      maxUnavailable: 25%\n    type: RollingUpdate\n  template:\n    metadata:\n      annotations:\n        kubectl.kubernetes.io/restartedAt: \"2026-04-13T18:44:25-04:00\"\n      labels:\n        app: api-server\n    spec:\n      containers:\n      - command:\n        - sh\n        - -c\n        - |\n          echo \"api-server booting with mode=${APP_MODE}\"\n          mkdir -p /www\n          echo \"ok\" >/www/index.html\n          exec httpd -f -p 8080 -h /www\n        envFrom:\n        - configMapRef:\n            name: api-config\n        image: ghcr.io/example/api-server:bad-tag\n        imagePullPolicy: IfNotPresent\n        name: api-server\n        ports:\n        - containerPort: 8080\n          protocol: TCP\n        readinessProbe:\n          failureThreshold: 3\n          initialDelaySeconds: 2\n          periodSeconds: 5\n          successThreshold: 1\n          tcpSocket:\n            port: 8080\n          timeoutSeconds: 1\n        resources: {}\n        terminationMessagePath: /dev/termination-log\n        terminationMessagePolicy: File\n      dnsPolicy: ClusterFirst\n      restartPolicy: Always\n      schedulerName: default-scheduler\n      securityContext: {}\n      terminationGracePeriodSeconds: 30\nstatus:\n  availableReplicas: 1\n  conditions:\n  - lastTransitionTime: \"2026-04-13T21:18:17Z\"\n    lastUpdateTime: \"2026-04-13T21:18:17Z\"\n    message: Deployment has minimum availability.\n    reason: MinimumReplicasAvailable\n    status: \"True\"\n    type: Available\n  - lastTransitionTime: \"2026-04-14T00:06:30Z\"\n    lastUpdateTime: \"2026-04-14T00:06:52Z\"\n    message: ReplicaSet \"api-server-5d4fff8cf7\" is progressing.\n    reason: ReplicaSetUpdated\n    status: \"True\"\n    type: Progressing\n  observedGeneration: 7\n  readyReplicas: 1\n  replicas: 2\n  terminatingReplicas: 0\n  unavailableReplicas: 1\n  updatedReplicas: 1"
+    ],
+    "metrics": [
+      "NAME                          READY   STATUS             RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES\napi-server-5d4fff8cf7-lwtlf   0/1     ImagePullBackOff   0          2m10s   10.244.0.11   minikube   <none>           <none>\napi-server-7c5bb8988f-j55vd   1/1     Running            0          84m     10.244.0.8    minikube   <none>           <none>"
+    ]
+  },
+  "execution_result": {
+    "commands": [
+      "kubectl -n payments get deployment api-server -o yaml",
+      "kubectl -n payments set image deployment/api-server api-server=busybox:1.36",
+      "kubectl -n payments rollout status deployment/api-server --timeout=120s"
+    ],
+    "details": "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  annotations:\n    deployment.kubernetes.io/revision: \"7\"\n    kubectl.kubernetes.io/last-applied-configuration: |\n      {\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{},\"name\":\"api-server\",\"namespace\":\"payments\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"api-server\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"api-server\"}},\"spec\":{\"containers\":[{\"command\":[\"sh\",\"-c\",\"echo \\\"api-server booting with mode=${APP_MODE}\\\"\\nmkdir -p /www\\necho \\\"ok\\\" \\u003e/www/index.html\\nexec httpd -f -p 8080 -h /www\\n\"],\"envFrom\":[{\"configMapRef\":{\"name\":\"api-config\"}}],\"image\":\"busybox:1.36\",\"name\":\"api-server\",\"ports\":[{\"containerPort\":8080}],\"readinessProbe\":{\"initialDelaySeconds\":2,\"periodSeconds\":5,\"tcpSocket\":{\"port\":8080}}}]}}}}\n  creationTimestamp: \"2026-04-13T21:18:13Z\"\n  generation: 7\n  name: api-server\n  namespace: payments\n  resourceVersion: \"11722\"\n  uid: 421b2ed2-00a4-4df4-aa54-47fc9503cf8d\nspec:\n  progressDeadlineSeconds: 600\n  replicas: 1\n  revisionHistoryLimit: 10\n  selector:\n    matchLabels:\n      app: api-server\n  strategy:\n    rollingUpdate:\n      maxSurge: 25%\n      maxUnavailable: 25%\n    type: RollingUpdate\n  template:\n    metadata:\n      annotations:\n        kubectl.kubernetes.io/restartedAt: \"2026-04-13T18:44:25-04:00\"\n      labels:\n        app: api-server\n    spec:\n      containers:\n      - command:\n        - sh\n        - -c\n        - |\n          echo \"api-server booting with mode=${APP_MODE}\"\n          mkdir -p /www\n          echo \"ok\" >/www/index.html\n          exec httpd -f -p 8080 -h /www\n        envFrom:\n        - configMapRef:\n            name: api-config\n        image: ghcr.io/example/api-server:bad-tag\n        imagePullPolicy: IfNotPresent\n        name: api-server\n        ports:\n        - containerPort: 8080\n          protocol: TCP\n        readinessProbe:\n          failureThreshold: 3\n          initialDelaySeconds: 2\n          periodSeconds: 5\n          successThreshold: 1\n          tcpSocket:\n            port: 8080\n          timeoutSeconds: 1\n        resources: {}\n        terminationMessagePath: /dev/termination-log\n        terminationMessagePolicy: File\n      dnsPolicy: ClusterFirst\n      restartPolicy: Always\n      schedulerName: default-scheduler\n      securityContext: {}\n      terminationGracePeriodSeconds: 30\nstatus:\n  availableReplicas: 1\n  conditions:\n  - lastTransitionTime: \"2026-04-13T21:18:17Z\"\n    lastUpdateTime: \"2026-04-13T21:18:17Z\"\n    message: Deployment has minimum availability.\n    reason: MinimumReplicasAvailable\n    status: \"True\"\n    type: Available\n  - lastTransitionTime: \"2026-04-14T00:16:53Z\"\n    lastUpdateTime: \"2026-04-14T00:16:53Z\"\n    message: ReplicaSet \"api-server-5d4fff8cf7\" has timed out progressing.\n    reason: ProgressDeadlineExceeded\n    status: \"False\"\n    type: Progressing\n  observedGeneration: 7\n  readyReplicas: 1\n  replicas: 2\n  terminatingReplicas: 0\n  unavailableReplicas: 1\n  updatedReplicas: 1\n\ndeployment.apps/api-server image updated\n\ndeployment \"api-server\" successfully rolled out",
+    "status": "completed"
+  },
+  "final_report": "**Incident Summary: payments/api-server ImagePullBackOff**\n\n**Trigger:** Workload entered `ImagePullBackOff` state.\n**Diagnosis:** Pod failed to pull the specified container image (`ghcr.io/example/api-server:bad-tag`).\n**Evidence:** Pod metrics and K8s findings confirmed the image pull failure.\n**Action:** Patch deployment to a known-good image tag (`busybox:1.36`).\n**Approval Status:** Required (High Risk).\n**Execution Result:** Pending execution of patch command.\n**Verification:** Monitor rollout status after patch to confirm stable deployment.",
+  "incident_id": "inc-local-001",
+  "k8sgpt_findings": [
+    {
+      "description": "{'kind': 'ConfigMap', 'name': 'payments/kube-root-ca.crt', 'error': [{'Text': 'ConfigMap kube-root-ca.crt is not used by any pods in the namespace', 'KubernetesDoc': '', 'Sensitive': []}], 'details': '', 'parentObject': ''}",
+      "recommendation": "",
+      "resource": "payments/kube-root-ca.crt",
+      "severity": "info"
+    },
+    {
+      "description": "{'kind': 'Service', 'name': 'payments/api-server', 'error': [{'Text': 'Service has not ready endpoints, pods: [Pod/api-server-5d4fff8cf7-lwtlf], expected 1', 'KubernetesDoc': '', 'Sensitive': []}], 'details': '', 'parentObject': ''}",
+      "recommendation": "",
+      "resource": "payments/api-server",
+      "severity": "info"
+    },
+    {
+      "description": "{'kind': 'Pod', 'name': 'payments/api-server-5d4fff8cf7-lwtlf', 'error': [{'Text': 'Back-off pulling image \"ghcr.io/example/api-server:bad-tag\": ErrImagePull: failed to pull and unpack image \"ghcr.io/example/api-server:bad-tag\": failed to resolve reference \"ghcr.io/example/api-server:bad-tag\": failed to authorize: failed to fetch anonymous token: unexpected status from GET request to https://ghcr.io/token?scope=repository%3Aexample%2Fapi-server%3Apull&service=ghcr.io: 403 Forbidden', 'KubernetesDoc': '', 'Sensitive': []}], 'details': '', 'parentObject': 'Deployment/api-server'}",
+      "recommendation": "",
+      "resource": "payments/api-server-5d4fff8cf7-lwtlf",
+      "severity": "info"
+    }
+  ],
+  "namespace": "payments",
+  "plan": [
+    {
+      "command": "kubectl -n payments get deployment api-server -o yaml",
+      "description": "Inspect the image configured on the deployment.",
+      "requires_approval": false,
+      "risk": "low",
+      "rollback": ""
+    },
+    {
+      "command": "kubectl -n payments set image deployment/api-server api-server=busybox:1.36",
+      "description": "Patch the deployment to a known-good image tag.",
+      "requires_approval": true,
+      "risk": "high",
+      "rollback": "kubectl -n payments rollout undo deployment/api-server"
+    },
+    {
+      "command": "kubectl -n payments rollout status deployment/api-server --timeout=120s",
+      "description": "Wait for the rollout to complete after patching the image.",
+      "requires_approval": false,
+      "risk": "low",
+      "rollback": ""
+    }
+  ],
+  "retrieved_org_roam_nodes": [],
+  "retrieved_runbook_passages": [
+    {
+      "content": "When a workload reports ImagePullBackOff, inspect the image field on the deployment, confirm the image tag exists, and verify the imagePullSecrets configuration if the registry is private. Patch the deployment to a known-good tag and confirm rollout status after the change.",
+      "metadata": {
+        "environment": "minikube",
+        "incident_type": "ImagePullBackOff",
+        "namespace": "payments",
+        "service": "api-server",
+        "title": "Runbook: Bad image tag or registry access"
+      },
+      "score": 0.5806904,
+      "source_id": "runbook-imagepullbackoff",
+      "title": "Runbook: Bad image tag or registry access"
+    },
+    {
+      "content": "If a deployment enters CrashLoopBackOff after a release, inspect envFrom and configMapKeyRef values first. A missing ConfigMap can prevent the container from starting. Restore the expected ConfigMap in the correct namespace, then restart the deployment and verify rollout health.",
+      "metadata": {
+        "environment": "minikube",
+        "incident_type": "CrashLoopBackOff",
+        "namespace": "payments",
+        "service": "api-server",
+        "title": "Runbook: Missing ConfigMap after deployment"
+      },
+      "score": 0.49575227,
+      "source_id": "runbook-missing-configmap",
+      "title": "Runbook: Missing ConfigMap after deployment"
+    }
+  ],
+  "risk_level": "high",
+  "severity": "warning",
+  "trace": [
+    "Incident monitor classified the trigger and target workload.",
+    "Context collector gathered events, logs, metrics, and manifests.",
+    "Kubernetes RAG retriever fetched the most relevant runbook passages.",
+    "Org-roam browser explored note context and backlinks.",
+    "K8sGPT MCP analysis added live cluster findings.",
+    "Diagnosis agent combined cluster evidence, RAG, Org-roam, and K8sGPT signals.",
+    "Remediation planner generated ordered actions and rollback steps.",
+    "Safety policy evaluated risk and approval requirements.",
+    "Human approval node auto-approved the plan for demo execution.",
+    "Executor ran the approved plan.",
+    "Verifier checked whether the workload recovered.",
+    "Reporter produced the incident summary."
+  ],
+  "trigger": "ImagePullBackOff",
+  "verification": {
+    "signals": [
+      "deployment \"api-server\" successfully rolled out",
+      "NAME                          READY   STATUS        RESTARTS   AGE\napi-server-5d4fff8cf7-lwtlf   0/1     Terminating   0          11m\napi-server-7c5bb8988f-j55vd   1/1     Running       0          94m"
+    ],
+    "success": true,
+    "summary": "Rollout verification succeeded."
+  },
+  "workload": "api-server"
+}
