@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-config
+  namespace: payments
+data:
+  APP_MODE: demo
+  FEATURE_FLAG: "true"
