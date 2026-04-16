@@ -1,4 +1,4 @@
-# Local-First Multi-Agent AIOps for Kubernetes Cluster Management
+# Multi-Agent AIOps for Kubernetes Cluster Management
 
 ## Motivation
 
@@ -8,7 +8,7 @@ I wanted a system that could:
 
 1. Watch the cluster for problems.
 2. Pull in operational knowledge from my own notes instead of relying only on generic internet knowledge.
-3. Suggest safe remediation steps while keeping a human in the loop for risky actions.
+3. Suggest remediation steps and, when allowed by policy, execute approved remediation while keeping a human in the loop for risky actions.
 4. Run fully on a local machine using Ollama and Google Gemma 4 rather than depending on a hosted model.
 
 This makes the project a good AIOps case study: it combines observability signals, retrieval, reasoning, automation, and safety controls in a single workflow.
@@ -17,7 +17,7 @@ This makes the project a good AIOps case study: it combines observability signal
 
 ### System Goal
 
-The system is a local-first multi-agent assistant for Kubernetes cluster management. It detects incidents, gathers evidence from the live cluster, retrieves Kubernetes runbooks and operational context through a dedicated RAG pipeline, explores my Emacs Org-roam note graph through MCP tools, proposes a remediation plan, and optionally executes low-risk actions after policy checks.
+The system is a local-first multi-agent assistant for Kubernetes cluster management. It detects incidents, gathers evidence from the live cluster, retrieves Kubernetes runbooks and operational context through a dedicated RAG pipeline, explores my Emacs Org-roam note graph through MCP tools, proposes a remediation plan, and can optionally execute approved remediation actions after policy checks.
 
 For testing and demonstration, I use `minikube` as the local Kubernetes environment. This keeps the project reproducible on a single machine while still supporting realistic failure scenarios such as failed rollouts, broken ConfigMaps, bad image tags, and scheduling problems.
 
