@@ -1,5 +1,10 @@
 # Multi-Agent AIOps for Kubernetes Cluster Management
 
+## Videos with slides
++ 5 mins video: https://youtu.be/zQZPOyFn0zg?si=UcY_wk2GKG3sc8NW
++ Slides: https://docs.google.com/presentation/d/12hhLbI3ievDBQ7gyMeHxwLkZ2l7IPR5IeL2giior5nA/edit?usp=sharing
++ workflow running logs: https://youtu.be/De4IYBkL8us?si=tolpQ28F8aUHqnWA
+
 ## Motivation
 
 I built this project to explore whether a local, privacy-preserving multi-agent system can help with one of the most repetitive and stressful parts of platform engineering: Kubernetes incident response. In a real cluster, operators constantly switch between `kubectl`, dashboards, logs, metrics, and scattered runbooks. That context switching slows diagnosis and makes remediation inconsistent.
