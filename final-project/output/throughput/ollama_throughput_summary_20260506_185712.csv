@@ -1,0 +1,8 @@
+model,runs,errors,median_output_tokens_per_second,mean_output_tokens_per_second,min_output_tokens_per_second,max_output_tokens_per_second,median_wall_output_tokens_per_second,median_prompt_tokens_per_second,median_output_tokens
+llama3.2:3b,3,0,9.183,9.46,9.112,10.084,9.023,736.554,256.0
+qwen2.5:7b,3,0,4.421,4.375,4.25,4.454,4.375,340.903,256.0
+deepseek-r1:7b,3,0,3.685,3.708,3.67,3.77,3.633,192.753,256.0
+smollm2:1.7b,3,0,9.778,9.667,9.02,10.204,9.688,791.6,256.0
+phi4-mini:3.8b,3,0,6.44,6.482,6.14,6.866,6.326,350.486,256.0
+gemma3:4b,3,0,6.014,6.017,5.924,6.114,5.823,301.748,256.0
+jingyaogong/minimind2:latest,3,0,41.863,50.725,34.223,76.09,41.567,7705.728,256.0

@@ -1,0 +1,884 @@
+{
+  "created_at": "2026-05-06T19:38:49",
+  "benchmark_config": {
+    "models": [
+      "llama3.2:3b",
+      "qwen2.5:7b",
+      "deepseek-r1:7b",
+      "smollm2:1.7b",
+      "phi4-mini:3.8b",
+      "gemma3:4b",
+      "jingyaogong/minimind2:latest"
+    ],
+    "runs": 3,
+    "warmup_runs": 1,
+    "num_predict": 256,
+    "warmup_predict": 32,
+    "num_ctx": 2048,
+    "temperature": 0.0,
+    "seed": 42,
+    "keep_alive": "5m",
+    "prompt": "Write a compact technical note about why local small language\nmodels are useful for privacy-preserving AI assistants. Include practical\ntradeoffs around latency, memory use, accuracy, and deployment simplicity."
+  },
+  "host_info": {
+    "hostname": "Meta-Scientific-Linux",
+    "platform_node": "Meta-Scientific-Linux",
+    "platform": "Linux-7.0.3-arch1-2-x86_64-with-glibc2.43",
+    "system": "Linux",
+    "release": "7.0.3-arch1-2",
+    "python_version": "3.14.4 (main, Apr  8 2026, 17:48:49) [GCC 15.2.1 20260209]",
+    "ollama_host": "http://127.0.0.1:11434",
+    "cpu": {
+      "model": "Intel(R) N100",
+      "logical_cpu_count": 4,
+      "architecture": "x86_64",
+      "lscpu": {
+        "available": true,
+        "command": [
+          "lscpu"
+        ],
+        "returncode": 0,
+        "stdout": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           39 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  4\nOn-line CPU(s) list:                     0-3\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) N100\nCPU family:                              6\nModel:                                   190\nThread(s) per core:                      1\nCore(s) per socket:                      4\nSocket(s):                               1\nStepping:                                0\nMicrocode version:                       0x21\nCPU(s) scaling MHz:                      89%\nCPU max MHz:                             3400.0000\nCPU min MHz:                             700.0000\nBogoMIPS:                                1612.80\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities\nVirtualization:                          VT-x\nL1d cache:                               128 KiB (4 instances)\nL1i cache:                               256 KiB (4 instances)\nL2 cache:                                2 MiB (1 instance)\nL3 cache:                                6 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-3\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Mitigation; Clear Register File\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS Not affected; BHI BHI_DIS_S\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace",
+        "stderr": ""
+      },
+      "sysctl_brand_string": {
+        "available": true,
+        "command": [
+          "sysctl",
+          "-n",
+          "machdep.cpu.brand_string"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "sysctl: cannot stat /proc/sys/machdep/cpu/brand_string: No such file or directory"
+      }
+    },
+    "gpu": {
+      "nvidia_gpus": [],
+      "nvidia_smi": {
+        "available": false,
+        "command": [
+          "nvidia-smi",
+          "--query-gpu=name,driver_version,memory.total",
+          "--format=csv,noheader"
+        ],
+        "error": "nvidia-smi not found"
+      },
+      "rocm_smi": {
+        "available": false,
+        "command": [
+          "rocm-smi",
+          "--showproductname",
+          "--showmeminfo",
+          "vram",
+          "--json"
+        ],
+        "error": "rocm-smi not found"
+      },
+      "lspci_display_devices": [
+        "00:02.0 VGA compatible controller: Intel Corporation Alder Lake-N [UHD Graphics]"
+      ]
+    }
+  },
+  "ollama_info": {
+    "cli_version": {
+      "available": true,
+      "command": [
+        "ollama",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "ollama version is 0.20.6",
+      "stderr": ""
+    },
+    "api_version": {
+      "version": "0.20.6"
+    },
+    "local_models": [
+      {
+        "name": "embeddinggemma:latest",
+        "model": "embeddinggemma:latest",
+        "modified_at": "2026-04-13T16:46:04.493717438-04:00",
+        "size": 621875917,
+        "digest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "gemma3",
+          "families": [
+            "gemma3"
+          ],
+          "parameter_size": "307.58M",
+          "quantization_level": "BF16"
+        }
+      },
+      {
+        "name": "gemma4:e4b",
+        "model": "gemma4:e4b",
+        "modified_at": "2026-04-13T16:44:54.791415389-04:00",
+        "size": 9608350718,
+        "digest": "c6eb396dbd5992bbe3f5cdb947e8bbc0ee413d7c17e2beaae69f5d569cf982eb",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "gemma4",
+          "families": [
+            "gemma4"
+          ],
+          "parameter_size": "8.0B",
+          "quantization_level": "Q4_K_M"
+        }
+      },
+      {
+        "name": "llava:latest",
+        "model": "llava:latest",
+        "modified_at": "2026-03-02T00:54:20.886857725-05:00",
+        "size": 4733363377,
+        "digest": "8dd30f6b0cb19f555f2c7a7ebda861449ea2cc76bf1f44e262931f45fc81d081",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "llama",
+          "families": [
+            "llama",
+            "clip"
+          ],
+          "parameter_size": "7B",
+          "quantization_level": "Q4_0"
+        }
+      },
+      {
+        "name": "qwen2.5:1.5b",
+        "model": "qwen2.5:1.5b",
+        "modified_at": "2026-03-01T22:28:26.818102529-05:00",
+        "size": 986061892,
+        "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "1.5B",
+          "quantization_level": "Q4_K_M"
+        }
+      },
+      {
+        "name": "llama3.2:1b",
+        "model": "llama3.2:1b",
+        "modified_at": "2026-03-01T02:06:24.091932781-05:00",
+        "size": 1321098329,
+        "digest": "baf6a787fdffd633537aa2eb51cfd54cb93ff08e28040095462bb63daf552878",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "llama",
+          "families": [
+            "llama"
+          ],
+          "parameter_size": "1.2B",
+          "quantization_level": "Q8_0"
+        }
+      },
+      {
+        "name": "nomic-embed-text:latest",
+        "model": "nomic-embed-text:latest",
+        "modified_at": "2026-01-16T22:19:11.244000169-05:00",
+        "size": 274302450,
+        "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "nomic-bert",
+          "families": [
+            "nomic-bert"
+          ],
+          "parameter_size": "137M",
+          "quantization_level": "F16"
+        }
+      },
+      {
+        "name": "gemma3:4b",
+        "model": "gemma3:4b",
+        "modified_at": "2025-04-19T01:08:43.734384303-04:00",
+        "size": 3338801804,
+        "digest": "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "gemma3",
+          "families": [
+            "gemma3"
+          ],
+          "parameter_size": "4.3B",
+          "quantization_level": "Q4_K_M"
+        }
+      }
+    ]
+  },
+  "summary": [
+    {
+      "model": "llama3.2:3b",
+      "runs": 3,
+      "errors": 0,
+      "median_output_tokens_per_second": 9.183,
+      "mean_output_tokens_per_second": 9.46,
+      "min_output_tokens_per_second": 9.112,
+      "max_output_tokens_per_second": 10.084,
+      "median_wall_output_tokens_per_second": 9.023,
+      "median_prompt_tokens_per_second": 736.554,
+      "median_output_tokens": 256.0
+    },
+    {
+      "model": "qwen2.5:7b",
+      "runs": 3,
+      "errors": 0,
+      "median_output_tokens_per_second": 4.421,
+      "mean_output_tokens_per_second": 4.375,
+      "min_output_tokens_per_second": 4.25,
+      "max_output_tokens_per_second": 4.454,
+      "median_wall_output_tokens_per_second": 4.375,
+      "median_prompt_tokens_per_second": 340.903,
+      "median_output_tokens": 256.0
+    },
+    {
+      "model": "deepseek-r1:7b",
+      "runs": 3,
+      "errors": 0,
+      "median_output_tokens_per_second": 3.685,
+      "mean_output_tokens_per_second": 3.708,
+      "min_output_tokens_per_second": 3.67,
+      "max_output_tokens_per_second": 3.77,
+      "median_wall_output_tokens_per_second": 3.633,
+      "median_prompt_tokens_per_second": 192.753,
+      "median_output_tokens": 256.0
+    },
+    {
+      "model": "smollm2:1.7b",
+      "runs": 3,
+      "errors": 0,
+      "median_output_tokens_per_second": 9.778,
+      "mean_output_tokens_per_second": 9.667,
+      "min_output_tokens_per_second": 9.02,
+      "max_output_tokens_per_second": 10.204,
+      "median_wall_output_tokens_per_second": 9.688,
+      "median_prompt_tokens_per_second": 791.6,
+      "median_output_tokens": 256.0
+    },
+    {
+      "model": "phi4-mini:3.8b",
+      "runs": 3,
+      "errors": 0,
+      "median_output_tokens_per_second": 6.44,
+      "mean_output_tokens_per_second": 6.482,
+      "min_output_tokens_per_second": 6.14,
+      "max_output_tokens_per_second": 6.866,
+      "median_wall_output_tokens_per_second": 6.326,
+      "median_prompt_tokens_per_second": 350.486,
+      "median_output_tokens": 256.0
+    },
+    {
+      "model": "gemma3:4b",
+      "runs": 3,
+      "errors": 0,
+      "median_output_tokens_per_second": 6.014,
+      "mean_output_tokens_per_second": 6.017,
+      "min_output_tokens_per_second": 5.924,
+      "max_output_tokens_per_second": 6.114,
+      "median_wall_output_tokens_per_second": 5.823,
+      "median_prompt_tokens_per_second": 301.748,
+      "median_output_tokens": 256.0
+    },
+    {
+      "model": "jingyaogong/minimind2:latest",
+      "runs": 3,
+      "errors": 0,
+      "median_output_tokens_per_second": 41.863,
+      "mean_output_tokens_per_second": 50.725,
+      "min_output_tokens_per_second": 34.223,
+      "max_output_tokens_per_second": 76.09,
+      "median_wall_output_tokens_per_second": 41.567,
+      "median_prompt_tokens_per_second": 7705.728,
+      "median_output_tokens": 256.0
+    }
+  ],
+  "runs": [
+    {
+      "model": "llama3.2:3b",
+      "created_at": "2026-05-06T23:01:09.071276648Z",
+      "done_reason": "length",
+      "prompt_eval_count": 63,
+      "prompt_eval_duration_seconds": 0.093,
+      "prompt_tokens_per_second": 678.236,
+      "eval_count": 256,
+      "eval_duration_seconds": 25.387,
+      "output_tokens_per_second": 10.084,
+      "total_duration_seconds": 25.867,
+      "load_duration_seconds": 0.175,
+      "client_wall_seconds": 25.868,
+      "wall_output_tokens_per_second": 9.896,
+      "response_chars": 1394,
+      "thinking_chars": 0,
+      "response_preview": "**Technical Note: Local Small Language Models for Privacy-Preserving AI Assistants**\\n\\nLocal small language models (LSLMs) offer a promising approach to privacy-preserving AI assistants by reducing the",
+      "raw_usage": {
+        "total_duration": 25866511004,
+        "load_duration": 175156242,
+        "prompt_eval_count": 63,
+        "prompt_eval_duration": 92888059,
+        "eval_count": 256,
+        "eval_duration": 25386728426
+      },
+      "run_index": 1
+    },
+    {
+      "model": "llama3.2:3b",
+      "created_at": "2026-05-06T23:01:37.628422051Z",
+      "done_reason": "length",
+      "prompt_eval_count": 63,
+      "prompt_eval_duration_seconds": 0.08,
+      "prompt_tokens_per_second": 788.908,
+      "eval_count": 256,
+      "eval_duration_seconds": 28.095,
+      "output_tokens_per_second": 9.112,
+      "total_duration_seconds": 28.556,
+      "load_duration_seconds": 0.166,
+      "client_wall_seconds": 28.557,
+      "wall_output_tokens_per_second": 8.964,
+      "response_chars": 1394,
+      "thinking_chars": 0,
+      "response_preview": "**Technical Note: Local Small Language Models for Privacy-Preserving AI Assistants**\\n\\nLocal small language models (LSLMs) offer a promising approach to privacy-preserving AI assistants by reducing the",
+      "raw_usage": {
+        "total_duration": 28555776350,
+        "load_duration": 166279243,
+        "prompt_eval_count": 63,
+        "prompt_eval_duration": 79857252,
+        "eval_count": 256,
+        "eval_duration": 28095112493
+      },
+      "run_index": 2
+    },
+    {
+      "model": "llama3.2:3b",
+      "created_at": "2026-05-06T23:02:06.000499212Z",
+      "done_reason": "length",
+      "prompt_eval_count": 63,
+      "prompt_eval_duration_seconds": 0.086,
+      "prompt_tokens_per_second": 736.554,
+      "eval_count": 256,
+      "eval_duration_seconds": 27.877,
+      "output_tokens_per_second": 9.183,
+      "total_duration_seconds": 28.371,
+      "load_duration_seconds": 0.179,
+      "client_wall_seconds": 28.372,
+      "wall_output_tokens_per_second": 9.023,
+      "response_chars": 1394,
+      "thinking_chars": 0,
+      "response_preview": "**Technical Note: Local Small Language Models for Privacy-Preserving AI Assistants**\\n\\nLocal small language models (LSLMs) offer a promising approach to privacy-preserving AI assistants by reducing the",
+      "raw_usage": {
+        "total_duration": 28370614300,
+        "load_duration": 179187788,
+        "prompt_eval_count": 63,
+        "prompt_eval_duration": 85533400,
+        "eval_count": 256,
+        "eval_duration": 27877405662
+      },
+      "run_index": 3
+    },
+    {
+      "model": "qwen2.5:7b",
+      "created_at": "2026-05-06T23:10:28.247714892Z",
+      "done_reason": "length",
+      "prompt_eval_count": 67,
+      "prompt_eval_duration_seconds": 0.197,
+      "prompt_tokens_per_second": 340.903,
+      "eval_count": 256,
+      "eval_duration_seconds": 57.471,
+      "output_tokens_per_second": 4.454,
+      "total_duration_seconds": 58.088,
+      "load_duration_seconds": 0.141,
+      "client_wall_seconds": 58.092,
+      "wall_output_tokens_per_second": 4.407,
+      "response_chars": 1347,
+      "thinking_chars": 0,
+      "response_preview": "**Technical Note: Local Small Language Models for Privacy-Preserving AI Assistants**\\n\\n**Introduction**\\nLocal small language models (LLMs) offer a compelling solution for deploying AI assistants that p",
+      "raw_usage": {
+        "total_duration": 58088125840,
+        "load_duration": 141449481,
+        "prompt_eval_count": 67,
+        "prompt_eval_duration": 196537092,
+        "eval_count": 256,
+        "eval_duration": 57471257540
+      },
+      "run_index": 1
+    },
+    {
+      "model": "qwen2.5:7b",
+      "created_at": "2026-05-06T23:11:29.824343433Z",
+      "done_reason": "length",
+      "prompt_eval_count": 67,
+      "prompt_eval_duration_seconds": 0.926,
+      "prompt_tokens_per_second": 72.381,
+      "eval_count": 256,
+      "eval_duration_seconds": 60.23,
+      "output_tokens_per_second": 4.25,
+      "total_duration_seconds": 61.573,
+      "load_duration_seconds": 0.139,
+      "client_wall_seconds": 61.577,
+      "wall_output_tokens_per_second": 4.157,
+      "response_chars": 1347,
+      "thinking_chars": 0,
+      "response_preview": "**Technical Note: Local Small Language Models for Privacy-Preserving AI Assistants**\\n\\n**Introduction**\\nLocal small language models (LLMs) offer a compelling solution for deploying AI assistants that p",
+      "raw_usage": {
+        "total_duration": 61572732401,
+        "load_duration": 138553253,
+        "prompt_eval_count": 67,
+        "prompt_eval_duration": 925659083,
+        "eval_count": 256,
+        "eval_duration": 60229905909
+      },
+      "run_index": 2
+    },
+    {
+      "model": "qwen2.5:7b",
+      "created_at": "2026-05-06T23:12:28.337878186Z",
+      "done_reason": "length",
+      "prompt_eval_count": 67,
+      "prompt_eval_duration_seconds": 0.187,
+      "prompt_tokens_per_second": 357.614,
+      "eval_count": 256,
+      "eval_duration_seconds": 57.905,
+      "output_tokens_per_second": 4.421,
+      "total_duration_seconds": 58.51,
+      "load_duration_seconds": 0.136,
+      "client_wall_seconds": 58.514,
+      "wall_output_tokens_per_second": 4.375,
+      "response_chars": 1347,
+      "thinking_chars": 0,
+      "response_preview": "**Technical Note: Local Small Language Models for Privacy-Preserving AI Assistants**\\n\\n**Introduction**\\nLocal small language models (LLMs) offer a compelling solution for deploying AI assistants that p",
+      "raw_usage": {
+        "total_duration": 58509528084,
+        "load_duration": 135681265,
+        "prompt_eval_count": 67,
+        "prompt_eval_duration": 187352693,
+        "eval_count": 256,
+        "eval_duration": 57904712355
+      },
+      "run_index": 3
+    },
+    {
+      "model": "deepseek-r1:7b",
+      "created_at": "2026-05-06T23:21:55.682272308Z",
+      "done_reason": "length",
+      "prompt_eval_count": 41,
+      "prompt_eval_duration_seconds": 0.213,
+      "prompt_tokens_per_second": 192.753,
+      "eval_count": 256,
+      "eval_duration_seconds": 67.906,
+      "output_tokens_per_second": 3.77,
+      "total_duration_seconds": 68.59,
+      "load_duration_seconds": 0.141,
+      "client_wall_seconds": 68.593,
+      "wall_output_tokens_per_second": 3.732,
+      "response_chars": 0,
+      "thinking_chars": 1305,
+      "response_preview": "",
+      "raw_usage": {
+        "total_duration": 68589754555,
+        "load_duration": 141134647,
+        "prompt_eval_count": 41,
+        "prompt_eval_duration": 212707308,
+        "eval_count": 256,
+        "eval_duration": 67905805935
+      },
+      "run_index": 1
+    },
+    {
+      "model": "deepseek-r1:7b",
+      "created_at": "2026-05-06T23:23:06.14229216Z",
+      "done_reason": "length",
+      "prompt_eval_count": 41,
+      "prompt_eval_duration_seconds": 0.203,
+      "prompt_tokens_per_second": 201.981,
+      "eval_count": 256,
+      "eval_duration_seconds": 69.754,
+      "output_tokens_per_second": 3.67,
+      "total_duration_seconds": 70.457,
+      "load_duration_seconds": 0.157,
+      "client_wall_seconds": 70.46,
+      "wall_output_tokens_per_second": 3.633,
+      "response_chars": 0,
+      "thinking_chars": 1305,
+      "response_preview": "",
+      "raw_usage": {
+        "total_duration": 70456767295,
+        "load_duration": 156997381,
+        "prompt_eval_count": 41,
+        "prompt_eval_duration": 202989612,
+        "eval_count": 256,
+        "eval_duration": 69753798565
+      },
+      "run_index": 2
+    },
+    {
+      "model": "deepseek-r1:7b",
+      "created_at": "2026-05-06T23:24:16.609986077Z",
+      "done_reason": "length",
+      "prompt_eval_count": 41,
+      "prompt_eval_duration_seconds": 0.492,
+      "prompt_tokens_per_second": 83.28,
+      "eval_count": 256,
+      "eval_duration_seconds": 69.474,
+      "output_tokens_per_second": 3.685,
+      "total_duration_seconds": 70.465,
+      "load_duration_seconds": 0.154,
+      "client_wall_seconds": 70.468,
+      "wall_output_tokens_per_second": 3.633,
+      "response_chars": 0,
+      "thinking_chars": 1305,
+      "response_preview": "",
+      "raw_usage": {
+        "total_duration": 70464658626,
+        "load_duration": 153912233,
+        "prompt_eval_count": 41,
+        "prompt_eval_duration": 492314004,
+        "eval_count": 256,
+        "eval_duration": 69473741444
+      },
+      "run_index": 3
+    },
+    {
+      "model": "smollm2:1.7b",
+      "created_at": "2026-05-06T23:28:02.920274962Z",
+      "done_reason": "length",
+      "prompt_eval_count": 68,
+      "prompt_eval_duration_seconds": 0.086,
+      "prompt_tokens_per_second": 791.6,
+      "eval_count": 256,
+      "eval_duration_seconds": 25.088,
+      "output_tokens_per_second": 10.204,
+      "total_duration_seconds": 25.316,
+      "load_duration_seconds": 0.051,
+      "client_wall_seconds": 25.318,
+      "wall_output_tokens_per_second": 10.111,
+      "response_chars": 1356,
+      "thinking_chars": 0,
+      "response_preview": "Local Small Language Models (SLMs) are beneficial for privacy-preserving AI assistants due to their advantages in terms of latency, memory usage, accuracy, and deployment simplicity.\\n\\n1. **Latency**: ",
+      "raw_usage": {
+        "total_duration": 25316235481,
+        "load_duration": 51102263,
+        "prompt_eval_count": 68,
+        "prompt_eval_duration": 85901922,
+        "eval_count": 256,
+        "eval_duration": 25087627860
+      },
+      "run_index": 1
+    },
+    {
+      "model": "smollm2:1.7b",
+      "created_at": "2026-05-06T23:28:31.522191271Z",
+      "done_reason": "length",
+      "prompt_eval_count": 68,
+      "prompt_eval_duration_seconds": 0.077,
+      "prompt_tokens_per_second": 882.075,
+      "eval_count": 256,
+      "eval_duration_seconds": 28.38,
+      "output_tokens_per_second": 9.02,
+      "total_duration_seconds": 28.6,
+      "load_duration_seconds": 0.048,
+      "client_wall_seconds": 28.602,
+      "wall_output_tokens_per_second": 8.95,
+      "response_chars": 1356,
+      "thinking_chars": 0,
+      "response_preview": "Local Small Language Models (SLMs) are beneficial for privacy-preserving AI assistants due to their advantages in terms of latency, memory usage, accuracy, and deployment simplicity.\\n\\n1. **Latency**: ",
+      "raw_usage": {
+        "total_duration": 28599692979,
+        "load_duration": 48159207,
+        "prompt_eval_count": 68,
+        "prompt_eval_duration": 77090945,
+        "eval_count": 256,
+        "eval_duration": 28380344911
+      },
+      "run_index": 2
+    },
+    {
+      "model": "smollm2:1.7b",
+      "created_at": "2026-05-06T23:28:57.947659358Z",
+      "done_reason": "length",
+      "prompt_eval_count": 68,
+      "prompt_eval_duration_seconds": 0.089,
+      "prompt_tokens_per_second": 762.244,
+      "eval_count": 256,
+      "eval_duration_seconds": 26.181,
+      "output_tokens_per_second": 9.778,
+      "total_duration_seconds": 26.423,
+      "load_duration_seconds": 0.053,
+      "client_wall_seconds": 26.425,
+      "wall_output_tokens_per_second": 9.688,
+      "response_chars": 1356,
+      "thinking_chars": 0,
+      "response_preview": "Local Small Language Models (SLMs) are beneficial for privacy-preserving AI assistants due to their advantages in terms of latency, memory usage, accuracy, and deployment simplicity.\\n\\n1. **Latency**: ",
+      "raw_usage": {
+        "total_duration": 26422981375,
+        "load_duration": 53272581,
+        "prompt_eval_count": 68,
+        "prompt_eval_duration": 89210303,
+        "eval_count": 256,
+        "eval_duration": 26180973770
+      },
+      "run_index": 3
+    },
+    {
+      "model": "phi4-mini:3.8b",
+      "created_at": "2026-05-06T23:34:11.923330075Z",
+      "done_reason": "length",
+      "prompt_eval_count": 41,
+      "prompt_eval_duration_seconds": 0.117,
+      "prompt_tokens_per_second": 350.486,
+      "eval_count": 256,
+      "eval_duration_seconds": 37.283,
+      "output_tokens_per_second": 6.866,
+      "total_duration_seconds": 37.955,
+      "load_duration_seconds": 0.198,
+      "client_wall_seconds": 37.959,
+      "wall_output_tokens_per_second": 6.744,
+      "response_chars": 1333,
+      "thinking_chars": 0,
+      "response_preview": "**Technical Note: Utility of Local Small Language Models in Privacy-Preserving AI Assistants**\\n\\nLocal small language models (LSLMs) offer significant advantages when deployed as part of private AI ass",
+      "raw_usage": {
+        "total_duration": 37954734789,
+        "load_duration": 198073211,
+        "prompt_eval_count": 41,
+        "prompt_eval_duration": 116980266,
+        "eval_count": 256,
+        "eval_duration": 37282789762
+      },
+      "run_index": 1
+    },
+    {
+      "model": "phi4-mini:3.8b",
+      "created_at": "2026-05-06T23:34:52.393531636Z",
+      "done_reason": "length",
+      "prompt_eval_count": 41,
+      "prompt_eval_duration_seconds": 0.122,
+      "prompt_tokens_per_second": 335.862,
+      "eval_count": 256,
+      "eval_duration_seconds": 39.751,
+      "output_tokens_per_second": 6.44,
+      "total_duration_seconds": 40.466,
+      "load_duration_seconds": 0.206,
+      "client_wall_seconds": 40.47,
+      "wall_output_tokens_per_second": 6.326,
+      "response_chars": 1333,
+      "thinking_chars": 0,
+      "response_preview": "**Technical Note: Utility of Local Small Language Models in Privacy-Preserving AI Assistants**\\n\\nLocal small language models (LSLMs) offer significant advantages when deployed as part of private AI ass",
+      "raw_usage": {
+        "total_duration": 40465588799,
+        "load_duration": 205670420,
+        "prompt_eval_count": 41,
+        "prompt_eval_duration": 122073910,
+        "eval_count": 256,
+        "eval_duration": 39751216165
+      },
+      "run_index": 2
+    },
+    {
+      "model": "phi4-mini:3.8b",
+      "created_at": "2026-05-06T23:35:34.798404008Z",
+      "done_reason": "length",
+      "prompt_eval_count": 41,
+      "prompt_eval_duration_seconds": 0.112,
+      "prompt_tokens_per_second": 366.16,
+      "eval_count": 256,
+      "eval_duration_seconds": 41.693,
+      "output_tokens_per_second": 6.14,
+      "total_duration_seconds": 42.4,
+      "load_duration_seconds": 0.207,
+      "client_wall_seconds": 42.404,
+      "wall_output_tokens_per_second": 6.037,
+      "response_chars": 1333,
+      "thinking_chars": 0,
+      "response_preview": "**Technical Note: Utility of Local Small Language Models in Privacy-Preserving AI Assistants**\\n\\nLocal small language models (LSLMs) offer significant advantages when deployed as part of private AI ass",
+      "raw_usage": {
+        "total_duration": 42400273396,
+        "load_duration": 207459709,
+        "prompt_eval_count": 41,
+        "prompt_eval_duration": 111972946,
+        "eval_count": 256,
+        "eval_duration": 41692615594
+      },
+      "run_index": 3
+    },
+    {
+      "model": "gemma3:4b",
+      "created_at": "2026-05-06T23:36:36.05311635Z",
+      "done_reason": "length",
+      "prompt_eval_count": 47,
+      "prompt_eval_duration_seconds": 0.143,
+      "prompt_tokens_per_second": 327.944,
+      "eval_count": 256,
+      "eval_duration_seconds": 43.216,
+      "output_tokens_per_second": 5.924,
+      "total_duration_seconds": 44.225,
+      "load_duration_seconds": 0.527,
+      "client_wall_seconds": 44.234,
+      "wall_output_tokens_per_second": 5.787,
+      "response_chars": 1228,
+      "thinking_chars": 0,
+      "response_preview": "## Technical Note: Local Small Language Models for Privacy-Preserving AI Assistants\\n\\n**Date:** October 26, 2023\\n**Subject:** Evaluating Local LLMs for Privacy-Focused Assistants\\n\\n**Introduction:** Tra",
+      "raw_usage": {
+        "total_duration": 44225399026,
+        "load_duration": 527156011,
+        "prompt_eval_count": 47,
+        "prompt_eval_duration": 143317014,
+        "eval_count": 256,
+        "eval_duration": 43215745922
+      },
+      "run_index": 1
+    },
+    {
+      "model": "gemma3:4b",
+      "created_at": "2026-05-06T23:37:20.021659098Z",
+      "done_reason": "length",
+      "prompt_eval_count": 47,
+      "prompt_eval_duration_seconds": 1.164,
+      "prompt_tokens_per_second": 40.386,
+      "eval_count": 256,
+      "eval_duration_seconds": 41.873,
+      "output_tokens_per_second": 6.114,
+      "total_duration_seconds": 43.96,
+      "load_duration_seconds": 0.5,
+      "client_wall_seconds": 43.963,
+      "wall_output_tokens_per_second": 5.823,
+      "response_chars": 1228,
+      "thinking_chars": 0,
+      "response_preview": "## Technical Note: Local Small Language Models for Privacy-Preserving AI Assistants\\n\\n**Date:** October 26, 2023\\n**Subject:** Evaluating Local LLMs for Privacy-Focused Assistants\\n\\n**Introduction:** Tra",
+      "raw_usage": {
+        "total_duration": 43960235131,
+        "load_duration": 499972177,
+        "prompt_eval_count": 47,
+        "prompt_eval_duration": 1163771560,
+        "eval_count": 256,
+        "eval_duration": 41872590665
+      },
+      "run_index": 2
+    },
+    {
+      "model": "gemma3:4b",
+      "created_at": "2026-05-06T23:38:03.656197119Z",
+      "done_reason": "length",
+      "prompt_eval_count": 47,
+      "prompt_eval_duration_seconds": 0.156,
+      "prompt_tokens_per_second": 301.748,
+      "eval_count": 256,
+      "eval_duration_seconds": 42.568,
+      "output_tokens_per_second": 6.014,
+      "total_duration_seconds": 43.629,
+      "load_duration_seconds": 0.488,
+      "client_wall_seconds": 43.636,
+      "wall_output_tokens_per_second": 5.867,
+      "response_chars": 1228,
+      "thinking_chars": 0,
+      "response_preview": "## Technical Note: Local Small Language Models for Privacy-Preserving AI Assistants\\n\\n**Date:** October 26, 2023\\n**Subject:** Evaluating Local LLMs for Privacy-Focused Assistants\\n\\n**Introduction:** Tra",
+      "raw_usage": {
+        "total_duration": 43629148876,
+        "load_duration": 487805911,
+        "prompt_eval_count": 47,
+        "prompt_eval_duration": 155758878,
+        "eval_count": 256,
+        "eval_duration": 42567924972
+      },
+      "run_index": 3
+    },
+    {
+      "model": "jingyaogong/minimind2:latest",
+      "created_at": "2026-05-06T23:38:36.183707987Z",
+      "done_reason": "length",
+      "prompt_eval_count": 81,
+      "prompt_eval_duration_seconds": 0.01,
+      "prompt_tokens_per_second": 8520.822,
+      "eval_count": 256,
+      "eval_duration_seconds": 3.364,
+      "output_tokens_per_second": 76.09,
+      "total_duration_seconds": 3.404,
+      "load_duration_seconds": 0.007,
+      "client_wall_seconds": 3.407,
+      "wall_output_tokens_per_second": 75.136,
+      "response_chars": 1008,
+      "thinking_chars": 0,
+      "response_preview": "There are several ways to handle the situation with sensitive information, such as a username or email address, a software application that allows users to access their data without having to share it",
+      "raw_usage": {
+        "total_duration": 3403830064,
+        "load_duration": 7476152,
+        "prompt_eval_count": 81,
+        "prompt_eval_duration": 9506125,
+        "eval_count": 256,
+        "eval_duration": 3364426285
+      },
+      "run_index": 1
+    },
+    {
+      "model": "jingyaogong/minimind2:latest",
+      "created_at": "2026-05-06T23:38:42.342509924Z",
+      "done_reason": "length",
+      "prompt_eval_count": 81,
+      "prompt_eval_duration_seconds": 0.011,
+      "prompt_tokens_per_second": 7705.728,
+      "eval_count": 256,
+      "eval_duration_seconds": 6.115,
+      "output_tokens_per_second": 41.863,
+      "total_duration_seconds": 6.155,
+      "load_duration_seconds": 0.007,
+      "client_wall_seconds": 6.159,
+      "wall_output_tokens_per_second": 41.567,
+      "response_chars": 1008,
+      "thinking_chars": 0,
+      "response_preview": "There are several ways to handle the situation with sensitive information, such as a username or email address, a software application that allows users to access their data without having to share it",
+      "raw_usage": {
+        "total_duration": 6155443298,
+        "load_duration": 7302258,
+        "prompt_eval_count": 81,
+        "prompt_eval_duration": 10511661,
+        "eval_count": 256,
+        "eval_duration": 6115197732
+      },
+      "run_index": 2
+    },
+    {
+      "model": "jingyaogong/minimind2:latest",
+      "created_at": "2026-05-06T23:38:49.866982497Z",
+      "done_reason": "length",
+      "prompt_eval_count": 81,
+      "prompt_eval_duration_seconds": 0.011,
+      "prompt_tokens_per_second": 7435.58,
+      "eval_count": 256,
+      "eval_duration_seconds": 7.48,
+      "output_tokens_per_second": 34.223,
+      "total_duration_seconds": 7.521,
+      "load_duration_seconds": 0.007,
+      "client_wall_seconds": 7.524,
+      "wall_output_tokens_per_second": 34.022,
+      "response_chars": 1008,
+      "thinking_chars": 0,
+      "response_preview": "There are several ways to handle the situation with sensitive information, such as a username or email address, a software application that allows users to access their data without having to share it",
+      "raw_usage": {
+        "total_duration": 7521128720,
+        "load_duration": 7287358,
+        "prompt_eval_count": 81,
+        "prompt_eval_duration": 10893568,
+        "eval_count": 256,
+        "eval_duration": 7480261085
+      },
+      "run_index": 3
+    }
+  ],
+  "errors": {
+    "llama3.2:3b": [],
+    "qwen2.5:7b": [],
+    "deepseek-r1:7b": [],
+    "smollm2:1.7b": [],
+    "phi4-mini:3.8b": [],
+    "gemma3:4b": [],
+    "jingyaogong/minimind2:latest": []
+  }
+}
