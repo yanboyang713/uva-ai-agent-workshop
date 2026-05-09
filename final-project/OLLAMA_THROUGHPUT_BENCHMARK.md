@@ -12,7 +12,19 @@ The default model set keeps model tags at or below 8B parameters where the tag d
 - `smollm2:1.7b`
 - `phi4-mini:3.8b`
 - `gemma3:4b`
+- `gemma4:e4b`
 - `jingyaogong/minimind2:latest`
+- `jingyaogong/minimind-3:latest`
+- `jingyaogong/minimind-3-moe:latest`
+- `hf.co/jingyaogong/minimind-3-gguf:minimind-3.q8.gguf`
+
+The script also accepts these shorthand aliases:
+
+- `gemma4` -> `gemma4:e4b`
+- `minimind-3-pytorch` -> `jingyaogong/minimind-3:latest`
+- `minimind-3` -> `jingyaogong/minimind-3:latest`
+- `minimind-3-moe` -> `jingyaogong/minimind-3-moe:latest`
+- `minimind-3-gguf` -> `hf.co/jingyaogong/minimind-3-gguf:minimind-3.q8.gguf`
 
 ## Run
 

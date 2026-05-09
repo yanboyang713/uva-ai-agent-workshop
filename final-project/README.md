@@ -14,7 +14,7 @@ I wanted a system that could:
 1. Watch the cluster for problems.
 2. Pull in operational knowledge from my own notes instead of relying only on generic internet knowledge.
 3. Suggest remediation steps and, when allowed by policy, execute approved remediation while keeping a human in the loop for risky actions.
-4. Run fully on a local machine using Ollama and Google Gemma 4 rather than depending on a hosted model.
+4. Run fully on a local machine using Ollama and a local small language model rather than depending on a hosted model.
 
 This makes the project a good AIOps case study: it combines observability signals, retrieval, reasoning, automation, and safety controls in a single workflow.
 
@@ -30,15 +30,16 @@ For testing and demonstration, I use `minikube` as the local Kubernetes environm
 
 #### 1. Local model with Ollama
 
-I use Google Gemma 4 through Ollama as the main reasoning model. The default choice is `gemma4:e4b` because it is practical for a laptop or student workstation, while `gemma4:26b` is a better option when more reasoning depth is needed and more memory is available.
+I use Ollama as the local model runtime and `jingyaogong/minimind-3-moe:latest` as the base small language model for the AIOps workflow. It is fast enough for repeated local incident-response loops, and the benchmark results below show that it has the best throughput among the tested models on my machine. Gemma 4 remains useful as a comparison model or as an optional higher-capability fallback when more reasoning depth is worth the extra latency.
 
 Recommended local setup:
 
-- Main orchestration and diagnosis model: `gemma4:e4b`
+- Base orchestration and diagnosis SLM: `jingyaogong/minimind-3-moe:latest`
+- Comparison model: `gemma4:e4b`
 - Optional higher-accuracy diagnosis model: `gemma4:26b`
-- Local embedding model for retrieval: `dengcao/EmbeddingGemma`
+- Local embedding model for retrieval: `embeddinggemma`
 
-This gives the project a coherent local stack: Google Gemma for generation and a Gemma-family embedding model for retrieval.
+This keeps the project local-first while separating fast workflow execution from optional deeper reasoning. MiniMind-3-MoE handles the default agent loop, and the embedding model supports retrieval over Kubernetes runbooks, manifests, and incident notes.
 
 #### 2. LangGraph as the workflow engine
 
@@ -425,9 +426,10 @@ Scenario: a deployment enters `CrashLoopBackOff` after a new release.
 
 - Agent workflow engine: LangGraph
 - Local LLM runtime: Ollama
-- Main model: `gemma4:e4b`
+- Base SLM: `jingyaogong/minimind-3-moe:latest`
+- Comparison model: `gemma4:e4b`
 - Optional stronger model: `gemma4:26b`
-- Embeddings: `dengcao/EmbeddingGemma`
+- Embeddings: `embeddinggemma`
 - Org-roam browser layer: `org-roam-mcp`
 - RAG framework: Haystack
 - Vector store: Qdrant
@@ -454,7 +456,27 @@ The local test workflow is:
 
 ## Evaluation
 
-Because this repository currently documents the project design more than a finished benchmarked implementation, this section defines a realistic evaluation protocol rather than inventing results. I would evaluate the project using a mixed qualitative and task-based method that fits a class project better than a large benchmark. The goal is not to claim production-grade autonomy; the goal is to test whether multi-agent local AIOps is more useful and safer than a simpler baseline.
+I evaluated the local model choices with the Ollama token-throughput benchmark in this repository, then used those results to select the base SLM for the workflow. The broader incident-response evaluation is still designed as a mixed qualitative and task-based protocol: the goal is not to claim production-grade autonomy, but to test whether multi-agent local AIOps is more useful and safer than a simpler baseline.
+
+### Local SLM Throughput Benchmark
+
+The table below was produced with `scripts/ollama_token_throughput_benchmark.py`. Each model ran three measured generations with 256 requested output tokens. All tested models completed without errors.
+
+| Model | Runs | Median tok/s | Mean tok/s | Wall tok/s | Out toks | Errors |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| `llama3.2:3b` | 3 | 10.134 | 10.153 | 9.94 | 256.0 | 0 |
+| `qwen2.5:7b` | 3 | 5.128 | 5.065 | 5.064 | 256.0 | 0 |
+| `deepseek-r1:7b` | 3 | 4.973 | 4.951 | 4.906 | 256.0 | 0 |
+| `smollm2:1.7b` | 3 | 13.935 | 13.361 | 13.762 | 256.0 | 0 |
+| `phi4-mini:3.8b` | 3 | 8.645 | 8.023 | 8.446 | 256.0 | 0 |
+| `gemma3:4b` | 3 | 8.202 | 7.97 | 7.952 | 256.0 | 0 |
+| `gemma4:e4b` | 3 | 6.792 | 6.753 | 6.618 | 256.0 | 0 |
+| `jingyaogong/minimind2:latest` | 3 | 93.359 | 91.864 | 91.968 | 256.0 | 0 |
+| `jingyaogong/minimind-3:latest` | 3 | 64.781 | 76.988 | 64.311 | 256.0 | 0 |
+| `jingyaogong/minimind-3-moe:latest` | 3 | 155.055 | 149.708 | 150.226 | 256.0 | 0 |
+| `hf.co/jingyaogong/minimind-3-gguf:minimind-3.q8.gguf` | 3 | 113.272 | 107.541 | 111.85 | 256.0 | 0 |
+
+Based on these measurements, I use `jingyaogong/minimind-3-moe:latest` as the base SLM. It had the highest median output throughput in the benchmark, which matters for an agent workflow that may call the model several times during one incident.
 
 ### Evaluation Questions
 
@@ -477,7 +499,7 @@ I would evaluate on a small but representative set of `minikube` incident scenar
 
 ### Baselines
 
-To make the evaluation meaningful, I would compare three systems:
+To make the evaluation meaningful, I would compare four systems:
 
 1. Single-agent without RAG
 2. Single-agent with Kubernetes RAG only
@@ -499,7 +521,7 @@ The most useful metrics for this project are:
 
 ### Qualitative User Study
 
-For the qualitative part, I would ask a few classmates or lab partners to use the system on prepared incident scenarios and rate:
+For the qualitative part, I would ask a few lab partners to use the system on prepared incident scenarios and rate:
 
 - clarity of the explanation
 - usefulness of retrieved notes
@@ -526,7 +548,7 @@ Even if the system does not fully automate remediation, it can still be successf
 
 This project shows that AIOps does not need to start with a large cloud platform. A useful cluster assistant can be built locally by combining three ideas:
 
-1. a capable local reasoning model through Ollama
+1. a fast local SLM through Ollama
 2. specialized agents with clear responsibilities
 3. hybrid knowledge access through Kubernetes RAG plus personal operational memory in Org-roam
 
@@ -547,4 +569,4 @@ If I continued this project, the next steps would be:
 
 ## Summary
 
-In this project, I designed a local-first multi-agent Kubernetes AIOps assistant that uses Google Gemma 4 in Ollama for reasoning, `org-roam-mcp` for note browsing and backlink exploration, Haystack + Qdrant for Kubernetes RAG, and K8sGPT MCP as a live cluster tool layer. The workflow monitors incidents, collects evidence, retrieves relevant runbook passages, explores related Org-roam notes, diagnoses problems, plans remediations, enforces safety checks, executes approved actions, and verifies outcomes. The design is motivated by the need for faster, safer, and more context-aware Kubernetes operations. The most important insight is that hybrid knowledge access plus structured agent responsibilities can make an AI assistant more useful than a single large prompt, especially when the task is incident response.
+In this project, I designed a local-first multi-agent Kubernetes AIOps assistant that uses MiniMind-3-MoE in Ollama as the base SLM, `org-roam-mcp` for note browsing and backlink exploration, Haystack + Qdrant for Kubernetes RAG, and K8sGPT MCP as a live cluster tool layer. The workflow monitors incidents, collects evidence, retrieves relevant runbook passages, explores related Org-roam notes, diagnoses problems, plans remediations, enforces safety checks, executes approved actions, and verifies outcomes. The design is motivated by the need for faster, safer, and more context-aware Kubernetes operations. The most important insight is that hybrid knowledge access plus structured agent responsibilities can make an AI assistant more useful than a single large prompt, especially when the task is incident response.

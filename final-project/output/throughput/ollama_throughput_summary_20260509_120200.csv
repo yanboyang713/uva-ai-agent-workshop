@@ -1,0 +1,12 @@
+model,runs,errors,median_output_tokens_per_second,mean_output_tokens_per_second,min_output_tokens_per_second,max_output_tokens_per_second,median_wall_output_tokens_per_second,median_prompt_tokens_per_second,median_output_tokens
+llama3.2:3b,3,0,10.134,10.153,9.12,11.205,9.94,630.272,256.0
+qwen2.5:7b,3,0,5.128,5.065,4.867,5.201,5.064,384.568,256.0
+deepseek-r1:7b,3,0,4.973,4.951,4.718,5.162,4.906,206.305,256.0
+smollm2:1.7b,3,0,13.935,13.361,11.792,14.355,13.762,849.574,256.0
+phi4-mini:3.8b,3,0,8.645,8.023,6.207,9.218,8.446,368.87,256.0
+gemma3:4b,3,0,8.202,7.97,7.382,8.325,7.952,296.087,256.0
+gemma4:e4b,3,0,6.792,6.753,6.67,6.798,6.618,326.769,256.0
+jingyaogong/minimind2:latest,3,0,93.359,91.864,88.412,93.821,91.968,7905.097,256.0
+jingyaogong/minimind-3:latest,3,0,64.781,76.988,54.196,111.986,64.311,18669.494,256.0
+jingyaogong/minimind-3-moe:latest,3,0,155.055,149.708,106.185,187.884,150.226,4639.641,256.0
+hf.co/jingyaogong/minimind-3-gguf:minimind-3.q8.gguf,3,0,113.272,107.541,90.914,118.437,111.85,18208.798,256.0

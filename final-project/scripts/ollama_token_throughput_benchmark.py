@@ -38,8 +38,20 @@ DEFAULT_MODELS = [
     "smollm2:1.7b",
     "phi4-mini:3.8b",
     "gemma3:4b",
+    "gemma4:e4b",
     "jingyaogong/minimind2:latest",
+    "jingyaogong/minimind-3:latest",
+    "jingyaogong/minimind-3-moe:latest",
+    "hf.co/jingyaogong/minimind-3-gguf:minimind-3.q8.gguf",
 ]
+
+MODEL_ALIASES = {
+    "gemma4": "gemma4:e4b",
+    "minimind-3-pytorch": "jingyaogong/minimind-3:latest",
+    "minimind-3": "jingyaogong/minimind-3:latest",
+    "minimind-3-moe": "jingyaogong/minimind-3-moe:latest",
+    "minimind-3-gguf": "hf.co/jingyaogong/minimind-3-gguf:minimind-3.q8.gguf",
+}
 
 DEFAULT_PROMPT = """Write a compact technical note about why local small language
 models are useful for privacy-preserving AI assistants. Include practical
@@ -411,6 +423,10 @@ def assert_small_model(model: str, max_b: float) -> None:
         )
 
 
+def resolve_model_name(model: str) -> str:
+    return MODEL_ALIASES.get(model.strip().lower(), model)
+
+
 def mean(values: list[float]) -> float | None:
     return statistics.fmean(values) if values else None
 
@@ -520,7 +536,7 @@ def parse_args() -> argparse.Namespace:
         "--models",
         nargs="+",
         default=DEFAULT_MODELS,
-        help="Ollama model names to test.",
+        help="Ollama model names or built-in aliases to test.",
     )
     parser.add_argument(
         "--host",
@@ -574,6 +590,8 @@ def main() -> None:
     args = parse_args()
     prompt = load_prompt(args)
     seed = None if args.no_seed else args.seed
+    requested_models = args.models
+    models = [resolve_model_name(model) for model in requested_models]
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -581,15 +599,17 @@ def main() -> None:
     host_info = collect_host_info(args.host)
     ollama_info = collect_ollama_info(args.host, args.timeout)
     all_runs: list[dict[str, Any]] = []
-    all_errors: dict[str, list[str]] = {model: [] for model in args.models}
+    all_errors: dict[str, list[str]] = {model: [] for model in models}
 
     print(f"Host: {host_info['hostname']}")
     print(f"Ollama host: {args.host}")
-    print(f"Models: {', '.join(args.models)}")
+    print(f"Models: {', '.join(models)}")
+    if requested_models != models:
+        print(f"Requested models: {', '.join(requested_models)}")
     print(f"Measured runs per model: {args.runs}")
     print()
 
-    for model in args.models:
+    for model in models:
         print(f"=== {model} ===")
         try:
             if not args.allow_over_max:
@@ -643,12 +663,14 @@ def main() -> None:
                 raise
         print()
 
-    summary = [summarize_model(model, all_runs, all_errors[model]) for model in args.models]
+    summary = [summarize_model(model, all_runs, all_errors[model]) for model in models]
 
     result = {
         "created_at": datetime.now().isoformat(timespec="seconds"),
         "benchmark_config": {
-            "models": args.models,
+            "models": models,
+            "requested_models": requested_models,
+            "model_aliases": MODEL_ALIASES,
             "runs": args.runs,
             "warmup_runs": args.warmup_runs,
             "num_predict": args.num_predict,
