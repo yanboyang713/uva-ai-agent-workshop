@@ -335,13 +335,20 @@ def load_or_unload_model(model: str, host: str, timeout: int, keep_alive: str | 
 
 def delete_model(model: str, host: str, timeout: int) -> None:
     print(f"Removing {model} from Ollama")
-    request_json(
-        host,
-        "/api/delete",
-        payload={"model": model},
-        method="DELETE",
-        timeout=timeout,
-    )
+    try:
+        request_json(
+            host,
+            "/api/delete",
+            payload={"model": model},
+            method="DELETE",
+            timeout=timeout,
+        )
+    except RuntimeError as exc:
+        message = str(exc).lower()
+        if "ollama http 404 for /api/delete" in message and "not found" in message:
+            print(f"  {model} is not installed; nothing to remove")
+            return
+        raise
 
 
 def run_generation(
@@ -638,8 +645,8 @@ def main() -> None:
                 assert_small_model(model, args.max_model_b)
 
             if args.pull:
-                model_should_be_removed = args.remove_after_model
                 pull_model(model, args.host, args.pull_timeout)
+                model_should_be_removed = args.remove_after_model
 
             for warmup_index in range(args.warmup_runs):
                 print(f"Warmup {warmup_index + 1}/{args.warmup_runs}")
