@@ -333,6 +333,17 @@ def load_or_unload_model(model: str, host: str, timeout: int, keep_alive: str | 
     )
 
 
+def delete_model(model: str, host: str, timeout: int) -> None:
+    print(f"Removing {model} from Ollama")
+    request_json(
+        host,
+        "/api/delete",
+        payload={"model": model},
+        method="DELETE",
+        timeout=timeout,
+    )
+
+
 def run_generation(
     *,
     model: str,
@@ -560,6 +571,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Unload each model after its benchmark runs.",
     )
+    parser.add_argument(
+        "--remove-after-model",
+        action="store_true",
+        help="Delete each model from local Ollama storage after its benchmark runs. Implies unload.",
+    )
     parser.add_argument("--prompt", default=DEFAULT_PROMPT, help="Prompt used for each benchmark run.")
     parser.add_argument("--prompt-file", help="Read the benchmark prompt from a text file.")
     parser.add_argument(
@@ -607,19 +623,28 @@ def main() -> None:
     if requested_models != models:
         print(f"Requested models: {', '.join(requested_models)}")
     print(f"Measured runs per model: {args.runs}")
+    if args.remove_after_model:
+        print("Cleanup: delete each model from Ollama after testing")
+    elif args.unload_after_model:
+        print("Cleanup: unload each model after testing")
     print()
 
     for model in models:
         print(f"=== {model} ===")
+        model_may_be_loaded = False
+        model_should_be_removed = False
         try:
             if not args.allow_over_max:
                 assert_small_model(model, args.max_model_b)
 
             if args.pull:
+                model_should_be_removed = args.remove_after_model
                 pull_model(model, args.host, args.pull_timeout)
 
             for warmup_index in range(args.warmup_runs):
                 print(f"Warmup {warmup_index + 1}/{args.warmup_runs}")
+                model_may_be_loaded = True
+                model_should_be_removed = args.remove_after_model
                 run_generation(
                     model=model,
                     host=args.host,
@@ -633,6 +658,8 @@ def main() -> None:
                 )
 
             for run_index in range(args.runs):
+                model_may_be_loaded = True
+                model_should_be_removed = args.remove_after_model
                 record = run_generation(
                     model=model,
                     host=args.host,
@@ -652,15 +679,32 @@ def main() -> None:
                     f"{record['eval_count']} output tokens"
                 )
 
-            if args.unload_after_model:
-                load_or_unload_model(model, args.host, args.timeout, keep_alive=0)
-
         except Exception as exc:
             message = f"{type(exc).__name__}: {exc}"
             all_errors[model].append(message)
             print(f"ERROR: {message}")
             if args.stop_on_error:
                 raise
+        finally:
+            if model_may_be_loaded and (args.unload_after_model or args.remove_after_model):
+                try:
+                    load_or_unload_model(model, args.host, args.timeout, keep_alive=0)
+                except Exception as exc:
+                    message = f"cleanup unload failed: {type(exc).__name__}: {exc}"
+                    all_errors[model].append(message)
+                    print(f"WARNING: {message}")
+                    if args.stop_on_error:
+                        raise
+
+            if model_should_be_removed:
+                try:
+                    delete_model(model, args.host, args.timeout)
+                except Exception as exc:
+                    message = f"cleanup remove failed: {type(exc).__name__}: {exc}"
+                    all_errors[model].append(message)
+                    print(f"WARNING: {message}")
+                    if args.stop_on_error:
+                        raise
         print()
 
     summary = [summarize_model(model, all_runs, all_errors[model]) for model in models]
@@ -679,6 +723,8 @@ def main() -> None:
             "temperature": args.temperature,
             "seed": seed,
             "keep_alive": args.keep_alive,
+            "unload_after_model": args.unload_after_model,
+            "remove_after_model": args.remove_after_model,
             "prompt": prompt,
         },
         "host_info": host_info,
