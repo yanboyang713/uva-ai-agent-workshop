@@ -460,7 +460,7 @@ I evaluated the local model choices with the Ollama token-throughput benchmark i
 
 ### Local SLM Throughput Benchmark
 
-The table below was produced with `scripts/ollama_token_throughput_benchmark.py`. Each model ran three measured generations with 256 requested output tokens. All tested models completed without errors.
+The first table below was produced with `scripts/ollama_token_throughput_benchmark.py` on Intel N100 CPU. Each model ran three measured generations with 256 requested output tokens. All tested models completed without errors.
 
 | Model | Runs | Median tok/s | Mean tok/s | Wall tok/s | Out toks | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -476,7 +476,23 @@ The table below was produced with `scripts/ollama_token_throughput_benchmark.py`
 | `jingyaogong/minimind-3-moe:latest` | 3 | 155.055 | 149.708 | 150.226 | 256.0 | 0 |
 | `hf.co/jingyaogong/minimind-3-gguf:minimind-3.q8.gguf` | 3 | 113.272 | 107.541 | 111.85 | 256.0 | 0 |
 
-Based on these measurements, I use `jingyaogong/minimind-3-moe:latest` as the base SLM. It had the highest median output throughput in the benchmark, which matters for an agent workflow that may call the model several times during one incident.
+An additional run on an NVIDIA RTX 2070 GPU used the same benchmark shape: three measured generations with 256 requested output tokens. In this run, `gemma4:e4b` recorded one error and no completed measured runs.
+
+| Model | Runs | Median tok/s | Mean tok/s | Wall tok/s | Out toks | Errors |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| `llama3.2:3b` | 3 | 139.355 | 139.335 | 111.53 | 256.0 | 0 |
+| `qwen2.5:7b` | 3 | 72.705 | 72.719 | 63.526 | 256.0 | 0 |
+| `deepseek-r1:7b` | 3 | 72.843 | 72.841 | 62.61 | 256.0 | 0 |
+| `smollm2:1.7b` | 3 | 177.004 | 177.03 | 155.784 | 256.0 | 0 |
+| `phi4-mini:3.8b` | 3 | 114.381 | 114.321 | 88.326 | 256.0 | 0 |
+| `gemma3:4b` | 3 | 95.057 | 94.62 | 82.512 | 256.0 | 0 |
+| `gemma4:e4b` | 0 | None | None | None | None | 1 |
+| `jingyaogong/minimind2:latest` | 3 | 671.195 | 659.447 | 614.664 | 256.0 | 0 |
+| `jingyaogong/minimind-3:latest` | 3 | 1294.78 | 1235.172 | 1090.719 | 256.0 | 0 |
+| `jingyaogong/minimind-3-moe:latest` | 3 | 1079.687 | 1039.208 | 1015.588 | 256.0 | 0 |
+| `hf.co/jingyaogong/minimind-3-gguf:minimind-3.q8.gguf` | 3 | 1286.361 | 1204.899 | 1202.291 | 256.0 | 0 |
+
+Based on the initial CPU measurements, I use `jingyaogong/minimind-3-moe:latest` as the base SLM. It had the highest median output throughput in that benchmark, which matters for an agent workflow that may call the model several times during one incident.
 
 ### Evaluation Questions
 

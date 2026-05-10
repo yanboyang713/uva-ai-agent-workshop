@@ -7,7 +7,7 @@ statistics. It uses Ollama's HTTP API directly, so no Python package is needed.
 
 Example:
     ollama serve
-    python final-project/scripts/ollama_token_throughput_benchmark.py --pull
+    python final-project/scripts/ollama_token_throughput_benchmark.py --pull --remove-after-model
 """
 
 from __future__ import annotations
