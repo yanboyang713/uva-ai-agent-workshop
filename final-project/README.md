@@ -404,7 +404,7 @@ Each agent reads and updates a shared incident state object. A minimal schema is
 }
 ```
 
-This shared state makes the workflow reproducible and easier to grade for a class project.
+This shared state makes the workflow reproducible.
 
 ### Example Incident Walkthrough
 
@@ -422,7 +422,7 @@ Scenario: a deployment enters `CrashLoopBackOff` after a new release.
 10. The Verifier checks that pods become ready and that restart counts stop increasing.
 11. The Reporter produces a concise incident report with retrieved passages, Org-roam note citations, and live-cluster evidence.
 
-### Suggested Implementation Stack
+### Implementation Stack
 
 - Agent workflow engine: LangGraph
 - Local LLM runtime: Ollama
